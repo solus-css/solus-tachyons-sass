@@ -1,0 +1,19 @@
+/*
+   LINE HEIGHT / LEADING
+   Docs: http://tachyons.io/docs/typography/line-height
+
+    Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+*/
+
+@mixin lh-solid {
+  line-height: $line-height-solid;
+}
+@mixin lh-title {
+  line-height: $line-height-title;
+}
+@mixin lh-copy {
+  line-height: $line-height-copy;
+}

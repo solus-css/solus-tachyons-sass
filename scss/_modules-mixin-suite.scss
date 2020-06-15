@@ -1,0 +1,88 @@
+// ! TACHYONS v4.9.X | http://tachyons.io
+//
+//
+//      ________            ______
+//      ___  __/_____ _________  /______  ______________________
+//      __  /  _  __ `/  ___/_  __ \_  / / /  __ \_  __ \_  ___/
+//      _  /   / /_/ // /__ _  / / /  /_/ // /_/ /  / / /(__  )
+//      /_/    \__,_/ \___/ /_/ /_/_\__, / \____//_/ /_//____/
+//      Haru                       /____/
+
+/**
+    This is a suite of all the project's mixins.
+    This suite is usefull if you need to use a traditional styling scheme such as BEM or C(not Tachyons functional classes), for example in a project that imports BEM class naming.
+    Adding these mixins adds 0 weight to your stylesheet untill you import them.
+*/
+
+// Breakpoint Generation
+@import "breakpoint-generator-mixin";
+
+//  Modules
+@import "box-sizing-mixin";
+@import "aspect-ratios-mixin";
+@import "images-mixin";
+@import "background-size-mixin";
+@import "background-position-mixin";
+@import "outlines-mixin";
+@import "borders-mixin";
+@import "border-colors-mixin";
+@import "border-radius-mixin";
+@import "border-style-mixin";
+@import "border-widths-mixin";
+@import "box-shadow-mixin";
+@import "code-mixin";
+@import "coordinates-mixin";
+@import "clears-mixin";
+@import "flexbox-mixin";
+@import "display-mixin";
+@import "floats-mixin";
+@import "font-family-mixin";
+@import "font-style-mixin";
+@import "font-weight-mixin";
+@import "forms-mixin";
+@import "heights-mixin";
+@import "letter-spacing-mixin";
+@import "line-height-mixin";
+@import "links-mixin";
+@import "lists-mixin";
+@import "max-widths-mixin";
+@import "widths-mixin";
+@import "overflow-mixin";
+@import "position-mixin";
+@import "opacity-mixin";
+@import "rotations-mixin";
+@import "skins-mixin";
+@import "skins-pseudo-mixin";
+@import "spacing-mixin";
+@import "negative-margins-mixin";
+@import "tables-mixin";
+@import "text-decoration-mixin";
+@import "text-align-mixin";
+@import "text-transform-mixin";
+@import "type-scale-mixin";
+@import "typography-mixin";
+@import "utilities-mixin";
+@import "visibility-mixin";
+@import "white-space-mixin";
+@import "vertical-align-mixin";
+@import "hovers-mixin";
+@import "z-index-mixin";
+@import "nested-mixin";
+@import "styles-mixin";
+
+// Extended modules
+@import "box-sizing-mixin";
+@import "word-break-mixin";
+@import "gradients-mixin";
+@import "letter-spacing-mixin";
+
+// Development
+@import "nested-mixin";
+@import "module-template-mixin";
+
+// Extended modules
+// @import "scss/word-break";
+
+// Development
+// @import "scss/module-template";
+// @import "scss/nested";

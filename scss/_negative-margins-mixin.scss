@@ -1,0 +1,136 @@
+/*
+   NEGATIVE MARGINS
+
+   Base:
+     n = negative
+
+   Modifiers:
+     a = all
+     t = top
+     r = right
+     b = bottom
+     l = left
+
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+
+    Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+*/
+
+@mixin na1 {
+  margin: -$spacing-extra-small;
+}
+@mixin na2 {
+  margin: -$spacing-small;
+}
+@mixin na3 {
+  margin: -$spacing-medium;
+}
+@mixin na4 {
+  margin: -$spacing-large;
+}
+@mixin na5 {
+  margin: -$spacing-extra-large;
+}
+@mixin na6 {
+  margin: -$spacing-extra-extra-large;
+}
+@mixin na7 {
+  margin: -$spacing-extra-extra-extra-large;
+}
+
+@mixin nl1 {
+  margin-left: -$spacing-extra-small;
+}
+@mixin nl2 {
+  margin-left: -$spacing-small;
+}
+@mixin nl3 {
+  margin-left: -$spacing-medium;
+}
+@mixin nl4 {
+  margin-left: -$spacing-large;
+}
+@mixin nl5 {
+  margin-left: -$spacing-extra-large;
+}
+@mixin nl6 {
+  margin-left: -$spacing-extra-extra-large;
+}
+@mixin nl7 {
+  margin-left: -$spacing-extra-extra-extra-large;
+}
+
+@mixin nr1 {
+  margin-right: -$spacing-extra-small;
+}
+@mixin nr2 {
+  margin-right: -$spacing-small;
+}
+@mixin nr3 {
+  margin-right: -$spacing-medium;
+}
+@mixin nr4 {
+  margin-right: -$spacing-large;
+}
+@mixin nr5 {
+  margin-right: -$spacing-extra-large;
+}
+@mixin nr6 {
+  margin-right: -$spacing-extra-extra-large;
+}
+@mixin nr7 {
+  margin-right: -$spacing-extra-extra-extra-large;
+}
+
+@mixin nb1 {
+  margin-bottom: -$spacing-extra-small;
+}
+@mixin nb2 {
+  margin-bottom: -$spacing-small;
+}
+@mixin nb3 {
+  margin-bottom: -$spacing-medium;
+}
+@mixin nb4 {
+  margin-bottom: -$spacing-large;
+}
+@mixin nb5 {
+  margin-bottom: -$spacing-extra-large;
+}
+@mixin nb6 {
+  margin-bottom: -$spacing-extra-extra-large;
+}
+@mixin nb7 {
+  margin-bottom: -$spacing-extra-extra-extra-large;
+}
+
+@mixin nt1 {
+  margin-top: -$spacing-extra-small;
+}
+@mixin nt2 {
+  margin-top: -$spacing-small;
+}
+@mixin nt3 {
+  margin-top: -$spacing-medium;
+}
+@mixin nt4 {
+  margin-top: -$spacing-large;
+}
+@mixin nt5 {
+  margin-top: -$spacing-extra-large;
+}
+@mixin nt6 {
+  margin-top: -$spacing-extra-extra-large;
+}
+@mixin nt7 {
+  margin-top: -$spacing-extra-extra-extra-large;
+}

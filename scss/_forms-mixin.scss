@@ -1,0 +1,13 @@
+/*
+   FORMS
+*/
+
+@mixin input-reset {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+@mixin moz-inner-reset {
+  border: 0;
+  padding: 0;
+}

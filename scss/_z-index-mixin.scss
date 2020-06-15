@@ -1,0 +1,75 @@
+/*
+  Z-INDEX
+
+  Base
+    z = z-index
+
+  Modifiers
+    -0 = literal value 0
+    -1 = literal value 1
+    -2 = literal value 2
+    -3 = literal value 3
+    -4 = literal value 4
+    -5 = literal value 5
+    -999 = literal value 999
+    -9999 = literal value 9999
+
+    -max = largest accepted z-index value as integer
+
+    -inherit = string value inherit
+    -initial = string value initial
+    -unset = string value unset
+
+  MDN: https://developer.mozilla.org/en/docs/Web/CSS/z-index
+  @include mozilla.org/en/docs/Web/CSS/z-ind;
+  Articles:
+    https://philipwalton.com/articles/what-no-one-told-you-about-z-index/
+
+  Tips on extending:
+  There might be a time worth using negative z-index values.
+  Or if you are using tachyons with another project, you might need to
+  adjust these values to suit your needs.
+*/
+
+@mixin z-index($val) {
+  z-index: $val;
+}
+@mixin z-0 {
+  @include z-index(0);
+}
+@mixin z-1 {
+  @include z-index(1);
+}
+@mixin z-2 {
+  @include z-index(2);
+}
+@mixin z-3 {
+  @include z-index(3);
+}
+@mixin z-4 {
+  @include z-index(4);
+}
+@mixin z-5 {
+  @include z-index(5);
+}
+
+@mixin z-999 {
+  @include z-index(999);
+}
+@mixin z-9999 {
+  @include z-index(9999);
+}
+
+@mixin z-max {
+  @include z-index(2147483647);
+}
+
+@mixin z-inherit {
+  @include z-index(inherit);
+}
+@mixin z-initial {
+  @include z-index(initial);
+}
+@mixin z-unset {
+  @include z-index(unset);
+}

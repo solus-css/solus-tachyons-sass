@@ -1,0 +1,20 @@
+/*
+  BOX-SHADOW
+  Docs: http://tachyons.io/docs/themes/box-shadow/
+ */
+
+@mixin shadow-1 {
+  box-shadow: $box-shadow-1;
+}
+@mixin shadow-2 {
+  box-shadow: $box-shadow-2;
+}
+@mixin shadow-3 {
+  box-shadow: $box-shadow-3;
+}
+@mixin shadow-4 {
+  box-shadow: $box-shadow-4;
+}
+@mixin shadow-5 {
+  box-shadow: $box-shadow-5;
+}

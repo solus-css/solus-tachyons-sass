@@ -1,0 +1,35 @@
+/*
+   TEXT TRANSFORM
+   Docs: http://tachyons.io/docs/typography/text-transform/
+
+   Base:
+     tt = text-transform
+
+   Modifiers
+     c = capitalize
+     l = lowercase
+     u = uppercase
+     n = none
+
+     Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+*/
+
+@mixin text_transform($style: none) {
+  text-transform: $style;
+}
+
+@mixin ttc {
+  @include text-transform(capitalize);
+}
+@mixin ttl {
+  @include text_transform(lowercase);
+}
+@mixin ttu {
+  @include text_transform(uppercase);
+}
+@mixin ttn {
+  @include text_transform(none);
+}
