@@ -1,0 +1,31 @@
+/*
+    BREAKPOINT GENERATOR MIXIN
+*/
+
+// Fallback values intended to be overwritten by _variables.scss
+$breakpoint-not-small: "screen and (min-width: 30em)" !default;
+$breakpoint-medium: "screen and (min-width: 30em) and (max-width: 60em)" !default;
+$breakpoint-large: "screen and (min-width: 60em)" !default;
+
+// The first elememt is empty for base styles without breakpoint
+$breakpoints: (
+  "": "",
+  "ns": $breakpoint-not-small,
+  "m": $breakpoint-medium,
+  "l": $breakpoint-large
+) !default;
+
+// Generate breakpoint suffixes for base classes
+@mixin generateBreakpoints {
+  @each $breakpoint, $width in $breakpoints {
+    @if ($breakpoint == "") {
+      $breakpointKey: $breakpoint !global;
+      @content;
+    } @else {
+      @media #{$width} {
+        $breakpointKey: "-" + $breakpoint !global;
+        @content;
+      }
+    }
+  }
+}
