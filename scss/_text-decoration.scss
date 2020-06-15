@@ -9,25 +9,16 @@
      -l  = large
 */
 
-.strike       { text-decoration: line-through; }
-.underline    { text-decoration: underline; }
-.no-underline { text-decoration: none; }
+@import "text-decoration-mixin";
 
-
-@media #{$breakpoint-not-small} {
-  .strike-ns       { text-decoration: line-through; }
-  .underline-ns    { text-decoration: underline; }
-  .no-underline-ns { text-decoration: none; }
-}
-
-@media #{$breakpoint-medium} {
-  .strike-m       { text-decoration: line-through; }
-  .underline-m    { text-decoration: underline; }
-  .no-underline-m { text-decoration: none; }
-}
-
-@media #{$breakpoint-large} {
-  .strike-l       { text-decoration: line-through; }
-  .underline-l {    text-decoration: underline; }
-  .no-underline-l { text-decoration: none; }
+@include generateBreakpoints() {
+  .strike#{$breakpointKey} {
+    @include strike;
+  }
+  .underline#{$breakpointKey} {
+    @include underline;
+  }
+  .no-underline#{$breakpointKey} {
+    @include no-underline;
+  }
 }

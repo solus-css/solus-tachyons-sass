@@ -2,8 +2,8 @@
    CODE
 */
 
+@import "code-mixin";
+
 .pre {
-  overflow-x: auto;
-  overflow-y: hidden;
-  overflow:   scroll;
+  @include pre;
 }

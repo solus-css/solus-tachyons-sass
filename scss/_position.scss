@@ -8,28 +8,19 @@
      -l  = large
 */
 
-.static { position: static; }
-.relative  { position: relative; }
-.absolute  { position: absolute; }
-.fixed  { position: fixed; }
+@import "position-mixin";
 
-@media #{$breakpoint-not-small} {
-  .static-ns { position: static; }
-  .relative-ns  { position: relative; }
-  .absolute-ns  { position: absolute; }
-  .fixed-ns  { position: fixed; }
-}
-
-@media #{$breakpoint-medium} {
-  .static-m { position: static; }
-  .relative-m  { position: relative; }
-  .absolute-m  { position: absolute; }
-  .fixed-m  { position: fixed; }
-}
-
-@media #{$breakpoint-large} {
-  .static-l { position: static; }
-  .relative-l  { position: relative; }
-  .absolute-l  { position: absolute; }
-  .fixed-l  { position: fixed; }
+@include generateBreakpoints() {
+  .static#{$breakpointKey} {
+    @include static;
+  }
+  .relative#{$breakpointKey} {
+    @include relative;
+  }
+  .absolute#{$breakpointKey} {
+    @include absolute;
+  }
+  .fixed#{$breakpointKey} {
+    @include fixed;
+  }
 }

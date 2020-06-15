@@ -8,24 +8,16 @@
      -l  = large
 */
 
-.tracked       { letter-spacing:  $letter-spacing-1; }
-.tracked-tight { letter-spacing: $letter-spacing-tight; }
-.tracked-mega  { letter-spacing:  $letter-spacing-2; }
+@import "letter-spacing-mixin";
 
-@media #{$breakpoint-not-small} {
-  .tracked-ns       { letter-spacing:  $letter-spacing-1; }
-  .tracked-tight-ns { letter-spacing: $letter-spacing-tight; }
-  .tracked-mega-ns  { letter-spacing:  $letter-spacing-2; }
-}
-
-@media #{$breakpoint-medium} {
-  .tracked-m       { letter-spacing:  $letter-spacing-1; }
-  .tracked-tight-m { letter-spacing: $letter-spacing-tight; }
-  .tracked-mega-m  { letter-spacing:  $letter-spacing-2; }
-}
-
-@media #{$breakpoint-large} {
-  .tracked-l       { letter-spacing:  $letter-spacing-1; }
-  .tracked-tight-l { letter-spacing: $letter-spacing-tight; }
-  .tracked-mega-l  { letter-spacing:  $letter-spacing-2; }
+@include generateBreakpoints() {
+  .tracked#{$breakpointKey} {
+    @include tracked;
+  }
+  .tracked-tight#{$breakpointKey} {
+    @include tracked-tight;
+  }
+  .tracked-mega#{$breakpointKey} {
+    @include tracked-mega;
+  }
 }

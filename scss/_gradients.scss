@@ -2,18 +2,20 @@
    GRADIENTS
 */
 
-.gradient-blue { 
-  background-image: linear-gradient(#4570B0, #0081C2);
+@import "gradients-mixin";
+
+.gradient-blue {
+  @include gradient-blue;
 }
 
-.gradient-blue-reversed { 
-  background-image: linear-gradient(#0081C2, #4570B0);
+.gradient-blue-reversed {
+  @include gradient-blue-reversed;
 }
 
-.gradient-light-blue { 
-  background-image: linear-gradient(#76D3FE, #008AE0);
+.gradient-light-blue {
+  @include gradient-light-blue;
 }
 
-.gradient-light-blue-reversed { 
-  background-image: linear-gradient(#008AE0, #76D3FE);
+.gradient-light-blue-reversed {
+  @include gradient-light-blue-reversed;
 }

@@ -3,9 +3,13 @@
   Docs: http://tachyons.io/docs/elements/tables/
 */
 
+// @todo: No mixins for these rules yet.
+
+@import "tables-mixin";
+
 .collapse {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .striped--light-silver:nth-child(odd) {

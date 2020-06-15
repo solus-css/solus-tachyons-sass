@@ -21,69 +21,203 @@
      -l  = large
 */
 
-.b--black {        border-color: $black; }
-.b--near-black {   border-color: $near-black; }
-.b--dark-gray {    border-color: $dark-gray; }
-.b--mid-gray {     border-color: $mid-gray; }
-.b--gray {         border-color: $gray; }
-.b--silver {       border-color: $silver; }
-.b--light-silver { border-color: $light-silver; }
-.b--moon-gray {    border-color: $moon-gray; }
-.b--light-gray {   border-color: $light-gray; }
-.b--near-white {   border-color: $near-white; }
-.b--white {        border-color: $white; }
+@import "border-colors-mixin";
 
-.b--white-90 {   border-color: $white-90; }
-.b--white-80 {   border-color: $white-80; }
-.b--white-70 {   border-color: $white-70; }
-.b--white-60 {   border-color: $white-60; }
-.b--white-50 {   border-color: $white-50; }
-.b--white-40 {   border-color: $white-40; }
-.b--white-30 {   border-color: $white-30; }
-.b--white-20 {   border-color: $white-20; }
-.b--white-10 {   border-color: $white-10; }
-.b--white-05 {   border-color: $white-05; }
-.b--white-025 {   border-color: $white-025; }
-.b--white-0125 {   border-color: $white-0125; }
+@include generateBreakpoints() #{$breakpointKey} {
+  .b--black#{$breakpointKey} {
+    @include b--black;
+  }
+  .b--near-black#{$breakpointKey} {
+    @include b--near-black;
+  }
+  .b--dark-gray#{$breakpointKey} {
+    @include b--dark-gray;
+  }
+  .b--mid-gray#{$breakpointKey} {
+    @include b--mid-gray;
+  }
+  .b--gray#{$breakpointKey} {
+    @include b--gray;
+  }
+  .b--silver#{$breakpointKey} {
+    @include b--silver;
+  }
+  .b--light-silver#{$breakpointKey} {
+    @include b--light-silver;
+  }
+  .b--moon-gray#{$breakpointKey} {
+    @include b--moon-gray;
+  }
+  .b--light-gray#{$breakpointKey} {
+    @include b--light-gray;
+  }
+  .b--near-white#{$breakpointKey} {
+    @include b--near-white;
+  }
+  .b--white#{$breakpointKey} {
+    @include b--white;
+  }
 
-.b--black-90 {   border-color: $black-90; }
-.b--black-80 {   border-color: $black-80; }
-.b--black-70 {   border-color: $black-70; }
-.b--black-60 {   border-color: $black-60; }
-.b--black-50 {   border-color: $black-50; }
-.b--black-40 {   border-color: $black-40; }
-.b--black-30 {   border-color: $black-30; }
-.b--black-20 {   border-color: $black-20; }
-.b--black-10 {   border-color: $black-10; }
-.b--black-05 {   border-color: $black-05; }
-.b--black-025 {   border-color: $black-025; }
-.b--black-0125 {   border-color: $black-0125; }
+  .b--white-90#{$breakpointKey} {
+    @include b--white-90;
+  }
+  .b--white-80#{$breakpointKey} {
+    @include b--white-80;
+  }
+  .b--white-70#{$breakpointKey} {
+    @include b--white-70;
+  }
+  .b--white-60#{$breakpointKey} {
+    @include b--white-60;
+  }
+  .b--white-50#{$breakpointKey} {
+    @include b--white-50;
+  }
+  .b--white-40#{$breakpointKey} {
+    @include b--white-40;
+  }
+  .b--white-30#{$breakpointKey} {
+    @include b--white-30;
+  }
+  .b--white-20#{$breakpointKey} {
+    @include b--white-20;
+  }
+  .b--white-10#{$breakpointKey} {
+    @include b--white-10;
+  }
+  .b--white-05#{$breakpointKey} {
+    @include b--white-05;
+  }
+  .b--white-025#{$breakpointKey} {
+    @include b--white-025;
+  }
+  .b--white-0125#{$breakpointKey} {
+    @include b--white-0125;
+  }
 
-.b--dark-red { border-color: $dark-red; }
-.b--red { border-color: $red; }
-.b--light-red { border-color: $light-red; }
-.b--orange { border-color: $orange; }
-.b--gold { border-color: $gold; }
-.b--yellow { border-color: $yellow; }
-.b--light-yellow { border-color: $light-yellow; }
-.b--purple { border-color: $purple; }
-.b--light-purple { border-color: $light-purple; }
-.b--dark-pink { border-color: $dark-pink; }
-.b--hot-pink { border-color: $hot-pink; }
-.b--pink { border-color: $pink; }
-.b--light-pink { border-color: $light-pink; }
-.b--dark-green { border-color: $dark-green; }
-.b--green { border-color: $green; }
-.b--light-green { border-color: $light-green; }
-.b--navy { border-color: $navy; }
-.b--dark-blue { border-color: $dark-blue; }
-.b--blue { border-color: $blue; }
-.b--light-blue { border-color: $light-blue; }
-.b--lightest-blue { border-color: $lightest-blue; }
-.b--washed-blue { border-color: $washed-blue; }
-.b--washed-green { border-color: $washed-green; }
-.b--washed-yellow { border-color: $washed-yellow; }
-.b--washed-red { border-color: $washed-red; }
+  .b--black-90#{$breakpointKey} {
+    @include b--black-90;
+  }
+  .b--black-80#{$breakpointKey} {
+    @include b--black-80;
+  }
+  .b--black-70#{$breakpointKey} {
+    @include b--black-70;
+  }
+  .b--black-60#{$breakpointKey} {
+    @include b--black-60;
+  }
+  .b--black-50#{$breakpointKey} {
+    @include b--black-50;
+  }
+  .b--black-40#{$breakpointKey} {
+    @include b--black-40;
+  }
+  .b--black-30#{$breakpointKey} {
+    @include b--black-30;
+  }
+  .b--black-20#{$breakpointKey} {
+    @include b--black-20;
+  }
+  .b--black-10#{$breakpointKey} {
+    @include b--black-10;
+  }
+  .b--black-05#{$breakpointKey} {
+    @include b--black-05;
+  }
+  .b--black-025#{$breakpointKey} {
+    @include b--black-025;
+  }
+  .b--black-0125#{$breakpointKey} {
+    @include b--black-0125;
+  }
 
-.b--transparent { border-color: $transparent; }
-.b--inherit { border-color: inherit; }
+  .b--dark-red#{$breakpointKey} {
+    @include b--dark-red;
+  }
+  .b--red#{$breakpointKey} {
+    @include b--red;
+  }
+  .b--light-red#{$breakpointKey} {
+    @include b--light-red;
+  }
+  .b--orange#{$breakpointKey} {
+    @include b--orange;
+  }
+  .b--gold#{$breakpointKey} {
+    @include b--gold;
+  }
+  .b--yellow#{$breakpointKey} {
+    @include b--yellow;
+  }
+  .b--light-yellow#{$breakpointKey} {
+    @include b--light-yellow;
+  }
+  .b--purple#{$breakpointKey} {
+    @include b--purple;
+  }
+  .b--light-purple#{$breakpointKey} {
+    @include b--light-purple;
+  }
+  .b--dark-pink#{$breakpointKey} {
+    @include b--dark-pink;
+  }
+  .b--hot-pink#{$breakpointKey} {
+    @include b--hot-pink;
+  }
+  .b--pink#{$breakpointKey} {
+    @include b--pink;
+  }
+  .b--light-pink#{$breakpointKey} {
+    @include b--light-pink;
+  }
+  .b--dark-green#{$breakpointKey} {
+    @include b--dark-green;
+  }
+  .b--green#{$breakpointKey} {
+    @include b--green;
+  }
+  .b--light-green#{$breakpointKey} {
+    @include b--light-green;
+  }
+  .b--navy#{$breakpointKey} {
+    @include b--navy;
+  }
+  .b--dark-blue#{$breakpointKey} {
+    @include b--dark-blue;
+  }
+  .b--blue#{$breakpointKey} {
+    @include b--blue;
+  }
+  .b--light-blue#{$breakpointKey} {
+    @include b--light-blue;
+  }
+  .b--lightest-blue#{$breakpointKey} {
+    @include b--lightest-blue;
+  }
+  .b--washed-blue#{$breakpointKey} {
+    @include b--washed-blue;
+  }
+  .b--washed-green#{$breakpointKey} {
+    @include b--washed-green;
+  }
+  .b--washed-yellow#{$breakpointKey} {
+    @include b--washed-yellow;
+  }
+  .b--washed-red#{$breakpointKey} {
+    @include b--washed-red;
+  }
+
+  .b--transparent#{$breakpointKey} {
+    @include b--transparent;
+  }
+  .b--inherit#{$breakpointKey} {
+    @include b--inherit;
+  }
+  .b--initial#{$breakpointKey} {
+    @include b--initial;
+  }
+  .b--unset#{$breakpointKey} {
+    @include b--unset;
+  }
+}

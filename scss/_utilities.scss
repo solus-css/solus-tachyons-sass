@@ -7,42 +7,23 @@
      -l  = large
 */
 
-/* Equivalent to .overflow-y-scroll */
+@import "utilities-mixin";
+
+// Equivalent to .overflow-y-scroll
 .overflow-container {
-  overflow-y: scroll;
+  // from overflow-mixin
+  @include overflow-y-scroll;
 }
 
-.center {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.mr-auto { margin-right: auto; }
-.ml-auto { margin-left:  auto; }
-
-@media #{$breakpoint-not-small}{
-  .center-ns {
-    margin-right: auto;
-    margin-left: auto;
+@include generateBreakpoints() {
+  .center#{$breakpointKey} {
+    @include center;
   }
-  .mr-auto-ns { margin-right: auto; }
-  .ml-auto-ns { margin-left:  auto; }
-}
 
-@media #{$breakpoint-medium}{
-  .center-m {
-    margin-right: auto;
-    margin-left: auto;
+  .mr-auto#{$breakpointKey} {
+    @include mr-auto;
   }
-  .mr-auto-m { margin-right: auto; }
-  .ml-auto-m { margin-left:  auto; }
-}
-
-@media #{$breakpoint-large}{
-  .center-l {
-    margin-right: auto;
-    margin-left: auto;
+  .ml-auto#{$breakpointKey} {
+    @include ml-auto;
   }
-  .mr-auto-l { margin-right: auto; }
-  .ml-auto-l { margin-left:  auto; }
 }

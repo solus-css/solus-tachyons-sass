@@ -7,128 +7,354 @@
    be set to the current text color.
 */
 
+@import "skins-mixin";
+
 /* Text colors */
 
-.black-90 {         color: $black-90; }
-.black-80 {         color: $black-80; }
-.black-70 {         color: $black-70; }
-.black-60 {         color: $black-60; }
-.black-50 {         color: $black-50; }
-.black-40 {         color: $black-40; }
-.black-30 {         color: $black-30; }
-.black-20 {         color: $black-20; }
-.black-10 {         color: $black-10; }
-.black-05 {         color: $black-05; }
+.black-90 {
+  @include black-90;
+}
+.black-80 {
+  @include black-80;
+}
+.black-70 {
+  @include black-70;
+}
+.black-60 {
+  @include black-60;
+}
+.black-50 {
+  @include black-50;
+}
+.black-40 {
+  @include black-40;
+}
+.black-30 {
+  @include black-30;
+}
+.black-20 {
+  @include black-20;
+}
+.black-10 {
+  @include black-10;
+}
+.black-05 {
+  @include black-05;
+}
 
-.white-90 {         color: $white-90; }
-.white-80 {         color: $white-80; }
-.white-70 {         color: $white-70; }
-.white-60 {         color: $white-60; }
-.white-50 {         color: $white-50; }
-.white-40 {         color: $white-40; }
-.white-30 {         color: $white-30; }
-.white-20 {         color: $white-20; }
-.white-10 {         color: $white-10; }
+.white-90 {
+  @include white-90;
+}
+.white-80 {
+  @include white-80;
+}
+.white-70 {
+  @include white-70;
+}
+.white-60 {
+  @include white-60;
+}
+.white-50 {
+  @include white-50;
+}
+.white-40 {
+  @include white-40;
+}
+.white-30 {
+  @include white-30;
+}
+.white-20 {
+  @include white-20;
+}
+.white-10 {
+  @include white-10;
+}
 
-.black {         color: $black; }
-.near-black {    color: $near-black; }
-.dark-gray {     color: $dark-gray; }
-.mid-gray {      color: $mid-gray; }
-.gray {          color: $gray; }
-.silver  {       color: $silver; }
-.light-silver {  color: $light-silver; }
-.moon-gray {     color: $moon-gray; }
-.light-gray {    color: $light-gray; }
-.near-white {    color: $near-white; }
-.white {         color: $white; }
+.black {
+  @include black;
+}
+.near-black {
+  @include near-black;
+}
+.dark-gray {
+  @include dark-gray;
+}
+.mid-gray {
+  @include mid-gray;
+}
+.gray {
+  @include gray;
+}
+.silver {
+  @include silver;
+}
+.light-silver {
+  @include light-silver;
+}
+.moon-gray {
+  @include moon-gray;
+}
+.light-gray {
+  @include light-gray;
+}
+.near-white {
+  @include near-white;
+}
+.white {
+  @include white;
+}
 
-.dark-red { color: $dark-red; }
-.red { color: $red; }
-.light-red { color: $light-red; }
-.orange { color: $orange; }
-.gold { color: $gold; }
-.yellow { color: $yellow; }
-.light-yellow { color: $light-yellow; }
-.purple { color: $purple; }
-.light-purple { color: $light-purple; }
-.dark-pink { color: $dark-pink; }
-.hot-pink { color: $hot-pink; }
-.pink { color: $pink; }
-.light-pink { color: $light-pink; }
-.dark-green { color: $dark-green; }
-.green { color: $green; }
-.light-green { color: $light-green; }
-.navy { color: $navy; }
-.dark-blue { color: $dark-blue; }
-.blue { color: $blue; }
-.light-blue { color: $light-blue; }
-.lightest-blue { color: $lightest-blue; }
-.washed-blue { color: $washed-blue; }
-.washed-green { color: $washed-green; }
-.washed-yellow { color: $washed-yellow; }
-.washed-red { color: $washed-red; }
-.color-inherit { color: inherit; }
+.dark-red {
+  @include dark-red;
+}
+.red {
+  @include red;
+}
+.light-red {
+  @include light-red;
+}
+.orange {
+  @include orange;
+}
+.gold {
+  @include gold;
+}
+.yellow {
+  @include yellow;
+}
+.light-yellow {
+  @include light-yellow;
+}
+.purple {
+  @include purple;
+}
+.light-purple {
+  @include light-purple;
+}
+.dark-pink {
+  @include dark-pink;
+}
+.hot-pink {
+  @include hot-pink;
+}
+.pink {
+  @include pink;
+}
+.light-pink {
+  @include light-pink;
+}
+.dark-green {
+  @include dark-green;
+}
+.green {
+  @include green;
+}
+.light-green {
+  @include light-green;
+}
+.navy {
+  @include navy;
+}
+.dark-blue {
+  @include dark-blue;
+}
+.blue {
+  @include blue;
+}
+.light-blue {
+  @include light-blue;
+}
+.lightest-blue {
+  @include lightest-blue;
+}
+.washed-blue {
+  @include washed-blue;
+}
+.washed-green {
+  @include washed-green;
+}
+.washed-yellow {
+  @include washed-yellow;
+}
+.washed-red {
+  @include washed-red;
+}
+.color-inherit {
+  @include color-inherit;
+}
 
-.bg-black-90 {         background-color: $black-90; }
-.bg-black-80 {         background-color: $black-80; }
-.bg-black-70 {         background-color: $black-70; }
-.bg-black-60 {         background-color: $black-60; }
-.bg-black-50 {         background-color: $black-50; }
-.bg-black-40 {         background-color: $black-40; }
-.bg-black-30 {         background-color: $black-30; }
-.bg-black-20 {         background-color: $black-20; }
-.bg-black-10 {         background-color: $black-10; }
-.bg-black-05 {         background-color: $black-05; }
-.bg-white-90 {        background-color: $white-90; }
-.bg-white-80 {        background-color: $white-80; }
-.bg-white-70 {        background-color: $white-70; }
-.bg-white-60 {        background-color: $white-60; }
-.bg-white-50 {        background-color: $white-50; }
-.bg-white-40 {        background-color: $white-40; }
-.bg-white-30 {        background-color: $white-30; }
-.bg-white-20 {        background-color: $white-20; }
-.bg-white-10 {        background-color: $white-10; }
-
-
+.bg-black-90 {
+  @include bg-black-90;
+}
+.bg-black-80 {
+  @include bg-black-80;
+}
+.bg-black-70 {
+  @include bg-black-70;
+}
+.bg-black-60 {
+  @include bg-black-60;
+}
+.bg-black-50 {
+  @include bg-black-50;
+}
+.bg-black-40 {
+  @include bg-black-40;
+}
+.bg-black-30 {
+  @include bg-black-30;
+}
+.bg-black-20 {
+  @include bg-black-20;
+}
+.bg-black-10 {
+  @include bg-black-10;
+}
+.bg-black-05 {
+  @include bg-black-05;
+}
+.bg-white-90 {
+  @include bg-white-90;
+}
+.bg-white-80 {
+  @include bg-white-80;
+}
+.bg-white-70 {
+  @include bg-white-70;
+}
+.bg-white-60 {
+  @include bg-white-60;
+}
+.bg-white-50 {
+  @include bg-white-50;
+}
+.bg-white-40 {
+  @include bg-white-40;
+}
+.bg-white-30 {
+  @include bg-white-30;
+}
+.bg-white-20 {
+  @include bg-white-20;
+}
+.bg-white-10 {
+  @include bg-white-10;
+}
 
 /* Background colors */
 
-.bg-black {         background-color: $black; }
-.bg-near-black {    background-color: $near-black; }
-.bg-dark-gray {     background-color: $dark-gray; }
-.bg-mid-gray {      background-color: $mid-gray; }
-.bg-gray {          background-color: $gray; }
-.bg-silver  {       background-color: $silver; }
-.bg-light-silver {  background-color: $light-silver; }
-.bg-moon-gray {     background-color: $moon-gray; }
-.bg-light-gray {    background-color: $light-gray; }
-.bg-near-white {    background-color: $near-white; }
-.bg-white {         background-color: $white; }
-.bg-transparent {   background-color: $transparent; }
+.bg-black {
+  @include bg-black;
+}
+.bg-near-black {
+  @include bg-near-black;
+}
+.bg-dark-gray {
+  @include bg-dark-gray;
+}
+.bg-mid-gray {
+  @include bg-mid-gray;
+}
+.bg-gray {
+  @include bg-gray;
+}
+.bg-silver {
+  @include bg-silver;
+}
+.bg-light-silver {
+  @include bg-light-silver;
+}
+.bg-moon-gray {
+  @include bg-moon-gray;
+}
+.bg-light-gray {
+  @include bg-light-gray;
+}
+.bg-near-white {
+  @include bg-near-white;
+}
+.bg-white {
+  @include bg-white;
+}
+.bg-transparent {
+  @include bg-transparent;
+}
 
-.bg-dark-red { background-color: $dark-red; }
-.bg-red { background-color: $red; }
-.bg-light-red { background-color: $light-red; }
-.bg-orange { background-color: $orange; }
-.bg-gold { background-color: $gold; }
-.bg-yellow { background-color: $yellow; }
-.bg-light-yellow { background-color: $light-yellow; }
-.bg-purple { background-color: $purple; }
-.bg-light-purple { background-color: $light-purple; }
-.bg-dark-pink { background-color: $dark-pink; }
-.bg-hot-pink { background-color: $hot-pink; }
-.bg-pink { background-color: $pink; }
-.bg-light-pink { background-color: $light-pink; }
-.bg-dark-green { background-color: $dark-green; }
-.bg-green { background-color: $green; }
-.bg-light-green { background-color: $light-green; }
-.bg-navy { background-color: $navy; }
-.bg-dark-blue { background-color: $dark-blue; }
-.bg-blue { background-color: $blue; }
-.bg-light-blue { background-color: $light-blue; }
-.bg-lightest-blue { background-color: $lightest-blue; }
-.bg-washed-blue { background-color: $washed-blue; }
-.bg-washed-green { background-color: $washed-green; }
-.bg-washed-yellow { background-color: $washed-yellow; }
-.bg-washed-red { background-color: $washed-red; }
-.bg-inherit { background-color: inherit; }
+.bg-dark-red {
+  @include bg-dark-red;
+}
+.bg-red {
+  @include bg-red;
+}
+.bg-light-red {
+  @include bg-light-red;
+}
+.bg-orange {
+  @include bg-orange;
+}
+.bg-gold {
+  @include bg-gold;
+}
+.bg-yellow {
+  @include bg-yellow;
+}
+.bg-light-yellow {
+  @include bg-light-yellow;
+}
+.bg-purple {
+  @include bg-purple;
+}
+.bg-light-purple {
+  @include bg-light-purple;
+}
+.bg-dark-pink {
+  @include bg-dark-pink;
+}
+.bg-hot-pink {
+  @include bg-hot-pink;
+}
+.bg-pink {
+  @include bg-pink;
+}
+.bg-light-pink {
+  @include bg-light-pink;
+}
+.bg-dark-green {
+  @include bg-dark-green;
+}
+.bg-green {
+  @include bg-green;
+}
+.bg-light-green {
+  @include bg-light-green;
+}
+.bg-navy {
+  @include bg-navy;
+}
+.bg-dark-blue {
+  @include bg-dark-blue;
+}
+.bg-blue {
+  @include bg-blue;
+}
+.bg-light-blue {
+  @include bg-light-blue;
+}
+.bg-lightest-blue {
+  @include bg-lightest-blue;
+}
+.bg-washed-blue {
+  @include bg-washed-blue;
+}
+.bg-washed-green {
+  @include bg-washed-green;
+}
+.bg-washed-yellow {
+  @include bg-washed-yellow;
+}
+.bg-washed-red {
+  @include bg-washed-red;
+}
+.bg-inherit {
+  @include bg-inherit;
+}

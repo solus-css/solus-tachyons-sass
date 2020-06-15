@@ -2,13 +2,13 @@
    FORMS
 */
 
+@import "forms-mixin";
+
 .input-reset {
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  @include input-reset;
 }
 
 .button-reset::-moz-focus-inner,
 .input-reset::-moz-focus-inner {
-  border: 0;
-  padding: 0;
+  @include moz-inner-reset;
 }

@@ -7,28 +7,19 @@
      -l  = large
 */
 
-.v-base     { vertical-align: baseline; }
-.v-mid      { vertical-align: middle; }
-.v-top      { vertical-align: top; }
-.v-btm      { vertical-align: bottom; }
+@import "vertical-align-mixin";
 
-@media #{$breakpoint-not-small} {
-  .v-base-ns     { vertical-align: baseline; }
-  .v-mid-ns      { vertical-align: middle; }
-  .v-top-ns      { vertical-align: top; }
-  .v-btm-ns      { vertical-align: bottom; }
-}
-
-@media #{$breakpoint-medium} {
-  .v-base-m     { vertical-align: baseline; }
-  .v-mid-m      { vertical-align: middle; }
-  .v-top-m      { vertical-align: top; }
-  .v-btm-m      { vertical-align: bottom; }
-}
-
-@media #{$breakpoint-large} {
-  .v-base-l     { vertical-align: baseline; }
-  .v-mid-l      { vertical-align: middle; }
-  .v-top-l      { vertical-align: top; }
-  .v-btm-l      { vertical-align: bottom; }
+@include generateBreakpoints() {
+  .v-base#{$breakpointKey} {
+    @include v-base;
+  }
+  .v-mid#{$breakpointKey} {
+    @include v-mid;
+  }
+  .v-top#{$breakpointKey} {
+    @include v-top;
+  }
+  .v-btm#{$breakpointKey} {
+    @include v-btm;
+  }
 }

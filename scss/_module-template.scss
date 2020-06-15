@@ -11,16 +11,10 @@
      -l  = large
 */
 
+// @import "module-template-mixin";
 
-@media #{$breakpoint-not-small} {
-
-}
-
-@media #{$breakpoint-medium} {
-
-}
-
-@media #{$breakpoint-large} {
-
-}
-
+// @include generateBreakpoints() {
+// 	.some-class#{$breakpointKey} {
+// 	    @include some-class;
+//     }
+// }

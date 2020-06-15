@@ -8,25 +8,16 @@
      -l  = large
 */
 
-  .lh-solid { line-height: $line-height-solid; }
-  .lh-title { line-height: $line-height-title; }
-  .lh-copy  { line-height: $line-height-copy; }
+@import "line-height-mixin";
 
-@media #{$breakpoint-not-small} {
-  .lh-solid-ns { line-height: $line-height-solid; }
-  .lh-title-ns { line-height: $line-height-title; }
-  .lh-copy-ns  { line-height: $line-height-copy; }
+@include generateBreakpoints() {
+  .lh-solid#{$breakpointKey} {
+    @include lh-solid;
+  }
+  .lh-title#{$breakpointKey} {
+    @include lh-title;
+  }
+  .lh-copy#{$breakpointKey} {
+    @include lh-copy;
+  }
 }
-
-@media #{$breakpoint-medium} {
-  .lh-solid-m { line-height: $line-height-solid; }
-  .lh-title-m { line-height: $line-height-title; }
-  .lh-copy-m  { line-height: $line-height-copy; }
-}
-
-@media #{$breakpoint-large} {
-  .lh-solid-l { line-height: $line-height-solid; }
-  .lh-title-l { line-height: $line-height-title; }
-  .lh-copy-l  { line-height: $line-height-copy; }
-}
-
