@@ -1,26 +1,12 @@
 /*
   Optional Tachyons CSS Custom Properties (variables) for using Tachyons scales in your CSS
-  Custom Properties are only available where they make sense to do so (colors, scales etc.) and they follow Tachyons naming conventions.
-
-  Modifiers:
-  Modifiers generally follow the same pattern as Tachyons CSS classes, with the exception of Media Query Extensions, and directional notations where standard property notation should be used instead.
-
-  For example, Tachyons border classes offer reset classes `.ba-0` which equates to  `border-width: 0;` so no CSS var is available for this.
-  Likewise the `.br-2` equates to `border-right: $border-width-2` in SASS, so instead border widths are notated as `border-right: var(--bw2)`
-
-  .yourClass {
-    border: var(--bw3) solid var(--silver);
-    border-radius: var(--br2);
-    margin-bottom: var(--s2);
-    line-height: var(--tracked);
-    font-size: var(--f2);
-  }
+  Custom Properties are only available where they make sense to do so (colors, scales etc.) and are named the same as thier Sass variable counterparts.
 */
 
-/* Tachyons SCSS variables */
-@import "all_variables";
+/* Tachyons Sass variables */
+@import "variables";
 
-/* Optional CSS Custom Properties */
+/* CSS Custom Properties */
 @import "border-radius-vars";
 @import "border-widths-vars";
 @import "box-shadow-vars";
