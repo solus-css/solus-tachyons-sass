@@ -108,7 +108,7 @@ This project has adopted a few tools to speed build times, and reduce cognitave 
 
 Due to their flexibility, especially with animations, this project has chosen to use `hsl` and `hsla` color values instead of `hex`.
 
-### IE6,7,8
+### IE6,7,8
 
 Where backwards compatibility is no longer a concern, we have begun removing the styles that target older versions  of IE. Fortunately, these are few and far between:
 
