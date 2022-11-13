@@ -1,15 +1,19 @@
 @mixin w1 {
   width: $width-1;
 }
+
 @mixin w2 {
   width: $width-2;
 }
+
 @mixin w3 {
   width: $width-3;
 }
+
 @mixin w4 {
   width: $width-4;
 }
+
 @mixin w5 {
   width: $width-5;
 }
@@ -17,42 +21,55 @@
 @mixin w-10 {
   width: 10%;
 }
+
 @mixin w-20 {
   width: 20%;
 }
+
 @mixin w-25 {
   width: 25%;
 }
+
 @mixin w-30 {
   width: 30%;
 }
+
 @mixin w-33 {
   width: 33%;
 }
+
 @mixin w-34 {
   width: 34%;
 }
+
 @mixin w-40 {
   width: 40%;
 }
+
 @mixin w-50 {
   width: 50%;
 }
+
 @mixin w-60 {
   width: 60%;
 }
+
 @mixin w-70 {
   width: 70%;
 }
+
 @mixin w-75 {
   width: 75%;
 }
+
 @mixin w-80 {
   width: 80%;
 }
+
 @mixin w-90 {
   width: 90%;
 }
+
 @mixin w-100 {
   width: 100%;
 }
@@ -60,9 +77,11 @@
 @mixin w-third {
   width: calc(100% / 3);
 }
+
 @mixin w-two-thirds {
   width: calc(100% / 1.5);
 }
+
 @mixin w-auto {
   width: auto;
 }

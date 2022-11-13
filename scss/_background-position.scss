@@ -1,4 +1,5 @@
 /*
+
     BACKGROUND POSITION
 
     Base:
@@ -10,24 +11,21 @@
     -right = center right
     -bottom = bottom center
     -left = center left
+
  */
 @include generate-breakpoints {
   .bg-center#{$bkpt-suffix} {
     @include bg-center;
   }
-
   .bg-top#{$bkpt-suffix} {
     @include bg-top;
   }
-
   .bg-right#{$bkpt-suffix} {
     @include bg-right;
   }
-
   .bg-bottom#{$bkpt-suffix} {
     @include bg-bottom;
   }
-
   .bg-left#{$bkpt-suffix} {
     @include bg-left;
   }

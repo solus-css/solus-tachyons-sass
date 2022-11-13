@@ -15,12 +15,15 @@
   .tl#{$bkpt-suffix} {
     @include tl;
   }
+
   .tr#{$bkpt-suffix} {
     @include tr;
   }
+
   .tc#{$bkpt-suffix} {
     @include tc;
   }
+
   .tj#{$bkpt-suffix} {
     @include tj;
   }

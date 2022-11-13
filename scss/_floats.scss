@@ -1,4 +1,5 @@
 /*
+
    FLOATS
    http://tachyons.io/docs/layout/floats/
 
@@ -15,6 +16,7 @@
      l = left
      r = right
      n = none
+
 */
 @include generate-breakpoints {
   .fl#{$bkpt-suffix} {

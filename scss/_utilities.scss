@@ -4,7 +4,6 @@
 
 /* Equivalent to .overflow-y-scroll */
 .overflow-container {
-  // from overflow-mixin
   @include overflow-y-scroll;
 }
 
@@ -16,6 +15,7 @@
   .mr-auto#{$bkpt-suffix} {
     @include mr-auto;
   }
+
   .ml-auto#{$bkpt-suffix} {
     @include ml-auto;
   }

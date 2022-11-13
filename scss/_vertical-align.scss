@@ -5,12 +5,15 @@
   .v-base#{$bkpt-suffix} {
     @include v-base;
   }
+
   .v-mid#{$bkpt-suffix} {
     @include v-mid;
   }
+
   .v-top#{$bkpt-suffix} {
     @include v-top;
   }
+
   .v-btm#{$bkpt-suffix} {
     @include v-btm;
   }

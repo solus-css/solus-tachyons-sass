@@ -33,6 +33,7 @@
   .f-headline#{$bkpt-suffix} {
     @include f-headline;
   }
+
   .f-subheadline#{$bkpt-suffix} {
     @include f-subheadline;
   }
@@ -41,21 +42,27 @@
   .f1#{$bkpt-suffix} {
     @include f1;
   }
+
   .f2#{$bkpt-suffix} {
     @include f2;
   }
+
   .f3#{$bkpt-suffix} {
     @include f3;
   }
+
   .f4#{$bkpt-suffix} {
     @include f4;
   }
+
   .f5#{$bkpt-suffix} {
     @include f5;
   }
+
   .f6#{$bkpt-suffix} {
     @include f6;
   }
+
   .f7#{$bkpt-suffix} {
     @include f7;
   }

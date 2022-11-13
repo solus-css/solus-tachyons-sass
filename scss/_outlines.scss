@@ -1,13 +1,17 @@
 /*
+
    OUTLINES
+
 */
 @include generate-breakpoints {
   .outline#{$bkpt-suffix} {
     @include outline;
   }
+
   .outline-transparent#{$bkpt-suffix} {
     @include outline-transparent;
   }
+
   .outline-0#{$bkpt-suffix} {
     @include outline-0;
   }

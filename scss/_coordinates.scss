@@ -1,4 +1,5 @@
 /*
+
    COORDINATES
    Docs: http://tachyons.io/docs/layout/position/
 
@@ -16,17 +17,21 @@
      -2  = literal value 2
      --1 = literal value -1
      --2 = literal value -2
+
 */
 @include generate-breakpoints {
   .top-0#{$bkpt-suffix} {
     @include top-0;
   }
+
   .right-0#{$bkpt-suffix} {
     @include right-0;
   }
+
   .bottom-0#{$bkpt-suffix} {
     @include bottom-0;
   }
+
   .left-0#{$bkpt-suffix} {
     @include left-0;
   }
@@ -34,12 +39,15 @@
   .top-1#{$bkpt-suffix} {
     @include top-1;
   }
+
   .right-1#{$bkpt-suffix} {
     @include right-1;
   }
+
   .bottom-1#{$bkpt-suffix} {
     @include bottom-1;
   }
+
   .left-1#{$bkpt-suffix} {
     @include left-1;
   }
@@ -47,12 +55,15 @@
   .top-2#{$bkpt-suffix} {
     @include top-2;
   }
+
   .right-2#{$bkpt-suffix} {
     @include right-2;
   }
+
   .bottom-2#{$bkpt-suffix} {
     @include bottom-2;
   }
+
   .left-2#{$bkpt-suffix} {
     @include left-2;
   }
@@ -60,12 +71,15 @@
   .top--1#{$bkpt-suffix} {
     @include top--1;
   }
+
   .right--1#{$bkpt-suffix} {
     @include right--1;
   }
+
   .bottom--1#{$bkpt-suffix} {
     @include bottom--1;
   }
+
   .left--1#{$bkpt-suffix} {
     @include left--1;
   }
@@ -73,12 +87,15 @@
   .top--2#{$bkpt-suffix} {
     @include top--2;
   }
+
   .right--2#{$bkpt-suffix} {
     @include right--2;
   }
+
   .bottom--2#{$bkpt-suffix} {
     @include bottom--2;
   }
+
   .left--2#{$bkpt-suffix} {
     @include left--2;
   }

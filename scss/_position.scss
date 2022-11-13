@@ -7,12 +7,15 @@
   .static#{$bkpt-suffix} {
     @include static;
   }
+
   .relative#{$bkpt-suffix} {
     @include relative;
   }
+
   .absolute#{$bkpt-suffix} {
     @include absolute;
   }
+
   .fixed#{$bkpt-suffix} {
     @include fixed;
   }

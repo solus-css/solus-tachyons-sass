@@ -1,4 +1,5 @@
 /*
+
     BORDERS
     Docs: http://tachyons.io/docs/themes/borders/
 
@@ -12,6 +13,7 @@
       b = bottom
       l = left
       n = none
+
 */
 @include generate-breakpoints {
   .ba#{$bkpt-suffix} {

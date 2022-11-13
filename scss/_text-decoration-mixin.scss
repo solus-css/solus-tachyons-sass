@@ -1,13 +1,15 @@
 @mixin text-decoration($style: none) {
-	text-decoration: $style;
+  text-decoration: $style;
 }
 
 @mixin strike {
-	@include text-decoration(line-through);
+  @include text-decoration(line-through);
 }
+
 @mixin underline {
-	@include text-decoration(underline);
+  @include text-decoration(underline);
 }
+
 @mixin no-underline {
-	@include text-decoration(none);
+  @include text-decoration(none);
 }

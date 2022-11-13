@@ -16,12 +16,15 @@
   .word-normal#{$bkpt-suffix} {
     @include word-normal;
   }
+
   .word-wrap-all#{$bkpt-suffix} {
     @include word-wrap-all;
   }
+
   .word-wrap#{$bkpt-suffix} {
     @include word-wrap;
   }
+
   .word-nowrap#{$bkpt-suffix} {
     @include word-nowrap;
   }

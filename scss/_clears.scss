@@ -1,16 +1,12 @@
 /*
+
    CLEARFIX
    http://tachyons.io/docs/layout/clearfix/
-*/
 
-/* Nicolas Gallaghers Clearfix solution
-   Ref: http://nicolasgallagher.com/micro-clearfix-hack/
 */
-
 .cf {
   @include cf;
 }
-
 @include generate-breakpoints {
   .cl#{$bkpt-suffix} {
     @include cl;

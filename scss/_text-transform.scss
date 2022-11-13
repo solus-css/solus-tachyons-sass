@@ -15,12 +15,15 @@
   .ttc#{$bkpt-suffix} {
     text-transform: capitalize;
   }
+
   .ttl#{$bkpt-suffix} {
     text-transform: lowercase;
   }
+
   .ttu#{$bkpt-suffix} {
     text-transform: uppercase;
   }
+
   .ttn#{$bkpt-suffix} {
     text-transform: none;
   }

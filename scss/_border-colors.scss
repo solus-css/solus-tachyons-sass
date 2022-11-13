@@ -1,4 +1,5 @@
 /*
+
    BORDER COLORS
    Docs: http://tachyons.io/docs/themes/borders/
 
@@ -14,10 +15,9 @@
 
    Modifiers:
    --color-name = each color variable name is also a border color name
-*/
 
-@include generate-breakpoints;
-#{$bkpt-suffix} {
+*/
+@include generate-breakpoints {
   .b--black#{$bkpt-suffix} {
     @include b--black;
   }

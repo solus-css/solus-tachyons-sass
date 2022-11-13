@@ -1,4 +1,5 @@
 /*
+
    DISPLAY
    Docs: http://tachyons.io/docs/layout/display
 
@@ -15,6 +16,7 @@
     tr    = table-row
     tcol  = table-column
     tcolg = table-column-group
+
 */
 @include generate-breakpoints {
   .dn#{$bkpt-suffix} {
@@ -50,7 +52,6 @@
   .dt-column-group#{$bkpt-suffix} {
     @include dt-column-group;
   }
-
   /*
     This will set table to full width and then
     all cells will be equal width

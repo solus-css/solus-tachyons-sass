@@ -5,12 +5,15 @@
   .ws-normal#{$bkpt-suffix} {
     @include ws-normal;
   }
+
   .nowrap#{$bkpt-suffix} {
     @include nowrap;
   }
+
   .pre#{$bkpt-suffix} {
     @include pre;
   }
+
   .pre-wrap#{$bkpt-suffix} {
     @include pre-wrap;
   }

@@ -6,9 +6,11 @@
   .strike#{$bkpt-suffix} {
     @include strike;
   }
+
   .underline#{$bkpt-suffix} {
     @include underline;
   }
+
   .no-underline#{$bkpt-suffix} {
     @include no-underline;
   }

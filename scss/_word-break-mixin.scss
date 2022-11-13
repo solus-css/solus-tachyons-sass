@@ -1,12 +1,15 @@
 @mixin word-normal {
-	word-break: normal;
+  word-break: normal;
 }
+
 @mixin word-wrap-all {
-	word-break: break-all;
+  word-break: break-all;
 }
+
 @mixin word-wrap {
-	word-break: break-word;
+  word-break: break-word;
 }
+
 @mixin word-nowrap {
-	word-break: keep-all;
+  word-break: keep-all;
 }
