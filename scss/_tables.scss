@@ -1,17 +1,16 @@
+// Converted Variables
+// Custom Media Query Variables
+
 /*
   TABLES
   Docs: http://tachyons.io/docs/elements/tables/
 */
 
-// @todo: No mixins for these rules yet.
-
-@import "tables-mixin";
-
 .collapse {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+// stylelint-disable selector-class-pattern
 .striped--light-silver:nth-child(odd) {
   background-color: $light-silver;
 }
@@ -27,6 +26,7 @@
 .striped--near-white:nth-child(odd) {
   background-color: $near-white;
 }
+// stylelint-enable
 
 .stripe-light:nth-child(odd) {
   background-color: $white-10;

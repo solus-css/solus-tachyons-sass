@@ -1,12 +1,4 @@
-/*
-   POSITIONING
-   Docs: http://tachyons.io/docs/layout/position/
-
-    Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-*/
+@use "sass:list";
 
 // A more powerfull SASS mixin based positioning system
 // Default Tachyons behavior remains unchanged
@@ -27,12 +19,13 @@
 // https://www.sitepoint.com/sass-mixins-kickstart-project/
 @mixin position($position, $args) {
   @each $o in top right bottom left {
-    $i: index($args, $o);
+    $i: list.index($args, $o);
     @if $i and $i + 1 <= length($args) and type-of(nth($args, $i + 1)) == number
     {
-      #{$o}: nth($args, $i + 1);
+      #{$o}: list.nth($args, $i + 1);
     }
   }
+
   position: $position;
 }
 

@@ -1,0 +1,66 @@
+// Color CSS Custom Properties
+// All other custom property declarations appear alongside their respective modules.
+
+:root{
+  --black: #{$black};
+  --near-black: #{$near-black};
+  --dark-gray: #{$dark-gray};
+  --mid-gray: #{$mid-gray};
+  --gray: #{$gray};
+  --silver: #{$silver};
+  --light-silver: #{$light-silver};
+  --moon-gray: #{$moon-gray};
+  --light-gray: #{$light-gray};
+  --near-white: #{$near-white};
+  --white: #{$white};
+  --transparent: #{$transparent};
+  --black-90: #{$black-90};
+  --black-80: #{$black-80};
+  --black-70: #{$black-70};
+  --black-60: #{$black-60};
+  --black-50: #{$black-50};
+  --black-40: #{$black-40};
+  --black-30: #{$black-30};
+  --black-20: #{$black-20};
+  --black-10: #{$black-10};
+  --black-05: #{$black-05};
+  --black-025: #{$black-025};
+  --black-0125: #{$black-0125};
+  --white-90: #{$white-90};
+  --white-80: #{$white-80};
+  --white-70: #{$white-70};
+  --white-60: #{$white-60};
+  --white-50: #{$white-50};
+  --white-40: #{$white-40};
+  --white-30: #{$white-30};
+  --white-20: #{$white-20};
+  --white-10: #{$white-10};
+  --white-05: #{$white-05};
+  --white-025: #{$white-025};
+  --white-0125: #{$white-0125};
+  --dark-red: #{$dark-red};
+  --red: #{$red};
+  --light-red: #{$light-red};
+  --orange: #{$orange};
+  --gold: #{$gold};
+  --yellow: #{$yellow};
+  --light-yellow: #{$light-yellow};
+  --purple: #{$purple};
+  --light-purple: #{$light-purple};
+  --dark-pink: #{$dark-pink};
+  --hot-pink: #{$hot-pink};
+  --pink: #{$pink};
+  --light-pink: #{$light-pink};
+  --dark-green: #{$dark-green};
+  --green: #{$green};
+  --light-green: #{$light-green};
+  --navy: #{$navy};
+  --dark-blue: #{$dark-blue};
+  --blue: #{$blue};
+  --light-blue: #{$light-blue};
+  --lightest-blue: #{$lightest-blue};
+  --washed-blue: #{$washed-blue};
+  --washed-green: #{$washed-green};
+  --washed-yellow: #{$washed-yellow};
+  --washed-red: #{$washed-red};
+}

@@ -1,20 +1,13 @@
 /*
    FONT STYLE
    Docs: http://tachyons.io/docs/typography/font-style/
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
 */
 
-@import "font-style-mixin";
-
-@include generateBreakpoints() {
-  .i#{$breakpointKey} {
+@include generate-breakpoints {
+  .i#{$bkpt-suffix} {
     @include i;
   }
-  .fs-normal#{$breakpointKey} {
+  .fs-normal#{$bkpt-suffix} {
     @include fs-normal;
   }
 }

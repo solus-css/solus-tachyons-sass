@@ -1,9 +1,6 @@
 /*
    CODE
 */
-
-@import "code-mixin";
-
 .pre {
-  @include pre;
+	@include pre;
 }

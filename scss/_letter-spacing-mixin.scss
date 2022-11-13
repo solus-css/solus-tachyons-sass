@@ -1,19 +1,9 @@
-/*
-   LETTER SPACING
-   Docs: http://tachyons.io/docs/typography/tracking/
-
-    Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-*/
-
 @mixin tracked {
-  letter-spacing: $letter-spacing-1;
+  letter-spacing: var(--letter-spacing-1);
 }
 @mixin tracked-tight {
-  letter-spacing: $letter-spacing-tight;
+  letter-spacing: var(--letter-spacing-tight);
 }
 @mixin tracked-mega {
-  letter-spacing: $letter-spacing-2;
+  letter-spacing: var(--letter-spacing-2);
 }

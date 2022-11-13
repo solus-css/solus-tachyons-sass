@@ -3,8 +3,6 @@
    http://tachyons.io/docs/elements/lists/
 */
 
-@import "lists-mixin";
-
 .list {
-  @include list;
+	@include list;
 }

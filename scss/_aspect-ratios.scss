@@ -1,10 +1,5 @@
 /*
    ASPECT RATIOS
-
-    Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
 */
 
 /* This is for fluid media that is embedded from third party sites like youtube, vimeo etc.
@@ -20,46 +15,44 @@
  *
  * */
 
-@import "aspect-ratios-mixin";
-
-@include generateBreakpoints() {
-  .aspect-ratio#{$breakpointKey} {
+@include generate-breakpoints {
+  .aspect-ratio#{$bkpt-suffix} {
     @include aspect-ratio;
   }
-  .aspect-ratio--16x9#{$breakpointKey} {
+  .aspect-ratio--16x9#{$bkpt-suffix} {
     @include aspect-ratio--16x9;
   }
-  .aspect-ratio--9x16#{$breakpointKey} {
+  .aspect-ratio--9x16#{$bkpt-suffix} {
     @include aspect-ratio--9x16;
   }
-  .aspect-ratio--4x3#{$breakpointKey} {
+  .aspect-ratio--4x3#{$bkpt-suffix} {
     @include aspect-ratio--4x3;
   }
-  .aspect-ratio--3x4#{$breakpointKey} {
+  .aspect-ratio--3x4#{$bkpt-suffix} {
     @include aspect-ratio--3x4;
   }
-  .aspect-ratio--6x4#{$breakpointKey} {
+  .aspect-ratio--6x4#{$bkpt-suffix} {
     @include aspect-ratio--6x4;
   }
-  .aspect-ratio--4x6#{$breakpointKey} {
+  .aspect-ratio--4x6#{$bkpt-suffix} {
     @include aspect-ratio--4x6;
   }
-  .aspect-ratio--8x5#{$breakpointKey} {
+  .aspect-ratio--8x5#{$bkpt-suffix} {
     @include aspect-ratio--8x5;
   }
-  .aspect-ratio--5x8#{$breakpointKey} {
+  .aspect-ratio--5x8#{$bkpt-suffix} {
     @include aspect-ratio--5x8;
   }
-  .aspect-ratio--7x5#{$breakpointKey} {
+  .aspect-ratio--7x5#{$bkpt-suffix} {
     @include aspect-ratio--7x5;
   }
-  .aspect-ratio--5x7#{$breakpointKey} {
+  .aspect-ratio--5x7#{$bkpt-suffix} {
     @include aspect-ratio--5x7;
   }
-  .aspect-ratio--1x1#{$breakpointKey} {
+  .aspect-ratio--1x1#{$bkpt-suffix} {
     @include aspect-ratio--1x1;
   }
-  .aspect-ratio--object#{$breakpointKey} {
+  .aspect-ratio--object#{$bkpt-suffix} {
     @include aspect-ratio--object;
   }
 }

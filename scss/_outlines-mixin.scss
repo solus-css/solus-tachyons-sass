@@ -1,18 +1,9 @@
-/*
-   OUTLINES
-
-    Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-*/
-
 @mixin outline {
-  outline: 1px solid;
+	outline: 1px solid;
 }
 @mixin outline-transparent {
-  outline: 1px solid transparent;
+	outline: 1px solid transparent;
 }
 @mixin outline-0 {
-  outline: 0;
+	outline: 0;
 }

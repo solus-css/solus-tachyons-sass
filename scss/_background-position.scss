@@ -10,33 +10,25 @@
     -right = center right
     -bottom = bottom center
     -left = center left
-
-    Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-*/
-
-@import "background-position-mixin";
-
-@include generateBreakpoints() {
-  .bg-center#{$breakpointKey} {
+ */
+@include generate-breakpoints {
+  .bg-center#{$bkpt-suffix} {
     @include bg-center;
   }
 
-  .bg-top#{$breakpointKey} {
+  .bg-top#{$bkpt-suffix} {
     @include bg-top;
   }
 
-  .bg-right#{$breakpointKey} {
+  .bg-right#{$bkpt-suffix} {
     @include bg-right;
   }
 
-  .bg-bottom#{$breakpointKey} {
+  .bg-bottom#{$bkpt-suffix} {
     @include bg-bottom;
   }
 
-  .bg-left#{$breakpointKey} {
+  .bg-left#{$bkpt-suffix} {
     @include bg-left;
   }
 }

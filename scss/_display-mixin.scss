@@ -1,66 +1,37 @@
-/*
-   DISPLAY
-   Docs: http://tachyons.io/docs/layout/display
-
-   Base:
-    d = display
-
-   Modifiers:
-    n     = none
-    b     = block
-    ib    = inline-block
-    it    = inline-table
-    t     = table
-    tc    = table-cell
-    tr    = table-row
-    tcol  = table-column
-    tcolg = table-column-group
-
-    Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-*/
-
 @mixin dn {
-  display: none;
+	display: none;
 }
 @mixin di {
-  display: inline;
+	display: inline;
 }
 @mixin db {
-  display: block;
+	display: block;
 }
 @mixin dib {
-  display: inline-block;
+	display: inline-block;
 }
 @mixin dit {
-  display: inline-table;
+	display: inline-table;
 }
 @mixin dt {
-  display: table;
+	display: table;
 }
 @mixin dtc {
-  display: table-cell;
+	display: table-cell;
 }
 @mixin dt-row {
-  display: table-row;
+	display: table-row;
 }
 @mixin dt-row-group {
-  display: table-row-group;
+	display: table-row-group;
 }
 @mixin dt-column {
-  display: table-column;
+	display: table-column;
 }
 @mixin dt-column-group {
-  display: table-column-group;
+	display: table-column-group;
 }
-
-/*
-    This will set table to full width and then
-    all cells will be equal width
-  */
 @mixin dt--fixed {
-  table-layout: fixed;
-  width: 100%;
+	width: 100%;
+	table-layout: fixed;
 }

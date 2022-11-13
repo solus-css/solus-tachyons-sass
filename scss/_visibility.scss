@@ -1,20 +1,13 @@
 /*
    VISIBILITY
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
 */
 
 /*
     Text that is hidden but accessible
     Ref: http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 */
-
-@import "visibility-mixin";
-@include generateBreakpoints() {
-  .clip#{$breakpointKey} {
+@include generate-breakpoints {
+  .clip#{$bkpt-suffix} {
     @include clip;
   }
 }

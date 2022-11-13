@@ -3,8 +3,6 @@
    Docs: http://tachyons.io/docs/typography/font-family/
 */
 
-@import "font-family-mixin";
-
 .sans-serif {
   @include sans-serif;
 }
@@ -21,9 +19,7 @@
   @include system-serif;
 }
 
-/* Monospaced Typefaces (for code) */
-
-/* From http://cssfontstack.com */
+/* Monospaced Typefaces (for code) http://cssfontstack.com */
 code,
 .code {
   @include code;
@@ -34,7 +30,6 @@ code,
 }
 
 /* Sans-Serif Typefaces */
-
 .helvetica {
   @include helvetica;
 }
@@ -44,7 +39,6 @@ code,
 }
 
 /* Serif Typefaces */
-
 .athelas {
   @include athelas;
 }

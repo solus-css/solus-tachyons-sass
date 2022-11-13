@@ -1,45 +1,32 @@
-/*
-   TYPOGRAPHY
-   http://tachyons.io/docs/typography/measure/
-
-    Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
- */
-
-/* Measure is limited to ~66 characters */
 @mixin measure {
-  max-width: $measure;
+	max-width: $measure;
 }
 
-/* Measure is limited to ~80 characters */
 @mixin measure-wide {
-  max-width: $measure-wide;
+	max-width: $measure-wide;
 }
 
-/* Measure is limited to ~45 characters */
 @mixin measure-narrow {
-  max-width: $measure-narrow;
+	max-width: $measure-narrow;
 }
 
-/* Book paragraph style - paragraphs are indented with no vertical spacing. */
 @mixin indent {
-  text-indent: 1em;
-  margin-top: 0;
-  margin-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-indent: 1em;
 }
 
 @mixin small-caps {
-  font-variant: small-caps;
+	font-variant: small-caps;
 }
 
-/* Combine this class with a width to truncate text (or just leave as is to truncate at width of containing element. */
 @mixin truncate($width: "") {
-  @if $width {
-    max-width: $width;
-  }
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+	@if $width {
+		max-width: $width;
+	}
+
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
+

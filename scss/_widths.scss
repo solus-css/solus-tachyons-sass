@@ -30,78 +30,76 @@
        -third      = 100% / 3 (Not supported in opera mini or IE8)
        -two-thirds = 100% / 1.5 (Not supported in opera mini or IE8)
        -auto       = string value auto
-
-    Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
  */
-
-@import "widths-mixin";
-
-@include generateBreakpoints() {
+@include generate-breakpoints {
   /* Width Scale */
 
-  .w1#{$breakpointKey} {
+  .w1#{$bkpt-suffix} {
     @include w1;
   }
-  .w2#{$breakpointKey} {
+  .w2#{$bkpt-suffix} {
     @include w2;
   }
-  .w3#{$breakpointKey} {
+  .w3#{$bkpt-suffix} {
     @include w3;
   }
-  .w4#{$breakpointKey} {
+  .w4#{$bkpt-suffix} {
     @include w4;
   }
-  .w5#{$breakpointKey} {
+  .w5#{$bkpt-suffix} {
     @include w5;
   }
 
-  .w-10#{$breakpointKey} {
+  .w-10#{$bkpt-suffix} {
     @include w-10;
   }
-  .w-20#{$breakpointKey} {
+  .w-20#{$bkpt-suffix} {
     @include w-20;
   }
-  .w-25#{$breakpointKey} {
+  .w-25#{$bkpt-suffix} {
     @include w-25;
   }
-  .w-30#{$breakpointKey} {
+  .w-30#{$bkpt-suffix} {
     @include w-30;
   }
-  .w-40#{$breakpointKey} {
+  .w-33#{$bkpt-suffix} {
+    @include w-33;
+  }
+  .w-34#{$bkpt-suffix} {
+    @include w-34;
+  }
+  .w-40#{$bkpt-suffix} {
     @include w-40;
   }
-  .w-50#{$breakpointKey} {
+  .w-50#{$bkpt-suffix} {
     @include w-50;
   }
-  .w-60#{$breakpointKey} {
+  .w-60#{$bkpt-suffix} {
     @include w-60;
   }
-  .w-70#{$breakpointKey} {
+  .w-70#{$bkpt-suffix} {
     @include w-70;
   }
-  .w-75#{$breakpointKey} {
+  .w-75#{$bkpt-suffix} {
     @include w-75;
   }
-  .w-80#{$breakpointKey} {
+  .w-80#{$bkpt-suffix} {
     @include w-80;
   }
-  .w-90#{$breakpointKey} {
+  .w-90#{$bkpt-suffix} {
     @include w-90;
   }
-  .w-100#{$breakpointKey} {
+  .w-100#{$bkpt-suffix} {
     @include w-100;
   }
 
-  .w-third#{$breakpointKey} {
+  .w-third#{$bkpt-suffix} {
     @include w-third;
   }
-  .w-two-thirds#{$breakpointKey} {
+  .w-two-thirds#{$bkpt-suffix} {
     @include w-two-thirds;
   }
-  .w-auto#{$breakpointKey} {
+  .w-auto#{$bkpt-suffix} {
     @include w-auto;
   }
 }

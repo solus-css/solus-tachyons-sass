@@ -19,55 +19,48 @@
      -100 = literal value 100%
 
      -none  = string value none
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
 */
 
-@import "max-widths-mixin";
-
-@include generateBreakpoints() {
+@include generate-breakpoints {
   /* Max Width Percentages */
 
-  .mw-100#{$breakpointKey} {
+  .mw-100#{$bkpt-suffix} {
     @include mw-100;
   }
 
   /* Max Width Scale */
 
-  .mw1#{$breakpointKey} {
+  .mw1#{$bkpt-suffix} {
     @include mw1;
   }
-  .mw2#{$breakpointKey} {
+  .mw2#{$bkpt-suffix} {
     @include mw2;
   }
-  .mw3#{$breakpointKey} {
+  .mw3#{$bkpt-suffix} {
     @include mw3;
   }
-  .mw4#{$breakpointKey} {
+  .mw4#{$bkpt-suffix} {
     @include mw4;
   }
-  .mw5#{$breakpointKey} {
+  .mw5#{$bkpt-suffix} {
     @include mw5;
   }
-  .mw6#{$breakpointKey} {
+  .mw6#{$bkpt-suffix} {
     @include mw6;
   }
-  .mw7#{$breakpointKey} {
+  .mw7#{$bkpt-suffix} {
     @include mw7;
   }
-  .mw8#{$breakpointKey} {
+  .mw8#{$bkpt-suffix} {
     @include mw8;
   }
-  .mw9#{$breakpointKey} {
+  .mw9#{$bkpt-suffix} {
     @include mw9;
   }
 
   /* Max Width String Properties */
 
-  .mw-none#{$breakpointKey} {
+  .mw-none#{$bkpt-suffix} {
     @include mw-none;
   }
 }

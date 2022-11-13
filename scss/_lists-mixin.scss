@@ -1,20 +1,7 @@
-/*
-   LISTS
-   http://tachyons.io/docs/elements/lists/
-*/
-
-/*
-    none
-    circle
-    square
-    upper-roman
-    lower-alpha
-*/
-
 @mixin list-style-type($style: none) {
-  list-style-type: $style;
+	list-style-type: $style;
 }
 
 @mixin list {
-  @include list-style-type(none);
+	@include list-style-type(none);
 }

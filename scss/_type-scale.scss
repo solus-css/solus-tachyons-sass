@@ -13,51 +13,50 @@
      5 = 5th step in size scale
      6 = 6th step in size scale
 
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
- */
-
-@import "type-scale-mixin";
-
-@include generateBreakpoints() {
+     $font-size-headline: 6rem !default;
+     $font-size-subheadline: 5rem !default;
+     $font-size-1: 3rem !default;
+     $font-size-2: 2.25rem !default;
+     $font-size-3: 1.5rem !default;
+     $font-size-4: 1.25rem !default;
+     $font-size-5: 1rem !default;
+     $font-size-6: 0.875rem !default;
+     $font-size-7: 0.75rem !default;
+*/
+@include generate-breakpoints {
   /*
    * For Hero/Marketing Titles
    *
    * These generally are too large for mobile
    * so be careful using them on smaller screens.
    * */
-  .f-6,
-  .f-headline#{$breakpointKey} {
+  .f-headline#{$bkpt-suffix} {
     @include f-headline;
   }
-  .f-5,
-  .f-subheadline#{$breakpointKey} {
+  .f-subheadline#{$bkpt-suffix} {
     @include f-subheadline;
   }
 
   /* Type Scale */
-
-  .f1#{$breakpointKey} {
+  .f1#{$bkpt-suffix} {
     @include f1;
   }
-  .f2#{$breakpointKey} {
+  .f2#{$bkpt-suffix} {
     @include f2;
   }
-  .f3#{$breakpointKey} {
+  .f3#{$bkpt-suffix} {
     @include f3;
   }
-  .f4#{$breakpointKey} {
+  .f4#{$bkpt-suffix} {
     @include f4;
   }
-  .f5#{$breakpointKey} {
+  .f5#{$bkpt-suffix} {
     @include f5;
   }
-  .f6#{$breakpointKey} {
+  .f6#{$bkpt-suffix} {
     @include f6;
   }
-  .f7#{$breakpointKey} {
+  .f7#{$bkpt-suffix} {
     @include f7;
   }
 }

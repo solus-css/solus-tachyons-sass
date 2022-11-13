@@ -7,354 +7,458 @@
    be set to the current text color.
 */
 
-@import "skins-mixin";
-
 /* Text colors */
 
 .black-90 {
-  @include black-90;
+	@include black-90;
 }
+
 .black-80 {
-  @include black-80;
+	@include black-80;
 }
+
 .black-70 {
-  @include black-70;
+	@include black-70;
 }
+
 .black-60 {
-  @include black-60;
+	@include black-60;
 }
+
 .black-50 {
-  @include black-50;
+	@include black-50;
 }
+
 .black-40 {
-  @include black-40;
+	@include black-40;
 }
+
 .black-30 {
-  @include black-30;
+	@include black-30;
 }
+
 .black-20 {
-  @include black-20;
+	@include black-20;
 }
+
 .black-10 {
-  @include black-10;
+	@include black-10;
 }
+
 .black-05 {
-  @include black-05;
+	@include black-05;
 }
 
 .white-90 {
-  @include white-90;
+	@include white-90;
 }
+
 .white-80 {
-  @include white-80;
+	@include white-80;
 }
+
 .white-70 {
-  @include white-70;
+	@include white-70;
 }
+
 .white-60 {
-  @include white-60;
+	@include white-60;
 }
+
 .white-50 {
-  @include white-50;
+	@include white-50;
 }
+
 .white-40 {
-  @include white-40;
+	@include white-40;
 }
+
 .white-30 {
-  @include white-30;
+	@include white-30;
 }
+
 .white-20 {
-  @include white-20;
+	@include white-20;
 }
+
 .white-10 {
-  @include white-10;
+	@include white-10;
 }
 
 .black {
-  @include black;
+	@include black;
 }
+
 .near-black {
-  @include near-black;
+	@include near-black;
 }
+
 .dark-gray {
-  @include dark-gray;
+	@include dark-gray;
 }
+
 .mid-gray {
-  @include mid-gray;
+	@include mid-gray;
 }
+
 .gray {
-  @include gray;
+	@include gray;
 }
+
 .silver {
-  @include silver;
+	@include silver;
 }
+
 .light-silver {
-  @include light-silver;
+	@include light-silver;
 }
+
 .moon-gray {
-  @include moon-gray;
+	@include moon-gray;
 }
+
 .light-gray {
-  @include light-gray;
+	@include light-gray;
 }
+
 .near-white {
-  @include near-white;
+	@include near-white;
 }
+
 .white {
-  @include white;
+	@include white;
 }
 
 .dark-red {
-  @include dark-red;
+	@include dark-red;
 }
+
 .red {
-  @include red;
+	@include red;
 }
+
 .light-red {
-  @include light-red;
+	@include light-red;
 }
+
 .orange {
-  @include orange;
+	@include orange;
 }
+
 .gold {
-  @include gold;
+	@include gold;
 }
+
 .yellow {
-  @include yellow;
+	@include yellow;
 }
+
 .light-yellow {
-  @include light-yellow;
+	@include light-yellow;
 }
+
 .purple {
-  @include purple;
+	@include purple;
 }
+
 .light-purple {
-  @include light-purple;
+	@include light-purple;
 }
+
 .dark-pink {
-  @include dark-pink;
+	@include dark-pink;
 }
+
 .hot-pink {
-  @include hot-pink;
+	@include hot-pink;
 }
+
 .pink {
-  @include pink;
+	@include pink;
 }
+
 .light-pink {
-  @include light-pink;
+	@include light-pink;
 }
+
 .dark-green {
-  @include dark-green;
+	@include dark-green;
 }
+
 .green {
-  @include green;
+	@include green;
 }
+
 .light-green {
-  @include light-green;
+	@include light-green;
 }
+
 .navy {
-  @include navy;
+	@include navy;
 }
+
 .dark-blue {
-  @include dark-blue;
+	@include dark-blue;
 }
+
 .blue {
-  @include blue;
+	@include blue;
 }
+
 .light-blue {
-  @include light-blue;
+	@include light-blue;
 }
+
 .lightest-blue {
-  @include lightest-blue;
+	@include lightest-blue;
 }
+
 .washed-blue {
-  @include washed-blue;
+	@include washed-blue;
 }
+
 .washed-green {
-  @include washed-green;
+	@include washed-green;
 }
+
 .washed-yellow {
-  @include washed-yellow;
+	@include washed-yellow;
 }
+
 .washed-red {
-  @include washed-red;
+	@include washed-red;
 }
+
 .color-inherit {
-  @include color-inherit;
+	@include color-inherit;
 }
 
 .bg-black-90 {
-  @include bg-black-90;
+	@include bg-black-90;
 }
+
 .bg-black-80 {
-  @include bg-black-80;
+	@include bg-black-80;
 }
+
 .bg-black-70 {
-  @include bg-black-70;
+	@include bg-black-70;
 }
+
 .bg-black-60 {
-  @include bg-black-60;
+	@include bg-black-60;
 }
+
 .bg-black-50 {
-  @include bg-black-50;
+	@include bg-black-50;
 }
+
 .bg-black-40 {
-  @include bg-black-40;
+	@include bg-black-40;
 }
+
 .bg-black-30 {
-  @include bg-black-30;
+	@include bg-black-30;
 }
+
 .bg-black-20 {
-  @include bg-black-20;
+	@include bg-black-20;
 }
+
 .bg-black-10 {
-  @include bg-black-10;
+	@include bg-black-10;
 }
+
 .bg-black-05 {
-  @include bg-black-05;
+	@include bg-black-05;
 }
+
 .bg-white-90 {
-  @include bg-white-90;
+	@include bg-white-90;
 }
+
 .bg-white-80 {
-  @include bg-white-80;
+	@include bg-white-80;
 }
+
 .bg-white-70 {
-  @include bg-white-70;
+	@include bg-white-70;
 }
+
 .bg-white-60 {
-  @include bg-white-60;
+	@include bg-white-60;
 }
+
 .bg-white-50 {
-  @include bg-white-50;
+	@include bg-white-50;
 }
+
 .bg-white-40 {
-  @include bg-white-40;
+	@include bg-white-40;
 }
+
 .bg-white-30 {
-  @include bg-white-30;
+	@include bg-white-30;
 }
+
 .bg-white-20 {
-  @include bg-white-20;
+	@include bg-white-20;
 }
+
 .bg-white-10 {
-  @include bg-white-10;
+	@include bg-white-10;
 }
 
 /* Background colors */
 
 .bg-black {
-  @include bg-black;
+	@include bg-black;
 }
+
 .bg-near-black {
-  @include bg-near-black;
+	@include bg-near-black;
 }
+
 .bg-dark-gray {
-  @include bg-dark-gray;
+	@include bg-dark-gray;
 }
+
 .bg-mid-gray {
-  @include bg-mid-gray;
+	@include bg-mid-gray;
 }
+
 .bg-gray {
-  @include bg-gray;
+	@include bg-gray;
 }
+
 .bg-silver {
-  @include bg-silver;
+	@include bg-silver;
 }
+
 .bg-light-silver {
-  @include bg-light-silver;
+	@include bg-light-silver;
 }
+
 .bg-moon-gray {
-  @include bg-moon-gray;
+	@include bg-moon-gray;
 }
+
 .bg-light-gray {
-  @include bg-light-gray;
+	@include bg-light-gray;
 }
+
 .bg-near-white {
-  @include bg-near-white;
+	@include bg-near-white;
 }
+
 .bg-white {
-  @include bg-white;
+	@include bg-white;
 }
+
 .bg-transparent {
-  @include bg-transparent;
+	@include bg-transparent;
 }
 
 .bg-dark-red {
-  @include bg-dark-red;
+	@include bg-dark-red;
 }
+
 .bg-red {
-  @include bg-red;
+	@include bg-red;
 }
+
 .bg-light-red {
-  @include bg-light-red;
+	@include bg-light-red;
 }
+
 .bg-orange {
-  @include bg-orange;
+	@include bg-orange;
 }
+
 .bg-gold {
-  @include bg-gold;
+	@include bg-gold;
 }
+
 .bg-yellow {
-  @include bg-yellow;
+	@include bg-yellow;
 }
+
 .bg-light-yellow {
-  @include bg-light-yellow;
+	@include bg-light-yellow;
 }
+
 .bg-purple {
-  @include bg-purple;
+	@include bg-purple;
 }
+
 .bg-light-purple {
-  @include bg-light-purple;
+	@include bg-light-purple;
 }
+
 .bg-dark-pink {
-  @include bg-dark-pink;
+	@include bg-dark-pink;
 }
+
 .bg-hot-pink {
-  @include bg-hot-pink;
+	@include bg-hot-pink;
 }
+
 .bg-pink {
-  @include bg-pink;
+	@include bg-pink;
 }
+
 .bg-light-pink {
-  @include bg-light-pink;
+	@include bg-light-pink;
 }
+
 .bg-dark-green {
-  @include bg-dark-green;
+	@include bg-dark-green;
 }
+
 .bg-green {
-  @include bg-green;
+	@include bg-green;
 }
+
 .bg-light-green {
-  @include bg-light-green;
+	@include bg-light-green;
 }
+
 .bg-navy {
-  @include bg-navy;
+	@include bg-navy;
 }
+
 .bg-dark-blue {
-  @include bg-dark-blue;
+	@include bg-dark-blue;
 }
+
 .bg-blue {
-  @include bg-blue;
+	@include bg-blue;
 }
+
 .bg-light-blue {
-  @include bg-light-blue;
+	@include bg-light-blue;
 }
+
 .bg-lightest-blue {
-  @include bg-lightest-blue;
+	@include bg-lightest-blue;
 }
+
 .bg-washed-blue {
-  @include bg-washed-blue;
+	@include bg-washed-blue;
 }
+
 .bg-washed-green {
-  @include bg-washed-green;
+	@include bg-washed-green;
 }
+
 .bg-washed-yellow {
-  @include bg-washed-yellow;
+	@include bg-washed-yellow;
 }
+
 .bg-washed-red {
-  @include bg-washed-red;
+	@include bg-washed-red;
 }
+
 .bg-inherit {
-  @include bg-inherit;
+	@include bg-inherit;
 }

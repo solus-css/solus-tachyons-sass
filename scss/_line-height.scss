@@ -1,23 +1,16 @@
 /*
    LINE HEIGHT / LEADING
    Docs: http://tachyons.io/docs/typography/line-height
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
 */
 
-@import "line-height-mixin";
-
-@include generateBreakpoints() {
-  .lh-solid#{$breakpointKey} {
+@include generate-breakpoints {
+  .lh-solid#{$bkpt-suffix} {
     @include lh-solid;
   }
-  .lh-title#{$breakpointKey} {
+  .lh-title#{$bkpt-suffix} {
     @include lh-title;
   }
-  .lh-copy#{$breakpointKey} {
+  .lh-copy#{$bkpt-suffix} {
     @include lh-copy;
   }
 }

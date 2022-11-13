@@ -1,25 +1,15 @@
-/*
-   VERTICAL ALIGN
-
-    Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-*/
-
 @mixin vertical-align($style) {
-  vertical-align: $style;
+	vertical-align: $style;
 }
-
 @mixin v-base {
-  @include vertical-align(baseline);
+	@include vertical-align(baseline);
 }
 @mixin v-mid {
-  @include vertical-align(middle);
+	@include vertical-align(middle);
 }
 @mixin v-top {
-  @include vertical-align(top);
+	@include vertical-align(top);
 }
 @mixin v-btm {
-  @include vertical-align(bottom);
+	@include vertical-align(bottom);
 }

@@ -1,25 +1,17 @@
 /*
    BACKGROUND SIZE
    Docs: http://tachyons.io/docs/themes/background-size/
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
 */
 
 /*
   Often used in combination with background image set as an inline style
   on an html element.
 */
-
-@import "background-size-mixin";
-
-@include generateBreakpoints() {
-  .cover#{$breakpointKey} {
+@include generate-breakpoints {
+  .cover#{$bkpt-suffix} {
     @include cover;
   }
-  .contain#{$breakpointKey} {
+  .contain#{$bkpt-suffix} {
     @include contain;
   }
 }

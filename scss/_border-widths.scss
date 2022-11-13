@@ -1,5 +1,4 @@
 /*
-
    BORDER WIDTHS
    Docs: http://tachyons.io/docs/themes/borders/
 
@@ -13,46 +12,38 @@
      3 = 3rd step in border-width scale
      4 = 4th step in border-width scale
      5 = 5th step in border-width scale
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
 */
-
-@import "border-widths-mixin";
-
-@include generateBreakpoints() {
-  .bw0#{$breakpointKey} {
+@include generate-breakpoints {
+  .bw0#{$bkpt-suffix} {
     @include bw0;
   }
-  .bw1#{$breakpointKey} {
+  .bw1#{$bkpt-suffix} {
     @include bw1;
   }
-  .bw2#{$breakpointKey} {
+  .bw2#{$bkpt-suffix} {
     @include bw2;
   }
-  .bw3#{$breakpointKey} {
+  .bw3#{$bkpt-suffix} {
     @include bw3;
   }
-  .bw4#{$breakpointKey} {
+  .bw4#{$bkpt-suffix} {
     @include bw4;
   }
-  .bw5#{$breakpointKey} {
+  .bw5#{$bkpt-suffix} {
     @include bw5;
   }
 
   /* Resets */
-  .bt-0#{$breakpointKey} {
+  .bt-0#{$bkpt-suffix} {
     @include bt-0;
   }
-  .br-0#{$breakpointKey} {
+  .br-0#{$bkpt-suffix} {
     @include br-0;
   }
-  .bb-0#{$breakpointKey} {
+  .bb-0#{$bkpt-suffix} {
     @include bb-0;
   }
-  .bl-0#{$breakpointKey} {
+  .bl-0#{$bkpt-suffix} {
     @include bl-0;
   }
 }

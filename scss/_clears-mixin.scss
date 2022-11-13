@@ -1,34 +1,25 @@
-/*
-    CLEARFIX
-    http://tachyons.io/docs/layout/clearfix/
- */
-
-/* Nicolas Gallaghers Clearfix solution
-    Ref: http://nicolasgallagher.com/micro-clearfix-hack/
-*/
-
 @mixin cf {
-  &:before,
-  &:after {
-    content: " ";
-    display: table;
-  }
+	&::before,
+	&::after {
+		display: table;
+		content: " ";
+	}
 
-  &:after {
-    clear: both;
-  }
+	&::after {
+		clear: both;
+	}
 
-  *zoom: 1;
+	*zoom: 1;
 }
 @mixin cl {
-  clear: left;
+	clear: left;
 }
 @mixin cr {
-  clear: right;
+	clear: right;
 }
 @mixin cb {
-  clear: both;
+	clear: both;
 }
 @mixin cn {
-  clear: none;
+	clear: none;
 }

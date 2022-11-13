@@ -16,82 +16,74 @@
      -2  = literal value 2
      --1 = literal value -1
      --2 = literal value -2
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
 */
-
-@import "coordinates-mixin";
-
-@include generateBreakpoints() {
-  .top-0#{$breakpointKey} {
+@include generate-breakpoints {
+  .top-0#{$bkpt-suffix} {
     @include top-0;
   }
-  .right-0#{$breakpointKey} {
+  .right-0#{$bkpt-suffix} {
     @include right-0;
   }
-  .bottom-0#{$breakpointKey} {
+  .bottom-0#{$bkpt-suffix} {
     @include bottom-0;
   }
-  .left-0#{$breakpointKey} {
+  .left-0#{$bkpt-suffix} {
     @include left-0;
   }
 
-  .top-1#{$breakpointKey} {
+  .top-1#{$bkpt-suffix} {
     @include top-1;
   }
-  .right-1#{$breakpointKey} {
+  .right-1#{$bkpt-suffix} {
     @include right-1;
   }
-  .bottom-1#{$breakpointKey} {
+  .bottom-1#{$bkpt-suffix} {
     @include bottom-1;
   }
-  .left-1#{$breakpointKey} {
+  .left-1#{$bkpt-suffix} {
     @include left-1;
   }
 
-  .top-2#{$breakpointKey} {
+  .top-2#{$bkpt-suffix} {
     @include top-2;
   }
-  .right-2#{$breakpointKey} {
+  .right-2#{$bkpt-suffix} {
     @include right-2;
   }
-  .bottom-2#{$breakpointKey} {
+  .bottom-2#{$bkpt-suffix} {
     @include bottom-2;
   }
-  .left-2#{$breakpointKey} {
+  .left-2#{$bkpt-suffix} {
     @include left-2;
   }
 
-  .top--1#{$breakpointKey} {
+  .top--1#{$bkpt-suffix} {
     @include top--1;
   }
-  .right--1#{$breakpointKey} {
+  .right--1#{$bkpt-suffix} {
     @include right--1;
   }
-  .bottom--1#{$breakpointKey} {
+  .bottom--1#{$bkpt-suffix} {
     @include bottom--1;
   }
-  .left--1#{$breakpointKey} {
+  .left--1#{$bkpt-suffix} {
     @include left--1;
   }
 
-  .top--2#{$breakpointKey} {
+  .top--2#{$bkpt-suffix} {
     @include top--2;
   }
-  .right--2#{$breakpointKey} {
+  .right--2#{$bkpt-suffix} {
     @include right--2;
   }
-  .bottom--2#{$breakpointKey} {
+  .bottom--2#{$bkpt-suffix} {
     @include bottom--2;
   }
-  .left--2#{$breakpointKey} {
+  .left--2#{$bkpt-suffix} {
     @include left--2;
   }
 
-  .absolute--fill#{$breakpointKey} {
+  .absolute--fill#{$bkpt-suffix} {
     @include absolute--fill;
   }
 }

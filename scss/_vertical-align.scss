@@ -1,25 +1,17 @@
 /*
    VERTICAL ALIGN
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
 */
-
-@import "vertical-align-mixin";
-
-@include generateBreakpoints() {
-  .v-base#{$breakpointKey} {
+@include generate-breakpoints {
+  .v-base#{$bkpt-suffix} {
     @include v-base;
   }
-  .v-mid#{$breakpointKey} {
+  .v-mid#{$bkpt-suffix} {
     @include v-mid;
   }
-  .v-top#{$breakpointKey} {
+  .v-top#{$bkpt-suffix} {
     @include v-top;
   }
-  .v-btm#{$breakpointKey} {
+  .v-btm#{$bkpt-suffix} {
     @include v-btm;
   }
 }

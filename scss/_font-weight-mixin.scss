@@ -1,57 +1,33 @@
-/*
-   FONT WEIGHT
-   Docs: http://tachyons.io/docs/typography/font-weight/
-
-   Base
-     fw = font-weight
-
-   Modifiers:
-     1 = literal value 100
-     2 = literal value 200
-     3 = literal value 300
-     4 = literal value 400
-     5 = literal value 500
-     6 = literal value 600
-     7 = literal value 700
-     8 = literal value 800
-     9 = literal value 900
-
-    Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-*/
-
 @mixin normal {
-  font-weight: normal;
+	font-weight: normal;
 }
 @mixin b {
-  font-weight: bold;
+	font-weight: bold;
 }
 @mixin fw1 {
-  font-weight: 100;
+	font-weight: 100;
 }
 @mixin fw2 {
-  font-weight: 200;
+	font-weight: 200;
 }
 @mixin fw3 {
-  font-weight: 300;
+	font-weight: 300;
 }
 @mixin fw4 {
-  font-weight: 400;
+	font-weight: 400;
 }
 @mixin fw5 {
-  font-weight: 500;
+	font-weight: 500;
 }
 @mixin fw6 {
-  font-weight: 600;
+	font-weight: 600;
 }
 @mixin fw7 {
-  font-weight: 700;
+	font-weight: 700;
 }
 @mixin fw8 {
-  font-weight: 800;
+	font-weight: 800;
 }
 @mixin fw9 {
-  font-weight: 900;
+	font-weight: 900;
 }

@@ -1,6 +1,5 @@
 /*
   TEXT ALIGN
-
   Docs: http://tachyons.io/docs/typography/text-align/
 
   Base
@@ -11,26 +10,18 @@
     r = right
     c = center
     j = justify
-
-  Media Query Extensions:
-    -ns = not-small
-    -m  = medium
-    -l  = large
 */
-
-@import "text-align-mixin";
-
-@include generateBreakpoints() {
-  .tl#{$breakpointKey} {
+@include generate-breakpoints {
+  .tl#{$bkpt-suffix} {
     @include tl;
   }
-  .tr#{$breakpointKey} {
+  .tr#{$bkpt-suffix} {
     @include tr;
   }
-  .tc#{$breakpointKey} {
+  .tc#{$bkpt-suffix} {
     @include tc;
   }
-  .tj#{$breakpointKey} {
+  .tj#{$bkpt-suffix} {
     @include tj;
   }
 }

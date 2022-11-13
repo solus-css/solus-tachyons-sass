@@ -3,8 +3,6 @@
    Docs: http://tachyons.io/docs/elements/links/
 */
 
-@import "links-mixin";
-
 .link {
-  @include link;
+	@include link;
 }

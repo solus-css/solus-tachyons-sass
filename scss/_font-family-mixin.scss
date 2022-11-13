@@ -1,14 +1,9 @@
-/*
-   FONT FAMILY GROUPS
-   Docs: http://tachyons.io/docs/typography/font-family/
-*/
-
 @mixin sans-serif {
-  font-family: $sans-serif;
+  font-family: var(--sans-serif);
 }
 
 @mixin serif {
-  font-family: $serif;
+  font-family: var(--serif);
 }
 
 @mixin system-sans-serif {
@@ -19,18 +14,13 @@
   font-family: serif;
 }
 
-/* Monospaced Typefaces (for code) */
-
-/* From http://cssfontstack.com */
 @mixin code {
-  font-family: Consolas, monaco, monospace;
+  font-family: var(--code);
 }
 
 @mixin courier {
   font-family: "Courier Next", courier, monospace;
 }
-
-/* Sans-Serif Typefaces */
 
 @mixin helvetica {
   font-family: "helvetica neue", helvetica, sans-serif;
@@ -40,7 +30,6 @@
   font-family: "avenir next", avenir, sans-serif;
 }
 
-/* Serif Typefaces */
 @mixin athelas {
   font-family: athelas, georgia, serif;
 }

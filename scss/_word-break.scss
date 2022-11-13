@@ -1,4 +1,5 @@
 /*
+
   WORD BREAK
 
    Base:
@@ -8,21 +9,20 @@
      -ns = not-small
      -m  = medium
      -l  = large
+
 */
 
-@import "word-break-mixin";
-
-@include generateBreakpoints() {
-  .word-normal#{$breakpointKey} {
+@include generate-breakpoints {
+  .word-normal#{$bkpt-suffix} {
     @include word-normal;
   }
-  .word-wrap-all#{$breakpointKey} {
+  .word-wrap-all#{$bkpt-suffix} {
     @include word-wrap-all;
   }
-  .word-wrap#{$breakpointKey} {
+  .word-wrap#{$bkpt-suffix} {
     @include word-wrap;
   }
-  .word-nowrap#{$breakpointKey} {
+  .word-nowrap#{$bkpt-suffix} {
     @include word-nowrap;
   }
 }

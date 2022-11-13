@@ -1,23 +1,16 @@
 /*
    LETTER SPACING
    Docs: http://tachyons.io/docs/typography/tracking/
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
 */
 
-@import "letter-spacing-mixin";
-
-@include generateBreakpoints() {
-  .tracked#{$breakpointKey} {
+@include generate-breakpoints {
+  .tracked#{$bkpt-suffix} {
     @include tracked;
   }
-  .tracked-tight#{$breakpointKey} {
+  .tracked-tight#{$bkpt-suffix} {
     @include tracked-tight;
   }
-  .tracked-mega#{$breakpointKey} {
+  .tracked-mega#{$bkpt-suffix} {
     @include tracked-mega;
   }
 }

@@ -10,26 +10,18 @@
      l = lowercase
      u = uppercase
      n = none
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
 */
-
-@import "text-transform-mixin";
-
-@include generateBreakpoints() {
-  .ttc#{$breakpointKey} {
+@include generate-breakpoints {
+  .ttc#{$bkpt-suffix} {
     text-transform: capitalize;
   }
-  .ttl#{$breakpointKey} {
+  .ttl#{$bkpt-suffix} {
     text-transform: lowercase;
   }
-  .ttu#{$breakpointKey} {
+  .ttu#{$bkpt-suffix} {
     text-transform: uppercase;
   }
-  .ttn#{$breakpointKey} {
+  .ttn#{$bkpt-suffix} {
     text-transform: none;
   }
 }

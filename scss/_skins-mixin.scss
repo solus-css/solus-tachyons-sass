@@ -1,357 +1,342 @@
-/*
-   SKINS
-   Docs: http://tachyons.io/docs/themes/skins/
-
-   Classes for setting foreground and background colors on elements.
-   If you haven't declared a border color, but set border on an element, it will
-   be set to the current text color.
-*/
-
-/* Text colors */
-
 @mixin black-90 {
-  color: $black-90;
+  color: var(--black-90);
 }
 @mixin black-80 {
-  color: $black-80;
+  color: var(--black-80);
 }
 @mixin black-70 {
-  color: $black-70;
+  color: var(--black-70);
 }
 @mixin black-60 {
-  color: $black-60;
+  color: var(--black-60);
 }
 @mixin black-50 {
-  color: $black-50;
+  color: var(--black-50);
 }
 @mixin black-40 {
-  color: $black-40;
+  color: var(--black-40);
 }
 @mixin black-30 {
-  color: $black-30;
+  color: var(--black-30);
 }
 @mixin black-20 {
-  color: $black-20;
+  color: var(--black-20);
 }
 @mixin black-10 {
-  color: $black-10;
+  color: var(--black-10);
 }
 @mixin black-05 {
-  color: $black-05;
+  color: var(--black-05);
 }
-
 @mixin white-90 {
-  color: $white-90;
+  color: var(--white-90);
 }
 @mixin white-80 {
-  color: $white-80;
+  color: var(--white-80);
 }
 @mixin white-70 {
-  color: $white-70;
+  color: var(--white-70);
 }
 @mixin white-60 {
-  color: $white-60;
+  color: var(--white-60);
 }
 @mixin white-50 {
-  color: $white-50;
+  color: var(--white-50);
 }
 @mixin white-40 {
-  color: $white-40;
+  color: var(--white-40);
 }
 @mixin white-30 {
-  color: $white-30;
+  color: var(--white-30);
 }
 @mixin white-20 {
-  color: $white-20;
+  color: var(--white-20);
 }
 @mixin white-10 {
-  color: $white-10;
+  color: var(--white-10);
 }
-
 @mixin black {
-  color: $black;
+  color: var(--black);
 }
 @mixin near-black {
-  color: $near-black;
+  color: var(--near-black);
 }
 @mixin dark-gray {
-  color: $dark-gray;
+  color: var(--dark-gray);
 }
 @mixin mid-gray {
-  color: $mid-gray;
+  color: var(--mid-gray);
 }
 @mixin gray {
-  color: $gray;
+  color: var(--gray);
 }
 @mixin silver {
-  color: $silver;
+  color: var(--silver);
 }
 @mixin light-silver {
-  color: $light-silver;
+  color: var(--light-silver);
 }
 @mixin moon-gray {
-  color: $moon-gray;
+  color: var(--moon-gray);
 }
 @mixin light-gray {
-  color: $light-gray;
+  color: var(--light-gray);
 }
 @mixin near-white {
-  color: $near-white;
+  color: var(--near-white);
 }
 @mixin white {
-  color: $white;
+  color: var(--white);
 }
 
 @mixin dark-red {
-  color: $dark-red;
+  color: var(--dark-red);
 }
 @mixin red {
-  color: $red;
+  color: var(--red);
 }
 @mixin light-red {
-  color: $light-red;
+  color: var(--light-red);
 }
 @mixin orange {
-  color: $orange;
+  color: var(--orange);
 }
 @mixin gold {
-  color: $gold;
+  color: var(--gold);
 }
 @mixin yellow {
-  color: $yellow;
+  color: var(--yellow);
 }
 @mixin light-yellow {
-  color: $light-yellow;
+  color: var(--light-yellow);
 }
 @mixin purple {
-  color: $purple;
+  color: var(--purple);
 }
 @mixin light-purple {
-  color: $light-purple;
+  color: var(--light-purple);
 }
 @mixin dark-pink {
-  color: $dark-pink;
+  color: var(--dark-pink);
 }
 @mixin hot-pink {
-  color: $hot-pink;
+  color: var(--hot-pink);
 }
 @mixin pink {
-  color: $pink;
+  color: var(--pink);
 }
 @mixin light-pink {
-  color: $light-pink;
+  color: var(--light-pink);
 }
 @mixin dark-green {
-  color: $dark-green;
+  color: var(--dark-green);
 }
 @mixin green {
-  color: $green;
+  color: var(--green);
 }
 @mixin light-green {
-  color: $light-green;
+  color: var(--light-green);
 }
 @mixin navy {
-  color: $navy;
+  color: var(--navy);
 }
 @mixin dark-blue {
-  color: $dark-blue;
+  color: var(--dark-blue);
 }
 @mixin blue {
-  color: $blue;
+  color: var(--blue);
 }
 @mixin light-blue {
-  color: $light-blue;
+  color: var(--light-blue);
 }
 @mixin lightest-blue {
-  color: $lightest-blue;
+  color: var(--lightest-blue);
 }
 @mixin washed-blue {
-  color: $washed-blue;
+  color: var(--washed-blue);
 }
 @mixin washed-green {
-  color: $washed-green;
+  color: var(--washed-green);
 }
 @mixin washed-yellow {
-  color: $washed-yellow;
+  color: var(--washed-yellow);
 }
 @mixin washed-red {
-  color: $washed-red;
+  color: var(--washed-red);
 }
 @mixin color-inherit {
   color: inherit;
 }
 
 @mixin bg-black-90 {
-  background-color: $black-90;
+  background-color: var(--black-90);
 }
 @mixin bg-black-80 {
-  background-color: $black-80;
+  background-color: var(--black-80);
 }
 @mixin bg-black-70 {
-  background-color: $black-70;
+  background-color: var(--black-70);
 }
 @mixin bg-black-60 {
-  background-color: $black-60;
+  background-color: var(--black-60);
 }
 @mixin bg-black-50 {
-  background-color: $black-50;
+  background-color: var(--black-50);
 }
 @mixin bg-black-40 {
-  background-color: $black-40;
+  background-color: var(--black-40);
 }
 @mixin bg-black-30 {
-  background-color: $black-30;
+  background-color: var(--black-30);
 }
 @mixin bg-black-20 {
-  background-color: $black-20;
+  background-color: var(--black-20);
 }
 @mixin bg-black-10 {
-  background-color: $black-10;
+  background-color: var(--black-10);
 }
 @mixin bg-black-05 {
-  background-color: $black-05;
+  background-color: var(--black-05);
 }
 @mixin bg-white-90 {
-  background-color: $white-90;
+  background-color: var(--white-90);
 }
 @mixin bg-white-80 {
-  background-color: $white-80;
+  background-color: var(--white-80);
 }
 @mixin bg-white-70 {
-  background-color: $white-70;
+  background-color: var(--white-70);
 }
 @mixin bg-white-60 {
-  background-color: $white-60;
+  background-color: var(--white-60);
 }
 @mixin bg-white-50 {
-  background-color: $white-50;
+  background-color: var(--white-50);
 }
 @mixin bg-white-40 {
-  background-color: $white-40;
+  background-color: var(--white-40);
 }
 @mixin bg-white-30 {
-  background-color: $white-30;
+  background-color: var(--white-30);
 }
 @mixin bg-white-20 {
-  background-color: $white-20;
+  background-color: var(--white-20);
 }
 @mixin bg-white-10 {
-  background-color: $white-10;
+  background-color: var(--white-10);
 }
-
-/* Background colors */
 
 @mixin bg-black {
-  background-color: $black;
+  background-color: var(--black);
 }
 @mixin bg-near-black {
-  background-color: $near-black;
+  background-color: var(--near-black);
 }
 @mixin bg-dark-gray {
-  background-color: $dark-gray;
+  background-color: var(--dark-gray);
 }
 @mixin bg-mid-gray {
-  background-color: $mid-gray;
+  background-color: var(--mid-gray);
 }
 @mixin bg-gray {
-  background-color: $gray;
+  background-color: var(--gray);
 }
 @mixin bg-silver {
-  background-color: $silver;
+  background-color: var(--silver);
 }
 @mixin bg-light-silver {
-  background-color: $light-silver;
+  background-color: var(--light-silver);
 }
 @mixin bg-moon-gray {
-  background-color: $moon-gray;
+  background-color: var(--moon-gray);
 }
 @mixin bg-light-gray {
-  background-color: $light-gray;
+  background-color: var(--light-gray);
 }
 @mixin bg-near-white {
-  background-color: $near-white;
+  background-color: var(--near-white);
 }
 @mixin bg-white {
-  background-color: $white;
+  background-color: var(--white);
 }
 @mixin bg-transparent {
-  background-color: $transparent;
+  background-color: var(--transparent);
 }
 
 @mixin bg-dark-red {
-  background-color: $dark-red;
+  background-color: var(--dark-red);
 }
 @mixin bg-red {
-  background-color: $red;
+  background-color: var(--red);
 }
 @mixin bg-light-red {
-  background-color: $light-red;
+  background-color: var(--light-red);
 }
 @mixin bg-orange {
-  background-color: $orange;
+  background-color: var(--orange);
 }
 @mixin bg-gold {
-  background-color: $gold;
+  background-color: var(--gold);
 }
 @mixin bg-yellow {
-  background-color: $yellow;
+  background-color: var(--yellow);
 }
 @mixin bg-light-yellow {
-  background-color: $light-yellow;
+  background-color: var(--light-yellow);
 }
 @mixin bg-purple {
-  background-color: $purple;
+  background-color: var(--purple);
 }
 @mixin bg-light-purple {
-  background-color: $light-purple;
+  background-color: var(--light-purple);
 }
 @mixin bg-dark-pink {
-  background-color: $dark-pink;
+  background-color: var(--dark-pink);
 }
 @mixin bg-hot-pink {
-  background-color: $hot-pink;
+  background-color: var(--hot-pink);
 }
 @mixin bg-pink {
-  background-color: $pink;
+  background-color: var(--pink);
 }
 @mixin bg-light-pink {
-  background-color: $light-pink;
+  background-color: var(--light-pink);
 }
 @mixin bg-dark-green {
-  background-color: $dark-green;
+  background-color: var(--dark-green);
 }
 @mixin bg-green {
-  background-color: $green;
+  background-color: var(--green);
 }
 @mixin bg-light-green {
-  background-color: $light-green;
+  background-color: var(--light-green);
 }
 @mixin bg-navy {
-  background-color: $navy;
+  background-color: var(--navy);
 }
 @mixin bg-dark-blue {
-  background-color: $dark-blue;
+  background-color: var(--dark-blue);
 }
 @mixin bg-blue {
-  background-color: $blue;
+  background-color: var(--blue);
 }
 @mixin bg-light-blue {
-  background-color: $light-blue;
+  background-color: var(--light-blue);
 }
 @mixin bg-lightest-blue {
-  background-color: $lightest-blue;
+  background-color: var(--lightest-blue);
 }
 @mixin bg-washed-blue {
-  background-color: $washed-blue;
+  background-color: var(--washed-blue);
 }
 @mixin bg-washed-green {
-  background-color: $washed-green;
+  background-color: var(--washed-green);
 }
 @mixin bg-washed-yellow {
-  background-color: $washed-yellow;
+  background-color: var(--washed-yellow);
 }
 @mixin bg-washed-red {
-  background-color: $washed-red;
+  background-color: var(--washed-red);
 }
 @mixin bg-inherit {
   background-color: inherit;

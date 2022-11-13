@@ -12,40 +12,32 @@
       b = bottom
       l = left
       n = none
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
 */
-
-@import "borders-mixin";
-
-@include generateBreakpoints() {
-  .ba#{$breakpointKey} {
+@include generate-breakpoints {
+  .ba#{$bkpt-suffix} {
     @include ba;
   }
-  .bt#{$breakpointKey} {
+  .bt#{$bkpt-suffix} {
     @include bt;
   }
-  .br#{$breakpointKey} {
+  .br#{$bkpt-suffix} {
     @include br;
   }
-  .bb#{$breakpointKey} {
+  .bb#{$bkpt-suffix} {
     @include bb;
   }
-  .bl#{$breakpointKey} {
+  .bl#{$bkpt-suffix} {
     @include bl;
   }
-  .bn#{$breakpointKey} {
+  .bn#{$bkpt-suffix} {
     @include bn;
   }
 
-  .ba#{$breakpointKey},
-  .bt#{$breakpointKey},
-  .br#{$breakpointKey},
-  .bb#{$breakpointKey},
-  .bl#{$breakpointKey} {
-    border-color: currentColor;
+  .ba#{$bkpt-suffix},
+  .bt#{$bkpt-suffix},
+  .br#{$bkpt-suffix},
+  .bb#{$bkpt-suffix},
+  .bl#{$bkpt-suffix} {
+    border-color: currentcolor;
   }
 }

@@ -1,20 +1,25 @@
 /*
-
   MODULE NAME
 
   Use this scaffolding to create or extend your own modules with tachyons
   style architecture.
-
-    Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
 */
 
-// @import "module-template-mixin";
+@media #{$breakpoint-not-small} {
+  // some rule
+}
 
-// @include generateBreakpoints() {
-// 	.some-class#{$breakpointKey} {
-// 	    @include some-class;
-//     }
-// }
+@media #{$breakpoint-medium} {
+  // some rule
+}
+
+@media #{$breakpoint-large} {
+  // some rule
+}
+
+// Auto generate breakpoints for your custom class
+@include generate-breakpoints {
+  .class#{$bkpt-suffix} {
+    // ... some styles
+  }
+}

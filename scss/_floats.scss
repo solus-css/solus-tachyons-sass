@@ -15,23 +15,15 @@
      l = left
      r = right
      n = none
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
 */
-
-@import "floats-mixin";
-
-@include generateBreakpoints() {
-  .fl#{$breakpointKey} {
+@include generate-breakpoints {
+  .fl#{$bkpt-suffix} {
     @include fl;
   }
-  .fr#{$breakpointKey} {
+  .fr#{$bkpt-suffix} {
     @include fr;
   }
-  .fn#{$breakpointKey} {
+  .fn#{$bkpt-suffix} {
     @include fn;
   }
 }

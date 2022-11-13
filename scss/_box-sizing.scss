@@ -2,14 +2,14 @@
   BOX SIZING
 */
 
-@import "box-sizing-mixin";
-
 html,
 body,
 div,
 article,
+aside,
 section,
 main,
+nav,
 footer,
 header,
 form,
@@ -31,6 +31,9 @@ li,
 dl,
 dt,
 dd,
+blockquote,
+figcaption,
+figure,
 textarea,
 table,
 td,

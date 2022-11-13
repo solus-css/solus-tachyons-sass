@@ -1,34 +1,27 @@
 /*
    ROTATIONS
-
-    Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
 */
 
-@import "rotations-mixin";
-
-@include generateBreakpoints() {
-  .rotate-45#{$breakpointKey} {
+@include generate-breakpoints {
+  .rotate-45#{$bkpt-suffix} {
     @include rotate-45;
   }
-  .rotate-90#{$breakpointKey} {
+  .rotate-90#{$bkpt-suffix} {
     @include rotate-90;
   }
-  .rotate-135#{$breakpointKey} {
+  .rotate-135#{$bkpt-suffix} {
     @include rotate-135;
   }
-  .rotate-180#{$breakpointKey} {
+  .rotate-180#{$bkpt-suffix} {
     @include rotate-180;
   }
-  .rotate-225#{$breakpointKey} {
+  .rotate-225#{$bkpt-suffix} {
     @include rotate-225;
   }
-  .rotate-270#{$breakpointKey} {
+  .rotate-270#{$bkpt-suffix} {
     @include rotate-270;
   }
-  .rotate-315#{$breakpointKey} {
+  .rotate-315#{$bkpt-suffix} {
     @include rotate-315;
   }
 }

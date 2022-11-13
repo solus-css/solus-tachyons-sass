@@ -3,44 +3,54 @@
     Docs: http://tachyons.io/docs/themes/opacity/
 */
 
-@import "opacity-mixin";
-
 .o-100 {
-  @include o-100;
+	@include o-100;
 }
+
 .o-90 {
-  @include o-90;
+	@include o-90;
 }
+
 .o-80 {
-  @include o-80;
+	@include o-80;
 }
+
 .o-70 {
-  @include o-70;
+	@include o-70;
 }
+
 .o-60 {
-  @include o-60;
+	@include o-60;
 }
+
 .o-50 {
-  @include o-50;
+	@include o-50;
 }
+
 .o-40 {
-  @include o-40;
+	@include o-40;
 }
+
 .o-30 {
-  @include o-30;
+	@include o-30;
 }
+
 .o-20 {
-  @include o-20;
+	@include o-20;
 }
+
 .o-10 {
-  @include o-10;
+	@include o-10;
 }
+
 .o-05 {
-  @include o-05;
+	@include o-05;
 }
+
 .o-025 {
-  @include o-025;
+	@include o-025;
 }
+
 .o-0 {
-  @include o-0;
+	@include o-0;
 }

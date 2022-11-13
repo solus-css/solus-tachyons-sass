@@ -1,25 +1,17 @@
 /*
    WHITE SPACE
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
 */
-
-@import "white-space-mixin";
-
-@include generateBreakpoints() {
-  .ws-normal#{$breakpointKey} {
+@include generate-breakpoints {
+  .ws-normal#{$bkpt-suffix} {
     @include ws-normal;
   }
-  .nowrap#{$breakpointKey} {
+  .nowrap#{$bkpt-suffix} {
     @include nowrap;
   }
-  .pre#{$breakpointKey} {
+  .pre#{$bkpt-suffix} {
     @include pre;
   }
-  .pre-wrap#{$breakpointKey} {
+  .pre-wrap#{$bkpt-suffix} {
     @include pre-wrap;
   }
 }

@@ -12,26 +12,18 @@
      --dotted = dotted
      --dashed = dashed
      --solid  = solid
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-*/
-
-@import "border-style-mixin";
-
-@include generateBreakpoints() {
-  .b--dotted#{$breakpointKey} {
+ */
+@include generate-breakpoints {
+  .b--dotted#{$bkpt-suffix} {
     @include b--dotted;
   }
-  .b--dashed#{$breakpointKey} {
+  .b--dashed#{$bkpt-suffix} {
     @include b--dashed;
   }
-  .b--solid#{$breakpointKey} {
+  .b--solid#{$bkpt-suffix} {
     @include b--solid;
   }
-  .b--none#{$breakpointKey} {
+  .b--none#{$bkpt-suffix} {
     @include b--none;
   }
 }

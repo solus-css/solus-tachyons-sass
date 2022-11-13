@@ -4,25 +4,24 @@
 */
 
 /* Nicolas Gallaghers Clearfix solution
-   Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
-
-@import "clears-mixin";
+   Ref: http://nicolasgallagher.com/micro-clearfix-hack/
+*/
 
 .cf {
   @include cf;
 }
 
-@include generateBreakpoints() {
-  .cl#{$breakpointKey} {
+@include generate-breakpoints {
+  .cl#{$bkpt-suffix} {
     @include cl;
   }
-  .cr#{$breakpointKey} {
+  .cr#{$bkpt-suffix} {
     @include cr;
   }
-  .cb#{$breakpointKey} {
+  .cb#{$bkpt-suffix} {
     @include cb;
   }
-  .cn#{$breakpointKey} {
+  .cn#{$bkpt-suffix} {
     @include cn;
   }
 }

@@ -14,210 +14,198 @@
 
    Modifiers:
    --color-name = each color variable name is also a border color name
-
-    Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
 */
 
-@import "border-colors-mixin";
-
-@include generateBreakpoints() #{$breakpointKey} {
-  .b--black#{$breakpointKey} {
+@include generate-breakpoints;
+#{$bkpt-suffix} {
+  .b--black#{$bkpt-suffix} {
     @include b--black;
   }
-  .b--near-black#{$breakpointKey} {
+  .b--near-black#{$bkpt-suffix} {
     @include b--near-black;
   }
-  .b--dark-gray#{$breakpointKey} {
+  .b--dark-gray#{$bkpt-suffix} {
     @include b--dark-gray;
   }
-  .b--mid-gray#{$breakpointKey} {
+  .b--mid-gray#{$bkpt-suffix} {
     @include b--mid-gray;
   }
-  .b--gray#{$breakpointKey} {
+  .b--gray#{$bkpt-suffix} {
     @include b--gray;
   }
-  .b--silver#{$breakpointKey} {
+  .b--silver#{$bkpt-suffix} {
     @include b--silver;
   }
-  .b--light-silver#{$breakpointKey} {
+  .b--light-silver#{$bkpt-suffix} {
     @include b--light-silver;
   }
-  .b--moon-gray#{$breakpointKey} {
+  .b--moon-gray#{$bkpt-suffix} {
     @include b--moon-gray;
   }
-  .b--light-gray#{$breakpointKey} {
+  .b--light-gray#{$bkpt-suffix} {
     @include b--light-gray;
   }
-  .b--near-white#{$breakpointKey} {
+  .b--near-white#{$bkpt-suffix} {
     @include b--near-white;
   }
-  .b--white#{$breakpointKey} {
+  .b--white#{$bkpt-suffix} {
     @include b--white;
   }
 
-  .b--white-90#{$breakpointKey} {
+  .b--white-90#{$bkpt-suffix} {
     @include b--white-90;
   }
-  .b--white-80#{$breakpointKey} {
+  .b--white-80#{$bkpt-suffix} {
     @include b--white-80;
   }
-  .b--white-70#{$breakpointKey} {
+  .b--white-70#{$bkpt-suffix} {
     @include b--white-70;
   }
-  .b--white-60#{$breakpointKey} {
+  .b--white-60#{$bkpt-suffix} {
     @include b--white-60;
   }
-  .b--white-50#{$breakpointKey} {
+  .b--white-50#{$bkpt-suffix} {
     @include b--white-50;
   }
-  .b--white-40#{$breakpointKey} {
+  .b--white-40#{$bkpt-suffix} {
     @include b--white-40;
   }
-  .b--white-30#{$breakpointKey} {
+  .b--white-30#{$bkpt-suffix} {
     @include b--white-30;
   }
-  .b--white-20#{$breakpointKey} {
+  .b--white-20#{$bkpt-suffix} {
     @include b--white-20;
   }
-  .b--white-10#{$breakpointKey} {
+  .b--white-10#{$bkpt-suffix} {
     @include b--white-10;
   }
-  .b--white-05#{$breakpointKey} {
+  .b--white-05#{$bkpt-suffix} {
     @include b--white-05;
   }
-  .b--white-025#{$breakpointKey} {
+  .b--white-025#{$bkpt-suffix} {
     @include b--white-025;
   }
-  .b--white-0125#{$breakpointKey} {
+  .b--white-0125#{$bkpt-suffix} {
     @include b--white-0125;
   }
 
-  .b--black-90#{$breakpointKey} {
+  .b--black-90#{$bkpt-suffix} {
     @include b--black-90;
   }
-  .b--black-80#{$breakpointKey} {
+  .b--black-80#{$bkpt-suffix} {
     @include b--black-80;
   }
-  .b--black-70#{$breakpointKey} {
+  .b--black-70#{$bkpt-suffix} {
     @include b--black-70;
   }
-  .b--black-60#{$breakpointKey} {
+  .b--black-60#{$bkpt-suffix} {
     @include b--black-60;
   }
-  .b--black-50#{$breakpointKey} {
+  .b--black-50#{$bkpt-suffix} {
     @include b--black-50;
   }
-  .b--black-40#{$breakpointKey} {
+  .b--black-40#{$bkpt-suffix} {
     @include b--black-40;
   }
-  .b--black-30#{$breakpointKey} {
+  .b--black-30#{$bkpt-suffix} {
     @include b--black-30;
   }
-  .b--black-20#{$breakpointKey} {
+  .b--black-20#{$bkpt-suffix} {
     @include b--black-20;
   }
-  .b--black-10#{$breakpointKey} {
+  .b--black-10#{$bkpt-suffix} {
     @include b--black-10;
   }
-  .b--black-05#{$breakpointKey} {
+  .b--black-05#{$bkpt-suffix} {
     @include b--black-05;
   }
-  .b--black-025#{$breakpointKey} {
+  .b--black-025#{$bkpt-suffix} {
     @include b--black-025;
   }
-  .b--black-0125#{$breakpointKey} {
+  .b--black-0125#{$bkpt-suffix} {
     @include b--black-0125;
   }
 
-  .b--dark-red#{$breakpointKey} {
+  .b--dark-red#{$bkpt-suffix} {
     @include b--dark-red;
   }
-  .b--red#{$breakpointKey} {
+  .b--red#{$bkpt-suffix} {
     @include b--red;
   }
-  .b--light-red#{$breakpointKey} {
+  .b--light-red#{$bkpt-suffix} {
     @include b--light-red;
   }
-  .b--orange#{$breakpointKey} {
+  .b--orange#{$bkpt-suffix} {
     @include b--orange;
   }
-  .b--gold#{$breakpointKey} {
+  .b--gold#{$bkpt-suffix} {
     @include b--gold;
   }
-  .b--yellow#{$breakpointKey} {
+  .b--yellow#{$bkpt-suffix} {
     @include b--yellow;
   }
-  .b--light-yellow#{$breakpointKey} {
+  .b--light-yellow#{$bkpt-suffix} {
     @include b--light-yellow;
   }
-  .b--purple#{$breakpointKey} {
+  .b--purple#{$bkpt-suffix} {
     @include b--purple;
   }
-  .b--light-purple#{$breakpointKey} {
+  .b--light-purple#{$bkpt-suffix} {
     @include b--light-purple;
   }
-  .b--dark-pink#{$breakpointKey} {
+  .b--dark-pink#{$bkpt-suffix} {
     @include b--dark-pink;
   }
-  .b--hot-pink#{$breakpointKey} {
+  .b--hot-pink#{$bkpt-suffix} {
     @include b--hot-pink;
   }
-  .b--pink#{$breakpointKey} {
+  .b--pink#{$bkpt-suffix} {
     @include b--pink;
   }
-  .b--light-pink#{$breakpointKey} {
+  .b--light-pink#{$bkpt-suffix} {
     @include b--light-pink;
   }
-  .b--dark-green#{$breakpointKey} {
+  .b--dark-green#{$bkpt-suffix} {
     @include b--dark-green;
   }
-  .b--green#{$breakpointKey} {
+  .b--green#{$bkpt-suffix} {
     @include b--green;
   }
-  .b--light-green#{$breakpointKey} {
+  .b--light-green#{$bkpt-suffix} {
     @include b--light-green;
   }
-  .b--navy#{$breakpointKey} {
+  .b--navy#{$bkpt-suffix} {
     @include b--navy;
   }
-  .b--dark-blue#{$breakpointKey} {
+  .b--dark-blue#{$bkpt-suffix} {
     @include b--dark-blue;
   }
-  .b--blue#{$breakpointKey} {
+  .b--blue#{$bkpt-suffix} {
     @include b--blue;
   }
-  .b--light-blue#{$breakpointKey} {
+  .b--light-blue#{$bkpt-suffix} {
     @include b--light-blue;
   }
-  .b--lightest-blue#{$breakpointKey} {
+  .b--lightest-blue#{$bkpt-suffix} {
     @include b--lightest-blue;
   }
-  .b--washed-blue#{$breakpointKey} {
+  .b--washed-blue#{$bkpt-suffix} {
     @include b--washed-blue;
   }
-  .b--washed-green#{$breakpointKey} {
+  .b--washed-green#{$bkpt-suffix} {
     @include b--washed-green;
   }
-  .b--washed-yellow#{$breakpointKey} {
+  .b--washed-yellow#{$bkpt-suffix} {
     @include b--washed-yellow;
   }
-  .b--washed-red#{$breakpointKey} {
+  .b--washed-red#{$bkpt-suffix} {
     @include b--washed-red;
   }
 
-  .b--transparent#{$breakpointKey} {
+  .b--transparent#{$bkpt-suffix} {
     @include b--transparent;
   }
-  .b--inherit#{$breakpointKey} {
+  .b--inherit#{$bkpt-suffix} {
     @include b--inherit;
-  }
-  .b--initial#{$breakpointKey} {
-    @include b--initial;
-  }
-  .b--unset#{$breakpointKey} {
-    @include b--unset;
   }
 }

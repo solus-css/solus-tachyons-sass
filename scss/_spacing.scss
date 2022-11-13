@@ -1,5 +1,3 @@
-/* Variables */
-
 /*
    SPACING
    Docs: http://tachyons.io/docs/layout/spacing/
@@ -7,8 +5,6 @@
    An eight step powers of two scale ranging from 0 to 16rem.
 
    Base:
-     p = padding
-     m = margin
 
    Modifiers:
      a = all
@@ -27,363 +23,355 @@
      5 = 5th step in spacing scale
      6 = 6th step in spacing scale
      7 = 7th step in spacing scale
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
 */
-
-@import "spacing-mixin";
-
-@include generateBreakpoints() {
-  .pa0#{$breakpointKey} {
+@include generate-breakpoints {
+  .pa0#{$bkpt-suffix} {
     @include pa0;
   }
-  .pa1#{$breakpointKey} {
+  .pa1#{$bkpt-suffix} {
     @include pa1;
   }
-  .pa2#{$breakpointKey} {
+  .pa2#{$bkpt-suffix} {
     @include pa2;
   }
-  .pa3#{$breakpointKey} {
+  .pa3#{$bkpt-suffix} {
     @include pa3;
   }
-  .pa4#{$breakpointKey} {
+  .pa4#{$bkpt-suffix} {
     @include pa4;
   }
-  .pa5#{$breakpointKey} {
+  .pa5#{$bkpt-suffix} {
     @include pa5;
   }
-  .pa6#{$breakpointKey} {
+  .pa6#{$bkpt-suffix} {
     @include pa6;
   }
-  .pa7#{$breakpointKey} {
+  .pa7#{$bkpt-suffix} {
     @include pa7;
   }
 
-  .pl0#{$breakpointKey} {
+  .pl0#{$bkpt-suffix} {
     @include pl0;
   }
-  .pl1#{$breakpointKey} {
+  .pl1#{$bkpt-suffix} {
     @include pl1;
   }
-  .pl2#{$breakpointKey} {
+  .pl2#{$bkpt-suffix} {
     @include pl2;
   }
-  .pl3#{$breakpointKey} {
+  .pl3#{$bkpt-suffix} {
     @include pl3;
   }
-  .pl4#{$breakpointKey} {
+  .pl4#{$bkpt-suffix} {
     @include pl4;
   }
-  .pl5#{$breakpointKey} {
+  .pl5#{$bkpt-suffix} {
     @include pl5;
   }
-  .pl6#{$breakpointKey} {
+  .pl6#{$bkpt-suffix} {
     @include pl6;
   }
-  .pl7#{$breakpointKey} {
+  .pl7#{$bkpt-suffix} {
     @include pl7;
   }
 
-  .pr0#{$breakpointKey} {
+  .pr0#{$bkpt-suffix} {
     @include pr0;
   }
-  .pr1#{$breakpointKey} {
+  .pr1#{$bkpt-suffix} {
     @include pr1;
   }
-  .pr2#{$breakpointKey} {
+  .pr2#{$bkpt-suffix} {
     @include pr2;
   }
-  .pr3#{$breakpointKey} {
+  .pr3#{$bkpt-suffix} {
     @include pr3;
   }
-  .pr4#{$breakpointKey} {
+  .pr4#{$bkpt-suffix} {
     @include pr4;
   }
-  .pr5#{$breakpointKey} {
+  .pr5#{$bkpt-suffix} {
     @include pr5;
   }
-  .pr6#{$breakpointKey} {
+  .pr6#{$bkpt-suffix} {
     @include pr6;
   }
-  .pr7#{$breakpointKey} {
+  .pr7#{$bkpt-suffix} {
     @include pr7;
   }
 
-  .pb0#{$breakpointKey} {
+  .pb0#{$bkpt-suffix} {
     @include pb0;
   }
-  .pb1#{$breakpointKey} {
+  .pb1#{$bkpt-suffix} {
     @include pb1;
   }
-  .pb2#{$breakpointKey} {
+  .pb2#{$bkpt-suffix} {
     @include pb2;
   }
-  .pb3#{$breakpointKey} {
+  .pb3#{$bkpt-suffix} {
     @include pb3;
   }
-  .pb4#{$breakpointKey} {
+  .pb4#{$bkpt-suffix} {
     @include pb4;
   }
-  .pb5#{$breakpointKey} {
+  .pb5#{$bkpt-suffix} {
     @include pb5;
   }
-  .pb6#{$breakpointKey} {
+  .pb6#{$bkpt-suffix} {
     @include pb6;
   }
-  .pb7#{$breakpointKey} {
+  .pb7#{$bkpt-suffix} {
     @include pb7;
   }
 
-  .pt0#{$breakpointKey} {
+  .pt0#{$bkpt-suffix} {
     @include pt0;
   }
-  .pt1#{$breakpointKey} {
+  .pt1#{$bkpt-suffix} {
     @include pt1;
   }
-  .pt2#{$breakpointKey} {
+  .pt2#{$bkpt-suffix} {
     @include pt2;
   }
-  .pt3#{$breakpointKey} {
+  .pt3#{$bkpt-suffix} {
     @include pt3;
   }
-  .pt4#{$breakpointKey} {
+  .pt4#{$bkpt-suffix} {
     @include pt4;
   }
-  .pt5#{$breakpointKey} {
+  .pt5#{$bkpt-suffix} {
     @include pt5;
   }
-  .pt6#{$breakpointKey} {
+  .pt6#{$bkpt-suffix} {
     @include pt6;
   }
-  .pt7#{$breakpointKey} {
+  .pt7#{$bkpt-suffix} {
     @include pt7;
   }
 
-  .pv0#{$breakpointKey} {
+  .pv0#{$bkpt-suffix} {
     @include pv0;
   }
-  .pv1#{$breakpointKey} {
+  .pv1#{$bkpt-suffix} {
     @include pv1;
   }
-  .pv2#{$breakpointKey} {
+  .pv2#{$bkpt-suffix} {
     @include pv2;
   }
-  .pv3#{$breakpointKey} {
+  .pv3#{$bkpt-suffix} {
     @include pv3;
   }
-  .pv4#{$breakpointKey} {
+  .pv4#{$bkpt-suffix} {
     @include pv4;
   }
-  .pv5#{$breakpointKey} {
+  .pv5#{$bkpt-suffix} {
     @include pv5;
   }
-  .pv6#{$breakpointKey} {
+  .pv6#{$bkpt-suffix} {
     @include pv6;
   }
-  .pv7#{$breakpointKey} {
+  .pv7#{$bkpt-suffix} {
     @include pv7;
   }
 
-  .ph0#{$breakpointKey} {
+  .ph0#{$bkpt-suffix} {
     @include ph0;
   }
-  .ph1#{$breakpointKey} {
+  .ph1#{$bkpt-suffix} {
     @include ph1;
   }
-  .ph2#{$breakpointKey} {
+  .ph2#{$bkpt-suffix} {
     @include ph2;
   }
-  .ph3#{$breakpointKey} {
+  .ph3#{$bkpt-suffix} {
     @include ph3;
   }
-  .ph4#{$breakpointKey} {
+  .ph4#{$bkpt-suffix} {
     @include ph4;
   }
-  .ph5#{$breakpointKey} {
+  .ph5#{$bkpt-suffix} {
     @include ph5;
   }
-  .ph6#{$breakpointKey} {
+  .ph6#{$bkpt-suffix} {
     @include ph6;
   }
-  .ph7#{$breakpointKey} {
+  .ph7#{$bkpt-suffix} {
     @include ph7;
   }
 
-  .ma0#{$breakpointKey} {
+  .ma0#{$bkpt-suffix} {
     @include ma0;
   }
-  .ma1#{$breakpointKey} {
+  .ma1#{$bkpt-suffix} {
     @include ma1;
   }
-  .ma2#{$breakpointKey} {
+  .ma2#{$bkpt-suffix} {
     @include ma2;
   }
-  .ma3#{$breakpointKey} {
+  .ma3#{$bkpt-suffix} {
     @include ma3;
   }
-  .ma4#{$breakpointKey} {
+  .ma4#{$bkpt-suffix} {
     @include ma4;
   }
-  .ma5#{$breakpointKey} {
+  .ma5#{$bkpt-suffix} {
     @include ma5;
   }
-  .ma6#{$breakpointKey} {
+  .ma6#{$bkpt-suffix} {
     @include ma6;
   }
-  .ma7#{$breakpointKey} {
+  .ma7#{$bkpt-suffix} {
     @include ma7;
   }
 
-  .ml0#{$breakpointKey} {
+  .ml0#{$bkpt-suffix} {
     @include ml0;
   }
-  .ml1#{$breakpointKey} {
+  .ml1#{$bkpt-suffix} {
     @include ml1;
   }
-  .ml2#{$breakpointKey} {
+  .ml2#{$bkpt-suffix} {
     @include ml2;
   }
-  .ml3#{$breakpointKey} {
+  .ml3#{$bkpt-suffix} {
     @include ml3;
   }
-  .ml4#{$breakpointKey} {
+  .ml4#{$bkpt-suffix} {
     @include ml4;
   }
-  .ml5#{$breakpointKey} {
+  .ml5#{$bkpt-suffix} {
     @include ml5;
   }
-  .ml6#{$breakpointKey} {
+  .ml6#{$bkpt-suffix} {
     @include ml6;
   }
-  .ml7#{$breakpointKey} {
+  .ml7#{$bkpt-suffix} {
     @include ml7;
   }
 
-  .mr0#{$breakpointKey} {
+  .mr0#{$bkpt-suffix} {
     @include mr0;
   }
-  .mr1#{$breakpointKey} {
+  .mr1#{$bkpt-suffix} {
     @include mr1;
   }
-  .mr2#{$breakpointKey} {
+  .mr2#{$bkpt-suffix} {
     @include mr2;
   }
-  .mr3#{$breakpointKey} {
+  .mr3#{$bkpt-suffix} {
     @include mr3;
   }
-  .mr4#{$breakpointKey} {
+  .mr4#{$bkpt-suffix} {
     @include mr4;
   }
-  .mr5#{$breakpointKey} {
+  .mr5#{$bkpt-suffix} {
     @include mr5;
   }
-  .mr6#{$breakpointKey} {
+  .mr6#{$bkpt-suffix} {
     @include mr6;
   }
-  .mr7#{$breakpointKey} {
+  .mr7#{$bkpt-suffix} {
     @include mr7;
   }
 
-  .mb0#{$breakpointKey} {
+  .mb0#{$bkpt-suffix} {
     @include mb0;
   }
-  .mb1#{$breakpointKey} {
+  .mb1#{$bkpt-suffix} {
     @include mb1;
   }
-  .mb2#{$breakpointKey} {
+  .mb2#{$bkpt-suffix} {
     @include mb2;
   }
-  .mb3#{$breakpointKey} {
+  .mb3#{$bkpt-suffix} {
     @include mb3;
   }
-  .mb4#{$breakpointKey} {
+  .mb4#{$bkpt-suffix} {
     @include mb4;
   }
-  .mb5#{$breakpointKey} {
+  .mb5#{$bkpt-suffix} {
     @include mb5;
   }
-  .mb6#{$breakpointKey} {
+  .mb6#{$bkpt-suffix} {
     @include mb6;
   }
-  .mb7#{$breakpointKey} {
+  .mb7#{$bkpt-suffix} {
     @include mb7;
   }
 
-  .mt0#{$breakpointKey} {
+  .mt0#{$bkpt-suffix} {
     @include mt0;
   }
-  .mt1#{$breakpointKey} {
+  .mt1#{$bkpt-suffix} {
     @include mt1;
   }
-  .mt2#{$breakpointKey} {
+  .mt2#{$bkpt-suffix} {
     @include mt2;
   }
-  .mt3#{$breakpointKey} {
+  .mt3#{$bkpt-suffix} {
     @include mt3;
   }
-  .mt4#{$breakpointKey} {
+  .mt4#{$bkpt-suffix} {
     @include mt4;
   }
-  .mt5#{$breakpointKey} {
+  .mt5#{$bkpt-suffix} {
     @include mt5;
   }
-  .mt6#{$breakpointKey} {
+  .mt6#{$bkpt-suffix} {
     @include mt6;
   }
-  .mt7#{$breakpointKey} {
+  .mt7#{$bkpt-suffix} {
     @include mt7;
   }
 
-  .mv0#{$breakpointKey} {
+  .mv0#{$bkpt-suffix} {
     @include mv0;
   }
-  .mv1#{$breakpointKey} {
+  .mv1#{$bkpt-suffix} {
     @include mv1;
   }
-  .mv2#{$breakpointKey} {
+  .mv2#{$bkpt-suffix} {
     @include mv2;
   }
-  .mv3#{$breakpointKey} {
+  .mv3#{$bkpt-suffix} {
     @include mv3;
   }
-  .mv4#{$breakpointKey} {
+  .mv4#{$bkpt-suffix} {
     @include mv4;
   }
-  .mv5#{$breakpointKey} {
+  .mv5#{$bkpt-suffix} {
     @include mv5;
   }
-  .mv6#{$breakpointKey} {
+  .mv6#{$bkpt-suffix} {
     @include mv6;
   }
-  .mv7#{$breakpointKey} {
+  .mv7#{$bkpt-suffix} {
     @include mv7;
   }
 
-  .mh0#{$breakpointKey} {
+  .mh0#{$bkpt-suffix} {
     @include mh0;
   }
-  .mh1#{$breakpointKey} {
+  .mh1#{$bkpt-suffix} {
     @include mh1;
   }
-  .mh2#{$breakpointKey} {
+  .mh2#{$bkpt-suffix} {
     @include mh2;
   }
-  .mh3#{$breakpointKey} {
+  .mh3#{$bkpt-suffix} {
     @include mh3;
   }
-  .mh4#{$breakpointKey} {
+  .mh4#{$bkpt-suffix} {
     @include mh4;
   }
-  .mh5#{$breakpointKey} {
+  .mh5#{$bkpt-suffix} {
     @include mh5;
   }
-  .mh6#{$breakpointKey} {
+  .mh6#{$bkpt-suffix} {
     @include mh6;
   }
-  .mh7#{$breakpointKey} {
+  .mh7#{$bkpt-suffix} {
     @include mh7;
   }
 }

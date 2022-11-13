@@ -1,136 +1,109 @@
-/*
-   NEGATIVE MARGINS
-
-   Base:
-     n = negative
-
-   Modifiers:
-     a = all
-     t = top
-     r = right
-     b = bottom
-     l = left
-
-     1 = 1st step in spacing scale
-     2 = 2nd step in spacing scale
-     3 = 3rd step in spacing scale
-     4 = 4th step in spacing scale
-     5 = 5th step in spacing scale
-     6 = 6th step in spacing scale
-     7 = 7th step in spacing scale
-
-    Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-*/
-
 @mixin na1 {
-  margin: -$spacing-extra-small;
+  margin: calc(-1 * var(--spacing-extra-small));
 }
 @mixin na2 {
-  margin: -$spacing-small;
+  margin: calc(-1 * var(--spacing-small));
 }
 @mixin na3 {
-  margin: -$spacing-medium;
+  margin: calc(-1 * var(--spacing-medium));
 }
 @mixin na4 {
-  margin: -$spacing-large;
+  margin: calc(-1 * var(--spacing-large));
 }
 @mixin na5 {
-  margin: -$spacing-extra-large;
+  margin: calc(-1 * var(--spacing-extra-large));
 }
 @mixin na6 {
-  margin: -$spacing-extra-extra-large;
+  margin: calc(-1 * var(--spacing-extra-extra-large));
 }
 @mixin na7 {
-  margin: -$spacing-extra-extra-extra-large;
+  margin: calc(-1 * var(--spacing-extra-extra-extra-large));
 }
 
 @mixin nl1 {
-  margin-left: -$spacing-extra-small;
+  margin-left: calc(-1 * var(--spacing-extra-small));
 }
 @mixin nl2 {
-  margin-left: -$spacing-small;
+  margin-left: calc(-1 * var(--spacing-small));
 }
 @mixin nl3 {
-  margin-left: -$spacing-medium;
+  margin-left: calc(-1 * var(--spacing-medium));
 }
 @mixin nl4 {
-  margin-left: -$spacing-large;
+  margin-left: calc(-1 * var(--spacing-large));
 }
 @mixin nl5 {
-  margin-left: -$spacing-extra-large;
+  margin-left: calc(-1 * var(--spacing-extra-large));
 }
 @mixin nl6 {
-  margin-left: -$spacing-extra-extra-large;
+  margin-left: calc(-1 * var(--spacing-extra-extra-large));
 }
 @mixin nl7 {
-  margin-left: -$spacing-extra-extra-extra-large;
+  margin-left: calc(-1 * var(--spacing-extra-extra-extra-large));
 }
 
 @mixin nr1 {
-  margin-right: -$spacing-extra-small;
+  margin-right: calc(-1 * var(--spacing-extra-small));
 }
 @mixin nr2 {
-  margin-right: -$spacing-small;
+  margin-right: calc(-1 * var(--spacing-small));
 }
 @mixin nr3 {
-  margin-right: -$spacing-medium;
+  margin-right: calc(-1 * var(--spacing-medium));
 }
 @mixin nr4 {
-  margin-right: -$spacing-large;
+  margin-right: calc(-1 * var(--spacing-large));
 }
 @mixin nr5 {
-  margin-right: -$spacing-extra-large;
+  margin-right: calc(-1 * var(--spacing-extra-large));
 }
 @mixin nr6 {
-  margin-right: -$spacing-extra-extra-large;
+  margin-right: calc(-1 * var(--spacing-extra-extra-large));
 }
 @mixin nr7 {
-  margin-right: -$spacing-extra-extra-extra-large;
+  margin-right: calc(-1 * var(--spacing-extra-extra-extra-large));
 }
 
 @mixin nb1 {
-  margin-bottom: -$spacing-extra-small;
+  margin-bottom: calc(-1 * var(--spacing-extra-small));
 }
 @mixin nb2 {
-  margin-bottom: -$spacing-small;
+  margin-bottom: calc(-1 * var(--spacing-small));
 }
 @mixin nb3 {
-  margin-bottom: -$spacing-medium;
+  margin-bottom: calc(-1 * var(--spacing-medium));
 }
 @mixin nb4 {
-  margin-bottom: -$spacing-large;
+  margin-bottom: calc(-1 * var(--spacing-large));
 }
 @mixin nb5 {
-  margin-bottom: -$spacing-extra-large;
+  margin-bottom: calc(-1 * var(--spacing-extra-large));
 }
 @mixin nb6 {
-  margin-bottom: -$spacing-extra-extra-large;
+  margin-bottom: calc(-1 * var(--spacing-extra-extra-large));
 }
 @mixin nb7 {
-  margin-bottom: -$spacing-extra-extra-extra-large;
+  margin-bottom: calc(-1 * var(--spacing-extra-extra-extra-large));
 }
 
 @mixin nt1 {
-  margin-top: -$spacing-extra-small;
+  margin-top: calc(-1 * var(--spacing-extra-small));
 }
 @mixin nt2 {
-  margin-top: -$spacing-small;
+  margin-top: calc(-1 * var(--spacing-small));
 }
 @mixin nt3 {
-  margin-top: -$spacing-medium;
+  margin-top: calc(-1 * var(--spacing-medium));
 }
 @mixin nt4 {
-  margin-top: -$spacing-large;
+  margin-top: calc(-1 * var(--spacing-large));
 }
 @mixin nt5 {
-  margin-top: -$spacing-extra-large;
+  margin-top: calc(-1 * var(--spacing-extra-large));
 }
 @mixin nt6 {
-  margin-top: -$spacing-extra-extra-large;
+  margin-top: calc(-1 * var(--spacing-extra-extra-large));
 }
 @mixin nt7 {
-  margin-top: -$spacing-extra-extra-extra-large;
+  margin-top: calc(-1 * var(--spacing-extra-extra-extra-large));
 }

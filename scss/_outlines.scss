@@ -1,23 +1,14 @@
 /*
    OUTLINES
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
 */
-
-@import "outlines-mixin";
-
-@include generateBreakpoints() {
-  .outline#{$breakpointKey} {
+@include generate-breakpoints {
+  .outline#{$bkpt-suffix} {
     @include outline;
   }
-  .outline-transparent#{$breakpointKey} {
+  .outline-transparent#{$bkpt-suffix} {
     @include outline-transparent;
   }
-  .outline-0#{$breakpointKey} {
+  .outline-0#{$bkpt-suffix} {
     @include outline-0;
   }
 }

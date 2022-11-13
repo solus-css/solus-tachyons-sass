@@ -4,9 +4,6 @@
 */
 
 /* Responsive images! */
-
-@import "images-mixin";
-
 img {
-  @include mw-100;
+	@include mw-100;
 }

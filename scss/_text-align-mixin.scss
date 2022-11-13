@@ -1,32 +1,12 @@
-/*
-  TEXT ALIGN
-
-  Docs: http://tachyons.io/docs/typography/text-align/
-
-  Base
-    t = text-align
-
-  Modifiers
-    l = left
-    r = right
-    c = center
-    j = justify
-
-  Media Query Extensions:
-    -ns = not-small
-    -m  = medium
-    -l  = large
-*/
-
 @mixin tl {
-  text-align: left;
+	text-align: left;
 }
 @mixin tr {
-  text-align: right;
+	text-align: right;
 }
 @mixin tc {
-  text-align: center;
+	text-align: center;
 }
 @mixin tj {
-  text-align: justify;
+	text-align: justify;
 }

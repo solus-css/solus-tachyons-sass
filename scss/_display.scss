@@ -15,47 +15,39 @@
     tr    = table-row
     tcol  = table-column
     tcolg = table-column-group
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
 */
-
-@import "display-mixin";
-
-@include generateBreakpoints() {
-  .dn#{$breakpointKey} {
+@include generate-breakpoints {
+  .dn#{$bkpt-suffix} {
     @include dn;
   }
-  .di#{$breakpointKey} {
+  .di#{$bkpt-suffix} {
     @include di;
   }
-  .db#{$breakpointKey} {
+  .db#{$bkpt-suffix} {
     @include db;
   }
-  .dib#{$breakpointKey} {
+  .dib#{$bkpt-suffix} {
     @include dib;
   }
-  .dit#{$breakpointKey} {
+  .dit#{$bkpt-suffix} {
     @include dit;
   }
-  .dt#{$breakpointKey} {
+  .dt#{$bkpt-suffix} {
     @include dt;
   }
-  .dtc#{$breakpointKey} {
+  .dtc#{$bkpt-suffix} {
     @include dtc;
   }
-  .dt-row#{$breakpointKey} {
+  .dt-row#{$bkpt-suffix} {
     @include dt-row;
   }
-  .dt-row-group#{$breakpointKey} {
+  .dt-row-group#{$bkpt-suffix} {
     @include dt-row-group;
   }
-  .dt-column#{$breakpointKey} {
+  .dt-column#{$bkpt-suffix} {
     @include dt-column;
   }
-  .dt-column-group#{$breakpointKey} {
+  .dt-column-group#{$bkpt-suffix} {
     @include dt-column-group;
   }
 
@@ -63,7 +55,7 @@
     This will set table to full width and then
     all cells will be equal width
   */
-  .dt--fixed#{$breakpointKey} {
+  .dt--fixed#{$bkpt-suffix} {
     @include dt--fixed;
   }
 }

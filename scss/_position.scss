@@ -1,26 +1,19 @@
 /*
    POSITIONING
    Docs: http://tachyons.io/docs/layout/position/
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
 */
 
-@import "position-mixin";
-
-@include generateBreakpoints() {
-  .static#{$breakpointKey} {
+@include generate-breakpoints {
+  .static#{$bkpt-suffix} {
     @include static;
   }
-  .relative#{$breakpointKey} {
+  .relative#{$bkpt-suffix} {
     @include relative;
   }
-  .absolute#{$breakpointKey} {
+  .absolute#{$bkpt-suffix} {
     @include absolute;
   }
-  .fixed#{$breakpointKey} {
+  .fixed#{$bkpt-suffix} {
     @include fixed;
   }
 }

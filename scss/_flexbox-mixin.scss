@@ -1,162 +1,151 @@
-/*
-  FLEXBOX
-
-    Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-*/
-
 @mixin flex {
-  display: flex;
+	display: flex;
 }
 
 @mixin inline-flex {
-  display: inline-flex;
+	display: inline-flex;
 }
 
-/* 1. Fix for Chrome 44 bug.
- * https://code.google.com/p/chromium/issues/detail?id=506893 */
 @mixin flex-auto {
-  flex: 1 1 auto;
-  min-width: 0; /* 1 */
-  min-height: 0; /* 1 */
+	flex: 1 1 auto;
+	min-width: 0; /* 1 */
+	min-height: 0; /* 1 */
 }
 
 @mixin flex-none {
-  flex: none;
+	flex: none;
 }
 
 @mixin flex-column {
-  flex-direction: column;
+	flex-direction: column;
 }
 @mixin flex-row {
-  flex-direction: row;
+	flex-direction: row;
 }
 @mixin flex-wrap {
-  flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 @mixin flex-nowrap {
-  flex-wrap: nowrap;
+	flex-wrap: nowrap;
 }
 @mixin flex-wrap-reverse {
-  flex-wrap: wrap-reverse;
+	flex-wrap: wrap-reverse;
 }
 @mixin flex-column-reverse {
-  flex-direction: column-reverse;
+	flex-direction: column-reverse;
 }
 @mixin flex-row-reverse {
-  flex-direction: row-reverse;
+	flex-direction: row-reverse;
 }
 
 @mixin items-start {
-  align-items: flex-start;
+	align-items: flex-start;
 }
 @mixin items-end {
-  align-items: flex-end;
+	align-items: flex-end;
 }
 @mixin items-center {
-  align-items: center;
+	align-items: center;
 }
 @mixin items-baseline {
-  align-items: baseline;
+	align-items: baseline;
 }
 @mixin items-stretch {
-  align-items: stretch;
+	align-items: stretch;
 }
 
 @mixin self-start {
-  align-self: flex-start;
+	align-self: flex-start;
 }
 @mixin self-end {
-  align-self: flex-end;
+	align-self: flex-end;
 }
 @mixin self-center {
-  align-self: center;
+	align-self: center;
 }
 @mixin self-baseline {
-  align-self: baseline;
+	align-self: baseline;
 }
 @mixin self-stretch {
-  align-self: stretch;
+	align-self: stretch;
 }
 
 @mixin justify-start {
-  justify-content: flex-start;
+	justify-content: flex-start;
 }
 @mixin justify-end {
-  justify-content: flex-end;
+	justify-content: flex-end;
 }
 @mixin justify-center {
-  justify-content: center;
+	justify-content: center;
 }
 @mixin justify-between {
-  justify-content: space-between;
+	justify-content: space-between;
 }
 @mixin justify-around {
-  justify-content: space-around;
+	justify-content: space-around;
 }
 
 @mixin content-start {
-  align-content: flex-start;
+	align-content: flex-start;
 }
 @mixin content-end {
-  align-content: flex-end;
+	align-content: flex-end;
 }
 @mixin content-center {
-  align-content: center;
+	align-content: center;
 }
 @mixin content-between {
-  align-content: space-between;
+	align-content: space-between;
 }
 @mixin content-around {
-  align-content: space-around;
+	align-content: space-around;
 }
 @mixin content-stretch {
-  align-content: stretch;
+	align-content: stretch;
 }
 
 @mixin order-0 {
-  order: 0;
+	order: 0;
 }
 @mixin order-1 {
-  order: 1;
+	order: 1;
 }
 @mixin order-2 {
-  order: 2;
+	order: 2;
 }
 @mixin order-3 {
-  order: 3;
+	order: 3;
 }
 @mixin order-4 {
-  order: 4;
+	order: 4;
 }
 @mixin order-5 {
-  order: 5;
+	order: 5;
 }
 @mixin order-6 {
-  order: 6;
+	order: 6;
 }
 @mixin order-7 {
-  order: 7;
+	order: 7;
 }
 @mixin order-8 {
-  order: 8;
+	order: 8;
 }
 @mixin order-last {
-  order: 99999;
+	order: 99999;
 }
 
 @mixin flex-grow-0 {
-  flex-grow: 0;
+	flex-grow: 0;
 }
 @mixin flex-grow-1 {
-  flex-grow: 1;
+	flex-grow: 1;
 }
 
 @mixin flex-shrink-0 {
-  flex-shrink: 0;
+	flex-shrink: 0;
 }
 @mixin flex-shrink-1 {
-  flex-shrink: 1;
+	flex-shrink: 1;
 }

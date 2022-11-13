@@ -1,29 +1,22 @@
 /*
    UTILITIES
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
 */
 
-@import "utilities-mixin";
-
-// Equivalent to .overflow-y-scroll
+/* Equivalent to .overflow-y-scroll */
 .overflow-container {
   // from overflow-mixin
   @include overflow-y-scroll;
 }
 
-@include generateBreakpoints() {
-  .center#{$breakpointKey} {
+@include generate-breakpoints {
+  .center#{$bkpt-suffix} {
     @include center;
   }
 
-  .mr-auto#{$breakpointKey} {
+  .mr-auto#{$bkpt-suffix} {
     @include mr-auto;
   }
-  .ml-auto#{$breakpointKey} {
+  .ml-auto#{$bkpt-suffix} {
     @include ml-auto;
   }
 }

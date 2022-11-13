@@ -1,24 +1,15 @@
 /*
    TEXT DECORATION
    Docs: http://tachyons.io/docs/typography/text-decoration/
-
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
 */
-
-@import "text-decoration-mixin";
-
-@include generateBreakpoints() {
-  .strike#{$breakpointKey} {
+@include generate-breakpoints {
+  .strike#{$bkpt-suffix} {
     @include strike;
   }
-  .underline#{$breakpointKey} {
+  .underline#{$bkpt-suffix} {
     @include underline;
   }
-  .no-underline#{$breakpointKey} {
+  .no-underline#{$bkpt-suffix} {
     @include no-underline;
   }
 }

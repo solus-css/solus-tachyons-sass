@@ -1,678 +1,671 @@
-/*
-   SKINS:PSEUDO
-
-   Customize the color of an element when
-   it is focused or hovered over.
- */
-
 @mixin hover-black {
-  &:hover,
-  &:focus {
-    color: $black;
-  }
+	&:hover,
+	&:focus {
+		color: $black;
+	}
 }
 @mixin hover-near-black {
-  &:hover,
-  &:focus {
-    color: $near-black;
-  }
+	&:hover,
+	&:focus {
+		color: $near-black;
+	}
 }
 @mixin hover-dark-gray {
-  &:hover,
-  &:focus {
-    color: $dark-gray;
-  }
+	&:hover,
+	&:focus {
+		color: $dark-gray;
+	}
 }
 @mixin hover-mid-gray {
-  &:hover,
-  &:focus {
-    color: $mid-gray;
-  }
+	&:hover,
+	&:focus {
+		color: $mid-gray;
+	}
 }
 @mixin hover-gray {
-  &:hover,
-  &:focus {
-    color: $gray;
-  }
+	&:hover,
+	&:focus {
+		color: $gray;
+	}
 }
 @mixin hover-silver {
-  &:hover,
-  &:focus {
-    color: $silver;
-  }
+	&:hover,
+	&:focus {
+		color: $silver;
+	}
 }
 @mixin hover-light-silver {
-  &:hover,
-  &:focus {
-    color: $light-silver;
-  }
+	&:hover,
+	&:focus {
+		color: $light-silver;
+	}
 }
 @mixin hover-moon-gray {
-  &:hover,
-  &:focus {
-    color: $moon-gray;
-  }
+	&:hover,
+	&:focus {
+		color: $moon-gray;
+	}
 }
 @mixin hover-light-gray {
-  &:hover,
-  &:focus {
-    color: $light-gray;
-  }
+	&:hover,
+	&:focus {
+		color: $light-gray;
+	}
 }
 @mixin hover-near-white {
-  &:hover,
-  &:focus {
-    color: $near-white;
-  }
+	&:hover,
+	&:focus {
+		color: $near-white;
+	}
 }
 @mixin hover-white {
-  &:hover,
-  &:focus {
-    color: $white;
-  }
+	&:hover,
+	&:focus {
+		color: $white;
+	}
 }
 
 @mixin hover-black-90 {
-  &:hover,
-  &:focus {
-    color: $black-90;
-  }
+	&:hover,
+	&:focus {
+		color: $black-90;
+	}
 }
 @mixin hover-black-80 {
-  &:hover,
-  &:focus {
-    color: $black-80;
-  }
+	&:hover,
+	&:focus {
+		color: $black-80;
+	}
 }
 @mixin hover-black-70 {
-  &:hover,
-  &:focus {
-    color: $black-70;
-  }
+	&:hover,
+	&:focus {
+		color: $black-70;
+	}
 }
 @mixin hover-black-60 {
-  &:hover,
-  &:focus {
-    color: $black-60;
-  }
+	&:hover,
+	&:focus {
+		color: $black-60;
+	}
 }
 @mixin hover-black-50 {
-  &:hover,
-  &:focus {
-    color: $black-50;
-  }
+	&:hover,
+	&:focus {
+		color: $black-50;
+	}
 }
 @mixin hover-black-40 {
-  &:hover,
-  &:focus {
-    color: $black-40;
-  }
+	&:hover,
+	&:focus {
+		color: $black-40;
+	}
 }
 @mixin hover-black-30 {
-  &:hover,
-  &:focus {
-    color: $black-30;
-  }
+	&:hover,
+	&:focus {
+		color: $black-30;
+	}
 }
 @mixin hover-black-20 {
-  &:hover,
-  &:focus {
-    color: $black-20;
-  }
+	&:hover,
+	&:focus {
+		color: $black-20;
+	}
 }
 @mixin hover-black-10 {
-  &:hover,
-  &:focus {
-    color: $black-10;
-  }
+	&:hover,
+	&:focus {
+		color: $black-10;
+	}
 }
 @mixin hover-white-90 {
-  &:hover,
-  &:focus {
-    color: $white-90;
-  }
+	&:hover,
+	&:focus {
+		color: $white-90;
+	}
 }
 @mixin hover-white-80 {
-  &:hover,
-  &:focus {
-    color: $white-80;
-  }
+	&:hover,
+	&:focus {
+		color: $white-80;
+	}
 }
 @mixin hover-white-70 {
-  &:hover,
-  &:focus {
-    color: $white-70;
-  }
+	&:hover,
+	&:focus {
+		color: $white-70;
+	}
 }
 @mixin hover-white-60 {
-  &:hover,
-  &:focus {
-    color: $white-60;
-  }
+	&:hover,
+	&:focus {
+		color: $white-60;
+	}
 }
 @mixin hover-white-50 {
-  &:hover,
-  &:focus {
-    color: $white-50;
-  }
+	&:hover,
+	&:focus {
+		color: $white-50;
+	}
 }
 @mixin hover-white-40 {
-  &:hover,
-  &:focus {
-    color: $white-40;
-  }
+	&:hover,
+	&:focus {
+		color: $white-40;
+	}
 }
 @mixin hover-white-30 {
-  &:hover,
-  &:focus {
-    color: $white-30;
-  }
+	&:hover,
+	&:focus {
+		color: $white-30;
+	}
 }
 @mixin hover-white-20 {
-  &:hover,
-  &:focus {
-    color: $white-20;
-  }
+	&:hover,
+	&:focus {
+		color: $white-20;
+	}
 }
 @mixin hover-white-10 {
-  &:hover,
-  &:focus {
-    color: $white-10;
-  }
+	&:hover,
+	&:focus {
+		color: $white-10;
+	}
 }
 @mixin hover-inherit {
-  &:hover,
-  &:focus {
-    color: inherit;
-  }
+	&:hover,
+	&:focus {
+		color: inherit;
+	}
 }
 
 @mixin hover-bg-black {
-  &:hover,
-  &:focus {
-    background-color: $black;
-  }
+	&:hover,
+	&:focus {
+		background-color: $black;
+	}
 }
 @mixin hover-bg-near-black {
-  &:hover,
-  &:focus {
-    background-color: $near-black;
-  }
+	&:hover,
+	&:focus {
+		background-color: $near-black;
+	}
 }
 @mixin hover-bg-dark-gray {
-  &:hover,
-  &:focus {
-    background-color: $dark-gray;
-  }
+	&:hover,
+	&:focus {
+		background-color: $dark-gray;
+	}
 }
 @mixin hover-bg-mid-gray {
-  &:hover,
-  &:focus {
-    background-color: $mid-gray;
-  }
+	&:hover,
+	&:focus {
+		background-color: $mid-gray;
+	}
 }
 @mixin hover-bg-gray {
-  &:hover,
-  &:focus {
-    background-color: $gray;
-  }
+	&:hover,
+	&:focus {
+		background-color: $gray;
+	}
 }
 @mixin hover-bg-silver {
-  &:hover,
-  &:focus {
-    background-color: $silver;
-  }
+	&:hover,
+	&:focus {
+		background-color: $silver;
+	}
 }
 @mixin hover-bg-light-silver {
-  &:hover,
-  &:focus {
-    background-color: $light-silver;
-  }
+	&:hover,
+	&:focus {
+		background-color: $light-silver;
+	}
 }
 @mixin hover-bg-moon-gray {
-  &:hover,
-  &:focus {
-    background-color: $moon-gray;
-  }
+	&:hover,
+	&:focus {
+		background-color: $moon-gray;
+	}
 }
 @mixin hover-bg-light-gray {
-  &:hover,
-  &:focus {
-    background-color: $light-gray;
-  }
+	&:hover,
+	&:focus {
+		background-color: $light-gray;
+	}
 }
 @mixin hover-bg-near-white {
-  &:hover,
-  &:focus {
-    background-color: $near-white;
-  }
+	&:hover,
+	&:focus {
+		background-color: $near-white;
+	}
 }
 @mixin hover-bg-white {
-  &:hover,
-  &:focus {
-    background-color: $white;
-  }
+	&:hover,
+	&:focus {
+		background-color: $white;
+	}
 }
 @mixin hover-bg-transparent {
-  &:hover,
-  &:focus {
-    background-color: $transparent;
-  }
+	&:hover,
+	&:focus {
+		background-color: $transparent;
+	}
 }
 
 @mixin hover-bg-black-90 {
-  &:hover,
-  &:focus {
-    background-color: $black-90;
-  }
+	&:hover,
+	&:focus {
+		background-color: $black-90;
+	}
 }
 @mixin hover-bg-black-80 {
-  &:hover,
-  &:focus {
-    background-color: $black-80;
-  }
+	&:hover,
+	&:focus {
+		background-color: $black-80;
+	}
 }
 @mixin hover-bg-black-70 {
-  &:hover,
-  &:focus {
-    background-color: $black-70;
-  }
+	&:hover,
+	&:focus {
+		background-color: $black-70;
+	}
 }
 @mixin hover-bg-black-60 {
-  &:hover,
-  &:focus {
-    background-color: $black-60;
-  }
+	&:hover,
+	&:focus {
+		background-color: $black-60;
+	}
 }
 @mixin hover-bg-black-50 {
-  &:hover,
-  &:focus {
-    background-color: $black-50;
-  }
+	&:hover,
+	&:focus {
+		background-color: $black-50;
+	}
 }
 @mixin hover-bg-black-40 {
-  &:hover,
-  &:focus {
-    background-color: $black-40;
-  }
+	&:hover,
+	&:focus {
+		background-color: $black-40;
+	}
 }
 @mixin hover-bg-black-30 {
-  &:hover,
-  &:focus {
-    background-color: $black-30;
-  }
+	&:hover,
+	&:focus {
+		background-color: $black-30;
+	}
 }
 @mixin hover-bg-black-20 {
-  &:hover,
-  &:focus {
-    background-color: $black-20;
-  }
+	&:hover,
+	&:focus {
+		background-color: $black-20;
+	}
 }
 @mixin hover-bg-black-10 {
-  &:hover,
-  &:focus {
-    background-color: $black-10;
-  }
+	&:hover,
+	&:focus {
+		background-color: $black-10;
+	}
 }
 @mixin hover-bg-white-90 {
-  &:hover,
-  &:focus {
-    background-color: $white-90;
-  }
+	&:hover,
+	&:focus {
+		background-color: $white-90;
+	}
 }
 @mixin hover-bg-white-80 {
-  &:hover,
-  &:focus {
-    background-color: $white-80;
-  }
+	&:hover,
+	&:focus {
+		background-color: $white-80;
+	}
 }
 @mixin hover-bg-white-70 {
-  &:hover,
-  &:focus {
-    background-color: $white-70;
-  }
+	&:hover,
+	&:focus {
+		background-color: $white-70;
+	}
 }
 @mixin hover-bg-white-60 {
-  &:hover,
-  &:focus {
-    background-color: $white-60;
-  }
+	&:hover,
+	&:focus {
+		background-color: $white-60;
+	}
 }
 @mixin hover-bg-white-50 {
-  &:hover,
-  &:focus {
-    background-color: $white-50;
-  }
+	&:hover,
+	&:focus {
+		background-color: $white-50;
+	}
 }
 @mixin hover-bg-white-40 {
-  &:hover,
-  &:focus {
-    background-color: $white-40;
-  }
+	&:hover,
+	&:focus {
+		background-color: $white-40;
+	}
 }
 @mixin hover-bg-white-30 {
-  &:hover,
-  &:focus {
-    background-color: $white-30;
-  }
+	&:hover,
+	&:focus {
+		background-color: $white-30;
+	}
 }
 @mixin hover-bg-white-20 {
-  &:hover,
-  &:focus {
-    background-color: $white-20;
-  }
+	&:hover,
+	&:focus {
+		background-color: $white-20;
+	}
 }
 @mixin hover-bg-white-10 {
-  &:hover,
-  &:focus {
-    background-color: $white-10;
-  }
+	&:hover,
+	&:focus {
+		background-color: $white-10;
+	}
 }
 
 @mixin hover-dark-red {
-  &:hover,
-  &:focus {
-    color: $dark-red;
-  }
+	&:hover,
+	&:focus {
+		color: $dark-red;
+	}
 }
 @mixin hover-red {
-  &:hover,
-  &:focus {
-    color: $red;
-  }
+	&:hover,
+	&:focus {
+		color: $red;
+	}
 }
 @mixin hover-light-red {
-  &:hover,
-  &:focus {
-    color: $light-red;
-  }
+	&:hover,
+	&:focus {
+		color: $light-red;
+	}
 }
 @mixin hover-orange {
-  &:hover,
-  &:focus {
-    color: $orange;
-  }
+	&:hover,
+	&:focus {
+		color: $orange;
+	}
 }
 @mixin hover-gold {
-  &:hover,
-  &:focus {
-    color: $gold;
-  }
+	&:hover,
+	&:focus {
+		color: $gold;
+	}
 }
 @mixin hover-yellow {
-  &:hover,
-  &:focus {
-    color: $yellow;
-  }
+	&:hover,
+	&:focus {
+		color: $yellow;
+	}
 }
 @mixin hover-light-yellow {
-  &:hover,
-  &:focus {
-    color: $light-yellow;
-  }
+	&:hover,
+	&:focus {
+		color: $light-yellow;
+	}
 }
 @mixin hover-purple {
-  &:hover,
-  &:focus {
-    color: $purple;
-  }
+	&:hover,
+	&:focus {
+		color: $purple;
+	}
 }
 @mixin hover-light-purple {
-  &:hover,
-  &:focus {
-    color: $light-purple;
-  }
+	&:hover,
+	&:focus {
+		color: $light-purple;
+	}
 }
 @mixin hover-dark-pink {
-  &:hover,
-  &:focus {
-    color: $dark-pink;
-  }
+	&:hover,
+	&:focus {
+		color: $dark-pink;
+	}
 }
 @mixin hover-hot-pink {
-  &:hover,
-  &:focus {
-    color: $hot-pink;
-  }
+	&:hover,
+	&:focus {
+		color: $hot-pink;
+	}
 }
 @mixin hover-pink {
-  &:hover,
-  &:focus {
-    color: $pink;
-  }
+	&:hover,
+	&:focus {
+		color: $pink;
+	}
 }
 @mixin hover-light-pink {
-  &:hover,
-  &:focus {
-    color: $light-pink;
-  }
+	&:hover,
+	&:focus {
+		color: $light-pink;
+	}
 }
 @mixin hover-dark-green {
-  &:hover,
-  &:focus {
-    color: $dark-green;
-  }
+	&:hover,
+	&:focus {
+		color: $dark-green;
+	}
 }
 @mixin hover-green {
-  &:hover,
-  &:focus {
-    color: $green;
-  }
+	&:hover,
+	&:focus {
+		color: $green;
+	}
 }
 @mixin hover-light-green {
-  &:hover,
-  &:focus {
-    color: $light-green;
-  }
+	&:hover,
+	&:focus {
+		color: $light-green;
+	}
 }
 @mixin hover-navy {
-  &:hover,
-  &:focus {
-    color: $navy;
-  }
+	&:hover,
+	&:focus {
+		color: $navy;
+	}
 }
 @mixin hover-dark-blue {
-  &:hover,
-  &:focus {
-    color: $dark-blue;
-  }
+	&:hover,
+	&:focus {
+		color: $dark-blue;
+	}
 }
 @mixin hover-blue {
-  &:hover,
-  &:focus {
-    color: $blue;
-  }
+	&:hover,
+	&:focus {
+		color: $blue;
+	}
 }
 @mixin hover-light-blue {
-  &:hover,
-  &:focus {
-    color: $light-blue;
-  }
+	&:hover,
+	&:focus {
+		color: $light-blue;
+	}
 }
 @mixin hover-lightest-blue {
-  &:hover,
-  &:focus {
-    color: $lightest-blue;
-  }
+	&:hover,
+	&:focus {
+		color: $lightest-blue;
+	}
 }
 @mixin hover-washed-blue {
-  &:hover,
-  &:focus {
-    color: $washed-blue;
-  }
+	&:hover,
+	&:focus {
+		color: $washed-blue;
+	}
 }
 @mixin hover-washed-green {
-  &:hover,
-  &:focus {
-    color: $washed-green;
-  }
+	&:hover,
+	&:focus {
+		color: $washed-green;
+	}
 }
 @mixin hover-washed-yellow {
-  &:hover,
-  &:focus {
-    color: $washed-yellow;
-  }
+	&:hover,
+	&:focus {
+		color: $washed-yellow;
+	}
 }
 @mixin hover-washed-red {
-  &:hover,
-  &:focus {
-    color: $washed-red;
-  }
+	&:hover,
+	&:focus {
+		color: $washed-red;
+	}
 }
 
 @mixin hover-bg-dark-red {
-  &:hover,
-  &:focus {
-    background-color: $dark-red;
-  }
+	&:hover,
+	&:focus {
+		background-color: $dark-red;
+	}
 }
 @mixin hover-bg-red {
-  &:hover,
-  &:focus {
-    background-color: $red;
-  }
+	&:hover,
+	&:focus {
+		background-color: $red;
+	}
 }
 @mixin hover-bg-light-red {
-  &:hover,
-  &:focus {
-    background-color: $light-red;
-  }
+	&:hover,
+	&:focus {
+		background-color: $light-red;
+	}
 }
 @mixin hover-bg-orange {
-  &:hover,
-  &:focus {
-    background-color: $orange;
-  }
+	&:hover,
+	&:focus {
+		background-color: $orange;
+	}
 }
 @mixin hover-bg-gold {
-  &:hover,
-  &:focus {
-    background-color: $gold;
-  }
+	&:hover,
+	&:focus {
+		background-color: $gold;
+	}
 }
 @mixin hover-bg-yellow {
-  &:hover,
-  &:focus {
-    background-color: $yellow;
-  }
+	&:hover,
+	&:focus {
+		background-color: $yellow;
+	}
 }
 @mixin hover-bg-light-yellow {
-  &:hover,
-  &:focus {
-    background-color: $light-yellow;
-  }
+	&:hover,
+	&:focus {
+		background-color: $light-yellow;
+	}
 }
 @mixin hover-bg-purple {
-  &:hover,
-  &:focus {
-    background-color: $purple;
-  }
+	&:hover,
+	&:focus {
+		background-color: $purple;
+	}
 }
 @mixin hover-bg-light-purple {
-  &:hover,
-  &:focus {
-    background-color: $light-purple;
-  }
+	&:hover,
+	&:focus {
+		background-color: $light-purple;
+	}
 }
 @mixin hover-bg-dark-pink {
-  &:hover,
-  &:focus {
-    background-color: $dark-pink;
-  }
+	&:hover,
+	&:focus {
+		background-color: $dark-pink;
+	}
 }
 @mixin hover-bg-hot-pink {
-  &:hover,
-  &:focus {
-    background-color: $hot-pink;
-  }
+	&:hover,
+	&:focus {
+		background-color: $hot-pink;
+	}
 }
 @mixin hover-bg-pink {
-  &:hover,
-  &:focus {
-    background-color: $pink;
-  }
+	&:hover,
+	&:focus {
+		background-color: $pink;
+	}
 }
 @mixin hover-bg-light-pink {
-  &:hover,
-  &:focus {
-    background-color: $light-pink;
-  }
+	&:hover,
+	&:focus {
+		background-color: $light-pink;
+	}
 }
 @mixin hover-bg-dark-green {
-  &:hover,
-  &:focus {
-    background-color: $dark-green;
-  }
+	&:hover,
+	&:focus {
+		background-color: $dark-green;
+	}
 }
 @mixin hover-bg-green {
-  &:hover,
-  &:focus {
-    background-color: $green;
-  }
+	&:hover,
+	&:focus {
+		background-color: $green;
+	}
 }
 @mixin hover-bg-light-green {
-  &:hover,
-  &:focus {
-    background-color: $light-green;
-  }
+	&:hover,
+	&:focus {
+		background-color: $light-green;
+	}
 }
 @mixin hover-bg-navy {
-  &:hover,
-  &:focus {
-    background-color: $navy;
-  }
+	&:hover,
+	&:focus {
+		background-color: $navy;
+	}
 }
 @mixin hover-bg-dark-blue {
-  &:hover,
-  &:focus {
-    background-color: $dark-blue;
-  }
+	&:hover,
+	&:focus {
+		background-color: $dark-blue;
+	}
 }
 @mixin hover-bg-blue {
-  &:hover,
-  &:focus {
-    background-color: $blue;
-  }
+	&:hover,
+	&:focus {
+		background-color: $blue;
+	}
 }
 @mixin hover-bg-light-blue {
-  &:hover,
-  &:focus {
-    background-color: $light-blue;
-  }
+	&:hover,
+	&:focus {
+		background-color: $light-blue;
+	}
 }
 @mixin hover-bg-lightest-blue {
-  &:hover,
-  &:focus {
-    background-color: $lightest-blue;
-  }
+	&:hover,
+	&:focus {
+		background-color: $lightest-blue;
+	}
 }
 @mixin hover-bg-washed-blue {
-  &:hover,
-  &:focus {
-    background-color: $washed-blue;
-  }
+	&:hover,
+	&:focus {
+		background-color: $washed-blue;
+	}
 }
 @mixin hover-bg-washed-green {
-  &:hover,
-  &:focus {
-    background-color: $washed-green;
-  }
+	&:hover,
+	&:focus {
+		background-color: $washed-green;
+	}
 }
 @mixin hover-bg-washed-yellow {
-  &:hover,
-  &:focus {
-    background-color: $washed-yellow;
-  }
+	&:hover,
+	&:focus {
+		background-color: $washed-yellow;
+	}
 }
 @mixin hover-bg-washed-red {
-  &:hover,
-  &:focus {
-    background-color: $washed-red;
-  }
+	&:hover,
+	&:focus {
+		background-color: $washed-red;
+	}
 }
 @mixin hover-bg-inherit {
-  &:hover,
-  &:focus {
-    background-color: inherit;
-  }
+	&:hover,
+	&:focus {
+		background-color: inherit;
+	}
 }
