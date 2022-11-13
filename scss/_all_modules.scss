@@ -1,7 +1,12 @@
 /*
-  Tachyons optional CSS Custom Properties (variables) for using Tachyons scales in custom your CSS
+  Tachyons Modules
 */
 
+// Required Helpers & Mixins
+@import "brkpnt_helper";
+@import "all_module_mixins";
+
+// modules
 @import "box-sizing";
 @import "aspect-ratios";
 @import "images";
@@ -52,5 +57,4 @@
 @import "vertical-align";
 @import "hovers";
 @import "z-index";
-@import "nested";
 @import "styles";
