@@ -2,9 +2,9 @@
 
 Tachyons Sass partials.
 
-The aims of Tachyons-Haru are to leverage the tooling of Sass in much the same way [tachyons-css](http://tachyons.io/) utilises PostCSS, thus enabling with Sass the creation of custom breakpoints and variable definitions when generating Tachyons partials. While there is a [tachyons-sass](https://github.com/tachyons-css/tachyons-sass) variant from which this project is forked, it does not fully leverage the potential of Sass.
+Tachyons-Haru aims to leverage the tooling of Sass in the same way [tachyons-css](http://tachyons.io/) utilises PostCSS, thus enabling Sass the creation of custom breakpoints and variable definitions when generating Tachyons partials. While there is a [tachyons-sass](https://github.com/tachyons-css/tachyons-sass) variant from which this project is forked, it does not fully leverage the potential of Sass.
 
-Tachyons-Haru breaks from the Tachyons parent project by integrating [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*), along side Sass variables definitions, so they can be used interchangeably within your projects. These features allow Tachyons scales and structure to be selectively used to provide uniformity in a project (for example when using BEM methodology) while also allowing the option of generating selected Tachyons partials when you just want just a sprinkle of Tachyons. These features are beneficial when using hybrid authoring approaches, and when migrating to or away from Tachyons.
+Tachyons-Haru breaks from the Tachyons parent project by integrating [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) alongside Sass variables definitions so that they can be used interchangeably within your projects. These features allow Tachyons scales and structure to be selectively used to provide uniformity in a project (for example, when using BEM methodology) while also allowing the option of generating selected Tachyons partials when you want to add "just a sprinkle" of Tachyons. These features are beneficial when using hybrid authoring approaches and migrating to or away from Tachyons.
 
 ## Local Setup
 
@@ -110,8 +110,8 @@ Due to their flexibility, especially with animations, this project has chosen to
 ## IE6-7-8
 Where backwards compatibility is no longer a concern, we have begun removing the styles that target older versions  of IE. Fortunately, these are few and far between:
 
-– Reference to `<command>` element removed from `_debug.sass`.
-– `_clears.sass` currently uses [Nicolas Gallagher's](http://nicolasgallagher.com/micro-clearfix-hack/) clearfix hack. As most layouts no longer use floats, this module be removed from many projects.
+- Reference to `<command>` element removed from `_debug.sass`.
+- `_clears.sass` currently uses [Nicolas Gallagher's](http://nicolasgallagher.com/micro-clearfix-hack/) clearfix hack. As most layouts no longer use floats, this module be removed from many projects.
 - `_visibility.scss` provides an accessable way to hide content using `.clip`, which in turn uses an underscore hack that targets IE6 and below.
 
 ## License
