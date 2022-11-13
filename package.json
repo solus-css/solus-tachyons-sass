@@ -1,16 +1,19 @@
 {
-  "name": "tachyons-sass-haru",
+  "name": "tachyons-sass",
   "description": "Transpiled Sass partials for Tachyons",
-  "author": "Benjamin Rush",
-  "contributor": "John Otander",
-  "version": "4.9.5",
+  "author": "Benjamin Rush (bnjmnrsh)",
+  "version": "0.1.0",
   "style": "tachyons.scss",
   "scripts": {
-    "start": "node build.js",
+    "build": "run-p css min.css",
+    "css": "sass  ./tachyons.scss dist/css/tachyons.css",
+    "min.css": "sass --style=compressed ./tachyons.scss dist/css/tachyons.min.css --style=compressed",
     "test": "ava",
-    "lint": "standard --fix"
+    "lint-js": "standard --fix",
+    "lint-css": "stylelint \"**/*.scss\"",
+    "wallace": "cat ./dist/css/./tachyons.css | wallace --verbose"
   },
-  "repository": "bnjmnrsh/tachyons-sass-haru",
+  "repository": "https://github.com/tachyons-haru/tachyons-sass-haru",
   "keywords": [
     "tachyons",
     "tachyons-css",
@@ -20,12 +23,20 @@
     "scss"
   ],
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "ava": "^0.25.0",
-    "css-scss": "^0.1.1",
-    "glob": "^7.1.3",
-    "node-sass": "^4.14.1",
-    "standard": "^12.0.1"
+    "cat": "^0.2.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.7.1",
+    "sass": "^1.56.1",
+    "sass-migrator": "^1.5.2",
+    "standard": "^12.0.1",
+    "stylelint": "^14.14.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-recommended-scss": "^5.0.2",
+    "stylelint-config-standard-scss": "^6.1.0",
+    "stylelint-scss": "^4.0.0",
+    "wallace-cli": "^2.5.0"
   }
 }
