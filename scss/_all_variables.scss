@@ -71,11 +71,11 @@ $border-width-4: 1rem !default;
 $border-width-5: 2rem !default;
 
 // Shadows
-$box-shadow-1: 0 0 4px 2px rgb(0 0 0 / 20%) !default;
-$box-shadow-2: 0 0 8px 2px rgb(0 0 0 / 20%) !default;
-$box-shadow-3: 2px 2px 4px 2px rgb(0 0 0 / 20%) !default;
-$box-shadow-4: 2px 2px 8px 0 rgb(0 0 0 / 20%) !default;
-$box-shadow-5: 4px 4px 8px 0 rgb(0 0 0 / 20%) !default;
+$box-shadow-1: 0 0 4px 2px hsl(0deg 0% 0% / 20%) !default;
+$box-shadow-2: 0 0 8px 2px hsl(0deg 0% 0% / 20%) !default;
+$box-shadow-3: 2px 2px 4px 2px hsl(0deg 0% 0% / 20%) !default;
+$box-shadow-4: 2px 2px 8px 0 hsl(0deg 0% 0% / 20%) !default;
+$box-shadow-5: 4px 4px 8px 0 hsl(0deg 0% 0% / 20%) !default;
 
 // Color Scales
 $black: hsl(0deg 0% 0%) !default; // #000
@@ -128,7 +128,7 @@ $hot-pink: hsl(324deg 100% 63%) !default; // #ff41b4
 $pink: hsl(324deg 100% 75%) !default; // #ff80cc
 $light-pink: hsl(326deg 100% 82%) !default; // #ffa3d7
 $dark-green: hsl(158deg 72% 27%) !default; // #137752
-$green: #19a974 !default; // #19a974
+$green: hsl(158deg 74% 38%) !default; // #19a974
 $light-green: hsl(158deg 66% 77%) !default; // #9eebcf
 $navy: hsl(216deg 100% 13%) !default; // #001b44
 $dark-blue: hsl(214deg 100% 31%) !default; // #00449e
