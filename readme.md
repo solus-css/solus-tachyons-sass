@@ -14,9 +14,9 @@ npm install https://github.com/tachyons-haru/tachyons-haru
 @import "path/to/tachyons.scss";
 ```
 ## Tachyons-Haru
-The aims of Tachyons-Haru are to leverage the tooling of Sass in much the way that [Tachyons](http://tachyons.io/) utilises PostCSS, thus enabling the generation of custom breakpoints and variable definitions with Sass generated Tachyons partials. While there is a [tachyons-sass](https://github.com/tachyons-css/tachyons-sass) variant of the project from which this project is forked, it does not fully leverage the potential of Sass, and has lagged behind in features.
+The aims of Tachyons-Haru are to leverage the tooling of Sass in much the same way [tachyons-css](http://tachyons.io/) utilises PostCSS, thus enabling with Sass the generation of custom breakpoints and variable definitions when generating Tachyons partials. While there is a [tachyons-sass](https://github.com/tachyons-css/tachyons-sass) variant from which this project is forked, it does not fully leverage the potential of Sass, and has lagged behind in features.
 
-Tachyons-Haru breaks from the Tachyons parent project by providing [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) allong with Sass varriables, so they can be used interoperably within your styles. These features allow Tachyons measurement scales and structure to be incorperated to provide uniformity (for example when also using BEM) while leaving the option to generate only the Tachyons partials required. This benificicial when migrating to or away from Tachyons in your project or when you just want just a sprinkle of Tachyons.
+Tachyons-Haru breaks from the Tachyons parent project by combining [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) with Sass varriables, so they can be used interoperably within your projects. These features allow Tachyons measurement scales and structure to be used to provide uniformity (for example when also using BEM) while leaving the option to generate only the Tachyons partials required. This is benificicial when migrating to or away from Tachyons in your project or when you just want just a sprinkle of Tachyons.
 
 ## Custom CSS Properties
 
@@ -28,7 +28,7 @@ Custom CSS properties are defined in `*-vars.scss` files that appear allong side
 
 ## Sass variables
 
-Tachyons-Haru has Sass variables and mixins to genteate each of Tachyons' utility classes. Sass variable names are identical to their custom property counterpart, a pattern established by [tachons-sass](https://github.com/tachyons-css/tachyons-sass) from which this project is a fork. See also [tachyons-custom](https://github.com/tachyons-haru/tachyons-custom) which offeres a near identical suite of custom variables, with the noteable exception of properties related to colors [ie skins](https://github.com/tachyons-haru/tachyons-custom/blob/master/src/_variables.css), where [tachyons-custom](https://github.com/tachyons-haru/tachyons-custom) has a greatly expanded color property set, diverging from the parent project.
+Tachyons-Haru has Sass variables and mixins to genteate each of Tachyons' utility classes. Sass variable names are identical to their custom property counterpart, a pattern established by [tachons-sass](https://github.com/tachyons-css/tachyons-sass) from which this project is forked. See also [tachyons-custom](https://github.com/tachyons-haru/tachyons-custom) which offeres a near identical suite of custom variables, with the noteable exception of properties related to colors [ie skins](https://github.com/tachyons-haru/tachyons-custom/blob/master/src/_variables.css), where [tachyons-custom](https://github.com/tachyons-haru/tachyons-custom) has a greatly expanded color property set, diverging from the parent project.
 
 Sass global variables are defined in the file `_all_variables.scss`.
 
@@ -37,7 +37,7 @@ Sass global variables are defined in the file `_all_variables.scss`.
 Each Tachyons partial group utilises a matched collection of mixins. Mixins are defined in `*-mixins.scss` files where the mixin name is the same to the Tachyons class name:
 
 ```scss
-@include ma3
+@include ma3;  // .ma3
 ```
 
 ## Custom Breakpoints
