@@ -102,7 +102,7 @@ Where backwards compatibility is no longer a concern, we have begun removing or 
 
 ### Tooling
 
-This project has adopted a few tools to speed build times, and reduce cognitave overhead. These include [dart-sass](https://www.npmjs.com/package/sass), for new Sass features, and [stylelint](https://www.npmjs.com/package/stylelint), and [prettier](https://www.npmjs.com/package/prettier) for code formatting. Because there doesn't appear to be a perfect configureation for Stylelint+Pritter which will follow Tachyons formatting conventions  –– we gave up, and decided not to bikeshed about it.
+This project has adopted a few tools to speed build times, and reduce cognitave overhead. These include [dart-sass](https://www.npmjs.com/package/sass), for new Sass features, as well as and [stylelint](https://www.npmjs.com/package/stylelint), and [prettier](https://www.npmjs.com/package/prettier) for code formatting. Because there doesn't appear to be a perfect configureation which will follow Tachyons formatting conventions  –– we decided not to bikeshed about it and just let Stylelint+Prettier do that work.
 
 ### Color
 Due to their flexibility, especially with animations, this project has chosen to use `hsl` and `hsla` color values instead of `hex`.
