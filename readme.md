@@ -105,9 +105,11 @@ Where backwards compatibility is no longer a concern, we have begun removing or 
 This project has adopted a few tools to speed build times, and reduce cognitave overhead. These include [dart-sass](https://www.npmjs.com/package/sass), for new Sass features, as well as and [stylelint](https://www.npmjs.com/package/stylelint), and [prettier](https://www.npmjs.com/package/prettier) for code formatting. Because there doesn't appear to be a perfect configureation which will follow Tachyons formatting conventions  –– we decided not to bikeshed about it and just let Stylelint+Prettier do that work.
 
 ### Color
+
 Due to their flexibility, especially with animations, this project has chosen to use `hsl` and `hsla` color values instead of `hex`.
 
-## IE6-7-8
+### IE6-7-8
+
 Where backwards compatibility is no longer a concern, we have begun removing the styles that target older versions  of IE. Fortunately, these are few and far between:
 
 - Reference to `<command>` element removed from `_debug.sass`.
