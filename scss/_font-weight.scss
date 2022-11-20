@@ -1,3 +1,6 @@
+@use "breakpoint-gen-mixin";
+@use "font-weight-mixin";
+
 /*
 
    FONT WEIGHT
@@ -19,38 +22,38 @@
 
 */
 
-@include generate-breakpoints {
-  .normal#{$bkpt-suffix} {
-    @include normal;
+@include breakpoint-gen-mixin.generate-breakpoints {
+  .normal#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include font-weight-mixin.normal;
   }
-  .b#{$bkpt-suffix} {
-    @include b;
+  .b#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include font-weight-mixin.b;
   }
-  .fw1#{$bkpt-suffix} {
-    @include fw1;
+  .fw1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include font-weight-mixin.fw1;
   }
-  .fw2#{$bkpt-suffix} {
-    @include fw2;
+  .fw2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include font-weight-mixin.fw2;
   }
-  .fw3#{$bkpt-suffix} {
-    @include fw3;
+  .fw3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include font-weight-mixin.fw3;
   }
-  .fw4#{$bkpt-suffix} {
-    @include fw4;
+  .fw4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include font-weight-mixin.fw4;
   }
-  .fw5#{$bkpt-suffix} {
-    @include fw5;
+  .fw5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include font-weight-mixin.fw5;
   }
-  .fw6#{$bkpt-suffix} {
-    @include fw6;
+  .fw6#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include font-weight-mixin.fw6;
   }
-  .fw7#{$bkpt-suffix} {
-    @include fw7;
+  .fw7#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include font-weight-mixin.fw7;
   }
-  .fw8#{$bkpt-suffix} {
-    @include fw8;
+  .fw8#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include font-weight-mixin.fw8;
   }
-  .fw9#{$bkpt-suffix} {
-    @include fw9;
+  .fw9#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include font-weight-mixin.fw9;
   }
 }

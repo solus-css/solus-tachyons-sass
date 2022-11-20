@@ -1,4 +1,8 @@
+@use "breakpoint-gen-mixin";
+@use "widths-mixin";
+
 /*
+
    WIDTHS
    Docs: http://tachyons.io/docs/layout/widths/
 
@@ -30,94 +34,95 @@
        -third      = 100% / 3 (Not supported in opera mini or IE8)
        -two-thirds = 100% / 1.5 (Not supported in opera mini or IE8)
        -auto       = string value auto
+
  */
-@include generate-breakpoints {
+@include breakpoint-gen-mixin.generate-breakpoints {
   /* Width Scale */
-  .w1#{$bkpt-suffix} {
-    @include w1;
+  .w1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include widths-mixin.w1;
   }
 
-  .w2#{$bkpt-suffix} {
-    @include w2;
+  .w2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include widths-mixin.w2;
   }
 
-  .w3#{$bkpt-suffix} {
-    @include w3;
+  .w3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include widths-mixin.w3;
   }
 
-  .w4#{$bkpt-suffix} {
-    @include w4;
+  .w4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include widths-mixin.w4;
   }
 
-  .w5#{$bkpt-suffix} {
-    @include w5;
+  .w5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include widths-mixin.w5;
   }
 
-  .w-10#{$bkpt-suffix} {
-    @include w-10;
+  .w-10#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include widths-mixin.w-10;
   }
 
-  .w-20#{$bkpt-suffix} {
-    @include w-20;
+  .w-20#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include widths-mixin.w-20;
   }
 
-  .w-25#{$bkpt-suffix} {
-    @include w-25;
+  .w-25#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include widths-mixin.w-25;
   }
 
-  .w-30#{$bkpt-suffix} {
-    @include w-30;
+  .w-30#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include widths-mixin.w-30;
   }
 
-  .w-33#{$bkpt-suffix} {
-    @include w-33;
+  .w-33#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include widths-mixin.w-33;
   }
 
-  .w-34#{$bkpt-suffix} {
-    @include w-34;
+  .w-34#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include widths-mixin.w-34;
   }
 
-  .w-40#{$bkpt-suffix} {
-    @include w-40;
+  .w-40#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include widths-mixin.w-40;
   }
 
-  .w-50#{$bkpt-suffix} {
-    @include w-50;
+  .w-50#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include widths-mixin.w-50;
   }
 
-  .w-60#{$bkpt-suffix} {
-    @include w-60;
+  .w-60#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include widths-mixin.w-60;
   }
 
-  .w-70#{$bkpt-suffix} {
-    @include w-70;
+  .w-70#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include widths-mixin.w-70;
   }
 
-  .w-75#{$bkpt-suffix} {
-    @include w-75;
+  .w-75#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include widths-mixin.w-75;
   }
 
-  .w-80#{$bkpt-suffix} {
-    @include w-80;
+  .w-80#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include widths-mixin.w-80;
   }
 
-  .w-90#{$bkpt-suffix} {
-    @include w-90;
+  .w-90#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include widths-mixin.w-90;
   }
 
-  .w-100#{$bkpt-suffix} {
-    @include w-100;
+  .w-100#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include widths-mixin.w-100;
   }
 
-  .w-third#{$bkpt-suffix} {
-    @include w-third;
+  .w-third#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include widths-mixin.w-third;
   }
 
-  .w-two-thirds#{$bkpt-suffix} {
-    @include w-two-thirds;
+  .w-two-thirds#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include widths-mixin.w-two-thirds;
   }
 
-  .w-auto#{$bkpt-suffix} {
-    @include w-auto;
+  .w-auto#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include widths-mixin.w-auto;
   }
 }

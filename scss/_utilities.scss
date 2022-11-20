@@ -1,22 +1,28 @@
+@use "breakpoint-gen-mixin";
+@use "overflow-mixin";
+@use "utilities-mixin";
+
 /*
+
    UTILITIES
+
 */
 
 /* Equivalent to .overflow-y-scroll */
 .overflow-container {
-  @include overflow-y-scroll;
+  @include overflow-mixin.overflow-y-scroll;
 }
 
-@include generate-breakpoints {
-  .center#{$bkpt-suffix} {
-    @include center;
+@include breakpoint-gen-mixin.generate-breakpoints {
+  .center#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include utilities-mixin.center;
   }
 
-  .mr-auto#{$bkpt-suffix} {
-    @include mr-auto;
+  .mr-auto#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include utilities-mixin.mr-auto;
   }
 
-  .ml-auto#{$bkpt-suffix} {
-    @include ml-auto;
+  .ml-auto#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include utilities-mixin.ml-auto;
   }
 }

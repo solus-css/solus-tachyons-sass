@@ -1,8 +1,10 @@
+@use "white-space-mixin";
+
 /*
 
    CODE
 
 */
 .pre {
-	@include pre;
+	@include white-space-mixin.pre;
 }

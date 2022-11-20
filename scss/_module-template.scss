@@ -1,25 +1,30 @@
+@use "breakpoint-gen-mixin";
+@use "variables";
+
 /*
+
   MODULE NAME
 
   Use this scaffolding to create or extend your own modules with tachyons
   style architecture.
+
 */
 
-@media #{$breakpoint-not-small} {
+@media #{variables.$breakpoint-not-small} {
   // some rule
 }
 
-@media #{$breakpoint-medium} {
+@media #{variables.$breakpoint-medium} {
   // some rule
 }
 
-@media #{$breakpoint-large} {
+@media #{variables.$breakpoint-large} {
   // some rule
 }
 
 // Auto generate breakpoints for your custom class
-@include generate-breakpoints {
-  .class#{$bkpt-suffix} {
+@include breakpoint-gen-mixin.generate-breakpoints {
+  .class#{breakpoint-gen-mixin.$bkpt-suffix} {
     // ... some styles
   }
 }

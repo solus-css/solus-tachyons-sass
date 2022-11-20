@@ -1,3 +1,5 @@
+@use "font-family-mixin";
+
 /*
 
    FONT FAMILY GROUPS
@@ -6,65 +8,65 @@
 */
 
 .sans-serif {
-  @include sans-serif;
+  @include font-family-mixin.sans-serif;
 }
 
 .serif {
-  @include serif;
+  @include font-family-mixin.serif;
 }
 
 .system-sans-serif {
-  @include system-sans-serif;
+  @include font-family-mixin.system-sans-serif;
 }
 
 .system-serif {
-  @include system-serif;
+  @include font-family-mixin.system-serif;
 }
 
 /* Monospaced Typefaces (for code) http://cssfontstack.com */
 code,
 .code {
-  @include code;
+  @include font-family-mixin.code;
 }
 
 .courier {
-  @include courier;
+  @include font-family-mixin.courier;
 }
 
 /* Sans-Serif Typefaces */
 .helvetica {
-  @include helvetica;
+  @include font-family-mixin.helvetica;
 }
 
 .avenir {
-  @include avenir;
+  @include font-family-mixin.avenir;
 }
 
 /* Serif Typefaces */
 .athelas {
-  @include athelas;
+  @include font-family-mixin.athelas;
 }
 
 .georgia {
-  @include georgia;
+  @include font-family-mixin.georgia;
 }
 
 .times {
-  @include times;
+  @include font-family-mixin.times;
 }
 
 .bodoni {
-  @include bodoni;
+  @include font-family-mixin.bodoni;
 }
 
 .calisto {
-  @include calisto;
+  @include font-family-mixin.calisto;
 }
 
 .garamond {
-  @include garamond;
+  @include font-family-mixin.garamond;
 }
 
 .baskerville {
-  @include baskerville;
+  @include font-family-mixin.baskerville;
 }

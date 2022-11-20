@@ -1,8 +1,12 @@
+@use "links-mixin";
+
 /*
+
    LINKS
    Docs: http://tachyons.io/docs/elements/links/
+
 */
 
 .link {
-	@include link;
+  @include links-mixin.link;
 }

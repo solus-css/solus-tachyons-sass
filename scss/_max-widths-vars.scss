@@ -1,11 +1,13 @@
+@use "variables";
+
 :root {
-  --max-width-1: #{$max-width-1};
-  --max-width-2: #{$max-width-2};
-  --max-width-3: #{$max-width-3};
-  --max-width-4: #{$max-width-4};
-  --max-width-5: #{$max-width-5};
-  --max-width-6: #{$max-width-6};
-  --max-width-7: #{$max-width-7};
-  --max-width-8: #{$max-width-8};
-  --max-width-9: #{$max-width-9};
+  --max-width-1: #{variables.$max-width-1};
+  --max-width-2: #{variables.$max-width-2};
+  --max-width-3: #{variables.$max-width-3};
+  --max-width-4: #{variables.$max-width-4};
+  --max-width-5: #{variables.$max-width-5};
+  --max-width-6: #{variables.$max-width-6};
+  --max-width-7: #{variables.$max-width-7};
+  --max-width-8: #{variables.$max-width-8};
+  --max-width-9: #{variables.$max-width-9};
 }

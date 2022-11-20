@@ -1,8 +1,10 @@
+@use "variables";
+
 :root {
-  --bw0: #{$border-width-none};
-  --bw1: #{$border-width-1};
-  --bw2: #{$border-width-2};
-  --bw3: #{$border-width-3};
-  --bw4: #{$border-width-4};
-  --bw5: #{$border-width-5};
+  --bw0: #{variables.$border-width-none};
+  --bw1: #{variables.$border-width-1};
+  --bw2: #{variables.$border-width-2};
+  --bw3: #{variables.$border-width-3};
+  --bw4: #{variables.$border-width-4};
+  --bw5: #{variables.$border-width-5};
 }

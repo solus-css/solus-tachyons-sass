@@ -1,37 +1,42 @@
+@use "breakpoint-gen-mixin";
+@use "typography-mixin";
+
 /*
+
    TYPOGRAPHY
    http://tachyons.io/docs/typography/measure/
+
 */
-@include generate-breakpoints {
+@include breakpoint-gen-mixin.generate-breakpoints {
   /* Measure is limited to ~66 characters */
-  .measure#{$bkpt-suffix} {
-    @include measure;
+  .measure#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include typography-mixin.measure;
   }
 
   /* Measure is limited to ~80 characters */
-  .measure-wide#{$bkpt-suffix} {
-    @include measure-wide;
+  .measure-wide#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include typography-mixin.measure-wide;
   }
 
   /* Measure is limited to ~45 characters */
-  .measure-narrow#{$bkpt-suffix} {
-    @include measure-narrow;
+  .measure-narrow#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include typography-mixin.measure-narrow;
   }
 
   /* Book paragraph style - paragraphs are indented with no vertical spacing. */
-  .indent#{$bkpt-suffix} {
-    @include indent;
+  .indent#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include typography-mixin.indent;
 
     margin-top: 0;
     margin-bottom: 0;
   }
 
-  .small-caps#{$bkpt-suffix} {
-    @include small-caps;
+  .small-caps#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include typography-mixin.small-caps;
   }
 
   /* Combine this class with a width to truncate text (or just leave as is to truncate at width of containing element. */
-  .truncate#{$bkpt-suffix} {
-    @include truncate;
+  .truncate#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include typography-mixin.truncate;
   }
 }

@@ -1,3 +1,6 @@
+@use "aspect-ratios-mixin";
+@use "breakpoint-gen-mixin";
+
 /*
 
    ASPECT RATIOS
@@ -15,44 +18,56 @@
  * </div>
  *
  * */
-@include generate-breakpoints {
-  .aspect-ratio#{$bkpt-suffix} {
-    @include aspect-ratio;
+@include breakpoint-gen-mixin.generate-breakpoints {
+  .aspect-ratio#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include aspect-ratios-mixin.aspect-ratio;
   }
-  .aspect-ratio--16x9#{$bkpt-suffix} {
-    @include aspect-ratio--16x9;
+
+  .aspect-ratio--16x9#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include aspect-ratios-mixin.aspect-ratio--16x9;
   }
-  .aspect-ratio--9x16#{$bkpt-suffix} {
-    @include aspect-ratio--9x16;
+
+  .aspect-ratio--9x16#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include aspect-ratios-mixin.aspect-ratio--9x16;
   }
-  .aspect-ratio--4x3#{$bkpt-suffix} {
-    @include aspect-ratio--4x3;
+
+  .aspect-ratio--4x3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include aspect-ratios-mixin.aspect-ratio--4x3;
   }
-  .aspect-ratio--3x4#{$bkpt-suffix} {
-    @include aspect-ratio--3x4;
+
+  .aspect-ratio--3x4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include aspect-ratios-mixin.aspect-ratio--3x4;
   }
-  .aspect-ratio--6x4#{$bkpt-suffix} {
-    @include aspect-ratio--6x4;
+
+  .aspect-ratio--6x4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include aspect-ratios-mixin.aspect-ratio--6x4;
   }
-  .aspect-ratio--4x6#{$bkpt-suffix} {
-    @include aspect-ratio--4x6;
+
+  .aspect-ratio--4x6#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include aspect-ratios-mixin.aspect-ratio--4x6;
   }
-  .aspect-ratio--8x5#{$bkpt-suffix} {
-    @include aspect-ratio--8x5;
+
+  .aspect-ratio--8x5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include aspect-ratios-mixin.aspect-ratio--8x5;
   }
-  .aspect-ratio--5x8#{$bkpt-suffix} {
-    @include aspect-ratio--5x8;
+
+  .aspect-ratio--5x8#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include aspect-ratios-mixin.aspect-ratio--5x8;
   }
-  .aspect-ratio--7x5#{$bkpt-suffix} {
-    @include aspect-ratio--7x5;
+
+  .aspect-ratio--7x5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include aspect-ratios-mixin.aspect-ratio--7x5;
   }
-  .aspect-ratio--5x7#{$bkpt-suffix} {
-    @include aspect-ratio--5x7;
+
+  .aspect-ratio--5x7#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include aspect-ratios-mixin.aspect-ratio--5x7;
   }
-  .aspect-ratio--1x1#{$bkpt-suffix} {
-    @include aspect-ratio--1x1;
+
+  .aspect-ratio--1x1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include aspect-ratios-mixin.aspect-ratio--1x1;
   }
-  .aspect-ratio--object#{$bkpt-suffix} {
-    @include aspect-ratio--object;
+
+  .aspect-ratio--object#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include aspect-ratios-mixin.aspect-ratio--object;
   }
 }

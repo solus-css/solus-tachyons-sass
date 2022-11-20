@@ -1,3 +1,6 @@
+@use "breakpoint-gen-mixin";
+@use "coordinates-mixin";
+
 /*
 
    COORDINATES
@@ -19,88 +22,88 @@
      --2 = literal value -2
 
 */
-@include generate-breakpoints {
-  .top-0#{$bkpt-suffix} {
-    @include top-0;
+@include breakpoint-gen-mixin.generate-breakpoints {
+  .top-0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include coordinates-mixin.top-0;
   }
 
-  .right-0#{$bkpt-suffix} {
-    @include right-0;
+  .right-0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include coordinates-mixin.right-0;
   }
 
-  .bottom-0#{$bkpt-suffix} {
-    @include bottom-0;
+  .bottom-0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include coordinates-mixin.bottom-0;
   }
 
-  .left-0#{$bkpt-suffix} {
-    @include left-0;
+  .left-0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include coordinates-mixin.left-0;
   }
 
-  .top-1#{$bkpt-suffix} {
-    @include top-1;
+  .top-1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include coordinates-mixin.top-1;
   }
 
-  .right-1#{$bkpt-suffix} {
-    @include right-1;
+  .right-1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include coordinates-mixin.right-1;
   }
 
-  .bottom-1#{$bkpt-suffix} {
-    @include bottom-1;
+  .bottom-1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include coordinates-mixin.bottom-1;
   }
 
-  .left-1#{$bkpt-suffix} {
-    @include left-1;
+  .left-1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include coordinates-mixin.left-1;
   }
 
-  .top-2#{$bkpt-suffix} {
-    @include top-2;
+  .top-2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include coordinates-mixin.top-2;
   }
 
-  .right-2#{$bkpt-suffix} {
-    @include right-2;
+  .right-2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include coordinates-mixin.right-2;
   }
 
-  .bottom-2#{$bkpt-suffix} {
-    @include bottom-2;
+  .bottom-2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include coordinates-mixin.bottom-2;
   }
 
-  .left-2#{$bkpt-suffix} {
-    @include left-2;
+  .left-2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include coordinates-mixin.left-2;
   }
 
-  .top--1#{$bkpt-suffix} {
-    @include top--1;
+  .top--1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include coordinates-mixin.top--1;
   }
 
-  .right--1#{$bkpt-suffix} {
-    @include right--1;
+  .right--1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include coordinates-mixin.right--1;
   }
 
-  .bottom--1#{$bkpt-suffix} {
-    @include bottom--1;
+  .bottom--1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include coordinates-mixin.bottom--1;
   }
 
-  .left--1#{$bkpt-suffix} {
-    @include left--1;
+  .left--1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include coordinates-mixin.left--1;
   }
 
-  .top--2#{$bkpt-suffix} {
-    @include top--2;
+  .top--2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include coordinates-mixin.top--2;
   }
 
-  .right--2#{$bkpt-suffix} {
-    @include right--2;
+  .right--2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include coordinates-mixin.right--2;
   }
 
-  .bottom--2#{$bkpt-suffix} {
-    @include bottom--2;
+  .bottom--2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include coordinates-mixin.bottom--2;
   }
 
-  .left--2#{$bkpt-suffix} {
-    @include left--2;
+  .left--2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include coordinates-mixin.left--2;
   }
 
-  .absolute--fill#{$bkpt-suffix} {
-    @include absolute--fill;
+  .absolute--fill#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include coordinates-mixin.absolute--fill;
   }
 }

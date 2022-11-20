@@ -1,3 +1,6 @@
+@use "background-size-mixin";
+@use "breakpoint-gen-mixin";
+
 /*
 
    BACKGROUND SIZE
@@ -8,11 +11,11 @@
   Often used in combination with background image set as an inline style
   on an html element.
 */
-@include generate-breakpoints {
-  .cover#{$bkpt-suffix} {
-    @include cover;
+@include breakpoint-gen-mixin.generate-breakpoints {
+  .cover#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include background-size-mixin.cover;
   }
-  .contain#{$bkpt-suffix} {
-    @include contain;
+  .contain#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include background-size-mixin.contain;
   }
 }

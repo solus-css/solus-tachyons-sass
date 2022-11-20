@@ -1,18 +1,21 @@
+@use "breakpoint-gen-mixin";
+@use "outlines-mixin";
+
 /*
 
    OUTLINES
 
 */
-@include generate-breakpoints {
-  .outline#{$bkpt-suffix} {
-    @include outline;
+@include breakpoint-gen-mixin.generate-breakpoints {
+  .outline#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include outlines-mixin.outline;
   }
 
-  .outline-transparent#{$bkpt-suffix} {
-    @include outline-transparent;
+  .outline-transparent#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include outlines-mixin.outline-transparent;
   }
 
-  .outline-0#{$bkpt-suffix} {
-    @include outline-0;
+  .outline-0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include outlines-mixin.outline-0;
   }
 }

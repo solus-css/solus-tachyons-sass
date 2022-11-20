@@ -1,4 +1,8 @@
+@use "breakpoint-gen-mixin";
+@use "text-align-mixin";
+
 /*
+
   TEXT ALIGN
   Docs: http://tachyons.io/docs/typography/text-align/
 
@@ -10,21 +14,22 @@
     r = right
     c = center
     j = justify
+
 */
-@include generate-breakpoints {
-  .tl#{$bkpt-suffix} {
-    @include tl;
+@include breakpoint-gen-mixin.generate-breakpoints {
+  .tl#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include text-align-mixin.tl;
   }
 
-  .tr#{$bkpt-suffix} {
-    @include tr;
+  .tr#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include text-align-mixin.tr;
   }
 
-  .tc#{$bkpt-suffix} {
-    @include tc;
+  .tc#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include text-align-mixin.tc;
   }
 
-  .tj#{$bkpt-suffix} {
-    @include tj;
+  .tj#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include text-align-mixin.tj;
   }
 }

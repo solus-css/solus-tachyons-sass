@@ -1,3 +1,6 @@
+@use "background-position-mixin";
+@use "breakpoint-gen-mixin";
+
 /*
 
     BACKGROUND POSITION
@@ -13,20 +16,24 @@
     -left = center left
 
  */
-@include generate-breakpoints {
-  .bg-center#{$bkpt-suffix} {
-    @include bg-center;
+@include breakpoint-gen-mixin.generate-breakpoints {
+  .bg-center#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include background-position-mixin.bg-center;
   }
-  .bg-top#{$bkpt-suffix} {
-    @include bg-top;
+
+  .bg-top#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include background-position-mixin.bg-top;
   }
-  .bg-right#{$bkpt-suffix} {
-    @include bg-right;
+
+  .bg-right#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include background-position-mixin.bg-right;
   }
-  .bg-bottom#{$bkpt-suffix} {
-    @include bg-bottom;
+
+  .bg-bottom#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include background-position-mixin.bg-bottom;
   }
-  .bg-left#{$bkpt-suffix} {
-    @include bg-left;
+
+  .bg-left#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include background-position-mixin.bg-left;
   }
 }

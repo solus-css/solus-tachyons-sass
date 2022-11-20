@@ -1,3 +1,5 @@
+@use "max-widths-mixin";
+
 /*
 
    IMAGES
@@ -6,5 +8,5 @@
 */
 /* Responsive images! */
 img {
-	@include mw-100;
+	@include max-widths-mixin.mw-100;
 }

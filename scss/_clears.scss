@@ -1,3 +1,6 @@
+@use "breakpoint-gen-mixin";
+@use "clears-mixin";
+
 /*
 
    CLEARFIX
@@ -5,19 +8,22 @@
 
 */
 .cf {
-  @include cf;
+  @include clears-mixin.cf;
 }
-@include generate-breakpoints {
-  .cl#{$bkpt-suffix} {
-    @include cl;
+@include breakpoint-gen-mixin.generate-breakpoints {
+  .cl#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include clears-mixin.cl;
   }
-  .cr#{$bkpt-suffix} {
-    @include cr;
+
+  .cr#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include clears-mixin.cr;
   }
-  .cb#{$bkpt-suffix} {
-    @include cb;
+
+  .cb#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include clears-mixin.cb;
   }
-  .cn#{$bkpt-suffix} {
-    @include cn;
+
+  .cn#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include clears-mixin.cn;
   }
 }

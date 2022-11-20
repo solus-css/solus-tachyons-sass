@@ -1,3 +1,6 @@
+@use "border-style-mixin";
+@use "breakpoint-gen-mixin";
+
 /*
 
    BORDER STYLES
@@ -15,17 +18,17 @@
      --solid  = solid
 
  */
-@include generate-breakpoints {
-  .b--dotted#{$bkpt-suffix} {
-    @include b--dotted;
+@include breakpoint-gen-mixin.generate-breakpoints {
+  .b--dotted#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include border-style-mixin.b--dotted;
   }
-  .b--dashed#{$bkpt-suffix} {
-    @include b--dashed;
+  .b--dashed#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include border-style-mixin.b--dashed;
   }
-  .b--solid#{$bkpt-suffix} {
-    @include b--solid;
+  .b--solid#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include border-style-mixin.b--solid;
   }
-  .b--none#{$bkpt-suffix} {
-    @include b--none;
+  .b--none#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include border-style-mixin.b--none;
   }
 }

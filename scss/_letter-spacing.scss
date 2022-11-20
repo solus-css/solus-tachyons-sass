@@ -1,17 +1,20 @@
+@use "breakpoint-gen-mixin";
+@use "letter-spacing-mixin";
+
 /*
 
    LETTER SPACING
    Docs: http://tachyons.io/docs/typography/tracking/
 
 */
-@include generate-breakpoints {
-  .tracked#{$bkpt-suffix} {
-    @include tracked;
+@include breakpoint-gen-mixin.generate-breakpoints {
+  .tracked#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include letter-spacing-mixin.tracked;
   }
-  .tracked-tight#{$bkpt-suffix} {
-    @include tracked-tight;
+  .tracked-tight#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include letter-spacing-mixin.tracked-tight;
   }
-  .tracked-mega#{$bkpt-suffix} {
-    @include tracked-mega;
+  .tracked-mega#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include letter-spacing-mixin.tracked-mega;
   }
 }

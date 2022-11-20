@@ -1,3 +1,5 @@
+@use "variables";
+
 :root {
   /*
   * For Hero/Marketing Titles
@@ -5,15 +7,15 @@
   * These generally are too large for mobile
   * so be careful using them on smaller screens
   */
-  --f-headline: #{$font-size-headline};
-  --f-subheadline: #{$font-size-subheadline};
+  --f-headline: #{variables.$font-size-headline};
+  --f-subheadline: #{variables.$font-size-subheadline};
 
   /* Type Scale */
-  --font-size-1: #{$font-size-1};
-  --font-size-2: #{$font-size-2};
-  --font-size-3: #{$font-size-3};
-  --font-size-4: #{$font-size-4};
-  --font-size-5: #{$font-size-5};
-  --font-size-6: #{$font-size-6};
-  --font-size-7: #{$font-size-7};
+  --font-size-1: #{variables.$font-size-1};
+  --font-size-2: #{variables.$font-size-2};
+  --font-size-3: #{variables.$font-size-3};
+  --font-size-4: #{variables.$font-size-4};
+  --font-size-5: #{variables.$font-size-5};
+  --font-size-6: #{variables.$font-size-6};
+  --font-size-7: #{variables.$font-size-7};
 }

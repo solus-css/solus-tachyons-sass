@@ -1,3 +1,6 @@
+@use "border-radius-mixin";
+@use "breakpoint-gen-mixin";
+
 /*
 
    BORDER RADIUS
@@ -18,38 +21,38 @@
      -pill = 9999px
 
 */
-@include generate-breakpoints {
-  .br0#{$bkpt-suffix} {
-    @include br0;
+@include breakpoint-gen-mixin.generate-breakpoints {
+  .br0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include border-radius-mixin.br0;
   }
-  .br1#{$bkpt-suffix} {
-    @include br1;
+  .br1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include border-radius-mixin.br1;
   }
-  .br2#{$bkpt-suffix} {
-    @include br2;
+  .br2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include border-radius-mixin.br2;
   }
-  .br3#{$bkpt-suffix} {
-    @include br3;
+  .br3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include border-radius-mixin.br3;
   }
-  .br4#{$bkpt-suffix} {
-    @include br4;
+  .br4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include border-radius-mixin.br4;
   }
-  .br-100#{$bkpt-suffix} {
-    @include br-100;
+  .br-100#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include border-radius-mixin.br-100;
   }
-  .br-pill#{$bkpt-suffix} {
-    @include br-pill;
+  .br-pill#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include border-radius-mixin.br-pill;
   }
-  .br--bottom#{$bkpt-suffix} {
-    @include br--bottom;
+  .br--bottom#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include border-radius-mixin.br--bottom;
   }
-  .br--top#{$bkpt-suffix} {
-    @include br--top;
+  .br--top#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include border-radius-mixin.br--top;
   }
-  .br--right#{$bkpt-suffix} {
-    @include br--right;
+  .br--right#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include border-radius-mixin.br--right;
   }
-  .br--left#{$bkpt-suffix} {
-    @include br--left;
+  .br--left#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include border-radius-mixin.br--left;
   }
 }

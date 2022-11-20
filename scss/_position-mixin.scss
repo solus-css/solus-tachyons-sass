@@ -1,3 +1,4 @@
+@use "sass:meta";
 @use "sass:list";
 
 // A more powerfull SASS mixin based positioning system
@@ -20,7 +21,7 @@
 @mixin position($position, $args) {
   @each $o in top right bottom left {
     $i: list.index($args, $o);
-    @if $i and $i + 1 <= length($args) and type-of(nth($args, $i + 1)) == number
+    @if $i and $i + 1 <= list.length($args) and meta.type-of(list.nth($args, $i + 1)) == number
     {
       #{$o}: list.nth($args, $i + 1);
     }

@@ -1,3 +1,6 @@
+@use "breakpoint-gen-mixin";
+@use "negative-margins-mixin";
+
 /*
 
    NEGATIVE @include MARGINS
@@ -22,144 +25,144 @@
 
 */
 
-@include generate-breakpoints {
-  .na1#{$bkpt-suffix} {
-    @include na1;
+@include breakpoint-gen-mixin.generate-breakpoints {
+  .na1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.na1;
   }
 
-  .na2#{$bkpt-suffix} {
-    @include na2;
+  .na2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.na2;
   }
 
-  .na3#{$bkpt-suffix} {
-    @include na3;
+  .na3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.na3;
   }
 
-  .na4#{$bkpt-suffix} {
-    @include na4;
+  .na4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.na4;
   }
 
-  .na5#{$bkpt-suffix} {
-    @include na5;
+  .na5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.na5;
   }
 
-  .na6#{$bkpt-suffix} {
-    @include na6;
+  .na6#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.na6;
   }
 
-  .na7#{$bkpt-suffix} {
-    @include na7;
+  .na7#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.na7;
   }
 
-  .nl1#{$bkpt-suffix} {
-    @include nl1;
+  .nl1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nl1;
   }
 
-  .nl2#{$bkpt-suffix} {
-    @include nl2;
+  .nl2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nl2;
   }
 
-  .nl3#{$bkpt-suffix} {
-    @include nl3;
+  .nl3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nl3;
   }
 
-  .nl4#{$bkpt-suffix} {
-    @include nl4;
+  .nl4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nl4;
   }
 
-  .nl5#{$bkpt-suffix} {
-    @include nl5;
+  .nl5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nl5;
   }
 
-  .nl6#{$bkpt-suffix} {
-    @include nl6;
+  .nl6#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nl6;
   }
 
-  .nl7#{$bkpt-suffix} {
-    @include nl7;
+  .nl7#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nl7;
   }
 
-  .nr1#{$bkpt-suffix} {
-    @include nr1;
+  .nr1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nr1;
   }
 
-  .nr2#{$bkpt-suffix} {
-    @include nr2;
+  .nr2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nr2;
   }
 
-  .nr3#{$bkpt-suffix} {
-    @include nr3;
+  .nr3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nr3;
   }
 
-  .nr4#{$bkpt-suffix} {
-    @include nr4;
+  .nr4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nr4;
   }
 
-  .nr5#{$bkpt-suffix} {
-    @include nr5;
+  .nr5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nr5;
   }
 
-  .nr6#{$bkpt-suffix} {
-    @include nr6;
+  .nr6#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nr6;
   }
 
-  .nr7#{$bkpt-suffix} {
-    @include nr7;
+  .nr7#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nr7;
   }
 
-  .nb1#{$bkpt-suffix} {
-    @include nb1;
+  .nb1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nb1;
   }
 
-  .nb2#{$bkpt-suffix} {
-    @include nb2;
+  .nb2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nb2;
   }
 
-  .nb3#{$bkpt-suffix} {
-    @include nb3;
+  .nb3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nb3;
   }
 
-  .nb4#{$bkpt-suffix} {
-    @include nb4;
+  .nb4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nb4;
   }
 
-  .nb5#{$bkpt-suffix} {
-    @include nb5;
+  .nb5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nb5;
   }
 
-  .nb6#{$bkpt-suffix} {
-    @include nb6;
+  .nb6#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nb6;
   }
 
-  .nb7#{$bkpt-suffix} {
-    @include nb7;
+  .nb7#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nb7;
   }
 
-  .nt1#{$bkpt-suffix} {
-    @include nt1;
+  .nt1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nt1;
   }
 
-  .nt2#{$bkpt-suffix} {
-    @include nt2;
+  .nt2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nt2;
   }
 
-  .nt3#{$bkpt-suffix} {
-    @include nt3;
+  .nt3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nt3;
   }
 
-  .nt4#{$bkpt-suffix} {
-    @include nt4;
+  .nt4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nt4;
   }
 
-  .nt5#{$bkpt-suffix} {
-    @include nt5;
+  .nt5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nt5;
   }
 
-  .nt6#{$bkpt-suffix} {
-    @include nt6;
+  .nt6#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nt6;
   }
 
-  .nt7#{$bkpt-suffix} {
-    @include nt7;
+  .nt7#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include negative-margins-mixin.nt7;
   }
 }

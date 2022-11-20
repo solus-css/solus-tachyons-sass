@@ -1,17 +1,22 @@
+@use "breakpoint-gen-mixin";
+@use "text-decoration-mixin";
+
 /*
+
    TEXT DECORATION
    Docs: http://tachyons.io/docs/typography/text-decoration/
+
 */
-@include generate-breakpoints {
-  .strike#{$bkpt-suffix} {
-    @include strike;
+@include breakpoint-gen-mixin.generate-breakpoints {
+  .strike#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include text-decoration-mixin.strike;
   }
 
-  .underline#{$bkpt-suffix} {
-    @include underline;
+  .underline#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include text-decoration-mixin.underline;
   }
 
-  .no-underline#{$bkpt-suffix} {
-    @include no-underline;
+  .no-underline#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include text-decoration-mixin.no-underline;
   }
 }

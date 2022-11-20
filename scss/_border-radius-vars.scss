@@ -1,8 +1,10 @@
+@use "variables";
+
 :root {
-  --border-radius-1: #{$border-radius-1};
-  --border-radius-2: #{$border-radius-2};
-  --border-radius-3: #{$border-radius-3};
-  --border-radius-4: #{$border-radius-4};
-  --border-radius-circle: #{$border-radius-circle};
-  --border-radius-pill: #{$border-radius-pill};
+  --border-radius-1: #{variables.$border-radius-1};
+  --border-radius-2: #{variables.$border-radius-2};
+  --border-radius-3: #{variables.$border-radius-3};
+  --border-radius-4: #{variables.$border-radius-4};
+  --border-radius-circle: #{variables.$border-radius-circle};
+  --border-radius-pill: #{variables.$border-radius-pill};
 }

@@ -1,3 +1,6 @@
+@use "breakpoint-gen-mixin";
+@use "floats-mixin";
+
 /*
 
    FLOATS
@@ -18,14 +21,14 @@
      n = none
 
 */
-@include generate-breakpoints {
-  .fl#{$bkpt-suffix} {
-    @include fl;
+@include breakpoint-gen-mixin.generate-breakpoints {
+  .fl#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include floats-mixin.fl;
   }
-  .fr#{$bkpt-suffix} {
-    @include fr;
+  .fr#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include floats-mixin.fr;
   }
-  .fn#{$bkpt-suffix} {
-    @include fn;
+  .fn#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include floats-mixin.fn;
   }
 }

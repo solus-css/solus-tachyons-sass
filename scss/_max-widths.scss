@@ -1,4 +1,8 @@
+@use "breakpoint-gen-mixin";
+@use "max-widths-mixin";
+
 /*
+
    MAX WIDTHS
    Docs: http://tachyons.io/docs/layout/max-widths/
 
@@ -19,52 +23,53 @@
      -100 = literal value 100%
 
      -none  = string value none
+
 */
-@include generate-breakpoints {
+@include breakpoint-gen-mixin.generate-breakpoints {
   /* Max Width Percentages */
-  .mw-100#{$bkpt-suffix} {
-    @include mw-100;
+  .mw-100#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include max-widths-mixin.mw-100;
   }
 
   /* Max Width Scale */
-  .mw1#{$bkpt-suffix} {
-    @include mw1;
+  .mw1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include max-widths-mixin.mw1;
   }
 
-  .mw2#{$bkpt-suffix} {
-    @include mw2;
+  .mw2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include max-widths-mixin.mw2;
   }
 
-  .mw3#{$bkpt-suffix} {
-    @include mw3;
+  .mw3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include max-widths-mixin.mw3;
   }
 
-  .mw4#{$bkpt-suffix} {
-    @include mw4;
+  .mw4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include max-widths-mixin.mw4;
   }
 
-  .mw5#{$bkpt-suffix} {
-    @include mw5;
+  .mw5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include max-widths-mixin.mw5;
   }
 
-  .mw6#{$bkpt-suffix} {
-    @include mw6;
+  .mw6#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include max-widths-mixin.mw6;
   }
 
-  .mw7#{$bkpt-suffix} {
-    @include mw7;
+  .mw7#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include max-widths-mixin.mw7;
   }
 
-  .mw8#{$bkpt-suffix} {
-    @include mw8;
+  .mw8#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include max-widths-mixin.mw8;
   }
 
-  .mw9#{$bkpt-suffix} {
-    @include mw9;
+  .mw9#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include max-widths-mixin.mw9;
   }
 
   /* Max Width String Properties */
-  .mw-none#{$bkpt-suffix} {
-    @include mw-none;
+  .mw-none#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include max-widths-mixin.mw-none;
   }
 }

@@ -1,3 +1,6 @@
+@use "borders-mixin";
+@use "breakpoint-gen-mixin";
+
 /*
 
     BORDERS
@@ -15,31 +18,31 @@
       n = none
 
 */
-@include generate-breakpoints {
-  .ba#{$bkpt-suffix} {
-    @include ba;
+@include breakpoint-gen-mixin.generate-breakpoints {
+  .ba#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include borders-mixin.ba;
   }
-  .bt#{$bkpt-suffix} {
-    @include bt;
+  .bt#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include borders-mixin.bt;
   }
-  .br#{$bkpt-suffix} {
-    @include br;
+  .br#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include borders-mixin.br;
   }
-  .bb#{$bkpt-suffix} {
-    @include bb;
+  .bb#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include borders-mixin.bb;
   }
-  .bl#{$bkpt-suffix} {
-    @include bl;
+  .bl#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include borders-mixin.bl;
   }
-  .bn#{$bkpt-suffix} {
-    @include bn;
+  .bn#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include borders-mixin.bn;
   }
 
-  .ba#{$bkpt-suffix},
-  .bt#{$bkpt-suffix},
-  .br#{$bkpt-suffix},
-  .bb#{$bkpt-suffix},
-  .bl#{$bkpt-suffix} {
+  .ba#{breakpoint-gen-mixin.$bkpt-suffix},
+  .bt#{breakpoint-gen-mixin.$bkpt-suffix},
+  .br#{breakpoint-gen-mixin.$bkpt-suffix},
+  .bb#{breakpoint-gen-mixin.$bkpt-suffix},
+  .bl#{breakpoint-gen-mixin.$bkpt-suffix} {
     border-color: currentcolor;
   }
 }

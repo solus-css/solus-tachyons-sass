@@ -1,5 +1,7 @@
+@use "variables";
+
 :root {
-  --line-height-solid: #{$line-height-solid};
-  --line-height-title: #{$line-height-title};
-  --line-height-copy: #{$line-height-copy};
+  --line-height-solid: #{variables.$line-height-solid};
+  --line-height-title: #{variables.$line-height-title};
+  --line-height-copy: #{variables.$line-height-copy};
 }

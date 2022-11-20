@@ -1,20 +1,25 @@
+@use "breakpoint-gen-mixin";
+@use "vertical-align-mixin";
+
 /*
+
    VERTICAL ALIGN
+
 */
-@include generate-breakpoints {
-  .v-base#{$bkpt-suffix} {
-    @include v-base;
+@include breakpoint-gen-mixin.generate-breakpoints {
+  .v-base#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include vertical-align-mixin.v-base;
   }
 
-  .v-mid#{$bkpt-suffix} {
-    @include v-mid;
+  .v-mid#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include vertical-align-mixin.v-mid;
   }
 
-  .v-top#{$bkpt-suffix} {
-    @include v-top;
+  .v-top#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include vertical-align-mixin.v-top;
   }
 
-  .v-btm#{$bkpt-suffix} {
-    @include v-btm;
+  .v-btm#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include vertical-align-mixin.v-btm;
   }
 }

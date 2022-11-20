@@ -1,13 +1,17 @@
-/*
-   VISIBILITY
-*/
+@use "breakpoint-gen-mixin";
+@use "visibility-mixin";
 
+/*
+
+   VISIBILITY
+
+*/
 /*
     Text that is hidden but accessible
     Ref: http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 */
-@include generate-breakpoints {
-  .clip#{$bkpt-suffix} {
-    @include clip;
+@include breakpoint-gen-mixin.generate-breakpoints {
+  .clip#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include visibility-mixin.clip;
   }
 }

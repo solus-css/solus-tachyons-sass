@@ -1,13 +1,15 @@
+@use "forms-mixin";
+
 /*
 
    FORMS
 
 */
 .input-reset {
-	@include input-reset;
+	@include forms-mixin.input-reset;
 }
 
 .button-reset::-moz-focus-inner,
 .input-reset::-moz-focus-inner {
-	@include moz-inner-reset;
+	@include forms-mixin.moz-inner-reset;
 }

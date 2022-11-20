@@ -1,3 +1,6 @@
+@use "cursor-mixin";
+@use "hovers-mixin";
+
 /*
 
   HOVER EFFECTS
@@ -16,14 +19,14 @@
   Dim element on hover by adding the dim class.
 */
 .dim {
-	@include dim;
+	@include hovers-mixin.dim;
 }
 
 /*
   Animate opacity to 100% on hover by adding the glow class.
 */
 .glow {
-	@include glow;
+	@include hovers-mixin.glow;
 }
 
 /*
@@ -41,28 +44,28 @@
 */
 
 .hide-child {
-	@include hide-child(child);
+	@include hovers-mixin.hide-child(child);
 }
 
 .underline-hover {
-	@include underline-hover;
+	@include hovers-mixin.underline-hover;
 }
 
 /* Can combine this with overflow-hidden to make background images grow on hover
  * even if you are using background-size: cover */
 
 .grow {
-	@include grow;
+	@include hovers-mixin.grow;
 }
 
 .grow-large {
-	@include grow-large;
+	@include hovers-mixin.grow-large;
 }
 
 /* Add pointer on hover */
 
 .pointer:hover {
-	@include cursor(pointer);
+	@include cursor-mixin.cursor(pointer);
 }
 
 /*
@@ -73,12 +76,12 @@
 */
 
 .shadow-hover {
-	@include shadow-hover;
+	@include hovers-mixin.shadow-hover;
 }
 
 /* Combine with classes in skins and skins-pseudo for
  * many different transition possibilities. */
 
 .bg-animate {
-	@include bg-animate;
+	@include hovers-mixin.bg-animate;
 }

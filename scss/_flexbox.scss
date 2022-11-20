@@ -1,147 +1,150 @@
+@use "breakpoint-gen-mixin";
+@use "flexbox-mixin";
+
 /*
 
   FLEXBOX
 
 */
-@include generate-breakpoints {
-  .flex#{$bkpt-suffix} {
-    @include flex;
+@include breakpoint-gen-mixin.generate-breakpoints {
+  .flex#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.flex;
   }
-  .inline-flex#{$bkpt-suffix} {
-    @include inline-flex;
+  .inline-flex#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.inline-flex;
   }
   /* 1. Fix for Chrome 44 bug.
     https://code.google.com/p/chromium/issues/detail?id=506893 */
-  .flex-auto#{$bkpt-suffix} {
-    @include flex-auto;
+  .flex-auto#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.flex-auto;
   }
-  .flex-none#{$bkpt-suffix} {
-    @include flex-none;
+  .flex-none#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.flex-none;
   }
-  .flex-column#{$bkpt-suffix} {
-    @include flex-column;
+  .flex-column#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.flex-column;
   }
-  .flex-row#{$bkpt-suffix} {
-    @include flex-row;
+  .flex-row#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.flex-row;
   }
-  .flex-wrap#{$bkpt-suffix} {
-    @include flex-wrap;
+  .flex-wrap#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.flex-wrap;
   }
-  .flex-nowrap#{$bkpt-suffix} {
-    @include flex-nowrap;
+  .flex-nowrap#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.flex-nowrap;
   }
-  .flex-wrap-reverse#{$bkpt-suffix} {
-    @include flex-wrap-reverse;
+  .flex-wrap-reverse#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.flex-wrap-reverse;
   }
-  .flex-column-reverse#{$bkpt-suffix} {
-    @include flex-column-reverse;
+  .flex-column-reverse#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.flex-column-reverse;
   }
-  .flex-row-reverse#{$bkpt-suffix} {
-    @include flex-row-reverse;
+  .flex-row-reverse#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.flex-row-reverse;
   }
-  .items-start#{$bkpt-suffix} {
-    @include items-start;
+  .items-start#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.items-start;
   }
-  .items-end#{$bkpt-suffix} {
-    @include items-end;
+  .items-end#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.items-end;
   }
-  .items-center#{$bkpt-suffix} {
-    @include items-center;
+  .items-center#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.items-center;
   }
-  .items-baseline#{$bkpt-suffix} {
-    @include items-baseline;
+  .items-baseline#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.items-baseline;
   }
-  .items-stretch#{$bkpt-suffix} {
-    @include items-stretch;
+  .items-stretch#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.items-stretch;
   }
-  .self-start#{$bkpt-suffix} {
-    @include self-start;
+  .self-start#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.self-start;
   }
-  .self-end#{$bkpt-suffix} {
-    @include self-end;
+  .self-end#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.self-end;
   }
-  .self-center#{$bkpt-suffix} {
-    @include self-center;
+  .self-center#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.self-center;
   }
-  .self-baseline#{$bkpt-suffix} {
-    @include self-baseline;
+  .self-baseline#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.self-baseline;
   }
-  .self-stretch#{$bkpt-suffix} {
-    @include self-stretch;
+  .self-stretch#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.self-stretch;
   }
-  .justify-start#{$bkpt-suffix} {
-    @include justify-start;
+  .justify-start#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.justify-start;
   }
-  .justify-end#{$bkpt-suffix} {
-    @include justify-end;
+  .justify-end#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.justify-end;
   }
-  .justify-center#{$bkpt-suffix} {
-    @include justify-center;
+  .justify-center#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.justify-center;
   }
-  .justify-between#{$bkpt-suffix} {
-    @include justify-between;
+  .justify-between#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.justify-between;
   }
-  .justify-around#{$bkpt-suffix} {
-    @include justify-around;
+  .justify-around#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.justify-around;
   }
-  .content-start#{$bkpt-suffix} {
-    @include content-start;
+  .content-start#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.content-start;
   }
-  .content-end#{$bkpt-suffix} {
-    @include content-end;
+  .content-end#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.content-end;
   }
-  .content-center#{$bkpt-suffix} {
-    @include content-center;
+  .content-center#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.content-center;
   }
-  .content-between#{$bkpt-suffix} {
-    @include content-between;
+  .content-between#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.content-between;
   }
-  .content-around#{$bkpt-suffix} {
-    @include content-around;
+  .content-around#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.content-around;
   }
-  .content-stretch#{$bkpt-suffix} {
-    @include content-stretch;
+  .content-stretch#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.content-stretch;
   }
-  .order-0#{$bkpt-suffix} {
-    @include order-0;
+  .order-0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.order-0;
   }
-  .order-1#{$bkpt-suffix} {
-    @include order-1;
+  .order-1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.order-1;
   }
-  .order-2#{$bkpt-suffix} {
-    @include order-2;
+  .order-2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.order-2;
   }
-  .order-3#{$bkpt-suffix} {
-    @include order-3;
+  .order-3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.order-3;
   }
-  .order-4#{$bkpt-suffix} {
-    @include order-4;
+  .order-4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.order-4;
   }
-  .order-5#{$bkpt-suffix} {
-    @include order-5;
+  .order-5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.order-5;
   }
-  .order-6#{$bkpt-suffix} {
-    @include order-6;
+  .order-6#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.order-6;
   }
-  .order-7#{$bkpt-suffix} {
-    @include order-7;
+  .order-7#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.order-7;
   }
-  .order-8#{$bkpt-suffix} {
-    @include order-8;
+  .order-8#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.order-8;
   }
-  .order-last#{$bkpt-suffix} {
-    @include order-last;
+  .order-last#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.order-last;
   }
-  .flex-grow-0#{$bkpt-suffix} {
-    @include flex-grow-0;
+  .flex-grow-0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.flex-grow-0;
   }
-  .flex-grow-1#{$bkpt-suffix} {
-    @include flex-grow-1;
+  .flex-grow-1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.flex-grow-1;
   }
-  .flex-shrink-0#{$bkpt-suffix} {
-    @include flex-shrink-0;
+  .flex-shrink-0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.flex-shrink-0;
   }
-  .flex-shrink-1#{$bkpt-suffix} {
-    @include flex-shrink-1;
+  .flex-shrink-1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include flexbox-mixin.flex-shrink-1;
   }
 }

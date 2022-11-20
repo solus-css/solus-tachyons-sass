@@ -1,3 +1,5 @@
+@use "box-sizing-mixin";
+
 /*
 
   BOX SIZING
@@ -51,5 +53,5 @@ input[type="tel"],
 input[type="text"],
 input[type="url"],
 .border-box {
-  @include border-box;
+  @include box-sizing-mixin.border-box;
 }

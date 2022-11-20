@@ -1,3 +1,6 @@
+@use "breakpoint-gen-mixin";
+@use "display-mixin";
+
 /*
 
    DISPLAY
@@ -18,45 +21,45 @@
     tcolg = table-column-group
 
 */
-@include generate-breakpoints {
-  .dn#{$bkpt-suffix} {
-    @include dn;
+@include breakpoint-gen-mixin.generate-breakpoints {
+  .dn#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include display-mixin.dn;
   }
-  .di#{$bkpt-suffix} {
-    @include di;
+  .di#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include display-mixin.di;
   }
-  .db#{$bkpt-suffix} {
-    @include db;
+  .db#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include display-mixin.db;
   }
-  .dib#{$bkpt-suffix} {
-    @include dib;
+  .dib#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include display-mixin.dib;
   }
-  .dit#{$bkpt-suffix} {
-    @include dit;
+  .dit#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include display-mixin.dit;
   }
-  .dt#{$bkpt-suffix} {
-    @include dt;
+  .dt#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include display-mixin.dt;
   }
-  .dtc#{$bkpt-suffix} {
-    @include dtc;
+  .dtc#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include display-mixin.dtc;
   }
-  .dt-row#{$bkpt-suffix} {
-    @include dt-row;
+  .dt-row#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include display-mixin.dt-row;
   }
-  .dt-row-group#{$bkpt-suffix} {
-    @include dt-row-group;
+  .dt-row-group#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include display-mixin.dt-row-group;
   }
-  .dt-column#{$bkpt-suffix} {
-    @include dt-column;
+  .dt-column#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include display-mixin.dt-column;
   }
-  .dt-column-group#{$bkpt-suffix} {
-    @include dt-column-group;
+  .dt-column-group#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include display-mixin.dt-column-group;
   }
   /*
     This will set table to full width and then
     all cells will be equal width
   */
-  .dt--fixed#{$bkpt-suffix} {
-    @include dt--fixed;
+  .dt--fixed#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include display-mixin.dt--fixed;
   }
 }

@@ -1,3 +1,5 @@
+@use "z-index-mixin";
+
 /*
 
   Z-INDEX
@@ -33,49 +35,49 @@
 
 */
 .z-0 {
-  @include z-0;
+  @include z-index-mixin.z-0;
 }
 
 .z-1 {
-  @include z-1;
+  @include z-index-mixin.z-1;
 }
 
 .z-2 {
-  @include z-2;
+  @include z-index-mixin.z-2;
 }
 
 .z-3 {
-  @include z-3;
+  @include z-index-mixin.z-3;
 }
 
 .z-4 {
-  @include z-4;
+  @include z-index-mixin.z-4;
 }
 
 .z-5 {
-  @include z-5;
+  @include z-index-mixin.z-5;
 }
 
 .z-999 {
-  @include z-999;
+  @include z-index-mixin.z-999;
 }
 
 .z-9999 {
-  @include z-9999;
+  @include z-index-mixin.z-9999;
 }
 
 .z-max {
-  @include z-max;
+  @include z-index-mixin.z-max;
 }
 
 .z-inherit {
-  @include z-inherit;
+  @include z-index-mixin.z-inherit;
 }
 
 .z-initial {
-  @include z-initial;
+  @include z-index-mixin.z-initial;
 }
 
 .z-unset {
-  @include z-unset;
+  @include z-index-mixin.z-unset;
 }

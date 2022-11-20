@@ -1,13 +1,15 @@
+@use "variables";
+
 @mixin measure {
-  max-width: $measure;
+  max-width: variables.$measure;
 }
 
 @mixin measure-wide {
-  max-width: $measure-wide;
+  max-width: variables.$measure-wide;
 }
 
 @mixin measure-narrow {
-  max-width: $measure-narrow;
+  max-width: variables.$measure-narrow;
 }
 
 @mixin indent {

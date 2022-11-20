@@ -1,16 +1,22 @@
+@use "breakpoint-gen-mixin";
+@use "line-height-mixin";
+
 /*
+
    LINE HEIGHT / LEADING
    Docs: http://tachyons.io/docs/typography/line-height
-*/
 
-@include generate-breakpoints {
-  .lh-solid#{$bkpt-suffix} {
-    @include lh-solid;
+*/
+@include breakpoint-gen-mixin.generate-breakpoints {
+  .lh-solid#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include line-height-mixin.lh-solid;
   }
-  .lh-title#{$bkpt-suffix} {
-    @include lh-title;
+
+  .lh-title#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include line-height-mixin.lh-title;
   }
-  .lh-copy#{$bkpt-suffix} {
-    @include lh-copy;
+
+  .lh-copy#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include line-height-mixin.lh-copy;
   }
 }

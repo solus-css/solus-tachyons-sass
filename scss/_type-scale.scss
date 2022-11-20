@@ -1,4 +1,8 @@
+@use "breakpoint-gen-mixin";
+@use "type-scale-mixin";
+
 /*
+
    TYPE SCALE
    Docs: http://tachyons.io/docs/typography/scale/
 
@@ -22,48 +26,49 @@
      $font-size-5: 1rem !default;
      $font-size-6: 0.875rem !default;
      $font-size-7: 0.75rem !default;
+
 */
-@include generate-breakpoints {
+@include breakpoint-gen-mixin.generate-breakpoints {
   /*
    * For Hero/Marketing Titles
    *
    * These generally are too large for mobile
    * so be careful using them on smaller screens.
    * */
-  .f-headline#{$bkpt-suffix} {
-    @include f-headline;
+  .f-headline#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include type-scale-mixin.f-headline;
   }
 
-  .f-subheadline#{$bkpt-suffix} {
-    @include f-subheadline;
+  .f-subheadline#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include type-scale-mixin.f-subheadline;
   }
 
   /* Type Scale */
-  .f1#{$bkpt-suffix} {
-    @include f1;
+  .f1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include type-scale-mixin.f1;
   }
 
-  .f2#{$bkpt-suffix} {
-    @include f2;
+  .f2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include type-scale-mixin.f2;
   }
 
-  .f3#{$bkpt-suffix} {
-    @include f3;
+  .f3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include type-scale-mixin.f3;
   }
 
-  .f4#{$bkpt-suffix} {
-    @include f4;
+  .f4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include type-scale-mixin.f4;
   }
 
-  .f5#{$bkpt-suffix} {
-    @include f5;
+  .f5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include type-scale-mixin.f5;
   }
 
-  .f6#{$bkpt-suffix} {
-    @include f6;
+  .f6#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include type-scale-mixin.f6;
   }
 
-  .f7#{$bkpt-suffix} {
-    @include f7;
+  .f7#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include type-scale-mixin.f7;
   }
 }

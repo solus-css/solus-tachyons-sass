@@ -1,4 +1,8 @@
+@use "breakpoint-gen-mixin";
+@use "spacing-mixin";
+
 /*
+
    SPACING
    Docs: http://tachyons.io/docs/layout/spacing/
 
@@ -23,453 +27,454 @@
      5 = 5th step in spacing scale
      6 = 6th step in spacing scale
      7 = 7th step in spacing scale
+
 */
-@include generate-breakpoints {
-  .pa0#{$bkpt-suffix} {
-    @include pa0;
+@include breakpoint-gen-mixin.generate-breakpoints {
+  .pa0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pa0;
   }
 
-  .pa1#{$bkpt-suffix} {
-    @include pa1;
+  .pa1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pa1;
   }
 
-  .pa2#{$bkpt-suffix} {
-    @include pa2;
+  .pa2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pa2;
   }
 
-  .pa3#{$bkpt-suffix} {
-    @include pa3;
+  .pa3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pa3;
   }
 
-  .pa4#{$bkpt-suffix} {
-    @include pa4;
+  .pa4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pa4;
   }
 
-  .pa5#{$bkpt-suffix} {
-    @include pa5;
+  .pa5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pa5;
   }
 
-  .pa6#{$bkpt-suffix} {
-    @include pa6;
+  .pa6#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pa6;
   }
 
-  .pa7#{$bkpt-suffix} {
-    @include pa7;
+  .pa7#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pa7;
   }
 
-  .pl0#{$bkpt-suffix} {
-    @include pl0;
+  .pl0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pl0;
   }
 
-  .pl1#{$bkpt-suffix} {
-    @include pl1;
+  .pl1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pl1;
   }
 
-  .pl2#{$bkpt-suffix} {
-    @include pl2;
+  .pl2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pl2;
   }
 
-  .pl3#{$bkpt-suffix} {
-    @include pl3;
+  .pl3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pl3;
   }
 
-  .pl4#{$bkpt-suffix} {
-    @include pl4;
+  .pl4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pl4;
   }
 
-  .pl5#{$bkpt-suffix} {
-    @include pl5;
+  .pl5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pl5;
   }
 
-  .pl6#{$bkpt-suffix} {
-    @include pl6;
+  .pl6#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pl6;
   }
 
-  .pl7#{$bkpt-suffix} {
-    @include pl7;
+  .pl7#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pl7;
   }
 
-  .pr0#{$bkpt-suffix} {
-    @include pr0;
+  .pr0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pr0;
   }
 
-  .pr1#{$bkpt-suffix} {
-    @include pr1;
+  .pr1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pr1;
   }
 
-  .pr2#{$bkpt-suffix} {
-    @include pr2;
+  .pr2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pr2;
   }
 
-  .pr3#{$bkpt-suffix} {
-    @include pr3;
+  .pr3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pr3;
   }
 
-  .pr4#{$bkpt-suffix} {
-    @include pr4;
+  .pr4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pr4;
   }
 
-  .pr5#{$bkpt-suffix} {
-    @include pr5;
+  .pr5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pr5;
   }
 
-  .pr6#{$bkpt-suffix} {
-    @include pr6;
+  .pr6#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pr6;
   }
 
-  .pr7#{$bkpt-suffix} {
-    @include pr7;
+  .pr7#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pr7;
   }
 
-  .pb0#{$bkpt-suffix} {
-    @include pb0;
+  .pb0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pb0;
   }
 
-  .pb1#{$bkpt-suffix} {
-    @include pb1;
+  .pb1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pb1;
   }
 
-  .pb2#{$bkpt-suffix} {
-    @include pb2;
+  .pb2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pb2;
   }
 
-  .pb3#{$bkpt-suffix} {
-    @include pb3;
+  .pb3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pb3;
   }
 
-  .pb4#{$bkpt-suffix} {
-    @include pb4;
+  .pb4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pb4;
   }
 
-  .pb5#{$bkpt-suffix} {
-    @include pb5;
+  .pb5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pb5;
   }
 
-  .pb6#{$bkpt-suffix} {
-    @include pb6;
+  .pb6#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pb6;
   }
 
-  .pb7#{$bkpt-suffix} {
-    @include pb7;
+  .pb7#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pb7;
   }
 
-  .pt0#{$bkpt-suffix} {
-    @include pt0;
+  .pt0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pt0;
   }
 
-  .pt1#{$bkpt-suffix} {
-    @include pt1;
+  .pt1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pt1;
   }
 
-  .pt2#{$bkpt-suffix} {
-    @include pt2;
+  .pt2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pt2;
   }
 
-  .pt3#{$bkpt-suffix} {
-    @include pt3;
+  .pt3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pt3;
   }
 
-  .pt4#{$bkpt-suffix} {
-    @include pt4;
+  .pt4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pt4;
   }
 
-  .pt5#{$bkpt-suffix} {
-    @include pt5;
+  .pt5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pt5;
   }
 
-  .pt6#{$bkpt-suffix} {
-    @include pt6;
+  .pt6#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pt6;
   }
 
-  .pt7#{$bkpt-suffix} {
-    @include pt7;
+  .pt7#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pt7;
   }
 
-  .pv0#{$bkpt-suffix} {
-    @include pv0;
+  .pv0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pv0;
   }
 
-  .pv1#{$bkpt-suffix} {
-    @include pv1;
+  .pv1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pv1;
   }
 
-  .pv2#{$bkpt-suffix} {
-    @include pv2;
+  .pv2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pv2;
   }
 
-  .pv3#{$bkpt-suffix} {
-    @include pv3;
+  .pv3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pv3;
   }
 
-  .pv4#{$bkpt-suffix} {
-    @include pv4;
+  .pv4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pv4;
   }
 
-  .pv5#{$bkpt-suffix} {
-    @include pv5;
+  .pv5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pv5;
   }
 
-  .pv6#{$bkpt-suffix} {
-    @include pv6;
+  .pv6#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pv6;
   }
 
-  .pv7#{$bkpt-suffix} {
-    @include pv7;
+  .pv7#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.pv7;
   }
 
-  .ph0#{$bkpt-suffix} {
-    @include ph0;
+  .ph0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.ph0;
   }
 
-  .ph1#{$bkpt-suffix} {
-    @include ph1;
+  .ph1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.ph1;
   }
 
-  .ph2#{$bkpt-suffix} {
-    @include ph2;
+  .ph2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.ph2;
   }
 
-  .ph3#{$bkpt-suffix} {
-    @include ph3;
+  .ph3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.ph3;
   }
 
-  .ph4#{$bkpt-suffix} {
-    @include ph4;
+  .ph4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.ph4;
   }
 
-  .ph5#{$bkpt-suffix} {
-    @include ph5;
+  .ph5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.ph5;
   }
 
-  .ph6#{$bkpt-suffix} {
-    @include ph6;
+  .ph6#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.ph6;
   }
 
-  .ph7#{$bkpt-suffix} {
-    @include ph7;
+  .ph7#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.ph7;
   }
 
-  .ma0#{$bkpt-suffix} {
-    @include ma0;
+  .ma0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.ma0;
   }
 
-  .ma1#{$bkpt-suffix} {
-    @include ma1;
+  .ma1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.ma1;
   }
 
-  .ma2#{$bkpt-suffix} {
-    @include ma2;
+  .ma2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.ma2;
   }
 
-  .ma3#{$bkpt-suffix} {
-    @include ma3;
+  .ma3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.ma3;
   }
 
-  .ma4#{$bkpt-suffix} {
-    @include ma4;
+  .ma4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.ma4;
   }
 
-  .ma5#{$bkpt-suffix} {
-    @include ma5;
+  .ma5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.ma5;
   }
 
-  .ma6#{$bkpt-suffix} {
-    @include ma6;
+  .ma6#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.ma6;
   }
 
-  .ma7#{$bkpt-suffix} {
-    @include ma7;
+  .ma7#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.ma7;
   }
 
-  .ml0#{$bkpt-suffix} {
-    @include ml0;
+  .ml0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.ml0;
   }
 
-  .ml1#{$bkpt-suffix} {
-    @include ml1;
+  .ml1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.ml1;
   }
 
-  .ml2#{$bkpt-suffix} {
-    @include ml2;
+  .ml2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.ml2;
   }
 
-  .ml3#{$bkpt-suffix} {
-    @include ml3;
+  .ml3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.ml3;
   }
 
-  .ml4#{$bkpt-suffix} {
-    @include ml4;
+  .ml4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.ml4;
   }
 
-  .ml5#{$bkpt-suffix} {
-    @include ml5;
+  .ml5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.ml5;
   }
 
-  .ml6#{$bkpt-suffix} {
-    @include ml6;
+  .ml6#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.ml6;
   }
 
-  .ml7#{$bkpt-suffix} {
-    @include ml7;
+  .ml7#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.ml7;
   }
 
-  .mr0#{$bkpt-suffix} {
-    @include mr0;
+  .mr0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mr0;
   }
 
-  .mr1#{$bkpt-suffix} {
-    @include mr1;
+  .mr1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mr1;
   }
 
-  .mr2#{$bkpt-suffix} {
-    @include mr2;
+  .mr2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mr2;
   }
 
-  .mr3#{$bkpt-suffix} {
-    @include mr3;
+  .mr3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mr3;
   }
 
-  .mr4#{$bkpt-suffix} {
-    @include mr4;
+  .mr4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mr4;
   }
 
-  .mr5#{$bkpt-suffix} {
-    @include mr5;
+  .mr5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mr5;
   }
 
-  .mr6#{$bkpt-suffix} {
-    @include mr6;
+  .mr6#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mr6;
   }
 
-  .mr7#{$bkpt-suffix} {
-    @include mr7;
+  .mr7#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mr7;
   }
 
-  .mb0#{$bkpt-suffix} {
-    @include mb0;
+  .mb0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mb0;
   }
 
-  .mb1#{$bkpt-suffix} {
-    @include mb1;
+  .mb1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mb1;
   }
 
-  .mb2#{$bkpt-suffix} {
-    @include mb2;
+  .mb2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mb2;
   }
 
-  .mb3#{$bkpt-suffix} {
-    @include mb3;
+  .mb3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mb3;
   }
 
-  .mb4#{$bkpt-suffix} {
-    @include mb4;
+  .mb4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mb4;
   }
 
-  .mb5#{$bkpt-suffix} {
-    @include mb5;
+  .mb5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mb5;
   }
 
-  .mb6#{$bkpt-suffix} {
-    @include mb6;
+  .mb6#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mb6;
   }
 
-  .mb7#{$bkpt-suffix} {
-    @include mb7;
+  .mb7#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mb7;
   }
 
-  .mt0#{$bkpt-suffix} {
-    @include mt0;
+  .mt0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mt0;
   }
 
-  .mt1#{$bkpt-suffix} {
-    @include mt1;
+  .mt1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mt1;
   }
 
-  .mt2#{$bkpt-suffix} {
-    @include mt2;
+  .mt2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mt2;
   }
 
-  .mt3#{$bkpt-suffix} {
-    @include mt3;
+  .mt3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mt3;
   }
 
-  .mt4#{$bkpt-suffix} {
-    @include mt4;
+  .mt4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mt4;
   }
 
-  .mt5#{$bkpt-suffix} {
-    @include mt5;
+  .mt5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mt5;
   }
 
-  .mt6#{$bkpt-suffix} {
-    @include mt6;
+  .mt6#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mt6;
   }
 
-  .mt7#{$bkpt-suffix} {
-    @include mt7;
+  .mt7#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mt7;
   }
 
-  .mv0#{$bkpt-suffix} {
-    @include mv0;
+  .mv0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mv0;
   }
 
-  .mv1#{$bkpt-suffix} {
-    @include mv1;
+  .mv1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mv1;
   }
 
-  .mv2#{$bkpt-suffix} {
-    @include mv2;
+  .mv2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mv2;
   }
 
-  .mv3#{$bkpt-suffix} {
-    @include mv3;
+  .mv3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mv3;
   }
 
-  .mv4#{$bkpt-suffix} {
-    @include mv4;
+  .mv4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mv4;
   }
 
-  .mv5#{$bkpt-suffix} {
-    @include mv5;
+  .mv5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mv5;
   }
 
-  .mv6#{$bkpt-suffix} {
-    @include mv6;
+  .mv6#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mv6;
   }
 
-  .mv7#{$bkpt-suffix} {
-    @include mv7;
+  .mv7#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mv7;
   }
 
-  .mh0#{$bkpt-suffix} {
-    @include mh0;
+  .mh0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mh0;
   }
 
-  .mh1#{$bkpt-suffix} {
-    @include mh1;
+  .mh1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mh1;
   }
 
-  .mh2#{$bkpt-suffix} {
-    @include mh2;
+  .mh2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mh2;
   }
 
-  .mh3#{$bkpt-suffix} {
-    @include mh3;
+  .mh3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mh3;
   }
 
-  .mh4#{$bkpt-suffix} {
-    @include mh4;
+  .mh4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mh4;
   }
 
-  .mh5#{$bkpt-suffix} {
-    @include mh5;
+  .mh5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mh5;
   }
 
-  .mh6#{$bkpt-suffix} {
-    @include mh6;
+  .mh6#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mh6;
   }
 
-  .mh7#{$bkpt-suffix} {
-    @include mh7;
+  .mh7#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include spacing-mixin.mh7;
   }
 }

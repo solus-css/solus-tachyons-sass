@@ -1,3 +1,6 @@
+@use "breakpoint-gen-mixin";
+@use "word-break-mixin";
+
 /*
 
   WORD BREAK
@@ -12,20 +15,20 @@
 
 */
 
-@include generate-breakpoints {
-  .word-normal#{$bkpt-suffix} {
-    @include word-normal;
+@include breakpoint-gen-mixin.generate-breakpoints {
+  .word-normal#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include word-break-mixin.word-normal;
   }
 
-  .word-wrap-all#{$bkpt-suffix} {
-    @include word-wrap-all;
+  .word-wrap-all#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include word-break-mixin.word-wrap-all;
   }
 
-  .word-wrap#{$bkpt-suffix} {
-    @include word-wrap;
+  .word-wrap#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include word-break-mixin.word-wrap;
   }
 
-  .word-nowrap#{$bkpt-suffix} {
-    @include word-nowrap;
+  .word-nowrap#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include word-break-mixin.word-nowrap;
   }
 }

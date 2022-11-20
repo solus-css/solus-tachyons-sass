@@ -1,3 +1,6 @@
+@use "border-widths-mixin";
+@use "breakpoint-gen-mixin";
+
 /*
 
    BORDER WIDTHS
@@ -15,37 +18,37 @@
      5 = 5th step in border-width scale
 
 */
-@include generate-breakpoints {
-  .bw0#{$bkpt-suffix} {
-    @include bw0;
+@include breakpoint-gen-mixin.generate-breakpoints {
+  .bw0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include border-widths-mixin.bw0;
   }
-  .bw1#{$bkpt-suffix} {
-    @include bw1;
+  .bw1#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include border-widths-mixin.bw1;
   }
-  .bw2#{$bkpt-suffix} {
-    @include bw2;
+  .bw2#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include border-widths-mixin.bw2;
   }
-  .bw3#{$bkpt-suffix} {
-    @include bw3;
+  .bw3#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include border-widths-mixin.bw3;
   }
-  .bw4#{$bkpt-suffix} {
-    @include bw4;
+  .bw4#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include border-widths-mixin.bw4;
   }
-  .bw5#{$bkpt-suffix} {
-    @include bw5;
+  .bw5#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include border-widths-mixin.bw5;
   }
 
   /* Resets */
-  .bt-0#{$bkpt-suffix} {
-    @include bt-0;
+  .bt-0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include border-widths-mixin.bt-0;
   }
-  .br-0#{$bkpt-suffix} {
-    @include br-0;
+  .br-0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include border-widths-mixin.br-0;
   }
-  .bb-0#{$bkpt-suffix} {
-    @include bb-0;
+  .bb-0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include border-widths-mixin.bb-0;
   }
-  .bl-0#{$bkpt-suffix} {
-    @include bl-0;
+  .bl-0#{breakpoint-gen-mixin.$bkpt-suffix} {
+    @include border-widths-mixin.bl-0;
   }
 }

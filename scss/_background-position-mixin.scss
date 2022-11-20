@@ -2,18 +2,22 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
+
 @mixin bg-top {
   background-repeat: no-repeat;
   background-position: top center;
 }
+
 @mixin bg-right {
   background-repeat: no-repeat;
   background-position: center right;
 }
+
 @mixin bg-bottom {
   background-repeat: no-repeat;
   background-position: bottom center;
 }
+
 @mixin bg-left {
   background-repeat: no-repeat;
   background-position: center left;
