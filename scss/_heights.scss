@@ -31,30 +31,36 @@
   .h1#{$bkpt-suffix} {
     @include h1;
   }
+
   .h2#{$bkpt-suffix} {
     @include h2;
   }
+
   .h3#{$bkpt-suffix} {
     @include h3;
   }
+
   .h4#{$bkpt-suffix} {
     @include h4;
   }
+
   .h5#{$bkpt-suffix} {
     @include h5;
   }
 
   /* Height Percentages - Based off of height of parent */
-
   .h-25#{$bkpt-suffix} {
     @include h-25;
   }
+
   .h-50#{$bkpt-suffix} {
     @include h-50;
   }
+
   .h-75#{$bkpt-suffix} {
     @include h-75;
   }
+
   .h-100#{$bkpt-suffix} {
     @include h-100;
   }
@@ -64,16 +70,18 @@
   }
 
   /* Screen Height Percentage */
-
   .vh-25#{$bkpt-suffix} {
     @include vh-25;
   }
+
   .vh-50#{$bkpt-suffix} {
     @include vh-50;
   }
+
   .vh-75#{$bkpt-suffix} {
     @include vh-75;
   }
+
   .vh-100#{$bkpt-suffix} {
     @include vh-100;
   }
@@ -83,10 +91,10 @@
   }
 
   /* String Properties */
-
   .h-auto#{$bkpt-suffix} {
     @include h-auto;
   }
+
   .h-inherit#{$bkpt-suffix} {
     @include h-inherit;
   }
