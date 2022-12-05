@@ -1,21 +1,21 @@
 @mixin w1 {
-  width: $width-1;
+  width: var(--width-1);
 }
 
 @mixin w2 {
-  width: $width-2;
+  width: var(--width-2);
 }
 
 @mixin w3 {
-  width: $width-3;
+  width: var(--width-3);
 }
 
 @mixin w4 {
-  width: $width-4;
+  width: var(--width-4);
 }
 
 @mixin w5 {
-  width: $width-5;
+  width: var(--width-5);
 }
 
 @mixin w-10 {
