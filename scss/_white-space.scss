@@ -7,14 +7,14 @@
   }
 
   .nowrap#{$bkpt-suffix} {
-    @include nowrap;
+    @include ws-nowrap;
   }
 
   .pre#{$bkpt-suffix} {
-    @include pre;
+    @include ws-pre;
   }
 
   .pre-wrap#{$bkpt-suffix} {
-    @include pre-wrap;
+    @include ws-pre-wrap;
   }
 }
