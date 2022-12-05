@@ -1,10 +1,7 @@
 /*
   Optional Tachyons CSS Custom Properties (variables) for using Tachyons scales in your CSS
-  Custom Properties are only available where they make sense to do so (colors, scales etc.) and are named the same as thier Sass variable counterparts.
+  Custom Properties are only available where they make sense to do so (colors, scales etc.) and share the same naming pattern as their Sass counterparts.
 */
-
-/* Tachyons Sass variables */
-@import "variables";
 
 /* CSS Custom Properties */
 @import "border-radius-vars";
