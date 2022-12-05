@@ -1,7 +1,3 @@
-@mixin mw-100 {
-  max-width: var(--max-width-100);
-}
-
 @mixin mw1 {
   max-width: var(--max-width-1);
 }
@@ -36,6 +32,10 @@
 
 @mixin mw9 {
   max-width: var(--max-width-9);
+}
+
+@mixin mw-100 {
+  max-width: var(--max-width-100);
 }
 
 @mixin mw-none {
