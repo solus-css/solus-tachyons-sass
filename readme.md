@@ -8,10 +8,18 @@ Tachyons-Haru breaks from the Tachyons parent project by integrating [CSS custom
 
 ## Local Setup
 
+To develop locally with Tachyons-Haru
+
 ```bash
 git clone https://github.com/tachyons-haru/tachyons-sass-haru.git
 cd tachyons-sass-haru
 npm install
+```
+
+Or as an NPM dependency:
+
+```bash
+npm i https://github.com/tachyons-haru/tachyons-sass-haru
 ```
 
 ### Basic Usage
@@ -58,6 +66,7 @@ Custom CSS properties are defined in `*-vars.scss` files that appear along side 
 ## Sass
 
 Tachyons-sass-haru uses variables and mixins to construct Sass partials for each Tachyons module.
+
 ### Sass Variables
 
  Sass variable names are identical to their custom property counterpart, a pattern established by [tachons-sass](https://github.com/tachyons-css/tachyons-sass) from which this project is forked. See also [tachyons-custom](https://github.com/tachyons-haru/tachyons-custom) which offers a near identical suite of custom variables, with the notable exception of properties related to colors [ie skins](https://github.com/tachyons-haru/tachyons-custom/blob/master/src/_variables.css), where [tachyons-custom](https://github.com/tachyons-haru/tachyons-custom) has a greatly expanded color property set, diverging from the parent project.
