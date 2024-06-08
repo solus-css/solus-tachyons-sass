@@ -11,6 +11,7 @@
     @include white-space-mixin.ws-normal;
   }
 
+<<<<<<< HEAD
   .nowrap#{breakpoint-gen-mixin.$bkpt-suffix} {
     @include white-space-mixin.nowrap;
   }
@@ -21,5 +22,17 @@
 
   .pre-wrap#{breakpoint-gen-mixin.$bkpt-suffix} {
     @include white-space-mixin.pre-wrap;
+=======
+  .nowrap#{$bkpt-suffix} {
+    @include ws-nowrap;
+  }
+
+  .pre#{$bkpt-suffix} {
+    @include ws-pre;
+  }
+
+  .pre-wrap#{$bkpt-suffix} {
+    @include ws-pre-wrap;
+>>>>>>> master
   }
 }

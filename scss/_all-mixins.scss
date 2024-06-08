@@ -1,6 +1,7 @@
 //  Sass mixins for extending Tachyons.
 
 // Breakpoint generator
+<<<<<<< HEAD
 @use "breakpoint-gen-mixin";
 
 // Tachyons module mixins
@@ -54,3 +55,58 @@
 @use "vertical-align-mixin";
 @use "hovers-mixin";
 @use "z-index-mixin";
+=======
+@import "breakpoints-mixin";
+
+// Tachyons module mixins
+// @include %module%
+@import "box-sizing-mixin";
+@import "aspect-ratios-mixin";
+@import "background-size-mixin";
+@import "background-position-mixin";
+@import "outlines-mixin";
+@import "borders-mixin";
+@import "border-colors-mixin";
+@import "border-radius-mixin";
+@import "border-style-mixin";
+@import "border-widths-mixin";
+@import "box-shadow-mixin";
+@import "code-mixin";
+@import "coordinates-mixin";
+@import "clears-mixin";
+@import "cursor-mixin";
+@import "flexbox-mixin";
+@import "display-mixin";
+@import "floats-mixin";
+@import "font-family-mixin";
+@import "font-style-mixin";
+@import "font-weight-mixin";
+@import "forms-mixin";
+@import "heights-mixin";
+@import "letter-spacing-mixin";
+@import "line-height-mixin";
+@import "links-mixin";
+@import "lists-mixin";
+@import "max-widths-mixin";
+@import "widths-mixin";
+@import "overflow-mixin";
+@import "position-mixin";
+@import "opacity-mixin";
+@import "rotations-mixin";
+@import "skins-mixin";
+@import "skins-pseudo-mixin";
+@import "spacing-mixin";
+@import "negative-margins-mixin";
+@import "text-decoration-mixin";
+@import "text-align-mixin";
+@import "text-transform-mixin";
+@import "type-scale-mixin";
+@import "typography-mixin";
+@import "utilities-mixin";
+@import "visibility-mixin";
+@import "white-space-mixin";
+@import "word-break-mixin";
+@import "vertical-align-mixin";
+@import "hovers-mixin";
+@import "z-index-mixin";
+>>>>>>> master
