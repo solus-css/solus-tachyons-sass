@@ -1,7 +1,6 @@
 @use "variables";
 
 @mixin w1 {
-<<<<<<< HEAD
   width: variables.$width-1;
 }
 
@@ -19,25 +18,6 @@
 
 @mixin w5 {
   width: variables.$width-5;
-=======
-  width: var(--width-1);
-}
-
-@mixin w2 {
-  width: var(--width-2);
-}
-
-@mixin w3 {
-  width: var(--width-3);
-}
-
-@mixin w4 {
-  width: var(--width-4);
-}
-
-@mixin w5 {
-  width: var(--width-5);
->>>>>>> master
 }
 
 @mixin w-10 {

@@ -36,7 +36,6 @@
      $font-size-7: 0.75rem !default;
 
 */
-<<<<<<< HEAD
 @include breakpoint-gen-mixin.generate-breakpoints {
   /*
    * For Hero/Marketing Titles
@@ -46,11 +45,6 @@
    * */
   .f-headline#{breakpoint-gen-mixin.$bkpt-suffix} {
     @include type-scale-mixin.f-headline;
-=======
-@include generate-breakpoints {
-  .f-headline#{$bkpt-suffix} {
-    @include f-headline;
->>>>>>> master
   }
 
   .f-subheadline#{breakpoint-gen-mixin.$bkpt-suffix} {
