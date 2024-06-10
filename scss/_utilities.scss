@@ -1,5 +1,7 @@
 @use "breakpoint-gen-mixin";
+
 @use "overflow-mixin";
+
 @use "utilities-mixin";
 
 /*
@@ -12,7 +14,6 @@
 .overflow-container {
   @include overflow-mixin.overflow-y-scroll;
 }
-
 @include breakpoint-gen-mixin.generate-breakpoints {
   .center#{breakpoint-gen-mixin.$bkpt-suffix} {
     @include utilities-mixin.center;

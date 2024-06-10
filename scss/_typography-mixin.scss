@@ -1,5 +1,4 @@
 @use "variables";
-
 @mixin measure {
   max-width: variables.$measure;
 }

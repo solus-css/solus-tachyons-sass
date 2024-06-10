@@ -1,4 +1,5 @@
 @use "breakpoint-gen-mixin";
+
 @use "heights-mixin";
 
 /*
@@ -34,7 +35,6 @@
   .h1#{breakpoint-gen-mixin.$bkpt-suffix} {
     @include heights-mixin.h1;
   }
-<<<<<<< HEAD
   .h2#{breakpoint-gen-mixin.$bkpt-suffix} {
     @include heights-mixin.h2;
   }
@@ -61,40 +61,6 @@
   }
   .h-100#{breakpoint-gen-mixin.$bkpt-suffix} {
     @include heights-mixin.h-100;
-=======
-
-  .h2#{$bkpt-suffix} {
-    @include h2;
-  }
-
-  .h3#{$bkpt-suffix} {
-    @include h3;
-  }
-
-  .h4#{$bkpt-suffix} {
-    @include h4;
-  }
-
-  .h5#{$bkpt-suffix} {
-    @include h5;
-  }
-
-  /* Height Percentages - Based off of height of parent */
-  .h-25#{$bkpt-suffix} {
-    @include h-25;
-  }
-
-  .h-50#{$bkpt-suffix} {
-    @include h-50;
-  }
-
-  .h-75#{$bkpt-suffix} {
-    @include h-75;
-  }
-
-  .h-100#{$bkpt-suffix} {
-    @include h-100;
->>>>>>> master
   }
 
   .min-h-100#{breakpoint-gen-mixin.$bkpt-suffix} {
@@ -102,7 +68,6 @@
   }
 
   /* Screen Height Percentage */
-<<<<<<< HEAD
 
   .vh-25#{breakpoint-gen-mixin.$bkpt-suffix} {
     @include heights-mixin.vh-25;
@@ -115,22 +80,6 @@
   }
   .vh-100#{breakpoint-gen-mixin.$bkpt-suffix} {
     @include heights-mixin.vh-100;
-=======
-  .vh-25#{$bkpt-suffix} {
-    @include vh-25;
-  }
-
-  .vh-50#{$bkpt-suffix} {
-    @include vh-50;
-  }
-
-  .vh-75#{$bkpt-suffix} {
-    @include vh-75;
-  }
-
-  .vh-100#{$bkpt-suffix} {
-    @include vh-100;
->>>>>>> master
   }
 
   .min-vh-100#{breakpoint-gen-mixin.$bkpt-suffix} {
@@ -138,20 +87,11 @@
   }
 
   /* String Properties */
-<<<<<<< HEAD
 
   .h-auto#{breakpoint-gen-mixin.$bkpt-suffix} {
     @include heights-mixin.h-auto;
   }
   .h-inherit#{breakpoint-gen-mixin.$bkpt-suffix} {
     @include heights-mixin.h-inherit;
-=======
-  .h-auto#{$bkpt-suffix} {
-    @include h-auto;
-  }
-
-  .h-inherit#{$bkpt-suffix} {
-    @include h-inherit;
->>>>>>> master
   }
 }

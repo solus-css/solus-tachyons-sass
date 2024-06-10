@@ -8,7 +8,9 @@ $bkpt-suffix: "";
     @if $breakpoint == "" {
       $bkpt-suffix: $breakpoint !global;
       @content;
-    } @else {
+    }
+
+ @else {
       @media #{$media} {
         $bkpt-suffix: "-" + $breakpoint !global;
         @content;

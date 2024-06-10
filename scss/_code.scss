@@ -1,4 +1,4 @@
-@use "white-space-mixin";
+@use "white-space-mixin" as white-space-mixin;
 
 /*
 
@@ -6,5 +6,5 @@
 
 */
 .pre {
-	@include white-space-mixin.pre;
+  @include white-space-mixin.ws-pre;
 }

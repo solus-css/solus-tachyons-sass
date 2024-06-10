@@ -1,6 +1,3 @@
-/* External Library Includes */
-@use "scss/vendor/normalize";
-
 /* ! TACHYONS v4.12.0 | http://tachyons.io */
 /*
  *   ________            ______
@@ -29,8 +26,10 @@
  *    - Debug children
  */
 
+/* External Library Includes */
+@use "scss/vendor/normalize";
+
 // Variables & Required Mixins
-<<<<<<< HEAD
 @forward "scss/variables";
 
 /* Modules */
@@ -91,119 +90,48 @@
 // @use "scss/styles";
 // @use "scss/nested";
 // @use "scss/module-template";
-=======
-@import "scss/all-sass-vars";
-@import "scss/all-mixins";
-
-/* Modules */
-@import "scss/all-modules";
-
-// @import "scss/box-sizing";
-// @import "scss/aspect-ratios";
-// @import "scss/images";
-// @import "scss/background-size";
-// @import "scss/background-position";
-// @import "scss/outlines";
-// @import "scss/borders";
-// @import "scss/border-colors";
-// @import "scss/border-radius";
-// @import "scss/border-style";
-// @import "scss/border-widths";
-// @import "scss/box-shadow";
-// @import "scss/code";
-// @import "scss/coordinates";
-// @import "scss/clears";
-// @import "scss/display";
-// @import "scss/flexbox";
-// @import "scss/floats";
-// @import "scss/font-family";
-// @import "scss/font-style";
-// @import "scss/font-weight";
-// @import "scss/forms";
-// @import "scss/heights";
-// @import "scss/letter-spacing";
-// @import "scss/line-height";
-// @import "scss/links";
-// @import "scss/lists";
-// @import "scss/max-widths";
-// @import "scss/widths";
-// @import "scss/overflow";
-// @import "scss/position";
-// @import "scss/opacity";
-// @import "scss/rotations";
-// @import "scss/skins";
-// @import "scss/skins-pseudo";
-// @import "scss/spacing";
-// @import "scss/negative-margins";
-// @import "scss/tables";
-// @import "scss/text-decoration";
-// @import "scss/text-align";
-// @import "scss/text-transform";
-// @import "scss/type-scale";
-// @import "scss/typography";
-// @import "scss/utilities";
-// @import "scss/visibility";
-// @import "scss/white-space";
-// @import "scss/word-break";
-// @import "scss/vertical-align";
-// @import "scss/hovers";
-// @import "scss/z-index";
-
-// Optional & Example files
-// @import 'scss/styles';
-// @import 'scss/nested';
-// @import 'scss/module_template';
->>>>>>> master
 
 /* CSS Custom Properties */
 /* Importing here will allow you to override any custom properties in modules */
-<<<<<<< HEAD
-// @use "scss/all-custom-properties";
+@use "scss/all-custom-properties";
+
+@use "scss/all-sass-vars";
 
 @use "scss/border-radius-vars";
+
 @use "scss/border-widths-vars";
+
 @use "scss/box-shadow-vars";
+
 @use "scss/heights-vars";
+
 @use "scss/font-families-vars";
+
 @use "scss/typography-vars";
+
 @use "scss/letter-spacing-vars";
+
 @use "scss/line-height-vars";
+
 @use "scss/max-widths-vars";
+
 @use "scss/widths-vars";
+
 @use "scss/opacity-vars";
+
 @use "scss/spacing-vars";
+
 @use "scss/type-scale-vars";
+
 @use "scss/colors-vars";
 
 /* Debugging */
-@use "scss/debug-children";
-@use "scss/debug-grid";
-=======
-@import "scss/all-css-vars";
-
-// @import "scss/border-radius-vars";
-// @import "scss/border-widths-vars";
-// @import "scss/box-shadow-vars";
-// @import "scss/heights-vars";
-// @import "scss/font-families-vars";
-// @import "scss/typography-vars";
-// @import "scss/letter-spacing-vars";
-// @import "scss/line-height-vars";
-// @import "scss/max-widths-vars";
-// @import "scss/widths-vars";
-// @import "scss/opacity-vars";
-// @import "scss/spacing-vars";
-// @import "scss/type-scale-vars";
-// @import "scss/colors-vars";
-
-/* Debugging */
-@import "scss/debug-children";
-@import "scss/debug-grid";
-
->>>>>>> master
 /* Uncomment out the line below to help debug layout issues */
+// @use "scss/debug-children";
+// @use "scss/debug-grid";
 /* @use "scss/debug"; */
 
+/* Mixins */
 @forward "scss/all-mixins";
 
 // @forward "scss/breakpoint-gen-mixin";

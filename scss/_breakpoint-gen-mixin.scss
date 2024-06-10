@@ -2,13 +2,16 @@
 
 //  Helper mixin for generating custom breakpoints
 //  $breakepoints are defined in _varriables.scss
+
 $bkpt-suffix: "";
 @mixin generate-breakpoints {
   @each $breakpoint, $media in variables.$breakpoints {
     @if $breakpoint == "" {
       $bkpt-suffix: $breakpoint !global;
       @content;
-    } @else {
+    }
+
+ @else {
       @media #{$media} {
         $bkpt-suffix: "-" + $breakpoint !global;
         @content;
