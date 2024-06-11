@@ -18,6 +18,7 @@
     "build:watch": "sass --watch tachyons.scss css/tachyons.css",
     "lint:js": "standard --fix",
     "lint:css": "stylelint \"**/*.scss\"",
+    "lint:css-fix": "stylelint \"**/*.scss\" --fix",
     "mutations": "immutable-css css/tachyons.css --strict",
     "start": "npm run build:watch",
     "test": "ava",
@@ -35,6 +36,7 @@
     "tachyons",
     "tachyons-css",
     "tachyons-sass-haru",
+    "haru-css",
     "sass",
     "scss"
   ],
@@ -44,23 +46,13 @@
     "cat": "^0.2.0",
     "immutable-css-cli": "^1.1.1",
     "npm-run-all": "^4.1.5",
-<<<<<<< HEAD
-    "prettier": "^2.7.1",
-    "sass": "^1.56.1",
-    "sass-migrator": "^1.7.1",
-    "standard": "^12.0.1",
-    "stylelint": "^14.14.1",
-    "stylelint-config-prettier-scss": "^0.0.1",
-    "stylelint-config-standard-scss": "^6.1.0",
-    "wallace-cli": "^2.5.0"
-=======
-    "prettier": "^3.3.1",
+    "prettier": "^3.3.2",
     "sass": "^1.77.4",
     "standard": "^17.1.0",
     "stylelint": "^16.6.1",
     "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-prettier": "^5.0.0",
     "wallace-cli": "^3.0.0"
->>>>>>> master
   },
   "contributors": [
     {
