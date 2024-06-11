@@ -1,144 +1,3 @@
-// Typography
-$sans-serif: -apple-system, blinkmacsystemfont, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif !default;
-$serif: georgia, serif !default;
-$code: consolas, monaco, monospace !default;
-$font-size-headline: 6rem !default;
-$font-size-subheadline: 5rem !default;
-$font-size-1: 3rem !default;
-$font-size-2: 2.25rem !default;
-$font-size-3: 1.5rem !default;
-$font-size-4: 1.25rem !default;
-$font-size-5: 1rem !default;
-$font-size-6: 0.875rem !default;
-$font-size-7: 0.75rem !default;
-$letter-spacing-tight: -0.05em !default;
-$letter-spacing-1: 0.1em !default;
-$letter-spacing-2: 0.25em !default;
-$line-height-solid: 1 !default;
-$line-height-title: 1.25 !default;
-$line-height-copy: 1.5 !default;
-$measure: 30em !default;
-$measure-narrow: 20em !default;
-$measure-wide: 34em !default;
-$spacing-none: 0 !default;
-$spacing-extra-small: 0.25rem !default;
-$spacing-small: 0.5rem !default;
-$spacing-medium: 1rem !default;
-$spacing-large: 2rem !default;
-$spacing-extra-large: 4rem !default;
-$spacing-extra-extra-large: 8rem !default;
-$spacing-extra-extra-extra-large: 16rem !default;
-$spacing-copy-separator: 1.5em !default;
-
-// Height, Width & Spacing
-$height-1: 1rem !default;
-$height-2: 2rem !default;
-$height-3: 4rem !default;
-$height-4: 8rem !default;
-$height-5: 16rem !default;
-$height-100: 100% !default;
-$width-1: 1rem !default;
-$width-2: 2rem !default;
-$width-3: 4rem !default;
-$width-4: 8rem !default;
-$width-5: 16rem !default;
-$width-100: 100% !default;
-$max-width-1: 1rem !default;
-$max-width-2: 2rem !default;
-$max-width-3: 4rem !default;
-$max-width-4: 8rem !default;
-$max-width-5: 16rem !default;
-$max-width-6: 32rem !default;
-$max-width-7: 48rem !default;
-$max-width-8: 64rem !default;
-$max-width-9: 96rem !default;
-$max-width-100: 96rem !default;
-
-// Borders
-$border-radius-none: 0 !default;
-$border-radius-1: 0.125rem !default;
-$border-radius-2: 0.25rem !default;
-$border-radius-3: 0.5rem !default;
-$border-radius-4: 1rem !default;
-$border-radius-circle: 100% !default;
-$border-radius-pill: 9999px !default;
-$border-width-none: 0 !default;
-$border-width-1: 0.125rem !default;
-$border-width-2: 0.25rem !default;
-$border-width-3: 0.5rem !default;
-$border-width-4: 1rem !default;
-$border-width-5: 2rem !default;
-
-// Shadows
-$box-shadow-1: 0 0 4px 2px hsl(0deg 0% 0% / 20%) !default;
-$box-shadow-2: 0 0 8px 2px hsl(0deg 0% 0% / 20%) !default;
-$box-shadow-3: 2px 2px 4px 2px hsl(0deg 0% 0% / 20%) !default;
-$box-shadow-4: 2px 2px 8px 0 hsl(0deg 0% 0% / 20%) !default;
-$box-shadow-5: 4px 4px 8px 0 hsl(0deg 0% 0% / 20%) !default;
-
-// Color Scales
-$black: hsl(0deg 0% 0%) !default; // #000
-$near-black: hsl(0deg 0% 7%) !default; // #111
-$dark-gray: hsl(0deg 0% 20%) !default; // #333
-$mid-gray: hsl(0deg 0% 33%) !default; // #555
-$gray: hsl(0deg 0% 47%) !default; // #777
-$silver: hsl(0deg 0% 60%) !default; // #999
-$light-silver: hsl(0deg 0% 67%) !default; // #aaa
-$moon-gray: hsl(0deg 0% 80%) !default; // #ccc
-$light-gray: hsl(0deg 0% 93%) !default; // #eee
-$near-white: hsl(0deg 0% 96%) !default; // #f4f4f4
-$white: hsl(0deg 0% 100%) !default; // #fff
-$transparent: transparent !default;
-$black-90: hsl(0deg 0% 0% / 90%) !default;
-$black-80: hsl(0deg 0% 0% / 80%) !default;
-$black-70: hsl(0deg 0% 0% / 70%) !default;
-$black-60: hsl(0deg 0% 0% / 60%) !default;
-$black-50: hsl(0deg 0% 0% / 50%) !default;
-$black-40: hsl(0deg 0% 0% / 40%) !default;
-$black-30: hsl(0deg 0% 0% / 30%) !default;
-$black-20: hsl(0deg 0% 0% / 20%) !default;
-$black-10: hsl(0deg 0% 0% / 10%) !default;
-$black-05: hsl(0deg 0% 0% / 5%) !default;
-$black-025: hsl(0deg 0% 0% / 2.5%) !default;
-$black-0125: hsl(0deg 0% 0% / 1.3%) !default;
-$white-90: hsl(0deg 0% 100% / 90%) !default;
-$white-80: hsl(0deg 0% 100% / 80%) !default;
-$white-70: hsl(0deg 0% 100% / 70%) !default;
-$white-60: hsl(0deg 0% 100% / 60%) !default;
-$white-50: hsl(0deg 0% 100% / 50%) !default;
-$white-40: hsl(0deg 0% 100% / 40%) !default;
-$white-30: hsl(0deg 0% 100% / 30%) !default;
-$white-20: hsl(0deg 0% 100% / 20%) !default;
-$white-10: hsl(0deg 0% 100% / 10%) !default;
-$white-05: hsl(0deg 0% 100% / 5%) !default;
-$white-025: hsl(0deg 0% 100% / 2.5%) !default;
-$white-0125: hsl(0deg 0% 100% / 1.3%) !default;
-$dark-red: hsl(357deg 97% 46%) !default; // #e7040f
-$red: hsl(3deg 100% 61%) !default; // #ff4136
-$light-red: hsl(8deg 100% 68%) !default; // #ff725c
-$orange: hsl(23deg 100% 50%) !default; // #ff6300
-$gold: hsl(43deg 100% 50%) !default; // #ffb700
-$yellow: hsl(51deg 100% 50%) !default; // #ffd700
-$light-yellow: hsl(53deg 91% 82%) !default; // #fbf1a9
-$purple: hsl(265deg 58% 41%) !default; // #5e2ca5
-$light-purple: hsl(267deg 85% 67%) !default; // #a463f2
-$dark-pink: hsl(320deg 100% 42%) !default; // #d5008f
-$hot-pink: hsl(324deg 100% 63%) !default; // #ff41b4
-$pink: hsl(324deg 100% 75%) !default; // #ff80cc
-$light-pink: hsl(326deg 100% 82%) !default; // #ffa3d7
-$dark-green: hsl(158deg 72% 27%) !default; // #137752
-$green: hsl(158deg 74% 38%) !default; // #19a974
-$light-green: hsl(158deg 66% 77%) !default; // #9eebcf
-$navy: hsl(216deg 100% 13%) !default; // #001b44
-$dark-blue: hsl(214deg 100% 31%) !default; // #00449e
-$blue: hsl(214deg 71% 54%) !default; // #357edd
-$light-blue: hsl(209deg 100% 79%) !default; // #96ccff
-$lightest-blue: hsl(203deg 100% 90%) !default; // #cdecff
-$washed-blue: hsl(173deg 100% 98%) !default; // #f6fffe
-$washed-green: hsl(157deg 84% 95%) !default; // #e8fdf5
-$washed-yellow: hsl(51deg 100% 96%) !default; // #fffceb
-$washed-red: hsl(0deg 100% 94%) !default; // #ffdfdf
-
 // Custom Media Query Variables
 $breakpoint-not-small: "screen and (min-width: 30em)" !default;
 $breakpoint-medium: "screen and (min-width: 30em) and (max-width: 60em)" !default;
@@ -150,4 +9,321 @@ $breakpoints: (
   "ns": $breakpoint-not-small,
   "m": $breakpoint-medium,
   "l": $breakpoint-large,
+) !default;
+
+// Typography
+$sans-serif: -apple-system, blinkmacsystemfont, "avenir next", avenir, helvetica,
+  "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif !default;
+$serif: georgia, serif !default;
+$code: consolas, monaco, monospace !default;
+$courier: "'Courier Next'", courier, monospace;
+$helvetica: "'helvetica neue'", helvetica, sans-serif;
+$avenir: "'avenir next'", avenir, sans-serif;
+$athelas: athelas, georga, serif;
+$georga: georgia, serif;
+$times: times, serif;
+$bodoni: "'Bodoni MT'", serif;
+$calisto: "'Calisto MT'", serif;
+$garamond: garamond, serif;
+$baskerville: baskerville, serif;
+
+$font-families: (
+  "sans-serif": $sans-serif,
+  "serif": $serif,
+  "system-sans-serif": sans-serif,
+  "system-serif": serif,
+  "monospace": $code,
+  "courier": $courier,
+  "helvetica": $helvetica,
+  "avenir": $avenir,
+  "athelas": $athelas,
+  "georgia": $georga,
+  "times": $times,
+  "bodoni": $bodoni,
+  "calisto": $calisto,
+  "garamond": $garamond,
+  "baskerville": $baskerville,
+) !default;
+
+$type-scales: (
+  "f-headline": 6rem,
+  "f-subheadline": 5rem,
+  "f1": 3rem,
+  "f2": 2.25rem,
+  "f3": 1.5rem,
+  "f4": 1.25rem,
+  "f5": 1rem,
+  "f6": 0.875rem,
+  "f7": 0.75rem,
+) !default;
+
+$font-weights: (
+  "fw1": 100,
+  "fw2": 200,
+  "fw3": 300,
+  "fw4": 400,
+  "fw5": 500,
+  "fw6": 600,
+  "fw7": 700,
+  "fw8": 800,
+  "fw9": 900,
+) !default;
+
+$letter-spacings: (
+  "ls-tight": -0.05em,
+  "ls-1": 0.1em,
+  "letter-spacing-2": 0.25em,
+) !default;
+
+$line-heights: (
+  "lh-solid": 1,
+  "lh-title": 1.25,
+  "lh-copy": 1.5,
+) !default;
+
+$measures: (
+  "measure": 30em,
+  "measure-narrow": 20em,
+  "measure-wide": 34em,
+) !default;
+
+// Height, Width & Spacing
+$spacings: (
+  "spacing-none": 0,
+  "spacing-extra-small": 0.25rem,
+  "spacing-small": 0.5rem,
+  "spacing-medium": 1rem,
+  "spacing-large": 2rem,
+  "spacing-extra-large": 4rem,
+  "spacing-extra-extra-large": 8rem,
+  "spacing-extra-extra-extra-large": 16rem,
+  "spacing-copy-separator": 1.5em,
+) !default;
+
+$heights-scale: (
+  "h1": 1rem,
+  "h2": 2rem,
+  "h3": 4rem,
+  "h4": 8rem,
+  "h5": 16rem,
+) !default;
+
+$heights-percent: (
+  "h-25": 25%,
+  "h-50": 50%,
+  "h-75": 75%,
+  "h-100": 100%,
+) !default;
+
+$heights-min: (
+  "min-h-25": 25%,
+  "min-h-100 ": 100%,
+  "min-vh-100": 100vh,
+) !default;
+
+$heights-viewport: (
+  "h-25": 25vh,
+  "h-50": 50vh,
+  "h-75": 75vh,
+  "h-100": 100vh,
+) !default;
+
+$heights-strings: (
+  "h-auto": auto,
+  "h-inherit": inherit,
+) !default;
+
+$widths: (
+  "w1": 1rem,
+  "w2": 2rem,
+  "w3": 4rem,
+  "w4": 8rem,
+  "w5": 16rem,
+  "w-10": 10%,
+  "w-20": 20%,
+  "w-25": 25%,
+  "w-30": 30%,
+  "w-33": 33%,
+  "w-34": 34%,
+  "w-40": 40%,
+  "w-50": 50%,
+  "w-60": 60%,
+  "w-70": 70%,
+  "w-75": 75%,
+  "w-80": 80%,
+  "w-90": 90%,
+  "w-100": 100%,
+  "w-third": "calc(100% / 3)",
+  "w-two-thirds": "calc(100% / 1 0.5)",
+  "w-auto": auto,
+) !default;
+
+$max-widths: (
+  "mw-1": 1rem,
+  "mw-2": 2rem,
+  "mw-3": 4rem,
+  "mw-4": 8rem,
+  "mw-5": 16rem,
+  "mw-6": 32rem,
+  "mw-7": 48rem,
+  "mw-8": 64rem,
+  "mw-9": 96rem,
+) !default;
+
+$margins: (
+  1: --spacing-extra-small,
+  2: --spacing-small,
+  3: --spacing-medium,
+  4: --spacing-large,
+  5: --spacing-extra-large,
+  6: --spacing-extra-extra-large,
+  7: --spacing-extra-extra-extra-large,
+) !default;
+
+// Borders
+$border-radii: (
+  "br-none": 0,
+  "br1": 0.125rem,
+  "br2": 0.25rem,
+  "br3": 0.5rem,
+  "br4": 1rem,
+  "br-100": 100%,
+  "br-circle": 100%,
+  "br-pill": 9999px,
+) !default;
+
+$border-widths: (
+  "bw0": 0,
+  "bw1": 0.125rem,
+  "bw2": 0.25rem,
+  "bw3": 0.5rem,
+  "bw4": 1rem,
+  "bw5": 2rem,
+) !default;
+
+// Shadows
+$shadows: (
+  "shadow-1": 0 0 4px 2px hsl(0deg 0% 0% / 20%),
+  "shadow-2": 0 0 8px 2px hsl(0deg 0% 0% / 20%),
+  "shadow-3": 2px 2px 4px 2px hsl(0deg 0% 0% / 20%),
+  "shadow-4": 2px 2px 8px 0 hsl(0deg 0% 0% / 20%),
+  "shadow-5": 4px 4px 8px 0 hsl(0deg 0% 0% / 20%),
+) !default;
+
+// Color Scales
+$color-scales: (
+  "black": hsl(0deg 0% 0%),
+  "near-black": hsl(0deg 0% 7%),
+  "dark-gray": hsl(0deg 0% 20%),
+  "mid-gray": hsl(0deg 0% 33%),
+  "gray": hsl(0deg 0% 47%),
+  "silver": hsl(0deg 0% 60%),
+  "light-silver": hsl(0deg 0% 67%),
+  "moon-gray": hsl(0deg 0% 80%),
+  "light-gray": hsl(0deg 0% 93%),
+  "near-white": hsl(0deg 0% 96%),
+  "white": hsl(0deg 0% 100%),
+  "transparent": transparent,
+  "black-90": hsl(0deg 0% 0% / 90%),
+  "black-80": hsl(0deg 0% 0% / 80%),
+  "black-70": hsl(0deg 0% 0% / 70%),
+  "black-60": hsl(0deg 0% 0% / 60%),
+  "black-50": hsl(0deg 0% 0% / 50%),
+  "black-40": hsl(0deg 0% 0% / 40%),
+  "black-30": hsl(0deg 0% 0% / 30%),
+  "black-20": hsl(0deg 0% 0% / 20%),
+  "black-10": hsl(0deg 0% 0% / 10%),
+  "black-05": hsl(0deg 0% 0% / 5%),
+  "black-025": hsl(0deg 0% 0% / 2.5%),
+  "black-0125": hsl(0deg 0% 0% / 1.25%),
+  "white-90": hsl(0deg 0% 100% / 90%),
+  "white-80": hsl(0deg 0% 100% / 80%),
+  "white-70": hsl(0deg 0% 100% / 70%),
+  "white-60": hsl(0deg 0% 100% / 60%),
+  "white-50": hsl(0deg 0% 100% / 50%),
+  "white-40": hsl(0deg 0% 100% / 40%),
+  "white-30": hsl(0deg 0% 100% / 30%),
+  "white-20": hsl(0deg 0% 100% / 20%),
+  "white-10": hsl(0deg 0% 100% / 10%),
+  "white-05": hsl(0deg 0% 100% / 5%),
+  "white-025": hsl(0deg 0% 100% / 2.5%),
+  "white-0125": hsl(0deg 0% 100% / 1.25%),
+  "dark-red": hsl(357deg 97% 46%),
+  "red": hsl(3deg 100% 61%),
+  "light-red": hsl(8deg 100% 68%),
+  "orange": hsl(23deg 100% 50%),
+  "gold": hsl(43deg 100% 50%),
+  "yellow": hsl(51deg 100% 50%),
+  "light-yellow": hsl(53deg 91% 82%),
+  "purple": hsl(265deg 58% 41%),
+  "light-purple": hsl(267deg 85% 67%),
+  "dark-pink": hsl(320deg 100% 42%),
+  "hot-pink": hsl(330deg 100% 50%),
+  "pink": hsl(335deg 100% 50%),
+  "light-pink": hsl(335deg 100% 67%),
+  "dark-green": hsl(120deg 100% 20%),
+  "green": hsl(120deg 100% 40%),
+  "light-green": hsl(120deg 100% 60%),
+  "navy": hsl(210deg 100% 25%),
+  "dark-blue": hsl(220deg 100% 20%),
+  "blue": hsl(220deg 100% 40%),
+  "light-blue": hsl(220deg 100% 60%),
+  "lightest-blue": hsl(220deg 100% 90%),
+  "washed-blue": hsl(220deg 100% 95%),
+  "washed-green": hsl(120deg 100% 95%),
+  "washed-yellow": hsl(51deg 100% 95%),
+  "washed-red": hsl(0deg 100% 95%),
+  "inherit": inherit,
+) !default;
+
+$opacities: (
+  "o-100": 1,
+  "o-90": 90,
+  "o-80": 80,
+  "o-70": 70,
+  "o-60": 60,
+  "o-50": 50,
+  "o-40": 40,
+  "o-30": 30,
+  "o-20": 20,
+  "o-10": 10,
+  "o-05": 0.5,
+  "o-025": 0.25,
+  "o-0": 0,
+) !default;
+
+// Utilites
+
+$ratios: (
+  "aspect-ratio--16x9": 56.25%,
+  "aspect-ratio--9x16": 177.77%,
+  "aspect-ratio--4x3": 75%,
+  "aspect-ratio--3x4": 133.33%,
+  "aspect-ratio--6x4": 66.6%,
+  "aspect-ratio--4x6": 150%,
+  "aspect-ratio--8x5": 62.5%,
+  "aspect-ratio--5x8": 160%,
+  "aspect-ratio--7x5": 71.42%,
+  "aspect-ratio--5x7": 140%,
+  "aspect-ratio--1x1": 100%,
+) !default;
+
+$rotations: (
+  "rorate-45": 45deg,
+  "rorate-90": 90deg,
+  "rorate-135": 135deg,
+  "rorate-180": 180deg,
+  "rorate-225": 225deg,
+  "rorate-270": 270deg,
+  "rorate-315": 315deg,
+) !default;
+
+$z-indexes: (
+  "z-0": 0,
+  "z-1": 1,
+  "z-2": 2,
+  "z-3": 3,
+  "z-5": 5,
+  "z-999": 999,
+  "z-9999": 9999,
 ) !default;
