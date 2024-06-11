@@ -1,0 +1,12 @@
+@mixin center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin mr-auto {
+  margin-right: auto;
+}
+
+@mixin ml-auto {
+  margin-left: auto;
+}

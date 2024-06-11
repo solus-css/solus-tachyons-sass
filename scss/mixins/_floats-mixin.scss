@@ -1,0 +1,11 @@
+@mixin fl {
+	_display: inline;
+	float: left;
+}
+@mixin fr {
+	_display: inline;
+	float: right;
+}
+@mixin fn {
+	float: none;
+}

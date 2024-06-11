@@ -1,0 +1,33 @@
+@mixin normal {
+	font-weight: normal;
+}
+@mixin b {
+	font-weight: bold;
+}
+@mixin fw1 {
+	font-weight: 100;
+}
+@mixin fw2 {
+	font-weight: 200;
+}
+@mixin fw3 {
+	font-weight: 300;
+}
+@mixin fw4 {
+	font-weight: 400;
+}
+@mixin fw5 {
+	font-weight: 500;
+}
+@mixin fw6 {
+	font-weight: 600;
+}
+@mixin fw7 {
+	font-weight: 700;
+}
+@mixin fw8 {
+	font-weight: 800;
+}
+@mixin fw9 {
+	font-weight: 900;
+}

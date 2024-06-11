@@ -1,0 +1,37 @@
+@mixin dn {
+	display: none;
+}
+@mixin di {
+	display: inline;
+}
+@mixin db {
+	display: block;
+}
+@mixin dib {
+	display: inline-block;
+}
+@mixin dit {
+	display: inline-table;
+}
+@mixin dt {
+	display: table;
+}
+@mixin dtc {
+	display: table-cell;
+}
+@mixin dt-row {
+	display: table-row;
+}
+@mixin dt-row-group {
+	display: table-row-group;
+}
+@mixin dt-column {
+	display: table-column;
+}
+@mixin dt-column-group {
+	display: table-column-group;
+}
+@mixin dt--fixed {
+	width: 100%;
+	table-layout: fixed;
+}

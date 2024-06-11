@@ -1,19 +1,15 @@
 @mixin h1 {
   height: var(--height-1);
 }
-
 @mixin h2 {
   height: var(--height-2);
 }
-
 @mixin h3 {
   height: var(--height-3);
 }
-
 @mixin h4 {
   height: var(--height-4);
 }
-
 @mixin h5 {
   height: var(--height-5);
 }
@@ -21,15 +17,12 @@
 @mixin h-25 {
   height: 25%;
 }
-
 @mixin h-50 {
   height: 50%;
 }
-
 @mixin h-75 {
   height: 75%;
 }
-
 @mixin h-100 {
   height: 100%;
 }
@@ -41,15 +34,12 @@
 @mixin vh-25 {
   height: 25vh;
 }
-
 @mixin vh-50 {
   height: 50vh;
 }
-
 @mixin vh-75 {
   height: 75vh;
 }
-
 @mixin vh-100 {
   height: 100vh;
 }
@@ -61,7 +51,6 @@
 @mixin h-auto {
   height: auto;
 }
-
 @mixin h-inherit {
   height: inherit;
 }

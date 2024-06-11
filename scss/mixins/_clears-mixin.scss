@@ -13,19 +13,15 @@
 
   *zoom: 1;
 }
-
 @mixin cl {
   clear: left;
 }
-
 @mixin cr {
   clear: right;
 }
-
 @mixin cb {
   clear: both;
 }
-
 @mixin cn {
   clear: none;
 }

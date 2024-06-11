@@ -1,11 +1,9 @@
 @mixin lh-solid {
   line-height: var(--line-height-solid);
 }
-
 @mixin lh-title {
   line-height: var(--line-height-title);
 }
-
 @mixin lh-copy {
   line-height: var(--line-height-copy);
 }

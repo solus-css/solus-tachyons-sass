@@ -1,22 +1,21 @@
-@use "variables";
 @mixin w1 {
-  width: variables.$width-1;
+  width: var(--width-1);
 }
 
 @mixin w2 {
-  width: variables.$width-2;
+  width: var(--width-2);
 }
 
 @mixin w3 {
-  width: variables.$width-3;
+  width: var(--width-3);
 }
 
 @mixin w4 {
-  width: variables.$width-4;
+  width: var(--width-4);
 }
 
 @mixin w5 {
-  width: variables.$width-5;
+  width: var(--width-5);
 }
 
 @mixin w-10 {

@@ -1,46 +1,36 @@
 @mixin br0 {
   border-radius: var(--border-radius-none);
 }
-
 @mixin br1 {
   border-radius: var(--border-radius-1);
 }
-
 @mixin br2 {
   border-radius: var(--border-radius-2);
 }
-
 @mixin br3 {
   border-radius: var(--border-radius-3);
 }
-
 @mixin br4 {
   border-radius: var(--border-radius-4);
 }
-
 @mixin br-100 {
   border-radius: var(--border-radius-circle);
 }
-
 @mixin br-pill {
   border-radius: var(--border-radius-pill);
 }
-
 @mixin br--bottom {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-
 @mixin br--top {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-
 @mixin br--right {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-
 @mixin br--left {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
