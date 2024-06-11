@@ -1,0 +1,6 @@
+// Create css custom properties from a map
+@mixin custom-properties($map) {
+  @each $key, $value in $map {
+    --#{$key}: #{$value};
+  }
+}

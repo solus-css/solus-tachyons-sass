@@ -1,0 +1,128 @@
+@use "sass:math";
+
+///  A mixin to generate flat classes from a scss map
+///
+///  @param {Map} $map - The map to generate classes from.
+///  @param {String} $property - The property to set.
+///  @param {String} $suffix - The suffix to append to the class name.
+///  @param {String} $pre - The prefix to prepend to the class name.
+///  @param {Boolean} $negative - Whether to generate negative values.
+@mixin generate-classes($map, $property: "", $suffix: "") {
+  @each $key, $value in $map {
+    @if $key != "" {
+      .#{$key}#{$suffix} {
+        @if $property {
+          #{$property}: var(--#{$key}, #{$value});
+        } @else {
+          @content ($key, $value);
+        }
+      }
+    }
+  }
+}
+
+///  A mixin to generate font-family classes from a scss map.
+///
+///  @param {Map} $map - The map to generate classes from.
+///  @param {String} $property - The property to set.
+///  @param {String} $suffix - The suffix to append to the class name.
+@mixin generate-family-classes($map, $property: "", $suffix: "") {
+  @each $key, $value in $map {
+    @if $key != "" {
+      .#{$key}#{$suffix} {
+        @if $property {
+          #{$property}: var(--#{$key}, #{$value});
+        }
+      }
+    }
+  }
+}
+
+/// A mixin to generate compound classes with internal incrementor from a scss map
+///
+///  @param {Map} $map - The map to generate classes from.
+///  @param {String} $property - The property to set.
+///  @param {String} $suffix - The suffix to append to the class name.
+///  @param {String} $pre - The prefix to prepend to the class name.
+///  @param {Boolean} $negative - Whether to generate negative values.
+@mixin generate-compound-incremented-classes(
+  $map,
+  $property: "",
+  $pre: "",
+  $suffix: "",
+  $negative: false,
+  $i: 0
+) {
+  @each $key, $value in $map {
+    @if $key != "" {
+      .#{$pre}#{$i}#{$suffix} {
+        @if $property {
+          @if $negative {
+            #{$property}: calc(-1 * var(--#{$key}, #{$value}));
+          } @else {
+            #{$property}: var(--#{$key}, #{$value});
+          }
+        } @else {
+          @content ($key, $value);
+        }
+      }
+      $i: $i + 1;
+    }
+  }
+}
+
+// A mixin to generate compound classes from a scss map
+///  @param {Map} $map - The map to generate classes from.
+///  @param {String} $property - The property to set.
+///  @param {String} $suffix - The suffix to append to the class name.
+///  @param {String} $pre - The prefix to prepend to the class name.
+///  @param {Boolean} $negative - Whether to generate negative values.
+@mixin generate-compound-classes(
+  $map,
+  $property: "",
+  $pre: "",
+  $suffix: "",
+  $negative: false
+) {
+  @each $key, $value in $map {
+    @if $key != "" {
+      @if $suffix == "" {
+        $suffix: -#{$key};
+      }
+      // if the string $pre does not end with '-'
+      @if not ends-with($pre, "-") and $pre != "" {
+        $pre: $pre + "-";
+      }
+      .#{$pre}#{$key}#{$suffix} {
+        @if $property != "" {
+          @if $negative {
+            #{$property}: calc(-1 * var(--#{$key}, #{$value}));
+          } @else {
+            #{$property}: var(--#{$key}, #{$value});
+          }
+        } @else {
+          @content ($key, $value);
+        }
+      }
+    }
+  }
+}
+
+///  A mixin to generate color classes from a scss map.
+///
+///  @param {Map} $map - The map to generate classes from.
+///  @param {String} $suffix - The suffix to append to the class name.
+///  @param {String} $pre - The prefix to prepend to the class name.
+@mixin generate-compound-color-classes($map, $pre: "", $suffix: "") {
+  @each $key, $value in $map {
+    @if $key != "" {
+      // if the string $pre does not end with '-'
+      @if not ends-with($pre, "-") and $pre != "" {
+        $pre: $pre + "-";
+      }
+      .#{$pre}#{$key}#{$suffix} {
+        @content ($key, $value);
+      }
+    }
+  }
+}
