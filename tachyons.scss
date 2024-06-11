@@ -1,4 +1,5 @@
 /* ! TACHYONS v4.12.X | http://tachyons.io */
+/* ! TACHYONS-HARU v0.1.0 | https://github.com/tachyons-haru */
 /*
  *   ________            ______
  *   ___  __/_____ _________  /______  ______________________
@@ -15,11 +16,12 @@
 //     - Generators
 //     - module mixins (depricated)
 //  4. CSS Custom Properties
-//     - all custom properties
+//     - All custom properties
 //     - (or selective imports)
 //  5. Tachyons Modules
-//     - all modules
+//     - All modules
 //     - (or selective imports)
+//     - Optional imports
 //  6. Debugging
 //     - Debug all
 //     - Debug children
@@ -28,14 +30,14 @@
 // @use "scss/vendor/normalize";
 
 // 2. Sass Variables
-// @forward "scss/variables";
+@forward "scss/variables";
 
 // 3. Mixins
-// @forward "scss/generators";
+@forward "scss/generators";
 
-// CSS Custom Properties
+// 4. CSS Custom Properties
 // Importing here will allow you to override any custom properties in modules.
-// @use "scss/properties";
+@use "scss/properties";
 // @use "scss/properties/border-radius-props";
 // @use "scss/properties/border-widths-props";
 // @use "scss/properties/box-shadow-props";
@@ -52,67 +54,66 @@
 // @use "scss/properties/utilities-props";
 // @use "scss/properties/widths-props";
 
-/* Modules */
-// @use "scss/modules";
+/* 5. Modules */
+@use "scss/modules";
 
-@use "scss/modules/box-sizing";
-@use "scss/modules/aspect-ratios";
-@use "scss/modules/images";
-@use "scss/modules/background-size";
-@use "scss/modules/background-position";
-@use "scss/modules/outlines";
-@use "scss/modules/borders";
-@use "scss/modules/border-colors";
-@use "scss/modules/border-radius";
-@use "scss/modules/border-style";
-@use "scss/modules/border-widths";
-@use "scss/modules/box-shadow";
-@use "scss/modules/code";
-@use "scss/modules/coordinates";
-@use "scss/modules/clears";
-@use "scss/modules/display";
-@use "scss/modules/flexbox";
-@use "scss/modules/floats";
-@use "scss/modules/font-family";
-@use "scss/modules/font-style";
-@use "scss/modules/font-weight";
-@use "scss/modules/forms";
-@use "scss/modules/heights";
-@use "scss/modules/letter-spacing";
-@use "scss/modules/line-height";
-@use "scss/modules/links";
-@use "scss/modules/lists";
-@use "scss/modules/max-widths";
-@use "scss/modules/widths";
-@use "scss/modules/overflow";
-@use "scss/modules/position";
-
-@use "scss/modules/opacity";
-@use "scss/modules/rotations";
-@use "scss/modules/skins";
-@use "scss/modules/skins-pseudo";
-@use "scss/modules/spacing";
-@use "scss/modules/negative-margins";
-@use "scss/modules/tables";
-@use "scss/modules/text-decoration";
-@use "scss/modules/text-align";
-@use "scss/modules/text-transform";
-@use "scss/modules/type-scale";
-@use "scss/modules/typography";
-@use "scss/modules/utilities";
-@use "scss/modules/visibility";
-@use "scss/modules/white-space";
-@use "scss/modules/word-break";
-@use "scss/modules/vertical-align";
-@use "scss/modules/hovers";
-@use "scss/modules/z-index";
+// @use "scss/modules/box-sizing";
+// @use "scss/modules/aspect-ratios";
+// @use "scss/modules/images";
+// @use "scss/modules/background-size";
+// @use "scss/modules/background-position";
+// @use "scss/modules/outlines";
+// @use "scss/modules/borders";
+// @use "scss/modules/border-colors";
+// @use "scss/modules/border-radius";
+// @use "scss/modules/border-style";
+// @use "scss/modules/border-widths";
+// @use "scss/modules/box-shadow";
+// @use "scss/modules/code";
+// @use "scss/modules/coordinates";
+// @use "scss/modules/clears";
+// @use "scss/modules/display";
+// @use "scss/modules/flexbox";
+// @use "scss/modules/floats";
+// @use "scss/modules/font-family";
+// @use "scss/modules/font-style";
+// @use "scss/modules/font-weight";
+// @use "scss/modules/forms";
+// @use "scss/modules/heights";
+// @use "scss/modules/letter-spacing";
+// @use "scss/modules/line-height";
+// @use "scss/modules/links";
+// @use "scss/modules/lists";
+// @use "scss/modules/max-widths";
+// @use "scss/modules/widths";
+// @use "scss/modules/overflow";
+// @use "scss/modules/position";
+// @use "scss/modules/opacity";
+// @use "scss/modules/rotations";
+// @use "scss/modules/skins";
+// @use "scss/modules/skins-pseudo";
+// @use "scss/modules/spacing";
+// @use "scss/modules/negative-margins";
+// @use "scss/modules/tables";
+// @use "scss/modules/text-decoration";
+// @use "scss/modules/text-align";
+// @use "scss/modules/text-transform";
+// @use "scss/modules/type-scale";
+// @use "scss/modules/typography";
+// @use "scss/modules/utilities";
+// @use "scss/modules/visibility";
+// @use "scss/modules/white-space";
+// @use "scss/modules/word-break";
+// @use "scss/modules/vertical-align";
+// @use "scss/modules/hovers";
+// @use "scss/modules/z-index";
 
 // Optional and Example files
 // @use "scss/modules/styles";
 // @use "scss/modules/nested";
 // @use "scss/modules/module-template";
 
-// Debugging
+// 6. Debugging
 // Uncomment the lines below to help debug layout issues
 // @use "scss/modules/debug-children";
 // @use "scss/modules/debug-grid";
