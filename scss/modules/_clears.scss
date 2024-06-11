@@ -1,0 +1,35 @@
+@use "../generators/breakpoints" as *;
+/*
+
+   CLEARFIX
+   http://tachyons.io/docs/layout/clearfix/
+
+*/
+.cf {
+  &::before,
+  &::after {
+    display: table;
+    content: " ";
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+@include generate-breakpoints {
+  .cl#{$bkpt-suffix} {
+    clear: left;
+  }
+
+  .cr#{$bkpt-suffix} {
+    clear: right;
+  }
+
+  .cb#{$bkpt-suffix} {
+    clear: both;
+  }
+
+  .cn#{$bkpt-suffix} {
+    clear: none;
+  }
+}

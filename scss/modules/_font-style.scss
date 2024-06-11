@@ -1,0 +1,15 @@
+@use "../generators/breakpoints" as *;
+/*
+
+   FONT STYLE
+   Docs: http://tachyons.io/docs/typography/font-style/
+
+*/
+@include generate-breakpoints {
+  .i#{$bkpt-suffix} {
+    font-style: italic;
+  }
+  .fs-normal#{$bkpt-suffix} {
+    font-style: normal;
+  }
+}

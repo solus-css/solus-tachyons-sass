@@ -1,0 +1,14 @@
+@use "../variables" as *;
+@use "../generators/classes" as *;
+@use "../generators/breakpoints" as *;
+
+/*
+
+  BOX-SHADOW
+  Docs: http://tachyons.io/docs/themes/box-shadow/
+
+ */
+@include generate-breakpoints {
+  @include generate-classes($shadows, box-shadow, $bkpt-suffix) {
+  }
+}

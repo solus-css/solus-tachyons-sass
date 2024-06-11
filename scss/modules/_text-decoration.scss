@@ -1,0 +1,21 @@
+@use "../generators/breakpoints" as *;
+
+/*
+
+   TEXT DECORATION
+   Docs: http://tachyons.io/docs/typography/text-decoration/
+
+*/
+@include generate-breakpoints {
+  .strike#{$bkpt-suffix} {
+    text-decoration: strike;
+  }
+
+  .underline#{$bkpt-suffix} {
+    text-decoration: underline;
+  }
+
+  .no-underline#{$bkpt-suffix} {
+    text-decoration: no-underline;
+  }
+}

@@ -1,0 +1,30 @@
+@use "../variables" as *;
+@use "../generators/breakpoints" as *;
+@use "../generators/classes" as *;
+/*
+
+   TYPOGRAPHY
+   http://tachyons.io/docs/typography/measure/
+
+*/
+@include generate-breakpoints {
+  @include generate-classes($measures, max-width, $bkpt-suffix);
+
+  /* Book paragraph style - paragraphs are indented with no vertical spacing. */
+  .indent#{$bkpt-suffix} {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-indent: 1em;
+  }
+
+  .small-caps#{$bkpt-suffix} {
+    font-variant: small-caps;
+  }
+
+  /* Combine this class with a width to truncate text (or just leave as is to truncate at width of containing element. */
+  .truncate#{$bkpt-suffix} {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

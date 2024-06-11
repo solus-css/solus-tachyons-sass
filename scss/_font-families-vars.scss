@@ -1,7 +1,0 @@
-@use "variables";
-
-:root {
-  --sans-serif: #{variables.$sans-serif};
-  --serif: #{variables.$serif};
-  --monospace: #{variables.$code};
-}

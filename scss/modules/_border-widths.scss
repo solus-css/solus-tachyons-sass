@@ -1,0 +1,36 @@
+@use "../variables" as *;
+@use "../generators/classes" as *;
+@use "../generators/breakpoints" as *;
+/*
+
+   BORDER WIDTHS
+   Docs: http://tachyons.io/docs/themes/borders/
+
+   Base:
+     bw = border-width
+
+   Modifiers:
+     0 = 0 width border
+     1 = 1st step in border-width scale
+     2 = 2nd step in border-width scale
+     3 = 3rd step in border-width scale
+     4 = 4th step in border-width scale
+     5 = 5th step in border-width scale
+
+*/
+@include generate-breakpoints {
+  @include generate-classes($border-widths, border-width, $bkpt-suffix);
+  /* Resets */
+  bt-0#{$bkpt-suffix} {
+    border-top-width: 0;
+  }
+  br-0#{$bkpt-suffix} {
+    border-right-width: 0;
+  }
+  bb-0#{$bkpt-suffix} {
+    border-bottom-width: 0;
+  }
+  bl-0#{$bkpt-suffix} {
+    border-left-width: 0;
+  }
+}

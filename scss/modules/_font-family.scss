@@ -1,0 +1,9 @@
+@use "../variables" as *;
+@use "../generators/classes" as *;
+/*
+
+   FONT FAMILY GROUPS
+   Docs: http://tachyons.io/docs/typography/font-family/
+
+*/
+@include generate-classes($font-families, font-family);

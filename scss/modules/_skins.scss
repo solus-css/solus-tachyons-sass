@@ -1,0 +1,31 @@
+@use "../variables" as *;
+@use "../generators/classes" as *;
+@use "../generators/breakpoints" as *;
+/*
+
+   SKINS
+   Docs: http://tachyons.io/docs/themes/skins/
+
+   Classes for setting foreground and background colors on elements.
+   If you haven't declared a border color, but set border on an element, it will
+   be set to the current text color.
+
+*/
+
+/* Text colors */
+@include generate-breakpoints {
+  @include generate-compound-color-classes($color-scales, "") using
+    ($key, $value) {
+    color: var(--#{$key}, #{$value});
+  }
+}
+/* Background colors */
+@include generate-breakpoints {
+  @include generate-compound-color-classes($color-scales, bg) using
+    ($key, $value) {
+    background-color: var(--#{$key}, #{$value});
+  }
+  .bg-inherit {
+    background-color: inherit;
+  }
+}

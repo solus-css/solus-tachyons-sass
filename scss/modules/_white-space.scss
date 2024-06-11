@@ -1,0 +1,24 @@
+@use "../generators/breakpoints" as *;
+
+/*
+
+   WHITE SPACE
+
+*/
+@include generate-breakpoints {
+  .ws-normal#{$bkpt-suffix} {
+    white-space: normal;
+  }
+
+  .nowrap#{$bkpt-suffix} {
+    white-space: nowrap;
+  }
+
+  .pre#{$bkpt-suffix} {
+    white-space: pre;
+  }
+
+  .pre-wrap#{$bkpt-suffix} {
+    white-space: pre-wrap;
+  }
+}

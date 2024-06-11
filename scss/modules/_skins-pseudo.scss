@@ -1,0 +1,21 @@
+@use "../variables" as *;
+@use "../generators/classes" as *;
+@use "../generators/breakpoints" as *;
+
+/*
+
+   SKINS:PSEUDO
+
+   Customize the color of an element when
+   it is focused or hovered over.
+
+ */
+@include generate-breakpoints {
+  @include generate-compound-color-classes($color-scales, hover) using
+    ($key, $value) {
+    &:hover,
+    &:focus {
+      color: var(--#{$key}, #{$value});
+    }
+  }
+}

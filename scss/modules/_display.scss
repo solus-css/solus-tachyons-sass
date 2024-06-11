@@ -1,0 +1,64 @@
+@use "../generators/breakpoints" as *;
+/*
+
+   DISPLAY
+   Docs: http://tachyons.io/docs/layout/display
+
+   Base:
+    d = display
+
+   Modifiers:
+    n     = none
+    b     = block
+    ib    = inline-block
+    it    = inline-table
+    t     = table
+    tc    = table-cell
+    tr    = table-row
+    tcol  = table-column
+    tcolg = table-column-group
+
+*/
+@include generate-breakpoints {
+  .dn#{$bkpt-suffix} {
+    display: none;
+  }
+  .di#{$bkpt-suffix} {
+    display: inline;
+  }
+  .db#{$bkpt-suffix} {
+    display: block;
+  }
+  .dib#{$bkpt-suffix} {
+    display: inline-block;
+  }
+  .dit#{$bkpt-suffix} {
+    display: inline-table;
+  }
+  .dt#{$bkpt-suffix} {
+    display: table;
+  }
+  .dtc#{$bkpt-suffix} {
+    display: table-cell;
+  }
+  .dt-row#{$bkpt-suffix} {
+    display: table-row;
+  }
+  .dt-row-group#{$bkpt-suffix} {
+    display: table-row-group;
+  }
+  .dt-column#{$bkpt-suffix} {
+    display: table-column;
+  }
+  .dt-column-group#{$bkpt-suffix} {
+    display: table-column-group;
+  }
+  /*
+    This will set table to full width and then
+    all cells will be equal width
+  */
+  .dt--fixed#{$bkpt-suffix} {
+    width: 100%;
+    table-layout: fixed;
+  }
+}

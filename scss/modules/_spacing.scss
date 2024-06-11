@@ -1,0 +1,95 @@
+@use "../variables" as *;
+@use "../generators/classes" as *;
+@use "../generators/breakpoints" as *;
+/*
+
+   SPACING
+   Docs: http://tachyons.io/docs/layout/spacing/
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Base:
+
+   Modifiers:
+     a = all
+     h = horizontal
+     v = vertical
+     t = top
+     r = right
+     b = bottom
+     l = left
+
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+
+*/
+
+@include generate-breakpoints {
+  @include generate-compound-incremented-classes(
+    $spacings,
+    padding,
+    pa,
+    $bkpt-suffix
+  );
+  @include generate-compound-incremented-classes(
+    $spacings,
+    padding-left,
+    pl,
+    $bkpt-suffix
+  );
+  @include generate-compound-incremented-classes(
+    $spacings,
+    padding-right,
+    pr,
+    $bkpt-suffix
+  );
+  @include generate-compound-incremented-classes(
+    $spacings,
+    padding-bottom,
+    pb,
+    $bkpt-suffix
+  );
+  @include generate-compound-incremented-classes(
+    $spacings,
+    padding-top,
+    pt,
+    $bkpt-suffix
+  );
+
+  @include generate-compound-incremented-classes(
+    $spacings,
+    margin,
+    pa,
+    $bkpt-suffix
+  );
+  @include generate-compound-incremented-classes(
+    $spacings,
+    margin-left,
+    pl,
+    $bkpt-suffix
+  );
+  @include generate-compound-incremented-classes(
+    $spacings,
+    margin-right,
+    pr,
+    $bkpt-suffix
+  );
+  @include generate-compound-incremented-classes(
+    $spacings,
+    margin-bottom,
+    pb,
+    $bkpt-suffix
+  );
+  @include generate-compound-incremented-classes(
+    $spacings,
+    margin-top,
+    pt,
+    $bkpt-suffix
+  );
+}

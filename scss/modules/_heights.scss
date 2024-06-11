@@ -1,0 +1,47 @@
+@use "../variables" as *;
+@use "../generators/classes" as *;
+@use "../generators/breakpoints" as *;
+/*
+
+   HEIGHTS
+   Docs: http://tachyons.io/docs/layout/heights/
+
+   Base:
+     h = height
+     min-h = min-height
+     min-vh = min-height vertical screen height
+     vh = vertical screen height
+
+   Modifiers
+     1 = 1st step in height scale
+     2 = 2nd step in height scale
+     3 = 3rd step in height scale
+     4 = 4th step in height scale
+     5 = 5th step in height scale
+
+     -25   = literal value 25%
+     -50   = literal value 50%
+     -75   = literal value 75%
+     -100  = literal value 100%
+
+     -auto = string value of auto
+     -inherit = string value of inherit
+
+*/
+
+@include generate-breakpoints {
+  /* Height Scale */
+  @include generate-classes($heights-scale, "height", $bkpt-suffix);
+
+  /* Height Percentages - Based off of height of parent */
+  @include generate-classes($heights-percent, "height", $bkpt-suffix);
+
+  /* Screen Height Percentage */
+  @include generate-classes($heights-percent, "height", $bkpt-suffix);
+
+  /* Min Height  Percentages - Based off of height of parent*/
+  @include generate-classes($heights-min, "min-height", $bkpt-suffix);
+
+  /* String Properties */
+  @include generate-classes($heights-strings, "height", $bkpt-suffix);
+}

@@ -1,0 +1,16 @@
+@use "../variables" as *;
+@use "../generators/classes" as *;
+@use "../generators/breakpoints" as *;
+
+/*
+
+   ROTATIONS
+
+*/
+
+@include generate-breakpoints {
+  @include generate-compound-classes($rotations, null, "rotate", null) using
+    ($key, $value) {
+    transform: rotate(var(--#{$key}, #{$value}));
+  }
+}

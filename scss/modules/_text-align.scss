@@ -1,0 +1,33 @@
+@use "../generators/breakpoints" as *;
+/*
+
+  TEXT ALIGN
+  Docs: http://tachyons.io/docs/typography/text-align/
+
+  Base
+    t = text-align
+
+  Modifiers
+    l = left
+    r = right
+    c = center
+    j = justify
+
+*/
+@include generate-breakpoints {
+  .tl#{$bkpt-suffix} {
+    text-align: left;
+  }
+
+  .tr#{$bkpt-suffix} {
+    text-align: right;
+  }
+
+  .tc#{$bkpt-suffix} {
+    text-align: center;
+  }
+
+  .tj#{$bkpt-suffix} {
+    text-align: justify;
+  }
+}

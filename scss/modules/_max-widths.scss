@@ -1,0 +1,93 @@
+@use "../variables" as *;
+@use "../generators/classes" as *;
+@use "../generators/breakpoints" as *;
+/*
+
+   MAX WIDTHS
+   Docs: http://tachyons.io/docs/layout/max-widths/
+
+   Base:
+     mw = max-width
+
+   Modifiers
+     1 = 1st step in width scale
+     2 = 2nd step in width scale
+     3 = 3rd step in width scale
+     4 = 4th step in width scale
+     5 = 5th step in width scale
+     6 = 6st step in width scale
+     7 = 7nd step in width scale
+     8 = 8rd step in width scale
+     9 = 9th step in width scale
+
+     -100 = literal value 100%
+
+     -none  = string value none
+
+*/
+
+@include generate-breakpoints {
+  @include generate-compound-incremented-classes(
+    $max-widths,
+    max-width,
+    mw,
+    $bkpt-suffix
+  );
+
+  .mw-100#{$bkpt-suffix} {
+    max-width: 100%;
+  }
+
+  .mw-none#{$bkpt-suffix} {
+    max-width: none;
+  }
+}
+
+// @include generate-breakpoints {
+//   /* Max Width Percentages */
+//   .mw-100#{$bkpt-suffix} {
+//     @include max-widths-mixin.mw-100;
+//   }
+
+//   /* Max Width Scale */
+//   .mw1#{$bkpt-suffix} {
+//     @include max-widths-mixin.mw1;
+//   }
+
+//   .mw2#{$bkpt-suffix} {
+//     @include max-widths-mixin.mw2;
+//   }
+
+//   .mw3#{$bkpt-suffix} {
+//     @include max-widths-mixin.mw3;
+//   }
+
+//   .mw4#{$bkpt-suffix} {
+//     @include max-widths-mixin.mw4;
+//   }
+
+//   .mw5#{$bkpt-suffix} {
+//     @include max-widths-mixin.mw5;
+//   }
+
+//   .mw6#{$bkpt-suffix} {
+//     @include max-widths-mixin.mw6;
+//   }
+
+//   .mw7#{$bkpt-suffix} {
+//     @include max-widths-mixin.mw7;
+//   }
+
+//   .mw8#{$bkpt-suffix} {
+//     @include max-widths-mixin.mw8;
+//   }
+
+//   .mw9#{$bkpt-suffix} {
+//     @include max-widths-mixin.mw9;
+//   }
+
+//   /* Max Width String Properties */
+//   .mw-none#{$bkpt-suffix} {
+//     @include max-widths-mixin.mw-none;
+//   }
+// }

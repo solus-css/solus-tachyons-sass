@@ -1,0 +1,32 @@
+@use "../generators/breakpoints" as *;
+/*
+
+   BORDER STYLES
+   Docs: http://tachyons.io/docs/themes/borders/
+
+   Depends on base border module in _borders.css
+
+   Base:
+     b = border-style
+
+   Modifiers:
+     --none   = none
+     --dotted = dotted
+     --dashed = dashed
+     --solid  = solid
+
+ */
+@include generate-breakpoints {
+  .b--dotted#{$bkpt-suffix} {
+    border-style: dotted;
+  }
+  .b--dashed#{$bkpt-suffix} {
+    border-style: dashed;
+  }
+  .b--solid#{$bkpt-suffix} {
+    border-style: solid;
+  }
+  .b--none#{$bkpt-suffix} {
+    border-style: none;
+  }
+}

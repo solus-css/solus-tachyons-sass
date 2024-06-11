@@ -1,0 +1,43 @@
+@use "../variables" as *;
+@use "../generators/classes" as *;
+@use "../generators/breakpoints" as *;
+
+/*
+
+   BORDER RADIUS
+   Docs: http://tachyons.io/docs/themes/border-radius/
+
+   Base:
+     br   = border-radius
+
+   Modifiers:
+     0    = 0/none
+     1    = 1st step in scale
+     2    = 2nd step in scale
+     3    = 3rd step in scale
+     4    = 4th step in scale
+
+   Literal values:
+     -100 = 100%
+     -pill = 9999px
+
+*/
+@include generate-breakpoints {
+  @include generate-classes($border-radii, border-radius, $bkpt-suffix);
+  .br--bottom#{$bkpt-suffix} {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .br--top#{$bkpt-suffix} {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .br--right#{$bkpt-suffix} {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .br--left#{$bkpt-suffix} {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
