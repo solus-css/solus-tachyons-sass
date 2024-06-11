@@ -1,0 +1,10 @@
+@mixin list-style-type($style: none) {
+	list-style-type: $style;
+}
+
+@mixin list {
+    &:before {
+    content: "\200B"; /* add zero-width space */
+   }
+	@include list-style-type(none);
+}
