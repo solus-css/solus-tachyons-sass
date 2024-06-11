@@ -1,11 +1,10 @@
 /*! nu-reset.css v0.0.1 | MIT License | https://gist.github.com/bnjmnrsh/6ca113fb4e3577e27de2228f997daa79 */
 /*
   Nu Reset
-  A thoughtfull mashup drawn from Josh Comeau and Andy Bell.
+  A thoughtfull reset drawn from the work of Andy Bell and Josh Comeau.
   https://www.joshwcomeau.com/css/custom-css-reset/
   https://piccalil.li/blog/a-more-modern-css-reset/
 */
-
 /*
   An intuitive box model.
 */
@@ -20,7 +19,6 @@
 * {
   margin: 0;
 }
-
 /*
   Prevent font size inflation on small devices.
 */
@@ -29,7 +27,6 @@ html {
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
 }
-
 /*
   Remove default margin in favour of better control in authored CSS
 */
@@ -54,7 +51,6 @@ body {
   line-height: var( --lh-copy, 1.5 );
   -webkit-font-smoothing: antialiased;
 }
-
 /*
   Improved media defaults
 */
@@ -75,7 +71,6 @@ textarea,
 select {
   font: inherit;
 }
-
 /*
    Set shorter line heights interactive elements.
 */
@@ -84,7 +79,6 @@ button,
 label {
   line-height: var(--lh-solid, 1);
 }
-
 /*
   Avoid text overflows.
 */
@@ -98,7 +92,6 @@ h6 {
   overflow-wrap: break-word;
   text-wrap: balance;
 }
-
 /*
   Anchor elements that don't have a class get default styles.
 */
@@ -106,14 +99,12 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
   color: currentColor;
 }
-
 /*
   Make sure textareas without a rows attribute don't collapse.
 */
 textarea:not([rows]) {
   min-height: var(--h4, 8rem);
 }
-
 /*
   Give anything anchored to some extra scroll margin.
 */
