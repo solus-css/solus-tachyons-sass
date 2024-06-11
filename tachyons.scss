@@ -27,7 +27,7 @@
 //     - Debug children
 
 // 1. External Library Includes
-// @use "scss/vendor/normalize";
+@use "scss/vendor/nu-reset";
 
 // 2. Sass Variables
 @forward "scss/variables";
@@ -38,6 +38,7 @@
 // 4. CSS Custom Properties
 // Importing here will allow you to override any custom properties in modules.
 @use "scss/properties";
+
 // @use "scss/properties/border-radius-props";
 // @use "scss/properties/border-widths-props";
 // @use "scss/properties/box-shadow-props";
