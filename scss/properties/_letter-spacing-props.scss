@@ -1,0 +1,7 @@
+@use "../variables" as *;
+@use "../generators/custom-properties" as *;
+
+:where(html) {
+  /* Letter Spacing */
+  @include custom-properties($letter-spacings);
+}

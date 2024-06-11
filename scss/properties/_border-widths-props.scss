@@ -1,0 +1,7 @@
+@use "../variables" as *;
+@use "../generators/custom-properties" as *;
+
+:where(html) {
+  /* Border Width */
+  @include custom-properties($border-widths);
+}

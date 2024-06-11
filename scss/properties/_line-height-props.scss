@@ -1,0 +1,7 @@
+@use "../variables" as *;
+@use "../generators/custom-properties" as *;
+
+:where(html) {
+  /* Line Heights */
+  @include custom-properties($line-heights);
+}

@@ -1,0 +1,13 @@
+@use "../variables" as *;
+@use "../generators/custom-properties" as *;
+
+:where(html) {
+  /*
+  * Type Scale
+  *
+  * For Hero/Marketing Titles
+  * These generally are too large for mobile
+  * so be careful using them on smaller screens
+  */
+  @include custom-properties($type-scales);
+}

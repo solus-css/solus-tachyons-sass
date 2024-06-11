@@ -1,0 +1,12 @@
+@use "../variables" as *;
+@use "../generators/custom-properties" as *;
+
+:where(html) {
+  /* Widths Scale */
+  @include custom-properties($widths);
+}
+
+:where(html) {
+  /* Max Widths Scale */
+  @include custom-properties($max-widths);
+}
