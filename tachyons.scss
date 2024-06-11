@@ -1,4 +1,4 @@
-/* ! TACHYONS v4.12.0 | http://tachyons.io */
+/* ! TACHYONS v4.12.X | http://tachyons.io */
 /*
  *   ________            ______
  *   ___  __/_____ _________  /______  ______________________
@@ -6,181 +6,114 @@
  *   _  /   / /_/ // /__ _  / / /  /_/ // /_/ /  / / /(__  )
  *   /_/    \__,_/ \___/ /_/ /_/_\__, / \____//_/ /_//____/
  *                              /____/
- *
- * TABLE OF CONTENTS
- * 1. External Library Includes
- *    - Normalize.css | http://normalize.css.github.io
- * 2. Sass Variables
- * 3. Tachyons Modules
- * 4. Required Mixins
- *    - helpers (breakpoints)
- *    - mixins
- * 5. Modules
- *    - all_custom_properties
- *    - (or selective imports)
- * 6. CSS Custom Properties
- *    - all_module
- *    - (or selective imports)
- * 7. Debugging
- *    - Debug all
- *    - Debug children
  */
+//  TABLE OF CONTENTS
+//  1. External Library Includes
+//     - Normalize.css | http://  normalize.css.github.io
+//  2. Sass Variables
+//  3. Mixins
+//     - Generators
+//     - module mixins (depricated)
+//  4. CSS Custom Properties
+//     - all custom properties
+//     - (or selective imports)
+//  5. Tachyons Modules
+//     - all modules
+//     - (or selective imports)
+//  6. Debugging
+//     - Debug all
+//     - Debug children
 
-/* External Library Includes */
-@use "scss/vendor/normalize";
+// 1. External Library Includes
+// @use "scss/vendor/normalize";
 
-// Variables & Required Mixins
-@forward "scss/variables";
+// 2. Sass Variables
+// @forward "scss/variables";
+
+// 3. Mixins
+// @forward "scss/generators";
+
+// CSS Custom Properties
+// Importing here will allow you to override any custom properties in modules.
+// @use "scss/properties";
+// @use "scss/properties/border-radius-props";
+// @use "scss/properties/border-widths-props";
+// @use "scss/properties/box-shadow-props";
+// @use "scss/properties/colors-props";
+// @use "scss/properties/font-families-props";
+// @use "scss/properties/heights-props";
+// @use "scss/properties/letter-spacing-props";
+// @use "scss/properties/line-height-props";
+// @use "scss/properties/max-widths-props";
+// @use "scss/properties/opacity-props";
+// @use "scss/properties/spacing-props";
+// @use "scss/properties/typography-props";
+// @use "scss/properties/type-scale-props";
+// @use "scss/properties/utilities-props";
+// @use "scss/properties/widths-props";
 
 /* Modules */
-@use "scss/all-modules";
+// @use "scss/modules";
 
-// @use "scss/box-sizing";
-// @use "scss/aspect-ratios";
-// @use "scss/images";
-// @use "scss/background-size";
-// @use "scss/background-position";
-// @use "scss/outlines";
-// @use "scss/borders";
-// @use "scss/border-colors";
-// @use "scss/border-radius";
-// @use "scss/border-style";
-// @use "scss/border-widths";
-// @use "scss/box-shadow";
-// @use "scss/code";
-// @use "scss/coordinates";
-// @use "scss/clears";
-// @use "scss/display";
-// @use "scss/flexbox";
-// @use "scss/floats";
-// @use "scss/font-family";
-// @use "scss/font-style";
-// @use "scss/font-weight";
-// @use "scss/forms";
-// @use "scss/heights";
-// @use "scss/letter-spacing";
-// @use "scss/line-height";
-// @use "scss/links";
-// @use "scss/lists";
-// @use "scss/max-widths";
-// @use "scss/widths";
-// @use "scss/overflow";
-// @use "scss/position";
-// @use "scss/opacity";
-// @use "scss/rotations";
-// @use "scss/skins";
-// @use "scss/skins-pseudo";
-// @use "scss/spacing";
-// @use "scss/negative-margins";
-// @use "scss/tables";
-// @use "scss/text-decoration";
-// @use "scss/text-align";
-// @use "scss/text-transform";
-// @use "scss/type-scale";
-// @use "scss/typography";
-// @use "scss/utilities";
-// @use "scss/visibility";
-// @use "scss/white-space";
-// @use "scss/word-break";
-// @use "scss/vertical-align";
-// @use "scss/hovers";
-// @use "scss/z-index";
+@use "scss/modules/box-sizing";
+@use "scss/modules/aspect-ratios";
+@use "scss/modules/images";
+@use "scss/modules/background-size";
+@use "scss/modules/background-position";
+@use "scss/modules/outlines";
+@use "scss/modules/borders";
+@use "scss/modules/border-colors";
+@use "scss/modules/border-radius";
+@use "scss/modules/border-style";
+@use "scss/modules/border-widths";
+@use "scss/modules/box-shadow";
+@use "scss/modules/code";
+@use "scss/modules/coordinates";
+@use "scss/modules/clears";
+@use "scss/modules/display";
+@use "scss/modules/flexbox";
+@use "scss/modules/floats";
+@use "scss/modules/font-family";
+@use "scss/modules/font-style";
+@use "scss/modules/font-weight";
+@use "scss/modules/forms";
+@use "scss/modules/heights";
+@use "scss/modules/letter-spacing";
+@use "scss/modules/line-height";
+@use "scss/modules/links";
+@use "scss/modules/lists";
+@use "scss/modules/max-widths";
+@use "scss/modules/widths";
+@use "scss/modules/overflow";
+@use "scss/modules/position";
+
+@use "scss/modules/opacity";
+@use "scss/modules/rotations";
+@use "scss/modules/skins";
+@use "scss/modules/skins-pseudo";
+@use "scss/modules/spacing";
+@use "scss/modules/negative-margins";
+@use "scss/modules/tables";
+@use "scss/modules/text-decoration";
+@use "scss/modules/text-align";
+@use "scss/modules/text-transform";
+@use "scss/modules/type-scale";
+@use "scss/modules/typography";
+@use "scss/modules/utilities";
+@use "scss/modules/visibility";
+@use "scss/modules/white-space";
+@use "scss/modules/word-break";
+@use "scss/modules/vertical-align";
+@use "scss/modules/hovers";
+@use "scss/modules/z-index";
 
 // Optional and Example files
-// @use "scss/styles";
-// @use "scss/nested";
-// @use "scss/module-template";
+// @use "scss/modules/styles";
+// @use "scss/modules/nested";
+// @use "scss/modules/module-template";
 
-/* CSS Custom Properties */
-/* Importing here will allow you to override any custom properties in modules */
-@use "scss/all-custom-properties";
-
-@use "scss/all-sass-vars";
-
-@use "scss/border-radius-vars";
-
-@use "scss/border-widths-vars";
-
-@use "scss/box-shadow-vars";
-
-@use "scss/heights-vars";
-
-@use "scss/font-families-vars";
-
-@use "scss/typography-vars";
-
-@use "scss/letter-spacing-vars";
-
-@use "scss/line-height-vars";
-
-@use "scss/max-widths-vars";
-
-@use "scss/widths-vars";
-
-@use "scss/opacity-vars";
-
-@use "scss/spacing-vars";
-
-@use "scss/type-scale-vars";
-
-@use "scss/colors-vars";
-
-/* Debugging */
-/* Uncomment out the line below to help debug layout issues */
-// @use "scss/debug-children";
-// @use "scss/debug-grid";
-/* @use "scss/debug"; */
-
-/* Mixins */
-@forward "scss/all-mixins";
-
-// @forward "scss/breakpoint-gen-mixin";
-// @forward "scss/aspect-ratios-mixin";
-// @forward "scss/background-position-mixin";
-// @forward "scss/background-size-mixin";
-// @forward "scss/border-colors-mixin";
-// @forward "scss/border-radius-mixin";
-// @forward "scss/border-style-mixin";
-// @forward "scss/border-widths-mixin";
-// @forward "scss/borders-mixin";
-// @forward "scss/box-shadow-mixin";
-// @forward "scss/box-sizing-mixin";
-// @forward "scss/breakpoint-gen-mixin";
-// @forward "scss/clears-mixin";
-// @forward "scss/coordinates-mixin";
-// @forward "scss/cursor-mixin";
-// @forward "scss/display-mixin";
-// @forward "scss/flexbox-mixin";
-// @forward "scss/floats-mixin";
-// @forward "scss/font-family-mixin";
-// @forward "scss/font-style-mixin";
-// @forward "scss/font-weight-mixin";
-// @forward "scss/forms-mixin";
-// @forward "scss/heights-mixin";
-// @forward "scss/hovers-mixin";
-// @forward "scss/letter-spacing-mixin";
-// @forward "scss/line-height-mixin";
-// @forward "scss/links-mixin";
-// @forward "scss/lists-mixin";
-// @forward "scss/max-widths-mixin";
-// @forward "scss/negative-margins-mixin";
-// @forward "scss/opacity-mixin";
-// @forward "scss/outlines-mixin";
-// @forward "scss/overflow-mixin";
-// @forward "scss/position-mixin";
-// @forward "scss/rotations-mixin";
-// @forward "scss/skins-mixin";
-// @forward "scss/skins-pseudo-mixin";
-// @forward "scss/spacing-mixin";
-// @forward "scss/text-align-mixin";
-// @forward "scss/text-decoration-mixin";
-// @forward "scss/text-transform-mixin";
-// @forward "scss/type-scale-mixin";
-// @forward "scss/typography-mixin";
-// @forward "scss/utilities-mixin";
-// @forward "scss/vertical-align-mixin";
-// @forward "scss/visibility-mixin";
-// @forward "scss/white-space-mixin";
-// @forward "scss/widths-mixin";
-// @forward "scss/word-break-mixin";
-// @forward "scss/z-index-mixin";
+// Debugging
+// Uncomment the lines below to help debug layout issues
+// @use "scss/modules/debug-children";
+// @use "scss/modules/debug-grid";
+// @use "scss/modules/debug";
