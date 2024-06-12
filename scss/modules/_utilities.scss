@@ -1,11 +1,9 @@
 @use "../generators/breakpoints" as *;
-
 /*
 
    UTILITIES
 
 */
-
 @include generate-breakpoints {
   /* Equivalent to .overflow-y-scroll */
   .overflow-container {

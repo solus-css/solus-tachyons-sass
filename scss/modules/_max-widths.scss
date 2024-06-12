@@ -25,7 +25,6 @@
      -none  = string value none
 
 */
-
 @include generate-breakpoints {
   @include generate-compound-classes($max-widths, mw, "", $bkpt-suffix, 1) using
     ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {

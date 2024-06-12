@@ -21,7 +21,6 @@
      9 = literal value 900
 
 */
-
 @include generate-breakpoints {
   .normal#{$bkpt-suffix} {
     font-weight: normal;

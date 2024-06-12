@@ -1,7 +1,5 @@
-@use "../generators/breakpoints" as *;
-
 @use "variables";
-
+@use "../generators/breakpoints" as *;
 /*
 
   MODULE NAME
@@ -10,7 +8,6 @@
   style architecture.
 
 */
-
 @media #{variables.$breakpoint-not-small} {
   // some rule
 }

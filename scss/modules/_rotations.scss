@@ -1,13 +1,11 @@
 @use "../variables" as *;
 @use "../generators/classes" as *;
 @use "../generators/breakpoints" as *;
-
 /*
 
    ROTATIONS
 
 */
-
 @include generate-breakpoints {
   @include generate-compound-classes($rotations, "", $bkpt-suffix) using
     ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {

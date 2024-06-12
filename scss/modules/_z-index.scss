@@ -1,6 +1,6 @@
 @use "../variables" as *;
-@use "../generators/breakpoints" as *;
 @use "../generators/classes" as *;
+@use "../generators/breakpoints" as *;
 /*
 
   Z-INDEX
@@ -35,7 +35,6 @@
   adjust these values to suit your needs.
 
 */
-
 @include generate-breakpoints {
   @include generate-classes($z-indexes, "z-index", $bkpt-suffix);
 }

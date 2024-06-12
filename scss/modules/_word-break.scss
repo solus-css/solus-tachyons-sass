@@ -1,5 +1,4 @@
 @use "../generators/breakpoints" as *;
-
 /*
 
   WORD BREAK
@@ -13,7 +12,6 @@
      -l  = large
 
 */
-
 @include generate-breakpoints {
   .word-normal#{$bkpt-suffix} {
     word-break: normal;

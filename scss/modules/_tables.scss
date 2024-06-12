@@ -4,13 +4,11 @@
   Docs: http://tachyons.io/docs/elements/tables/
 
 */
-
 .collapse {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-// stylelint-disable selector-class-pattern
 .striped--light-silver:nth-child(odd) {
   background-color: var(--light-silver);
 }
@@ -26,7 +24,6 @@
 .striped--near-white:nth-child(odd) {
   background-color: var(--near-white);
 }
-// stylelint-enable
 
 .stripe-light:nth-child(odd) {
   background-color: var(--white-10);

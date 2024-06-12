@@ -1,13 +1,12 @@
 @use "../variables" as *;
-@use "../generators/breakpoints" as *;
 @use "../generators/classes" as *;
+@use "../generators/breakpoints" as *;
 /*
 
     OPACITY
     Docs: http://tachyons.io/docs/themes/opacity/
 
 */
-
 @include generate-breakpoints {
   @include generate-classes($opacities, "opacity", $bkpt-suffix);
 }

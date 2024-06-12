@@ -28,7 +28,6 @@
      -inherit = string value of inherit
 
 */
-
 @include generate-breakpoints {
   /* Height Scale */
   @include generate-classes($heights-scale, "height", $bkpt-suffix);
