@@ -7,7 +7,7 @@
 ///
 /// @example
 ///   @include generate-breakpoints {
-///      .your-class#{$bkpt-suffix} {
+///      .your-class-#{$bkpt-suffix} {
 ///        ...
 ///      }
 ///   }

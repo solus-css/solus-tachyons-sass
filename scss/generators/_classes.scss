@@ -8,6 +8,19 @@
 ///  @param {String} $suffix - The suffix to append to the class name.
 ///  @param {String} $pre - The prefix to prepend to the class name.
 ///  @param {Boolean} $negative - Whether to generate negative values.
+///
+///  @example
+///  @include generate-classes(
+///  (
+///    "br1": 0.125rem,
+///    "br2": 0.25rem,
+///   ),
+///  "border-radius", $bkpt-suffix);
+///
+/// Produces:
+///  .br0 { border-radius: var(--border-radius-none, 0); }
+///  .br1 { border-radius: var(--border-radius-1, 0.125rem); }
+///
 @mixin generate-classes($map, $property: "", $suffix: "") {
   @each $key, $value in $map {
     @if $key != "" {
@@ -29,6 +42,24 @@
 ///  @param {String} $suffix - The suffix to append to the class name.
 ///  @param {String} $suffix - The suffix to append to the class name.
 ///  @param {Integer} $i - Incrementor, defaults to 0, use to set starting value.
+/// @example
+/// @include generate-compound-classes(
+///     (
+///       "spacing-none": 0,
+///       "spacing-small": 0.5rem
+///     ),
+///     "pa", "", $bkpt-suffix
+///   )
+///   using ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+///   .#{$prefix}#{$i}#{$bkpt-suffix} {
+///     padding: var(--#{$key}, #{$value});
+///   }
+/// }
+///
+/// Produces:
+/// .pa0 { padding: var(--spacing-none, 0); }
+/// .pa1 { padding: var(--spacing-extra-small, 0.25rem); }
+///
 @mixin generate-compound-classes(
   $map,
   $prefix: "",

@@ -1,4 +1,14 @@
-// Create css custom properties from a map
+/// Generates CSS custom properties for each key-value pair in the provided map.
+///
+/// @param {Map} $map - A map of key-value pairs to generate custom properties for.
+///
+/// @example
+///   @include custom-properties((
+///     color-primary: #007bff,
+///     color-secondary: #6c757d,
+///     font-size-base: 1rem
+///   ));
+///
 @mixin custom-properties($map) {
   @each $key, $value in $map {
     --#{$key}: #{$value};
