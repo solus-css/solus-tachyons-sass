@@ -115,17 +115,17 @@ $heights-percent: (
   "h-100": 100%,
 ) !default;
 
-$heights-min: (
-  "min-h-25": 25%,
-  "min-h-100 ": 100%,
-  "min-vh-100": 100vh,
-) !default;
-
 $heights-viewport: (
   "h-25": 25vh,
   "h-50": 50vh,
   "h-75": 75vh,
   "h-100": 100vh,
+) !default;
+
+$heights-min: (
+  "min-h-25": 25%,
+  "min-h-100 ": 100%,
+  "min-vh-100": 100vh,
 ) !default;
 
 $heights-strings: (
