@@ -31,65 +31,64 @@
 */
 
 @include generate-breakpoints {
-  @include generate-compound-incremented-classes(
-    $spacings,
-    padding,
-    pa,
-    $bkpt-suffix
-  );
-  @include generate-compound-incremented-classes(
-    $spacings,
-    padding-left,
-    pl,
-    $bkpt-suffix
-  );
-  @include generate-compound-incremented-classes(
-    $spacings,
-    padding-right,
-    pr,
-    $bkpt-suffix
-  );
-  @include generate-compound-incremented-classes(
-    $spacings,
-    padding-bottom,
-    pb,
-    $bkpt-suffix
-  );
-  @include generate-compound-incremented-classes(
-    $spacings,
-    padding-top,
-    pt,
-    $bkpt-suffix
-  );
-
-  @include generate-compound-incremented-classes(
-    $spacings,
-    margin,
-    pa,
-    $bkpt-suffix
-  );
-  @include generate-compound-incremented-classes(
-    $spacings,
-    margin-left,
-    pl,
-    $bkpt-suffix
-  );
-  @include generate-compound-incremented-classes(
-    $spacings,
-    margin-right,
-    pr,
-    $bkpt-suffix
-  );
-  @include generate-compound-incremented-classes(
-    $spacings,
-    margin-bottom,
-    pb,
-    $bkpt-suffix
-  );
-  @include generate-compound-incremented-classes(
-    $spacings,
-    margin-top,
-    pt,
-    $bkpt-suffix
-  );
+  @include generate-compound-classes($spacings, pa, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      padding: var(--#{$key}, #{$value});
+    }
+  }
+  @include generate-compound-classes($spacings, pl, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      padding-left: var(--#{$key}, #{$value});
+    }
+  }
+  @include generate-compound-classes($spacings, pr, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      padding-right: var(--#{$key}, #{$value});
+    }
+  }
+  @include generate-compound-classes($spacings, pb, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      padding-bottom: var(--#{$key}, #{$value});
+    }
+  }
+  @include generate-compound-classes($spacings, pt, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      padding-top: var(--#{$key}, #{$value});
+    }
+  }
+  @include generate-compound-classes($spacings, ma, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      margin: var(--#{$key}, #{$value});
+    }
+  }
+  @include generate-compound-classes($spacings, ml, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      margin-left: var(--#{$key}, #{$value});
+    }
+  }
+  @include generate-compound-classes($spacings, mr, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      margin-right: var(--#{$key}, #{$value});
+    }
+  }
+  @include generate-compound-classes($spacings, mb, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      margin-bottom: var(--#{$key}, #{$value});
+    }
+  }
+  @include generate-compound-classes($spacings, mt, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      margin-top: var(--#{$key}, #{$value});
+    }
+  }
 }

@@ -11,11 +11,13 @@
 
  */
 @include generate-breakpoints {
-  @include generate-compound-color-classes($color-scales, hover) using
-    ($key, $value) {
-    &:hover,
-    &:focus {
-      color: var(--#{$key}, #{$value});
+  @include generate-compound-classes($color-scales, hover) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$key}#{$bkpt-suffix} {
+      &:hover,
+      &:focus {
+        color: var(--#{$key}, #{$value});
+      }
     }
   }
 }

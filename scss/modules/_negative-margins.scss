@@ -28,39 +28,34 @@
 */
 
 @include generate-breakpoints {
-  @include generate-compound-incremented-classes(
-    $spacings,
-    margin,
-    na,
-    $bkpt-suffix,
-    true
-  );
-  @include generate-compound-incremented-classes(
-    $spacings,
-    margin-left,
-    nl,
-    $bkpt-suffix,
-    true
-  );
-  @include generate-compound-incremented-classes(
-    $spacings,
-    margin-right,
-    nr,
-    $bkpt-suffix,
-    true
-  );
-  @include generate-compound-incremented-classes(
-    $spacings,
-    margin-bottom,
-    nb,
-    $bkpt-suffix,
-    true
-  );
-  @include generate-compound-incremented-classes(
-    $spacings,
-    margin-top,
-    nt,
-    $bkpt-suffix,
-    true
-  );
+  @include generate-compound-classes($spacings, na, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      margin: calc(-1 * var(--#{$key}, #{$value}));
+    }
+  }
+  @include generate-compound-classes($spacings, nl, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      margin-left: calc(-1 * var(--#{$key}, #{$value}));
+    }
+  }
+  @include generate-compound-classes($spacings, nr, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      margin-right: calc(-1 * var(--#{$key}, #{$value}));
+    }
+  }
+  @include generate-compound-classes($spacings, nb, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      margin-bottom: calc(-1 * var(--#{$key}, #{$value}));
+    }
+  }
+  @include generate-compound-classes($spacings, nt, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      margin-top: calc(-1 * var(--#{$key}, #{$value}));
+    }
+  }
 }

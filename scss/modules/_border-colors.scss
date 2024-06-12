@@ -21,9 +21,9 @@
    --color-name = each color variable name is also a border color name
 
 */
-@include generate-breakpoints {
-  @include generate-compound-color-classes($color-scales, "b--") using
-    ($key, $value) {
+@include generate-compound-classes($color-scales, "b--") using
+  ($key, $value, $prefix, $suffix, $brkpoint, $i) {
+  .#{$prefix}#{$key}#{$bkpt-suffix} {
     border-color: var(--#{$key}, #{$value});
   }
 }

@@ -9,8 +9,10 @@
 */
 
 @include generate-breakpoints {
-  @include generate-compound-classes($rotations, null, "rotate", null) using
-    ($key, $value) {
-    transform: rotate(var(--#{$key}, #{$value}));
+  @include generate-compound-classes($rotations, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$key}#{$bkpt-suffix} {
+      transform: var(--#{$key}, #{$value});
+    }
   }
 }
