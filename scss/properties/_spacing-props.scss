@@ -1,0 +1,9 @@
+@use "../variables" as *;
+@use "../generators/custom-properties" as *;
+
+:where(html) {
+  /* Spacings
+  * Positive values, as applied to the margin and padding scales
+  */
+  @include custom-properties($spacings);
+}

@@ -1,0 +1,41 @@
+@use "../variables" as *;
+@use "../generators/classes" as *;
+@use "../generators/breakpoints" as *;
+/*
+
+   MAX WIDTHS
+   Docs: http://tachyons.io/docs/layout/max-widths/
+
+   Base:
+     mw = max-width
+
+   Modifiers
+     1 = 1st step in width scale
+     2 = 2nd step in width scale
+     3 = 3rd step in width scale
+     4 = 4th step in width scale
+     5 = 5th step in width scale
+     6 = 6st step in width scale
+     7 = 7nd step in width scale
+     8 = 8rd step in width scale
+     9 = 9th step in width scale
+
+     -100 = literal value 100%
+
+     -none  = string value none
+
+*/
+@include generate-breakpoints {
+  @include generate-compound-classes($max-widths, mw, "", $bkpt-suffix, 1) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      max-width: var(--#{$key}, #{$value});
+    }
+  }
+  .mw-100#{$bkpt-suffix} {
+    max-width: 100%;
+  }
+  .mw-none#{$bkpt-suffix} {
+    max-width: none;
+  }
+}

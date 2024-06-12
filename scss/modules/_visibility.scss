@@ -1,0 +1,16 @@
+@use "../generators/breakpoints" as *;
+/*
+
+   VISIBILITY
+
+*/
+/*
+    Text that is hidden but accessible
+    Ref: http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*/
+@include generate-breakpoints {
+  .clip#{$bkpt-suffix} {
+    position: fixed !important;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+}

@@ -1,0 +1,11 @@
+@use "../variables" as *;
+@use "../generators/custom-properties" as *;
+
+:where(html) {
+  /* Heights */
+  @include custom-properties($heights-scale);
+  @include custom-properties($heights-percent);
+  @include custom-properties($heights-min);
+  @include custom-properties($heights-viewport);
+  @include custom-properties($heights-strings);
+}

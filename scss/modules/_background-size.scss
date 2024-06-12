@@ -1,0 +1,19 @@
+@use "../generators/breakpoints" as *;
+/*
+
+   BACKGROUND SIZE
+   Docs: http://tachyons.io/docs/themes/background-size/
+
+*/
+/*
+  Often used in combination with background image set as an inline style
+  on an html element.
+*/
+@include generate-breakpoints {
+  .cover#{$bkpt-suffix} {
+    background-size: cover !important;
+  }
+  .contain#{$bkpt-suffix} {
+    background-size: contain !important;
+  }
+}

@@ -1,0 +1,107 @@
+@use "../generators/breakpoints" as *;
+/*
+
+   COORDINATES
+   Docs: http://tachyons.io/docs/layout/position/
+
+   Use in combination with the position module.
+
+   Base:
+     top
+     bottom
+     right
+     left
+
+   Modifiers:
+     -0  = literal value 0
+     -1  = literal value 1
+     -2  = literal value 2
+     --1 = literal value -1
+     --2 = literal value -2
+
+*/
+@include generate-breakpoints {
+  .top-0#{$bkpt-suffix} {
+    top: 0;
+  }
+
+  .right-0#{$bkpt-suffix} {
+    right: 0;
+  }
+
+  .bottom-0#{$bkpt-suffix} {
+    bottom: 0;
+  }
+
+  .left-0#{$bkpt-suffix} {
+    left: 0;
+  }
+
+  .top-1#{$bkpt-suffix} {
+    top: 1rem;
+  }
+
+  .right-1#{$bkpt-suffix} {
+    right: 1rem;
+  }
+
+  .bottom-1#{$bkpt-suffix} {
+    bottom: 1rem;
+  }
+
+  .left-1#{$bkpt-suffix} {
+    left: 1rem;
+  }
+
+  .top-2#{$bkpt-suffix} {
+    top: 2rem;
+  }
+
+  .right-2#{$bkpt-suffix} {
+    right: 2rem;
+  }
+
+  .bottom-2#{$bkpt-suffix} {
+    bottom: 2rem;
+  }
+
+  .left-2#{$bkpt-suffix} {
+    left: 2rem;
+  }
+
+  .top--1#{$bkpt-suffix} {
+    top: -1rem;
+  }
+
+  .right--1#{$bkpt-suffix} {
+    right: -1rem;
+  }
+
+  .bottom--1#{$bkpt-suffix} {
+    bottom: -1rem;
+  }
+
+  .left--1#{$bkpt-suffix} {
+    left: -1rem;
+  }
+
+  .top--2#{$bkpt-suffix} {
+    top: -2rem;
+  }
+
+  .right--2#{$bkpt-suffix} {
+    right: -2rem;
+  }
+
+  .bottom--2#{$bkpt-suffix} {
+    bottom: -2rem;
+  }
+
+  .left--2#{$bkpt-suffix} {
+    left: -2rem;
+  }
+
+  .absolute--fill#{$bkpt-suffix} {
+    inset: 0;
+  }
+}

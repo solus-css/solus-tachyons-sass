@@ -83,7 +83,7 @@ Each Tachyons module utilises a matched collection of Sass mixins. Mixins are de
 
 ### Custom Breakpoints
 
-Breakpoints and their utility class prefixes are defined in `_all_variables.scss`. The mixin that does the heavy lifting can be found in `_breakpoint_gen_mixin.scss`.
+Breakpoints and their utility class prefixes are defined in `_all_variables.scss`. The mixin that does the heavy lifting can be found in `_breakpoint-gen-mixin.scss`.
 
 Adding or tweaking breakpoints can be done by modifying the key:value pairs of the `$breakpoints` map found in `_all_variables.scss`:
 

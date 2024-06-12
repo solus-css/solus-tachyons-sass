@@ -1,0 +1,22 @@
+@use "../generators/breakpoints" as *;
+/*
+
+   POSITIONING
+   Docs: http://tachyons.io/docs/layout/position/
+
+*/
+
+@include generate-breakpoints {
+  .static#{$bkpt-suffix} {
+    position: static;
+  }
+  .relative#{$bkpt-suffix} {
+    position: relative;
+  }
+  .absolute#{$bkpt-suffix} {
+    position: absolute;
+  }
+  .fixed#{$bkpt-suffix} {
+    position: fixed;
+  }
+}

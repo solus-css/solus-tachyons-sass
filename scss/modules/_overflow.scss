@@ -1,0 +1,55 @@
+@use "../generators/breakpoints" as *;
+/*
+
+    OVERFLOW
+
+*/
+@include generate-breakpoints {
+  .overflow-visible#{$bkpt-suffix} {
+    overflow: visible;
+  }
+
+  .overflow-hidden#{$bkpt-suffix} {
+    overflow: hidden;
+  }
+
+  .overflow-scroll#{$bkpt-suffix} {
+    overflow: scroll;
+  }
+
+  .overflow-auto#{$bkpt-suffix} {
+    overflow: auto;
+  }
+
+  .overflow-x-visible#{$bkpt-suffix} {
+    overflow-x: visible;
+  }
+
+  .overflow-x-hidden#{$bkpt-suffix} {
+    overflow-x: hidden;
+  }
+
+  .overflow-x-scroll#{$bkpt-suffix} {
+    overflow-x: scroll;
+  }
+
+  .overflow-x-auto#{$bkpt-suffix} {
+    overflow-x: auto;
+  }
+
+  .overflow-y-visible#{$bkpt-suffix} {
+    overflow-y: visible;
+  }
+
+  .overflow-y-hidden#{$bkpt-suffix} {
+    overflow-y: hidden;
+  }
+
+  .overflow-y-scroll#{$bkpt-suffix} {
+    overflow-y: scroll;
+  }
+
+  .overflow-y-auto#{$bkpt-suffix} {
+    overflow-y: auto;
+  }
+}

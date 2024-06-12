@@ -1,0 +1,33 @@
+@use "../generators/breakpoints" as *;
+/*
+
+   TEXT TRANSFORM
+   Docs: http://tachyons.io/docs/typography/text-transform/
+
+   Base:
+     tt = text-transform
+
+   Modifiers
+     c = capitalize
+     l = lowercase
+     u = uppercase
+     n = none
+
+*/
+@include generate-breakpoints {
+  .ttc#{$bkpt-suffix} {
+    text-transform: capitalize;
+  }
+
+  .ttl#{$bkpt-suffix} {
+    text-transform: lowercase;
+  }
+
+  .ttu#{$bkpt-suffix} {
+    text-transform: uppercase;
+  }
+
+  .ttn#{$bkpt-suffix} {
+    text-transform: none;
+  }
+}

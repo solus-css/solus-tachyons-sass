@@ -1,0 +1,39 @@
+@use "../variables" as *;
+@use "../generators/classes" as *;
+@use "../generators/breakpoints" as *;
+/*
+
+   TYPE SCALE
+   Docs: http://tachyons.io/docs/typography/scale/
+
+   Base:
+    f = font-size
+
+   Modifiers
+     1 = 1st step in size scale
+     2 = 2nd step in size scale
+     3 = 3rd step in size scale
+     4 = 4th step in size scale
+     5 = 5th step in size scale
+     6 = 6th step in size scale
+
+    * For Hero/Marketing Titles
+    *
+    * These generally are too large for mobile
+    * so be careful using them on smaller screens.
+     f-headline: 6rem !default;
+     f-subheadline: 5rem !default;
+
+     * Type Scale
+     --f1: 3rem !default;
+     --f2: 2.25rem !default;
+     --f3: 1.5rem !default;
+     --f4: 1.25rem !default;
+     --f5: 1rem !default;
+     --f6: 0.875rem !default;
+     --f7: 0.75rem !default;
+
+*/
+@include generate-breakpoints {
+  @include generate-classes($type-scales, font-size, $bkpt-suffix);
+}

@@ -1,0 +1,19 @@
+@use "../generators/breakpoints" as *;
+/*
+
+   OUTLINES
+
+*/
+@include generate-breakpoints {
+  .outline#{$bkpt-suffix} {
+    outline: 1px solid;
+  }
+
+  .outline-transparent#{$bkpt-suffix} {
+    outline: 1px solid transparent;
+  }
+
+  .outline-0#{$bkpt-suffix} {
+    outline: 0;
+  }
+}

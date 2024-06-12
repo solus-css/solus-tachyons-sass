@@ -1,0 +1,42 @@
+@use "../generators/breakpoints" as *;
+/*
+
+    BACKGROUND POSITION
+
+    Base:
+    bg = background
+
+    Modifiers:
+    -center = center center
+    -top = top center
+    -right = center right
+    -bottom = bottom center
+    -left = center left
+
+ */
+@include generate-breakpoints {
+  .bg-center#{$bkpt-suffix} {
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .bg-top#{$bkpt-suffix} {
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  .bg-right#{$bkpt-suffix} {
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+
+  .bg-bottom#{$bkpt-suffix} {
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+
+  .bg-left#{$bkpt-suffix} {
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+}

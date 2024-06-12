@@ -1,0 +1,25 @@
+@use "../generators/breakpoints" as *;
+/*
+
+   UTILITIES
+
+*/
+@include generate-breakpoints {
+  /* Equivalent to .overflow-y-scroll */
+  .overflow-container {
+    overflow-y: scroll;
+  }
+
+  .center#{$bkpt-suffix} {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .mr-auto#{$bkpt-suffix} {
+    margin-right: auto;
+  }
+
+  .ml-auto#{$bkpt-suffix} {
+    margin-left: auto;
+  }
+}

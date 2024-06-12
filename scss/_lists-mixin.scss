@@ -1,7 +1,0 @@
-@mixin list-style-type($style: none) {
-	list-style-type: $style;
-}
-
-@mixin list {
-	@include list-style-type(none);
-}

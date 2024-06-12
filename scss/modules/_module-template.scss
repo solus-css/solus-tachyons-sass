@@ -1,0 +1,28 @@
+@use "variables";
+@use "../generators/breakpoints" as *;
+/*
+
+  MODULE NAME
+
+  Use this scaffolding to create or extend your own modules with tachyons
+  style architecture.
+
+*/
+@media #{variables.$breakpoint-not-small} {
+  // some rule
+}
+
+@media #{variables.$breakpoint-medium} {
+  // some rule
+}
+
+@media #{variables.$breakpoint-large} {
+  // some rule
+}
+
+// Auto generate breakpoints for your custom class
+@include generate-breakpoints {
+  .class#{$bkpt-suffix} {
+    // ... some styles
+  }
+}

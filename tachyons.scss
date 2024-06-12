@@ -1,5 +1,5 @@
-/*! TACHYONS v4.12.0 | http://tachyons.io */
-
+/* ! TACHYONS v4.12.X | http://tachyons.io */
+/* ! TACHYONS-HARU v0.1.0 | https://github.com/tachyons-haru */
 /*
  *   ________            ______
  *   ___  __/_____ _________  /______  ______________________
@@ -7,114 +7,115 @@
  *   _  /   / /_/ // /__ _  / / /  /_/ // /_/ /  / / /(__  )
  *   /_/    \__,_/ \___/ /_/ /_/_\__, / \____//_/ /_//____/
  *                              /____/
- *
- * TABLE OF CONTENTS
- * 1. External Library Includes
- *    - Normalize.css | http://normalize.css.github.io
- * 2. Sass Variables
- * 3. Tachyons Modules
- * 4. Required Mixins
- *    - helpers (breakpoints)
- *    - mixins
- * 5. Modules
- *    - all_custom_properties
- *    - (or selective imports)
- * 6. CSS Custom Properties
- *    - all_module
- *    - (or selective imports)
- * 7. Debugging
- *    - Debug all
- *    - Debug children
  */
+//  TABLE OF CONTENTS
+//  1. External Library Includes
+//     - Normalize.css | http://  normalize.css.github.io
+//  2. Sass Variables
+//  3. Mixins
+//     - Generators
+//     - module mixins (depricated)
+//  4. CSS Custom Properties
+//     - All custom properties
+//     - (or selective imports)
+//  5. Tachyons Modules
+//     - All modules
+//     - (or selective imports)
+//     - Optional imports
+//  6. Debugging
+//     - Debug all
+//     - Debug children
 
-/* External Library Includes */
-@import "scss/vendor/normalize";
+// 1. External Library Includes
+@use "scss/vendor/nu-reset";
 
-// Variables & Required Mixins
-@import "scss/all-sass-vars";
-@import "scss/all-mixins";
+// 2. Sass Variables
+@forward "scss/variables";
 
-/* Modules */
-@import "scss/all-modules";
+// 3. Mixins
+@forward "scss/generators";
 
-// @import "scss/box-sizing";
-// @import "scss/aspect-ratios";
-// @import "scss/images";
-// @import "scss/background-size";
-// @import "scss/background-position";
-// @import "scss/outlines";
-// @import "scss/borders";
-// @import "scss/border-colors";
-// @import "scss/border-radius";
-// @import "scss/border-style";
-// @import "scss/border-widths";
-// @import "scss/box-shadow";
-// @import "scss/code";
-// @import "scss/coordinates";
-// @import "scss/clears";
-// @import "scss/display";
-// @import "scss/flexbox";
-// @import "scss/floats";
-// @import "scss/font-family";
-// @import "scss/font-style";
-// @import "scss/font-weight";
-// @import "scss/forms";
-// @import "scss/heights";
-// @import "scss/letter-spacing";
-// @import "scss/line-height";
-// @import "scss/links";
-// @import "scss/lists";
-// @import "scss/max-widths";
-// @import "scss/widths";
-// @import "scss/overflow";
-// @import "scss/position";
-// @import "scss/opacity";
-// @import "scss/rotations";
-// @import "scss/skins";
-// @import "scss/skins-pseudo";
-// @import "scss/spacing";
-// @import "scss/negative-margins";
-// @import "scss/tables";
-// @import "scss/text-decoration";
-// @import "scss/text-align";
-// @import "scss/text-transform";
-// @import "scss/type-scale";
-// @import "scss/typography";
-// @import "scss/utilities";
-// @import "scss/visibility";
-// @import "scss/white-space";
-// @import "scss/word-break";
-// @import "scss/vertical-align";
-// @import "scss/hovers";
-// @import "scss/z-index";
+// 4. CSS Custom Properties
+// Importing here will allow you to override any custom properties in modules.
+@use "scss/properties";
 
-// Optional & Example files
-// @import 'scss/styles';
-// @import 'scss/nested';
-// @import 'scss/module_template';
+// @use "scss/properties/border-radius-props";
+// @use "scss/properties/border-widths-props";
+// @use "scss/properties/box-shadow-props";
+// @use "scss/properties/colors-props";
+// @use "scss/properties/font-families-props";
+// @use "scss/properties/heights-props";
+// @use "scss/properties/letter-spacing-props";
+// @use "scss/properties/line-height-props";
+// @use "scss/properties/max-widths-props";
+// @use "scss/properties/opacity-props";
+// @use "scss/properties/spacing-props";
+// @use "scss/properties/typography-props";
+// @use "scss/properties/type-scale-props";
+// @use "scss/properties/utilities-props";
+// @use "scss/properties/widths-props";
 
-/* CSS Custom Properties */
-/* Importing here will allow you to override any custom properties in modules */
-@import "scss/all-css-vars";
+/* 5. Modules */
+@use "scss/modules";
 
-// @import "scss/border-radius-vars";
-// @import "scss/border-widths-vars";
-// @import "scss/box-shadow-vars";
-// @import "scss/heights-vars";
-// @import "scss/font-families-vars";
-// @import "scss/typography-vars";
-// @import "scss/letter-spacing-vars";
-// @import "scss/line-height-vars";
-// @import "scss/max-widths-vars";
-// @import "scss/widths-vars";
-// @import "scss/opacity-vars";
-// @import "scss/spacing-vars";
-// @import "scss/type-scale-vars";
-// @import "scss/colors-vars";
+// @use "scss/modules/box-sizing";
+// @use "scss/modules/aspect-ratios";
+// @use "scss/modules/images";
+// @use "scss/modules/background-size";
+// @use "scss/modules/background-position";
+// @use "scss/modules/outlines";
+// @use "scss/modules/borders";
+// @use "scss/modules/border-colors";
+// @use "scss/modules/border-radius";
+// @use "scss/modules/border-style";
+// @use "scss/modules/border-widths";
+// @use "scss/modules/box-shadow";
+// @use "scss/modules/code";
+// @use "scss/modules/coordinates";
+// @use "scss/modules/clears";
+// @use "scss/modules/display";
+// @use "scss/modules/flexbox";
+// @use "scss/modules/floats";
+// @use "scss/modules/font-family";
+// @use "scss/modules/font-style";
+// @use "scss/modules/font-weight";
+// @use "scss/modules/forms";
+// @use "scss/modules/heights";
+// @use "scss/modules/letter-spacing";
+// @use "scss/modules/line-height";
+// @use "scss/modules/links";
+// @use "scss/modules/lists";
+// @use "scss/modules/max-widths";
+// @use "scss/modules/widths";
+// @use "scss/modules/overflow";
+// @use "scss/modules/position";
+// @use "scss/modules/opacity";
+// @use "scss/modules/rotations";
+// @use "scss/modules/skins";
+// @use "scss/modules/skins-pseudo";
+// @use "scss/modules/spacing";
+// @use "scss/modules/negative-margins";
+// @use "scss/modules/tables";
+// @use "scss/modules/text-decoration";
+// @use "scss/modules/text-align";
+// @use "scss/modules/text-transform";
+// @use "scss/modules/type-scale";
+// @use "scss/modules/typography";
+// @use "scss/modules/utilities";
+// @use "scss/modules/visibility";
+// @use "scss/modules/white-space";
+// @use "scss/modules/word-break";
+// @use "scss/modules/vertical-align";
+// @use "scss/modules/hovers";
+// @use "scss/modules/z-index";
 
-/* Debugging */
-@import "scss/debug-children";
-@import "scss/debug-grid";
+// Optional and Example files
+// @use "scss/modules/styles";
+// @use "scss/modules/nested";
+// @use "scss/modules/module-template";
 
-/* Uncomment out the line below to help debug layout issues */
-/* @import 'scss/debug'; */
+// 6. Debugging
+// Uncomment the lines below to help debug layout issues
+// @use "scss/modules/debug-children";
+// @use "scss/modules/debug-grid";
+// @use "scss/modules/debug";

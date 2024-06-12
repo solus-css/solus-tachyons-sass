@@ -1,0 +1,28 @@
+@use "../variables" as *;
+@use "../generators/classes" as *;
+@use "../generators/breakpoints" as *;
+/*
+
+   BORDER COLORS
+   Docs: http://tachyons.io/docs/themes/borders/
+
+   Border colors can be used to extend the base
+   border classes ba,bt,bb,br,bl found in the _borders.css file.
+
+   The base border class by default will set the color of the border
+   to that of the current text color. These classes are for the cases
+   where you desire for the text and border colors to be different.
+
+   Base:
+     b = border
+
+   Modifiers:
+   --color-name = each color variable name is also a border color name
+
+*/
+@include generate-compound-classes($color-scales, "b--") using
+  ($key, $value, $prefix, $suffix, $brkpoint, $i) {
+  .#{$prefix}#{$key}#{$bkpt-suffix} {
+    border-color: var(--#{$key}, #{$value});
+  }
+}

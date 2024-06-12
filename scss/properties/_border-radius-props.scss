@@ -1,0 +1,7 @@
+@use "../variables" as *;
+@use "../generators/custom-properties" as *;
+
+:where(html) {
+  /* Border Radius */
+  @include custom-properties($border-radii);
+}

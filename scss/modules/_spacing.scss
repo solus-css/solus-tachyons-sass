@@ -1,0 +1,93 @@
+@use "../variables" as *;
+@use "../generators/classes" as *;
+@use "../generators/breakpoints" as *;
+/*
+
+   SPACING
+   Docs: http://tachyons.io/docs/layout/spacing/
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Base:
+
+   Modifiers:
+     a = all
+     h = horizontal
+     v = vertical
+     t = top
+     r = right
+     b = bottom
+     l = left
+
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+
+*/
+@include generate-breakpoints {
+  @include generate-compound-classes($spacings, pa, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      padding: var(--#{$key}, #{$value});
+    }
+  }
+  @include generate-compound-classes($spacings, pl, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      padding-left: var(--#{$key}, #{$value});
+    }
+  }
+  @include generate-compound-classes($spacings, pr, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      padding-right: var(--#{$key}, #{$value});
+    }
+  }
+  @include generate-compound-classes($spacings, pb, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      padding-bottom: var(--#{$key}, #{$value});
+    }
+  }
+  @include generate-compound-classes($spacings, pt, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      padding-top: var(--#{$key}, #{$value});
+    }
+  }
+  @include generate-compound-classes($spacings, ma, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      margin: var(--#{$key}, #{$value});
+    }
+  }
+  @include generate-compound-classes($spacings, ml, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      margin-left: var(--#{$key}, #{$value});
+    }
+  }
+  @include generate-compound-classes($spacings, mr, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      margin-right: var(--#{$key}, #{$value});
+    }
+  }
+  @include generate-compound-classes($spacings, mb, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      margin-bottom: var(--#{$key}, #{$value});
+    }
+  }
+  @include generate-compound-classes($spacings, mt, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      margin-top: var(--#{$key}, #{$value});
+    }
+  }
+}

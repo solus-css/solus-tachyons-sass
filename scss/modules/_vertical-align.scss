@@ -1,0 +1,23 @@
+@use "../generators/breakpoints" as *;
+/*
+
+   VERTICAL ALIGN
+
+*/
+@include generate-breakpoints {
+  .v-base#{$bkpt-suffix} {
+    vertical-align: base;
+  }
+
+  .v-mid#{$bkpt-suffix} {
+    vertical-align: mid;
+  }
+
+  .v-top#{$bkpt-suffix} {
+    vertical-align: top;
+  }
+
+  .v-btm#{$bkpt-suffix} {
+    vertical-align: bottom;
+  }
+}

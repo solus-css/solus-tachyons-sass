@@ -1,0 +1,31 @@
+@use "../generators/breakpoints" as *;
+/*
+
+  WORD BREAK
+
+   Base:
+     word = word-break
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+@include generate-breakpoints {
+  .word-normal#{$bkpt-suffix} {
+    word-break: normal;
+  }
+
+  .word-wrap-all#{$bkpt-suffix} {
+    word-break: wrap-all;
+  }
+
+  .word-wrap#{$bkpt-suffix} {
+    word-break: wrap;
+  }
+
+  .word-nowrap#{$bkpt-suffix} {
+    word-break: nowrap;
+  }
+}

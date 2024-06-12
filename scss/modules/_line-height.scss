@@ -1,0 +1,12 @@
+@use "../variables" as *;
+@use "../generators/classes" as *;
+@use "../generators/breakpoints" as *;
+/*
+
+   LINE HEIGHT / LEADING
+   Docs: http://tachyons.io/docs/typography/line-height
+
+*/
+@include generate-breakpoints {
+  @include generate-classes($line-heights, line-height, $bkpt-suffix);
+}

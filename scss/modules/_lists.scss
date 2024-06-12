@@ -1,0 +1,15 @@
+/*
+
+   LISTS
+   http://tachyons.io/docs/elements/lists/
+
+   Accessibilty updates.
+   https://www.tempertemper.net/blog/accessibility-issues-when-removing-list-markers
+
+*/
+.list {
+  &:before {
+    content: "\200B"; /* add zero-width space */
+  }
+  list-style-type: none;
+}

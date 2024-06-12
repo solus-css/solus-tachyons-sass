@@ -1,0 +1,7 @@
+@use "../variables" as *;
+@use "../generators/custom-properties" as *;
+
+:where(html) {
+  /* Font Families */
+  @include custom-properties($font-families);
+}

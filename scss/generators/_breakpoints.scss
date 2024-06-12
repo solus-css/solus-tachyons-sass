@@ -1,0 +1,31 @@
+@use "../variables" as *;
+
+/// Helper mixin for generating custom breakpoints.
+///
+/// @mixin generate-breakpoints
+/// @desc Generates CSS media queries for each breakpoint defined in `_variables.scss`.
+///
+/// @example
+///   @include generate-breakpoints {
+///      .your-class-#{$bkpt-suffix} {
+///        ...
+///      }
+///   }
+///
+$bkpt-suffix: ""; // needs to be gloabal
+@mixin generate-breakpoints {
+  @each $breakpoint, $media in $breakpoints {
+    @if $breakpoint == "" {
+      // If the breakpoint is empty, set $bkpt-suffix to an empty string and invoke the content block
+      $bkpt-suffix: "" !global;
+      @content;
+    } @else {
+      // For non-empty breakpoints, set $bkpt-suffix to the breakpoint name prefixed with a hyphen
+      // and invoke the content block within a media query for the corresponding media query
+      @media #{$media} {
+        $bkpt-suffix: "-" + $breakpoint !global;
+        @content;
+      }
+    }
+  }
+}

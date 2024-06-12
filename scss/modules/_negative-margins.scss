@@ -1,0 +1,58 @@
+@use "../variables" as *;
+@use "../generators/classes" as *;
+@use "../generators/breakpoints" as *;
+/*
+
+   NEGATIVE @include MARGINS
+
+   Base:
+     n = negative
+
+   Modifiers:
+     a = all
+     t = top
+     r = right
+     b = bottom
+     l = left
+
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+
+*/
+@include generate-breakpoints {
+  @include generate-compound-classes($spacings, na, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      margin: calc(-1 * var(--#{$key}, #{$value}));
+    }
+  }
+  @include generate-compound-classes($spacings, nl, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      margin-left: calc(-1 * var(--#{$key}, #{$value}));
+    }
+  }
+  @include generate-compound-classes($spacings, nr, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      margin-right: calc(-1 * var(--#{$key}, #{$value}));
+    }
+  }
+  @include generate-compound-classes($spacings, nb, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      margin-bottom: calc(-1 * var(--#{$key}, #{$value}));
+    }
+  }
+  @include generate-compound-classes($spacings, nt, "", $bkpt-suffix) using
+    ($key, $value, $prefix, $suffix, $bkpt-suffix, $i) {
+    .#{$prefix}#{$i}#{$bkpt-suffix} {
+      margin-top: calc(-1 * var(--#{$key}, #{$value}));
+    }
+  }
+}

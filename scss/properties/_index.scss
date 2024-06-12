@@ -1,0 +1,49 @@
+@use "../variables" as *;
+@use "../generators/custom-properties" as *;
+/*
+
+  Custom Properties
+
+  Custom Properties (variables) for using Tachyons scales in your CSS
+  Custom Properties are only available where they make sense to do so (colors, scales etc.) and are named the same as their class counterparts.
+
+*/
+:where(html) {
+  /* Border Radius */
+  @include custom-properties($border-radii);
+  /* Border Width */
+  @include custom-properties($border-widths);
+  /* Shadows */
+  @include custom-properties($shadows);
+  /* Colors */
+  @include custom-properties($color-scales);
+  /* Font Families */
+  @include custom-properties($font-families);
+  /* Heights */
+  @include custom-properties($heights-scale);
+  @include custom-properties($heights-percent);
+  @include custom-properties($heights-min);
+  @include custom-properties($heights-viewport);
+  @include custom-properties($heights-strings);
+  /* Letter Spacing */
+  @include custom-properties($letter-spacings);
+  /* Line Heights */
+  @include custom-properties($line-heights);
+  /* Opacities */
+  @include custom-properties($opacities);
+  /* Ratios */
+  @include custom-properties($ratios);
+  /* Rotations */
+  @include custom-properties($rotations);
+  /* Spacings */
+  @include custom-properties($spacings);
+  /* Type Scale */
+  @include custom-properties($type-scales);
+  /* Measure */
+  @include custom-properties($measures);
+  /* Widths Scales */
+  @include custom-properties($widths);
+  @include custom-properties($max-widths);
+  /* z-index */
+  @include custom-properties($z-indexes);
+}

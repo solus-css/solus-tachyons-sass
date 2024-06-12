@@ -1,0 +1,329 @@
+// Custom Media Query Variables
+$breakpoint-not-small: "screen and (min-width: 30em)" !default;
+$breakpoint-medium: "screen and (min-width: 30em) and (max-width: 60em)" !default;
+$breakpoint-large: "screen and (min-width: 60em)" !default;
+
+// Empty starting value is requried to generate non-breakpoint classes.
+$breakpoints: (
+  "": "",
+  "ns": $breakpoint-not-small,
+  "m": $breakpoint-medium,
+  "l": $breakpoint-large,
+) !default;
+
+// Typography
+$sans-serif: -apple-system, blinkmacsystemfont, "avenir next", avenir, helvetica,
+  "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif !default;
+$serif: georgia, serif !default;
+$code: consolas, monaco, monospace !default;
+$courier: "'Courier Next'", courier, monospace;
+$helvetica: "'helvetica neue'", helvetica, sans-serif;
+$avenir: "'avenir next'", avenir, sans-serif;
+$athelas: athelas, georga, serif;
+$georga: georgia, serif;
+$times: times, serif;
+$bodoni: "'Bodoni MT'", serif;
+$calisto: "'Calisto MT'", serif;
+$garamond: garamond, serif;
+$baskerville: baskerville, serif;
+
+$font-families: (
+  "sans-serif": $sans-serif,
+  "serif": $serif,
+  "system-sans-serif": sans-serif,
+  "system-serif": serif,
+  "monospace": $code,
+  "courier": $courier,
+  "helvetica": $helvetica,
+  "avenir": $avenir,
+  "athelas": $athelas,
+  "georgia": $georga,
+  "times": $times,
+  "bodoni": $bodoni,
+  "calisto": $calisto,
+  "garamond": $garamond,
+  "baskerville": $baskerville,
+) !default;
+
+$type-scales: (
+  "f-headline": 6rem,
+  "f-subheadline": 5rem,
+  "f1": 3rem,
+  "f2": 2.25rem,
+  "f3": 1.5rem,
+  "f4": 1.25rem,
+  "f5": 1rem,
+  "f6": 0.875rem,
+  "f7": 0.75rem,
+) !default;
+
+$font-weights: (
+  "fw1": 100,
+  "fw2": 200,
+  "fw3": 300,
+  "fw4": 400,
+  "fw5": 500,
+  "fw6": 600,
+  "fw7": 700,
+  "fw8": 800,
+  "fw9": 900,
+) !default;
+
+$letter-spacings: (
+  "ls-tight": -0.05em,
+  "ls-1": 0.1em,
+  "letter-spacing-2": 0.25em,
+) !default;
+
+$line-heights: (
+  "lh-solid": 1,
+  "lh-title": 1.25,
+  "lh-copy": 1.5,
+) !default;
+
+$measures: (
+  "measure": 30em,
+  "measure-narrow": 20em,
+  "measure-wide": 34em,
+) !default;
+
+// Height, Width & Spacing
+$spacings: (
+  "spacing-none": 0,
+  "spacing-extra-small": 0.25rem,
+  "spacing-small": 0.5rem,
+  "spacing-medium": 1rem,
+  "spacing-large": 2rem,
+  "spacing-extra-large": 4rem,
+  "spacing-extra-extra-large": 8rem,
+  "spacing-extra-extra-extra-large": 16rem,
+  "spacing-copy-separator": 1.5em,
+) !default;
+
+$heights-scale: (
+  "h1": 1rem,
+  "h2": 2rem,
+  "h3": 4rem,
+  "h4": 8rem,
+  "h5": 16rem,
+) !default;
+
+$heights-percent: (
+  "h-25": 25%,
+  "h-50": 50%,
+  "h-75": 75%,
+  "h-100": 100%,
+) !default;
+
+$heights-viewport: (
+  "h-25": 25vh,
+  "h-50": 50vh,
+  "h-75": 75vh,
+  "h-100": 100vh,
+) !default;
+
+$heights-min: (
+  "min-h-25": 25%,
+  "min-h-100 ": 100%,
+  "min-vh-100": 100vh,
+) !default;
+
+$heights-strings: (
+  "h-auto": auto,
+  "h-inherit": inherit,
+) !default;
+
+$widths: (
+  "w1": 1rem,
+  "w2": 2rem,
+  "w3": 4rem,
+  "w4": 8rem,
+  "w5": 16rem,
+  "w-10": 10%,
+  "w-20": 20%,
+  "w-25": 25%,
+  "w-30": 30%,
+  "w-33": 33%,
+  "w-34": 34%,
+  "w-40": 40%,
+  "w-50": 50%,
+  "w-60": 60%,
+  "w-70": 70%,
+  "w-75": 75%,
+  "w-80": 80%,
+  "w-90": 90%,
+  "w-100": 100%,
+  "w-third": "calc(100% / 3)",
+  "w-two-thirds": "calc(100% / 1 0.5)",
+  "w-auto": auto,
+) !default;
+
+$max-widths: (
+  "mw-1": 1rem,
+  "mw-2": 2rem,
+  "mw-3": 4rem,
+  "mw-4": 8rem,
+  "mw-5": 16rem,
+  "mw-6": 32rem,
+  "mw-7": 48rem,
+  "mw-8": 64rem,
+  "mw-9": 96rem,
+) !default;
+
+$margins: (
+  1: --spacing-extra-small,
+  2: --spacing-small,
+  3: --spacing-medium,
+  4: --spacing-large,
+  5: --spacing-extra-large,
+  6: --spacing-extra-extra-large,
+  7: --spacing-extra-extra-extra-large,
+) !default;
+
+// Borders
+$border-radii: (
+  "br-none": 0,
+  "br1": 0.125rem,
+  "br2": 0.25rem,
+  "br3": 0.5rem,
+  "br4": 1rem,
+  "br-100": 100%,
+  "br-circle": 100%,
+  "br-pill": 9999px,
+) !default;
+
+$border-widths: (
+  "bw0": 0,
+  "bw1": 0.125rem,
+  "bw2": 0.25rem,
+  "bw3": 0.5rem,
+  "bw4": 1rem,
+  "bw5": 2rem,
+) !default;
+
+// Shadows
+$shadows: (
+  "shadow-1": 0 0 4px 2px hsl(0deg 0% 0% / 20%),
+  "shadow-2": 0 0 8px 2px hsl(0deg 0% 0% / 20%),
+  "shadow-3": 2px 2px 4px 2px hsl(0deg 0% 0% / 20%),
+  "shadow-4": 2px 2px 8px 0 hsl(0deg 0% 0% / 20%),
+  "shadow-5": 4px 4px 8px 0 hsl(0deg 0% 0% / 20%),
+) !default;
+
+// Color Scales
+$color-scales: (
+  "black": hsl(0deg 0% 0%),
+  "near-black": hsl(0deg 0% 7%),
+  "dark-gray": hsl(0deg 0% 20%),
+  "mid-gray": hsl(0deg 0% 33%),
+  "gray": hsl(0deg 0% 47%),
+  "silver": hsl(0deg 0% 60%),
+  "light-silver": hsl(0deg 0% 67%),
+  "moon-gray": hsl(0deg 0% 80%),
+  "light-gray": hsl(0deg 0% 93%),
+  "near-white": hsl(0deg 0% 96%),
+  "white": hsl(0deg 0% 100%),
+  "transparent": transparent,
+  "black-90": hsl(0deg 0% 0% / 90%),
+  "black-80": hsl(0deg 0% 0% / 80%),
+  "black-70": hsl(0deg 0% 0% / 70%),
+  "black-60": hsl(0deg 0% 0% / 60%),
+  "black-50": hsl(0deg 0% 0% / 50%),
+  "black-40": hsl(0deg 0% 0% / 40%),
+  "black-30": hsl(0deg 0% 0% / 30%),
+  "black-20": hsl(0deg 0% 0% / 20%),
+  "black-10": hsl(0deg 0% 0% / 10%),
+  "black-05": hsl(0deg 0% 0% / 5%),
+  "black-025": hsl(0deg 0% 0% / 2.5%),
+  "black-0125": hsl(0deg 0% 0% / 1.25%),
+  "white-90": hsl(0deg 0% 100% / 90%),
+  "white-80": hsl(0deg 0% 100% / 80%),
+  "white-70": hsl(0deg 0% 100% / 70%),
+  "white-60": hsl(0deg 0% 100% / 60%),
+  "white-50": hsl(0deg 0% 100% / 50%),
+  "white-40": hsl(0deg 0% 100% / 40%),
+  "white-30": hsl(0deg 0% 100% / 30%),
+  "white-20": hsl(0deg 0% 100% / 20%),
+  "white-10": hsl(0deg 0% 100% / 10%),
+  "white-05": hsl(0deg 0% 100% / 5%),
+  "white-025": hsl(0deg 0% 100% / 2.5%),
+  "white-0125": hsl(0deg 0% 100% / 1.25%),
+  "dark-red": hsl(357deg 97% 46%),
+  "red": hsl(3deg 100% 61%),
+  "light-red": hsl(8deg 100% 68%),
+  "orange": hsl(23deg 100% 50%),
+  "gold": hsl(43deg 100% 50%),
+  "yellow": hsl(51deg 100% 50%),
+  "light-yellow": hsl(53deg 91% 82%),
+  "purple": hsl(265deg 58% 41%),
+  "light-purple": hsl(267deg 85% 67%),
+  "dark-pink": hsl(320deg 100% 42%),
+  "hot-pink": hsl(330deg 100% 50%),
+  "pink": hsl(335deg 100% 50%),
+  "light-pink": hsl(335deg 100% 67%),
+  "dark-green": hsl(120deg 100% 20%),
+  "green": hsl(120deg 100% 40%),
+  "light-green": hsl(120deg 100% 60%),
+  "navy": hsl(210deg 100% 25%),
+  "dark-blue": hsl(220deg 100% 20%),
+  "blue": hsl(220deg 100% 40%),
+  "light-blue": hsl(220deg 100% 60%),
+  "lightest-blue": hsl(220deg 100% 90%),
+  "washed-blue": hsl(220deg 100% 95%),
+  "washed-green": hsl(120deg 100% 95%),
+  "washed-yellow": hsl(51deg 100% 95%),
+  "washed-red": hsl(0deg 100% 95%),
+  "inherit": inherit,
+) !default;
+
+$opacities: (
+  "o-100": 1,
+  "o-90": 90,
+  "o-80": 80,
+  "o-70": 70,
+  "o-60": 60,
+  "o-50": 50,
+  "o-40": 40,
+  "o-30": 30,
+  "o-20": 20,
+  "o-10": 10,
+  "o-05": 0.5,
+  "o-025": 0.25,
+  "o-0": 0,
+) !default;
+
+// Utilites
+
+$ratios: (
+  "aspect-ratio--16x9": 56.25%,
+  "aspect-ratio--9x16": 177.77%,
+  "aspect-ratio--4x3": 75%,
+  "aspect-ratio--3x4": 133.33%,
+  "aspect-ratio--6x4": 66.6%,
+  "aspect-ratio--4x6": 150%,
+  "aspect-ratio--8x5": 62.5%,
+  "aspect-ratio--5x8": 160%,
+  "aspect-ratio--7x5": 71.42%,
+  "aspect-ratio--5x7": 140%,
+  "aspect-ratio--1x1": 100%,
+) !default;
+
+$rotations: (
+  "rorate-45": 45deg,
+  "rorate-90": 90deg,
+  "rorate-135": 135deg,
+  "rorate-180": 180deg,
+  "rorate-225": 225deg,
+  "rorate-270": 270deg,
+  "rorate-315": 315deg,
+) !default;
+
+$z-indexes: (
+  "z-0": 0,
+  "z-1": 1,
+  "z-2": 2,
+  "z-3": 3,
+  "z-5": 5,
+  "z-999": 999,
+  "z-9999": 9999,
+) !default;
