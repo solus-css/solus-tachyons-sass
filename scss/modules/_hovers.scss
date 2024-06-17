@@ -62,6 +62,7 @@
   opacity: 0;
   transition: opacity 0.15s ease-in;
 }
+
 .hide-child:hover .child,
 .hide-child:focus .child,
 .hide-child:active .child {
@@ -80,10 +81,10 @@
  * even if you are using background-size: cover */
 
 .grow {
-  -moz-osx-font-smoothing: grayscale;
-  backface-visibility: hidden;
   transform: translateZ(0);
+  backface-visibility: hidden;
   transition: transform 0.25s ease-out;
+  -moz-osx-font-smoothing: grayscale;
 
   &:hover,
   &:focus {
@@ -96,10 +97,10 @@
 }
 
 .grow-large {
-  -moz-osx-font-smoothing: grayscale;
-  backface-visibility: hidden;
   transform: translateZ(0);
+  backface-visibility: hidden;
   transition: transform 0.25s ease-in-out;
+  -moz-osx-font-smoothing: grayscale;
 
   &:hover,
   &:focus {
@@ -125,22 +126,22 @@
 */
 
 .shadow-hover {
-  cursor: pointer;
   position: relative;
+  cursor: pointer;
   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 
   &::after {
-    content: "";
-    box-shadow: 0 0 16px 2px rgb(0 0 0 / 20%);
-    border-radius: inherit;
-    opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -1;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    border-radius: inherit;
+    box-shadow: 0 0 16px 2px rgb(0 0 0 / 20%);
+    opacity: 0;
     transition: opacity 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    content: "";
   }
 
   &:hover::after,

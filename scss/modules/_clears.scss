@@ -16,6 +16,7 @@
     clear: both;
   }
 }
+
 @include generate-breakpoints {
   .cl#{$bkpt-suffix} {
     clear: left;
