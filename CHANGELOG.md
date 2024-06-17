@@ -1,4 +1,4 @@
-## Tachyons-Haru Change Log
+# Tachyons-Haru Change Log
 
 ## v0.0.1
 
@@ -20,4 +20,4 @@ Also:
 
 ## v0.1.1
 
-v0.1.1 adds some improved stylelint rules, and corrects some @mixin generator errors introduced in v0.1.0.
+v0.1.1 sees improved linting and corrects some errors when migrating to @mixin generators.

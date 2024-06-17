@@ -15,7 +15,7 @@
 /* Text colors */
 @include generate-compound-classes($color-scales) using
   ($key, $value, $prefix, $suffix, $brkpoint, $i) {
-  .#{$key}#{$bkpt-suffix} {
+  .#{$key} {
     color: var(--#{$key}, #{$value});
   }
 }
@@ -23,7 +23,7 @@
 /* Background colors */
 @include generate-compound-classes($color-scales, bg) using
   ($key, $value, $prefix, $suffix, $brkpoint, $i) {
-  .#{$prefix}#{$key}#{$bkpt-suffix} {
+  .#{$prefix}#{$key} {
     color: var(--#{$key}, #{$value});
   }
 }
