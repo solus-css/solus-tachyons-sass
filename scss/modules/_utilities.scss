@@ -6,7 +6,7 @@
 */
 @include generate-breakpoints {
   /* Equivalent to .overflow-y-scroll */
-  .overflow-container {
+  .overflow-container#{$bkpt-suffix} {
     overflow-y: scroll;
   }
 
