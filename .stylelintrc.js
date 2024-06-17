@@ -8,7 +8,7 @@ module.exports = {
   rules: {
     // recommended rules
     "comment-empty-line-before": null,
-    "scss/dollar-variable-empty-line-before": "always",
+    "scss/dollar-variable-empty-line-before": ["never", { ignore: ["after-comment", "inside-single-line-block", "after-dollar-variable"] }],
     "scss/at-rule-no-unknown": true,
     "scss/at-mixin-pattern": null,
     "at-rule-empty-line-before": [
