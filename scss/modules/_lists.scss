@@ -8,8 +8,9 @@
 
 */
 .list {
-  &:before {
+  &::before {
     content: "\200B"; /* add zero-width space */
   }
+
   list-style-type: none;
 }
