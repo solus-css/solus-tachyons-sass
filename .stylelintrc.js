@@ -1,14 +1,18 @@
 module.exports = {
-  extends: ["stylelint-config-standard-scss"],
-  plugin: ["stylelint-prettier"],
+  extends: [
+    "stylelint-config-standard-scss",
+    "stylelint-config-rational-order",
+    "stylelint-prettier/recommended",
+  ],
+  plugin: ["stylelint-order", "stylelint-config-rational-order/plugin"],
   rules: {
     // recommended rules
-    "at-rule-no-unknown": null,
     "comment-empty-line-before": null,
+    "scss/dollar-variable-empty-line-before": "always",
     "scss/at-rule-no-unknown": true,
     "scss/at-mixin-pattern": null,
     "at-rule-empty-line-before": [
-      "never",
+      "always",
       {
         ignore: ["after-comment", "first-nested"],
         except: [
@@ -17,6 +21,14 @@ module.exports = {
           "blockless-after-same-name-blockless",
           "inside-block",
         ],
+      },
+    ],
+    "order/properties-order": [],
+    "plugin/rational-order": [
+      true,
+      {
+        "border-in-box-model": false,
+        "empty-line-between-groups": false,
       },
     ],
   },
