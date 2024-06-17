@@ -24,6 +24,6 @@
 @include generate-compound-classes($color-scales, bg) using
   ($key, $value, $prefix, $suffix, $brkpoint, $i) {
   .#{$prefix}#{$key} {
-    color: var(--#{$key}, #{$value});
+    background-color: var(--#{$key}, #{$value});
   }
 }
