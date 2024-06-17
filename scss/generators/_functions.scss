@@ -1,10 +1,12 @@
+@use "sass:string";
+
 /// Checks if a string ends with a specific substring.
 ///
 /// @param {String} $string - The string to be checked.
 /// @param {String} $substr - The substring to be checked for.
 /// @return {Boolean} - Returns `true` if the string ends with the substring, `false` otherwise.
 @function ends-with($string, $substr) {
-  @return str-slice($string, - str-length($substr)) == $substr;
+  @return string.slice($string, - string.length($substr)) == $substr;
 }
 
 /// Checks if a string starts with a specific substring.
@@ -13,5 +15,5 @@
 /// @param {String} $substr - The substring to be checked for.
 /// @return {Boolean} - Returns `true` if the string starts with the substring, `false` otherwise.
 @function starts-with($string, $substr) {
-  @return str-slice($string, 1, str-length($substr)) == $substr;
+  @return string.slice($string, 1, string.length($substr)) == $substr;
 }
