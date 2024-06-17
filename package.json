@@ -2,7 +2,7 @@
     "name": "tachyons-sass-haru",
     "description": "Transpiled Sass partials for Tachyons",
     "author": "Benjamin Rush (bnjmnrsh)",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "style": "css/tachyons.min.css",
     "main": "tachyons.scss",
     "files": [
