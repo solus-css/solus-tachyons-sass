@@ -4,8 +4,6 @@
 
 */
 .pre {
+  overflow: auto hidden;
   white-space: pre;
-  overflow-x: auto;
-  overflow-y: hidden;
-  overflow: scroll;
 }
