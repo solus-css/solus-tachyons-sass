@@ -4,14 +4,10 @@
 :where(html) {
   /* Ratios */
   @include custom-properties($ratios);
-}
 
-:where(html) {
   /* Rotations */
   @include custom-properties($rotations);
-}
 
-:where(html) {
   /* z-index */
   @include custom-properties($z-indexes);
 }

@@ -36,9 +36,9 @@
   @include generate-classes($heights-percent, "height", $bkpt-suffix);
 
   /* Screen Height Percentage */
-  @include generate-classes($heights-percent, "height", $bkpt-suffix);
+  @include generate-classes($heights-viewport, "height", $bkpt-suffix);
 
-  /* Min Height  Percentages - Based off of height of parent*/
+  /* Min Height  Percentages - Based off of height of parent */
   @include generate-classes($heights-min, "min-height", $bkpt-suffix);
 
   /* String Properties */

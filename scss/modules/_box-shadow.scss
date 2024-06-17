@@ -8,6 +8,5 @@
 
  */
 @include generate-breakpoints {
-  @include generate-classes($shadows, box-shadow, $bkpt-suffix) {
-  }
+  @include generate-classes($shadows, box-shadow, $bkpt-suffix);
 }

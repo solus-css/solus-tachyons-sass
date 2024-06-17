@@ -73,6 +73,7 @@
       @if not ends-with($prefix, "-") and $prefix != "" {
         $prefix: $prefix + "-";
       }
+
       // if the string $suffix does start with '-'
       @if not starts-with($suffix, "-") and $suffix != "" {
         $suffix: "-" + $suffix;

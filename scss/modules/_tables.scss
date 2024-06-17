@@ -4,6 +4,7 @@
   Docs: http://tachyons.io/docs/elements/tables/
 
 */
+// stylelint-disable selector-class-pattern
 .collapse {
   border-collapse: collapse;
   border-spacing: 0;
@@ -32,3 +33,4 @@
 .stripe-dark:nth-child(odd) {
   background-color: var(--black-10);
 }
+// stylelint-enable selector-class-pattern

@@ -1,4 +1,5 @@
 @use "../variables" as *;
+$bkpt-suffix: ""; // needs to be global
 
 /// Helper mixin for generating custom breakpoints.
 ///
@@ -12,7 +13,6 @@
 ///      }
 ///   }
 ///
-$bkpt-suffix: ""; // needs to be gloabal
 @mixin generate-breakpoints {
   @each $breakpoint, $media in $breakpoints {
     @if $breakpoint == "" {

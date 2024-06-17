@@ -28,6 +28,7 @@
   .b#{$bkpt-suffix} {
     font-weight: bold;
   }
+
   // Weights scale
   @include generate-classes($font-weights, font-weight, $bkpt-suffix);
 }
