@@ -22,7 +22,7 @@
 */
 @include generate-compound-classes($color-scales, "b--") using
   ($key, $value, $prefix, $suffix, $brkpoint, $i) {
-  .#{$prefix}#{$key}#{$bkpt-suffix} {
+  .#{$prefix}#{$key} {
     border-color: var(--#{$key}, #{$value});
   }
 }
