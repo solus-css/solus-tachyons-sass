@@ -17,3 +17,7 @@ Also:
 - All vars are now generated into custom properties with `:where(HTML)` for the lowest possible specificity.
 - Class declarations now use these custom properties and have built-in fallback values.
 - Experimental reset (nu-reset): <https://gist.github.com/bnjmnrsh/6ca113fb4e3577e27de2228f997daa79>
+
+## v0.1.1
+
+v0.1.1 adds some improved stylelint rules, and corrects some @mixin generator errors introduced in v0.1.0.
