@@ -78,10 +78,10 @@
     justify-content: center;
   }
   .justify-between#{$bkpt-suffix} {
-    justify-content: between;
+    justify-content: space-between;
   }
   .justify-around#{$bkpt-suffix} {
-    justify-content: around;
+    justify-content: space-around;
   }
   .content-start#{$bkpt-suffix} {
     align-content: flex-start;
