@@ -1,25 +1,25 @@
-# Solas Tachyons Sass
+# Solus Tachyons Sass
 
 Tachyons Sass partials.
 
-Solas-Tachyons aims to leverage the tooling of Sass in the same way [tachyons-css](http://tachyons.io/) utilises PostCSS, thus enabling the creation of custom breakpoints and variable definitions when generating Tachyons modules with Sass. While there is a [tachyons-sass](https://github.com/tachyons-css/tachyons-sass) variant from which this project is forked, it does not fully leverage the potential of Sass.
+Solus-Tachyons aims to leverage the tooling of Sass in the same way [tachyons-css](http://tachyons.io/) utilises PostCSS, thus enabling the creation of custom breakpoints and variable definitions when generating Tachyons modules with Sass. While there is a [tachyons-sass](https://github.com/tachyons-css/tachyons-sass) variant from which this project is forked, it does not fully leverage the potential of Sass.
 
-Solas-Tachyons breaks from the Tachyons parent project by integrating [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) alongside Sass variables definitions so that they can be used interchangeably within your projects. These features allow Tachyons scales and structure to be selectively used to provide uniformity in a project (for example, when using BEM methodology) while also allowing the option of generating selected Tachyons partials when you want to add "just a sprinkle" of Tachyons. These features are beneficial when using hybrid authoring approaches and migrating to or away from Tachyons.
+Solus-Tachyons breaks from the Tachyons parent project by integrating [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) alongside Sass variables definitions so that they can be used interchangeably within your projects. These features allow Tachyons scales and structure to be selectively used to provide uniformity in a project (for example, when using BEM methodology) while also allowing the option of generating selected Tachyons partials when you want to add "just a sprinkle" of Tachyons. These features are beneficial when using hybrid authoring approaches and migrating to or away from Tachyons.
 
 ## Local Setup
 
-To develop locally with Solas-Tachyons
+To develop locally with Solus-Tachyons
 
 ```bash
-git clone https://github.com/solas-css/solas-tachyons-sass.git
-cd solas-tachyons-sass
+git clone https://github.com/solus-css/solus-tachyons-sass.git
+cd solus-tachyons-sass
 npm install
 ```
 
 Or as an NPM dependency:
 
 ```bash
-npm i https://github.com/solas-css/solas-tachyons-sass
+npm i https://github.com/solus-css/solus-tachyons-sass
 ```
 
 ### Basic Usage
@@ -51,13 +51,13 @@ Stylelint can be used to lint generated css after a `build` command by running t
 
 ```npm run lint:css```
 
-Solas-Tachyons-SASS is bunnedled with [wallace-cli](https://github.com/projectwallace/wallace-cli). After a build, you can generate a report of useful statistics about your CSS in your terminal by running the command:
+Solus-Tachyons-SASS is bunnedled with [wallace-cli](https://github.com/projectwallace/wallace-cli). After a build, you can generate a report of useful statistics about your CSS in your terminal by running the command:
 
 ```npm run wallace```
 
 ## Custom CSS Properties
 
-Solas-Tachyons includes custom CSS properties for colors and all unit based values, where the name for each property matches its Sass variable counterpart.
+Solus-Tachyons includes custom CSS properties for colors and all unit based values, where the name for each property matches its Sass variable counterpart.
 
 For example the [spacing values](http://tachyons.io/docs/layout/spacing/) for `margin-all` (ie `.ma3`) are governed by the CSS custom property: `var(--spacing-medium)` which corresponds to the Sass variable `$spacing-medium`.
 
@@ -65,11 +65,11 @@ Custom CSS properties are defined in `*-vars.scss` files that appear along side 
 
 ## Sass
 
-Solas-Tachyons-SASS uses variables and mixins to construct Sass partials for each Tachyons module.
+Solus-Tachyons-SASS uses variables and mixins to construct Sass partials for each Tachyons module.
 
 ### Sass Variables
 
- Sass variable names are identical to their custom property counterpart, a pattern established by [tachons-sass](https://github.com/tachyons-css/tachyons-sass) from which this project is forked. See also [tachyons-custom](https://github.com/solas-css/tachyons-custom) which offers a near identical suite of custom variables, with the notable exception of properties related to colors [ie skins](https://github.com/solas-css/tachyons-custom/blob/master/src/_variables.css), where [tachyons-custom](https://github.com/solas-css/tachyons-custom) has a greatly expanded color property set, diverging from the parent project.
+ Sass variable names are identical to their custom property counterpart, a pattern established by [tachons-sass](https://github.com/tachyons-css/tachyons-sass) from which this project is forked. See also [tachyons-custom](https://github.com/solus-css/tachyons-custom) which offers a near identical suite of custom variables, with the notable exception of properties related to colors [ie skins](https://github.com/solus-css/tachyons-custom/blob/master/src/_variables.css), where [tachyons-custom](https://github.com/solus-css/tachyons-custom) has a greatly expanded color property set, diverging from the parent project.
 
 Sass global variables are defined in the file `_all_variables.scss`.
 
@@ -105,7 +105,7 @@ $breakpoints: (
 
 > NOTE: Be mindful when adding arbitrary breakpoints as these will balloon the overall size of your compiled CSS, as each suite of Tachyons utility classes will be generated for every breakpoint.
 
-## Differences between Tachyons and Solas-Tachyons
+## Differences between Tachyons and Solus-Tachyons
 
 Where backwards compatibility is no longer a concern, we have begun removing or augmenting styles and rules that have either been deprecated or where modern tools and techniques are available.
 
@@ -138,4 +138,4 @@ MIT
 5. Create new Pull Request
 
 Tachyons by [@mrmrs_](https://twitter.com/mrmrs_) & [@4lpine](https://twitter.com/4lpine)
-Solas-Tachyons by [bnjmnrsh](https://github.com/bnjmnrsh)
+Solus-Tachyons by [bnjmnrsh](https://github.com/bnjmnrsh)
