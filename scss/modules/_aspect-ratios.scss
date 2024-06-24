@@ -19,7 +19,7 @@
  *
  * */
 @include generate-breakpoints {
-  @include generate-classes(map, padding-bottom, $bkpt-suffix);
+  @include generate-classes($ratios, padding-bottom, $bkpt-suffix);
 
   .aspect-ratio--object#{$bkpt-suffix} {
     position: absolute;
